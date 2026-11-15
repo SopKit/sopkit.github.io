@@ -26,7 +26,7 @@ export default function ServicesPage() {
 				<p className="text-lg leading-relaxed text-muted-foreground">
 					Need a clean SEO tool, small business landing page, speed fix, or API integration? We build practical web utilities and growth pages.
 				</p>
-				<Button asChild><Link href="/contact">Start a Project</Link></Button>
+				<Button asChild><Link href="/contact/">Start a Project</Link></Button>
 			</section>
 
 			<section className="grid gap-4 md:grid-cols-2">

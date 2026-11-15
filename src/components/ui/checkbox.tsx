@@ -1,34 +1,57 @@
 "use client";
 
+import {
+	CheckboxInput,
+	type CheckboxInputProps,
+} from "@astryxdesign/core/CheckboxInput";
 import * as React from "react";
-import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
-import { CheckIcon } from "lucide-react";
 
-import { cn } from "@/lib/utils";
+type CheckedState = boolean | "indeterminate";
 
-interface CheckboxProps extends Omit<React.ComponentProps<typeof CheckboxPrimitive.Root>, "onCheckedChange"> {
-	onCheckedChange?: (checked: boolean | any) => void;
+interface CheckboxProps {
+	checked?: CheckedState;
+	defaultChecked?: CheckedState;
+	onCheckedChange?: (checked: boolean) => void;
+	disabled?: boolean;
+	required?: boolean;
+	id?: string;
+	name?: string;
+	className?: string;
+	"aria-label"?: string;
 }
 
-function Checkbox({ className, onCheckedChange, ...props }: CheckboxProps) {
-	return (
-		<CheckboxPrimitive.Root
-			data-slot="checkbox"
-			className={cn(
-				"peer border-input dark:bg-input/30 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground dark:data-[state=checked]:bg-primary data-[state=checked]:border-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive size-4 shrink-0 shadow-xs transition-shadow outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50",
-				className,
-			)}
-			onCheckedChange={onCheckedChange as any}
-			{...props}
-		>
-			<CheckboxPrimitive.Indicator
-				data-slot="checkbox-indicator"
-				className="flex items-center justify-center text-current transition-none"
-			>
-				<CheckIcon className="size-3.5" />
-			</CheckboxPrimitive.Indicator>
-		</CheckboxPrimitive.Root>
-	);
+/** Astryx CheckboxInput keeping the `checked`/`onCheckedChange` contract. */
+function Checkbox({
+	checked,
+	defaultChecked = false,
+	onCheckedChange,
+	disabled,
+	required,
+	id,
+	name,
+	className,
+	"aria-label": ariaLabel,
+}: CheckboxProps) {
+	const [inner, setInner] = React.useState<CheckedState>(defaultChecked);
+	const value = checked ?? inner;
+
+	const checkboxProps = {
+		"data-slot": "checkbox",
+		id,
+		label: ariaLabel ?? (id ? "" : "Checkbox"),
+		isLabelHidden: true,
+		value,
+		onChange: (next: boolean) => {
+			if (checked === undefined) setInner(next);
+			onCheckedChange?.(next);
+		},
+		isDisabled: disabled,
+		isRequired: required,
+		htmlName: name,
+		className,
+	} as unknown as CheckboxInputProps;
+
+	return <CheckboxInput {...checkboxProps} />;
 }
 
 export { Checkbox };

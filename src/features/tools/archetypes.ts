@@ -199,6 +199,10 @@ export function resolveDataProcessing(tool: {
     category.includes("youtube") ||
     category.includes("downloader") ||
     id.includes("youtube") ||
+    id.includes("downloader") ||
+    id.includes("terabox") ||
+    id.includes("pollinations") ||
+    id === "ai-image-generator" ||
     id.includes("transcrib") ||
     id.includes("speech-to-text") ||
     id.includes("ai-art")
@@ -207,7 +211,7 @@ export function resolveDataProcessing(tool: {
       type: "REMOTE",
       label: "Cloud API Processing",
       badgeText: "Secure Cloud API",
-      description: "Requires secure external API processing. No user media or output is retained on servers.",
+      description: "Your input is sent to an external service to produce the result. See the tool description for which service is used.",
     };
   }
 
@@ -242,7 +246,7 @@ export function resolveDataProcessing(tool: {
   return {
     type: "LOCAL",
     label: "Local Browser Sandbox",
-    badgeText: "100% Client-Side",
-    description: "Executes entirely in your local browser memory via WebAssembly/Web Workers. Files never leave your device.",
+    badgeText: "Runs in Your Browser",
+    description: "This tool processes your input in the browser. It does not upload your files to a SopKit server.",
   };
 }

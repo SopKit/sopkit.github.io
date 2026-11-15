@@ -23,7 +23,7 @@ export default function AdvertisePage() {
 				<p className="text-lg leading-relaxed text-muted-foreground">
 					Sponsor a category, tool, or newsletter placement without popups, deceptive buttons, or interruptive ads.
 				</p>
-				<Button asChild><Link href="/contact">Ask About Sponsorship</Link></Button>
+				<Button asChild><Link href="/contact/">Ask About Sponsorship</Link></Button>
 			</section>
 
 			<section className="grid gap-4 md:grid-cols-3">

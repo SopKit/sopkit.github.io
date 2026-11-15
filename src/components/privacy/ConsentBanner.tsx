@@ -66,7 +66,7 @@ export default function ConsentBanner() {
 
             <p className="mt-1 text-xs leading-5 text-muted-foreground">
               SopKit keeps optional analytics and advertising disabled until you choose. Core tools remain available.
-              See the <a href="/privacy" className="font-medium text-primary underline underline-offset-2">Privacy Policy</a> for details.
+              See the <a href="/privacy/" className="font-medium text-primary underline underline-offset-2">Privacy Policy</a> for details.
             </p>
 
             {settings && (

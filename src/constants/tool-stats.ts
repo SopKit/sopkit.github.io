@@ -4,3 +4,4 @@
 export const TOOL_COUNT = 464;
 export const CATEGORY_COUNT = 20;
 export const POPULAR_TOOL_COUNT = 127;
+export const CATEGORY_TOOL_COUNTS: Record<string, number> = {"generators":33,"image":37,"text":34,"pdf":19,"video":5,"youtube":10,"audio":5,"developer":111,"utilities":72,"seo":9,"ai-tools":12,"others":7,"company":2,"content":7,"blog":0,"calculators":42,"exam-tools":20,"health":5,"privacy-tools":23,"extraction":11};

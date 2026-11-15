@@ -12,48 +12,50 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
+import { pageHref } from "@/seo/canonical";
+import { CATEGORY_TOOL_COUNTS } from "@/constants/tool-stats";
 
 const CATEGORIES = [
 	{
 		title: "Image Suite",
-		description: "Compress, resize, remove backgrounds, crop, and convert image formats at WebAssembly speeds.",
+		description: "Compress, resize, remove backgrounds, crop, and convert image formats in your browser.",
 		href: "/image-tools",
-		count: "50+ Tools",
+		count: `${CATEGORY_TOOL_COUNTS.image ?? 0} tools`,
 		icon: ImageIcon,
 	},
 	{
 		title: "PDF Engine",
-		description: "Merge, split, compress, annotate, and password protect documents with zero server uploads.",
+		description: "Merge, split, compress, annotate, and password protect documents in your browser.",
 		href: "/pdf-tools",
-		count: "40+ Tools",
+		count: `${CATEGORY_TOOL_COUNTS.pdf ?? 0} tools`,
 		icon: FileText,
 	},
 	{
 		title: "Developer Utilities",
 		description: "JSON formatting, Base64 encoding, UUID generation, diff checking, minifiers, and regex parsers.",
 		href: "/developer-tools",
-		count: "100+ Tools",
+		count: `${CATEGORY_TOOL_COUNTS.developer ?? 0} tools`,
 		icon: Code,
 	},
 	{
 		title: "Calculators",
 		description: "CGPA converters, financial retainers, car loan EMIs, inflation tracking, and unit calculations.",
 		href: "/calculators",
-		count: "80+ Tools",
+		count: `${CATEGORY_TOOL_COUNTS.calculators ?? 0} tools`,
 		icon: Calculator,
 	},
 	{
 		title: "SEO & Webmaster",
 		description: "Inspect meta tags, audit website accessibility, generate robots.txt, and analyze indexing signals.",
 		href: "/seo-tools",
-		count: "45+ Tools",
+		count: `${CATEGORY_TOOL_COUNTS.seo ?? 0} tools`,
 		icon: Search,
 	},
 	{
 		title: "Text & Content",
 		description: "Live word & character counts, slug generators, markdown converters, case converters, and text diffs.",
 		href: "/text-tools",
-		count: "60+ Tools",
+		count: `${CATEGORY_TOOL_COUNTS.text ?? 0} tools`,
 		icon: Type,
 	},
 ];
@@ -77,7 +79,7 @@ export function CategoryShowcase() {
 					</div>
 
 					<Link
-						href="/tools"
+						href="/tools/"
 						className="inline-flex items-center gap-1.5 text-xs font-bold text-foreground hover:text-accent transition-colors no-underline group"
 					>
 						<span>View all categories</span>
@@ -92,7 +94,7 @@ export function CategoryShowcase() {
 						return (
 							<Link
 								key={cat.title}
-								href={cat.href}
+								href={pageHref(cat.href)}
 								className="group relative flex flex-col justify-between p-7 rounded-2xl bg-card border border-border/80 hover:border-foreground/40 shadow-sm hover:shadow-md transition-all duration-200 no-underline"
 							>
 								<div>

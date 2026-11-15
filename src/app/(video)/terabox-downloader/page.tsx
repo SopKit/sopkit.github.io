@@ -5,15 +5,14 @@ import { SimpleTeraboxPlayer } from "@/components/tools/video/SimpleTeraboxPlaye
 import { getToolByRoute } from "@/lib/tools";
 
 export const metadata = {
-	title: "Free Terabox Video Downloader Online - No Signup | SopKit",
-	description: "Download, convert, and edit video files instantly with our free Terabox Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
-	keywords: "terabox video downloader, free online tool, no signup, terabox-downloader, Terabox Downloader, free terabox-downloader, Terabox Downloader online, video tool, video editor, media converter, online video, SopKit",
+	title: "Terabox Video Player - Open Share Links Online",
+	description: "Paste a Terabox share link to open the file in an embedded third-party player, with a new-tab option and copyable embed code. Nothing is converted or edited.",
 	alternates: {
 		canonical: `${SITE_URL}/terabox-downloader`,
 	},
 	openGraph: {
-		title: "Free Terabox Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Terabox Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
+		title: "Terabox Video Player - Open Share Links Online",
+		description: "Paste a Terabox share link to open the file in an embedded third-party player, with a new-tab option and copyable embed code. Nothing is converted or edited.",
 		url: `${SITE_URL}/terabox-downloader`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -21,11 +20,12 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Terabox Video Downloader Online - No Signup | SopKit",
-		description: "Download, convert, and edit video files instantly with our free Terabox Video Downloader online. Fast, secure, and private processing with no signup. 100% free.",
+		title: "Terabox Video Player - Open Share Links Online",
+		description: "Paste a Terabox share link to open the file in an embedded third-party player, with a new-tab option and copyable embed code. Nothing is converted or edited.",
 		images: ["/og-image.jpg"],
 	},
-	robots: { index: true, follow: true },
+	// Downloader-style pages stay out of the index (src/data/monetization.ts).
+	robots: { index: false, follow: true },
 };
 
 export default async function ToolPage() {

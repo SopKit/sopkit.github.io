@@ -47,7 +47,6 @@ next-env.d.ts
 # wrangler files
 .wrangler
 .dev.vars*
-public/sw.js
 build.log
 public/sw.*
 workbox-*
@@ -71,3 +70,6 @@ scripts/create-issues.sh
 opencode.json
 mcp.json
 .mcp.json
+
+# generated reports
+/reports/

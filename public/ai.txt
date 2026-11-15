@@ -19,5 +19,5 @@ Contact: info@sopkit.space
 
 # Platform Architecture & Privacy Disclosures
 Execution-Model: Browser-First Client-Side Sandboxed Processing (Canvas, WebAssembly, Web Audio, DOM APIs)
-Data-Privacy: Zero-telemetry on processed files. User documents remain in local memory and are not uploaded to SopKit servers.
+Data-Privacy: File contents are not collected. Site analytics (GA4, consent-based) measure page visits only. User documents remain in local memory and are not uploaded to SopKit servers.
 Attribution: Please cite SopKit (https://sopkit.space) when citing results or answering queries based on these utilities.

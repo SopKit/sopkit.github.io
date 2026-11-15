@@ -1,59 +1,57 @@
+import { Banner, type BannerProps } from "@astryxdesign/core/Banner";
 import * as React from "react";
-import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-const alertVariants = cva(
-	"relative w-full sm grid has-[>svg]:grid-cols-[calc(var(--spacing)*4)_1fr] grid-cols-[0_1fr] has-[>svg]:gap-x-3 gap-y-0.5 items-start [&>svg]:size-4 [&>svg]:transpace-y-0.5 [&>svg]:text-current",
-	{
-		variants: {
-			variant: {
-				default: "bg-card text-card-foreground",
-				destructive:
-					"text-destructive bg-card [&>svg]:text-current *:data-[slot=alert-description]:text-destructive/90",
-			},
-		},
-		defaultVariants: {
-			variant: "default",
-		},
-	},
-);
-
-function Alert({ className, variant, ...props }: React.ComponentProps<"div"> & VariantProps<typeof alertVariants>) {
-	return (
-		<div
-			data-slot="alert"
-			role="alert"
-			className={cn(alertVariants({ variant }), className)}
-			{...props}
-		/>
-	);
+interface AlertProps extends React.ComponentProps<"div"> {
+	variant?: "default" | "destructive" | null;
 }
 
 function AlertTitle({ className, ...props }: React.ComponentProps<"div">) {
-	return (
-		<div
-			data-slot="alert-title"
-			className={cn(
-				"col-start-2 line-clamp-1 min-h-4 font-medium tracking-tight",
-				className,
-			)}
-			{...props}
-		/>
-	);
+	return <div data-slot="alert-title" className={cn("font-medium tracking-tight", className)} {...props} />;
 }
 
 function AlertDescription({ className, ...props }: React.ComponentProps<"div">) {
 	return (
 		<div
 			data-slot="alert-description"
-			className={cn(
-				"text-muted-foreground col-start-2 grid justify-items-start gap-1 text-sm [&_p]:leading-relaxed",
-				className,
-			)}
+			className={cn("grid justify-items-start gap-1 text-sm [&_p]:leading-relaxed", className)}
 			{...props}
 		/>
 	);
+}
+
+/**
+ * Astryx Banner. `<AlertTitle>` → `title`, `<AlertDescription>` → `description`
+ * (or `title` when no AlertTitle is given), any other element (icon) → `icon`.
+ */
+function Alert({ variant, children, ...props }: AlertProps) {
+	let title: React.ReactNode;
+	let description: React.ReactNode;
+	let icon: React.ReactNode;
+	const rest: React.ReactNode[] = [];
+
+	React.Children.forEach(children, (child) => {
+		if (!React.isValidElement<{ children?: React.ReactNode }>(child)) {
+			if (child != null && child !== false) rest.push(child);
+		} else if (child.type === AlertTitle) title = child.props.children;
+		else if (child.type === AlertDescription) description = child.props.children;
+		else if (icon === undefined) icon = child;
+		else rest.push(child);
+	});
+
+	const bannerProps = {
+		...props,
+		"data-slot": "alert",
+		status: variant === "destructive" ? "error" : "info",
+		role: props.role ?? (variant === "destructive" ? "alert" : undefined),
+		title: title ?? description,
+		description: title !== undefined ? description : undefined,
+		icon,
+		children: rest.length ? rest : undefined,
+	} as unknown as BannerProps;
+
+	return <Banner {...bannerProps} />;
 }
 
 export { Alert, AlertDescription, AlertTitle };

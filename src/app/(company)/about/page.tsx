@@ -6,14 +6,14 @@ import { SITE_CONFIG } from "@/constants/config";
 
 export const metadata = {
 	title: "About SopKit — Privacy-First Free Online Tools Platform",
-	description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with processing models clearly disclosed on individual tool pages.`,
+	description: `Who builds SopKit, how its ${SITE_CONFIG.toolCountString} free browser-based tools handle your files, and how each tool discloses where processing happens.`,
 	keywords: "about SopKit, client-side tools, private online utility, no upload pdf editor, local image converter, browser sandbox tools, secure developer tools, open source browser utilities",
 	alternates: {
 		canonical: `${SITE_CONFIG.siteUrl}/about`,
 	},
 	openGraph: {
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
-		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with local processing used where supported.`,
+		description: `Who builds SopKit, how its ${SITE_CONFIG.toolCountString} free browser-based tools handle your files, and how each tool discloses where processing happens.`,
 		url: `${SITE_CONFIG.siteUrl}/about`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -22,7 +22,7 @@ export const metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "About SopKit — Privacy-First Free Online Tools Platform",
-		description: `Learn about SopKit — the privacy-first free online tools platform with ${SITE_CONFIG.toolCountString} browser-based utilities. No signup for core utilities, with processing models clearly disclosed on individual tool pages.`,
+		description: `Who builds SopKit, how its ${SITE_CONFIG.toolCountString} free browser-based tools handle your files, and how each tool discloses where processing happens.`,
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -150,7 +150,7 @@ export default async function AboutPage() {
 										View Project on GitHub
 									</a>
 									<a
-										href="/contact"
+										href="/contact/"
 										className="inline-flex items-center gap-2 px-5 py-2.5 border border-border hover:bg-muted/40 rounded-xl text-sm font-bold transition-all"
 									>
 										Contact Team

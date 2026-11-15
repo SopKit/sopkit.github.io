@@ -56,7 +56,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						A{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON formatter</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON formatter</Link>{" "}
 						is the bread and butter: paste minified chaos, get readable
 						indented output. It earns first place because it prevents the most
 						expensive mistake in JSON work — misreading structure while
@@ -68,7 +68,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Run anything questionable through a{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON validator</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON validator</Link>{" "}
 						before blaming your code. It pinpoints the exact line and character
 						where parsing fails, which turns a ten-minute hunt through nested
 						objects into a five-second fix — usually a trailing comma or a
@@ -80,7 +80,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Formatting helps; collapsing helps more. A{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON viewer</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON viewer</Link>{" "}
 						renders trees you can fold node by node, ideal for orienting
 						yourself in an unfamiliar API response before writing a single
 						line against it.
@@ -91,7 +91,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Sometimes you need to edit, not just read. A{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON editor</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON editor</Link>{" "}
 						validates as you type, so a deleted brace announces itself
 						immediately instead of three saves later.
 					</p>
@@ -101,7 +101,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						When staging works and production doesn't, a{" "}
-						<Link href="/json-diff-checker" className="text-primary underline">JSON diff checker</Link>{" "}
+						<Link href="/json-diff-checker/" className="text-primary underline">JSON diff checker</Link>{" "}
 						compares the two payloads key by key. Type drift — a number that
 						became a string between environments — is invisible to the naked
 						eye and obvious to a diff.
@@ -113,7 +113,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Before embedding JSON in a build artifact or returning it from an
 						endpoint, strip whitespace with a{" "}
-						<Link href="/json-minify" className="text-primary underline">JSON minifier</Link>.
+						<Link href="/json-minify/" className="text-primary underline">JSON minifier</Link>.
 						On large payloads the size drop is dramatic, and unlike gzip it
 						requires no server cooperation.
 					</p>
@@ -123,9 +123,9 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Data teams live in spreadsheets; APIs speak JSON. A{" "}
-						<Link href="/csv-to-json-converter" className="text-primary underline">CSV to JSON converter</Link>{" "}
+						<Link href="/csv-to-json-converter/" className="text-primary underline">CSV to JSON converter</Link>{" "}
 						and its reverse, the{" "}
-						<Link href="/json-to-csv-converter" className="text-primary underline">JSON to CSV converter</Link>,
+						<Link href="/json-to-csv-converter/" className="text-primary underline">JSON to CSV converter</Link>,
 						keep both sides talking without manual copy-paste marathons.
 					</p>
 
@@ -135,7 +135,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Kubernetes manifests and GitHub Actions are YAML country, but most
 						documentation and tooling outputs JSON. A{" "}
-						<Link href="/json-to-yaml-converter" className="text-primary underline">JSON to YAML converter</Link>{" "}
+						<Link href="/json-to-yaml-converter/" className="text-primary underline">JSON to YAML converter</Link>{" "}
 						(and YAML back) makes moving between the two worlds a copy-paste
 						instead of a rewrite.
 					</p>
@@ -145,7 +145,7 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Old enterprise integrations never die. An{" "}
-						<Link href="/xml-to-json-converter" className="text-primary underline">XML to JSON converter</Link>{" "}
+						<Link href="/xml-to-json-converter/" className="text-primary underline">XML to JSON converter</Link>{" "}
 						modernizes legacy responses just enough for contemporary code to
 						consume them, no middleware project required.
 					</p>
@@ -155,9 +155,9 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Rounding out the list, a{" "}
-						<Link href="/json-to-typescript" className="text-primary underline">JSON to TypeScript converter</Link>{" "}
+						<Link href="/json-to-typescript/" className="text-primary underline">JSON to TypeScript converter</Link>{" "}
 						generates interfaces straight from sample payloads, and{" "}
-						<Link href="/json-to-json-schema" className="text-primary underline">JSON to JSON Schema</Link>{" "}
+						<Link href="/json-to-json-schema/" className="text-primary underline">JSON to JSON Schema</Link>{" "}
 						produces validation schemas for the times you need contracts, not
 						types.
 					</p>
@@ -208,7 +208,7 @@ export default async function ToolPage() {
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						Every tool above lives in SopKit's developer category — find them
 						and hundreds more via{" "}
-						<Link href="/search" className="text-primary underline">SopKit search</Link>.
+						<Link href="/search/" className="text-primary underline">SopKit search</Link>.
 					</p>
 				</div>
 			</ToolLayout>

@@ -3,6 +3,7 @@ import ToolLayout from "@/components/tools/shared/ToolLayout";
 import { KeyRound, ShieldCheck, ChevronRight } from "lucide-react";
 import { getAllTools } from "@/lib/tools";
 import { generateToolMetadata } from "@/lib/seo";
+import { pageHref } from "@/seo/canonical";
 
 export const metadata = generateToolMetadata({
 	name: "API Key Tester Suite",
@@ -43,7 +44,7 @@ export default async function ApiKeyTesterHubPage() {
 					{testers.map((tester) => (
 						<Link
 							key={tester.id}
-							href={tester.route}
+							href={pageHref(tester.route)}
 							className="group block p-5 bg-card/25 border border-border/40 hover:border-primary/40 hover:bg-card/45 transition-all duration-300 rounded-xl relative overflow-hidden"
 						>
 							<div className="flex items-start justify-between gap-3 mb-2">

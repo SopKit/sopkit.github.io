@@ -6,7 +6,6 @@ import { SITE_CONFIG } from "@/constants/config";
 import AdPlacement from "@/components/ads/AdPlacement";
 import { Container } from "@/components/layout/Container";
 import { ToolDirectorySection } from "@/components/marketing/ToolDirectorySection";
-import { VisitorBadge } from "@/components/shared/VisitorBadge";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
@@ -29,8 +28,6 @@ export default async function ToolsDirectoryPage() {
 						<span>{SITE_CONFIG.toolCountString} Available Utilities</span>
 						<span className="text-border">•</span>
 						<span>Browser-First</span>
-						<span className="text-border">•</span>
-						<VisitorBadge path="/tools" label="PAGE VIEWS" />
 					</div>
 
 					<h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-foreground leading-[1.1]">

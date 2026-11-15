@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { Upload, ClipboardPaste } from "lucide-react";
+import { VisuallyHidden } from "@astryxdesign/core/VisuallyHidden";
 import { cn } from "@/lib/utils";
 import { DS } from "./tokens";
 
@@ -28,7 +29,13 @@ interface ToolDropzoneProps {
 /**
  * The one canonical file-upload zone for all tools. Keyboard accessible
  * (Enter/Space opens the picker), supports drag-and-drop with a visible
- * active state, clipboard paste (Cmd+V), and announces itself to screen readers.
+ * active state, clipboard paste (Cmd+V), and announces itself (and each
+ * accepted selection, via a polite live region) to screen readers.
+ *
+ * Styled with Astryx tokens (see `DS.dropzone`). It does not wrap the Astryx
+ * `FileInput` dropzone: that component is a controlled value holder that
+ * renders its own file list, while tools need a fire-and-forget `onFiles`
+ * callback with a custom title/subtitle/icon and clipboard paste.
  */
 export function ToolDropzone({
 	title,
@@ -43,6 +50,19 @@ export function ToolDropzone({
 }: ToolDropzoneProps) {
 	const inputRef = React.useRef<HTMLInputElement>(null);
 	const [dragging, setDragging] = React.useState(false);
+	const [announcement, setAnnouncement] = React.useState("");
+
+	const emit = React.useCallback(
+		(files: File[]) => {
+			onFiles(files);
+			setAnnouncement(
+				files.length === 1
+					? `Selected ${files[0].name}`
+					: `Selected ${files.length} files`,
+			);
+		},
+		[onFiles],
+	);
 
 	const openPicker = React.useCallback(() => {
 		if (!disabled) inputRef.current?.click();
@@ -73,15 +93,16 @@ export function ToolDropzone({
 			}
 
 			if (pastedFiles.length > 0) {
-				onFiles(multiple ? pastedFiles : pastedFiles.slice(0, 1));
+				emit(multiple ? pastedFiles : pastedFiles.slice(0, 1));
 			}
 		};
 
 		window.addEventListener("paste", handlePaste);
 		return () => window.removeEventListener("paste", handlePaste);
-	}, [enablePaste, disabled, multiple, onFiles]);
+	}, [enablePaste, disabled, multiple, emit]);
 
 	return (
+		<>
 		<div
 			role="button"
 			tabIndex={disabled ? -1 : 0}
@@ -99,7 +120,7 @@ export function ToolDropzone({
 				setDragging(false);
 				if (disabled) return;
 				const files = Array.from(event.dataTransfer.files);
-				if (files.length > 0) onFiles(multiple ? files : files.slice(0, 1));
+				if (files.length > 0) emit(multiple ? files : files.slice(0, 1));
 			}}
 			className={cn(
 				DS.dropzone.base,
@@ -115,7 +136,7 @@ export function ToolDropzone({
 				title={`${title}${subtitle ? `. ${subtitle}` : ""}`}
 				onChange={(event) => {
 					const files = Array.from(event.target.files ?? []);
-					if (files.length > 0) onFiles(files);
+					if (files.length > 0) emit(files);
 					// Allow re-selecting the same file twice in a row.
 					event.target.value = "";
 				}}
@@ -125,7 +146,7 @@ export function ToolDropzone({
 				tabIndex={-1}
 			/>
 			<div className={DS.dropzone.iconChip}>
-				{icon ?? <Upload className="h-7 w-7 text-foreground" />}
+				{icon ?? <Upload aria-hidden="true" className="h-7 w-7 text-(--color-text-primary)" />}
 			</div>
 			<div className="space-y-1.5">
 				<p className={DS.dropzone.title}>{title}</p>
@@ -133,12 +154,17 @@ export function ToolDropzone({
 					<p className={DS.dropzone.subtitle}>{subtitle}</p>
 				) : null}
 				{enablePaste && !disabled && (
-					<p className="text-[11px] font-mono text-muted-foreground/70 inline-flex items-center gap-1 pt-1">
-						<ClipboardPaste className="h-3 w-3 inline" />
+					<p className="text-[11px] font-mono text-(--color-text-secondary) inline-flex items-center gap-1 pt-1">
+						<ClipboardPaste aria-hidden="true" className="h-3 w-3 inline" />
 						<span>or paste from clipboard (Ctrl / ⌘+V)</span>
 					</p>
 				)}
 			</div>
 		</div>
+		{/* Outside the role="button" box, whose aria-label would mask it. */}
+		<VisuallyHidden role="status" aria-live="polite">
+			{announcement}
+		</VisuallyHidden>
+		</>
 	);
 }

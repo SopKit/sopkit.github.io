@@ -6,7 +6,7 @@ import StructuredData from "@/components/shared/StructuredData";
 import BreadcrumbsEnhanced from "@/components/seo/BreadcrumbsEnhanced";
 import { type Tool } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
-import { VisitorBadge } from "@/components/shared/VisitorBadge";
+import { pageHref } from "@/seo/canonical";
 
 export type HubPageProps = {
 	title: string;
@@ -60,7 +60,6 @@ export default function HubPage({
 				<section className="max-w-3xl space-y-5">
 					<div className="flex flex-wrap items-center gap-3">
 						<Badge variant="secondary" className="rounded-full">{badge}</Badge>
-						<VisitorBadge path={route} label="PAGE VIEWS" />
 					</div>
 					<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">
 						{title}
@@ -77,7 +76,7 @@ export default function HubPage({
 					{topTools.map((tool) => (
 						<Link
 							key={tool.id}
-							href={tool.route}
+							href={pageHref(tool.route)}
 							className="group rounded-xl border border-border/60 bg-card/40 p-5 transition-colors hover:border-primary/30"
 						>
 							<div className="flex items-start justify-between gap-4">

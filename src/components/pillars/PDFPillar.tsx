@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { pageHref } from "@/seo/canonical";
 
 const pdfTools = [
     {
@@ -69,7 +70,7 @@ export default function PDFPillar() {
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
                             {group.tools.map((tool, j) => (
-                                <Link key={j} href={tool.href} className="group no-underline">
+                                <Link key={j} href={pageHref(tool.href)} className="group no-underline">
                                     <Card className="rounded-2xl border border-border/70 dark:border-border/40 bg-card/60 dark:bg-card/40 hover:bg-card/95 dark:hover:bg-card/75 backdrop-blur-md transition-all duration-300 hover:border-primary/50 hover:shadow-[0_16px_36px_rgba(37,99,235,0.12)] relative overflow-hidden">
                                         <CardContent className="p-6 space-y-4">
                                             <div className="flex items-center justify-between">

@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import type { SearchToolRecord } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
+import { pageHref } from "@/seo/canonical";
 
 const QUICK_TRENDING_TOOLS = [
 	{ name: "PDF Merge", route: "/pdf-merger" },
@@ -26,7 +27,7 @@ const EMPTY_TOOLS: PremiumHeroTool[] = [];
 
 export function PremiumHero({
 	title = `Private, Fast & Local — ${SITE_CONFIG.toolCountString} Free Online Tools`,
-	subtitle = "Run 600+ utilities directly in your browser. No file uploads, no tracking, and no account required.",
+	subtitle = `Run ${SITE_CONFIG.toolCountString} utilities in your browser. No account required.`,
 	tools = EMPTY_TOOLS,
 }: {
 	title?: string;
@@ -172,7 +173,7 @@ export function PremiumHero({
 							ref={inputRef}
 							type="text"
 							aria-label="Search all tools"
-							placeholder="Search 600+ tools (e.g. PDF, Image, JSON, QR)..."
+							placeholder={`Search ${SITE_CONFIG.toolCountString} tools (e.g. PDF, Image, JSON, QR)...`}
 							className="h-13 sm:h-14 pl-12 pr-28 bg-transparent border-none text-sm sm:text-base focus:outline-none placeholder:text-muted-foreground/50 w-full text-foreground font-medium"
 							value={query}
 							onChange={(e) => {
@@ -268,7 +269,7 @@ export function PremiumHero({
 					{QUICK_TRENDING_TOOLS.map((item) => (
 						<a
 							key={item.route}
-							href={item.route}
+							href={pageHref(item.route)}
 							className="inline-flex items-center px-3 py-1 rounded-full bg-muted/50 hover:bg-primary hover:text-primary-foreground border border-border/40 hover:border-transparent text-xs text-muted-foreground transition-all duration-200"
 						>
 							{item.name}

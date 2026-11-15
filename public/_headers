@@ -84,15 +84,6 @@
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 
 # ---------------------------------------------------------------------------
-# Service worker - must revalidate immediately
-# ---------------------------------------------------------------------------
-/sw.js
-  Cache-Control: public, max-age=0, must-revalidate
-
-/workbox-*.js
-  Cache-Control: public, max-age=0, must-revalidate
-
-# ---------------------------------------------------------------------------
 # SEO files - moderate cache
 # ---------------------------------------------------------------------------
 /robots.txt

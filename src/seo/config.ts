@@ -4,7 +4,7 @@
  */
 
 import { SeoConfig } from "./types";
-import { SITE_URL, SITE_NAME, GITHUB_REPO_URL } from "@/constants/config";
+import { SITE_URL, SITE_NAME, GITHUB_REPO_URL, TOOL_COUNT_STRING } from "@/constants/config";
 
 export const SEO_CONFIG: SeoConfig = {
   siteUrl: SITE_URL,
@@ -12,7 +12,7 @@ export const SEO_CONFIG: SeoConfig = {
   defaultTitle: `${SITE_NAME} — Free Online Developer & Productivity Tools`,
   titleTemplate: `%s | ${SITE_NAME}`,
   defaultDescription:
-    "Explore 600+ free online developer tools, PDF utilities, image editors, and converters. 100% private, browser-based, with zero file uploads or logins.",
+    `Explore ${TOOL_COUNT_STRING} free online developer tools, PDF utilities, image editors, and converters. Browser-based, with no login required.`,
   defaultOgImage: "/og-image.png",
   twitterHandle: "@sopkit",
   organization: {

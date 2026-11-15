@@ -8,6 +8,7 @@ import { LanguageSelector } from "@/components/shared/LanguageSelector";
 import { VisitorBadge } from "@/components/shared/VisitorBadge";
 import { STATIC_ROUTES } from "@/constants/routes";
 import { SITE_CONFIG } from "@/constants/config";
+import { pageHref } from "@/seo/canonical";
 
 // Mirrors the consent gate in ConsentAwareThirdPartyScripts: the visitor badge
 // is a third-party image request, so it renders only after analytics consent.
@@ -47,7 +48,7 @@ export function Footer() {
 	];
 
 	const platformLinks = [
-		{ name: "All 600+ Tools", href: STATIC_ROUTES.TOOLS },
+		{ name: `All ${SITE_CONFIG.toolCountString} Tools`, href: STATIC_ROUTES.TOOLS },
 		{ name: "Tool Guides", href: STATIC_ROUTES.TOOL_GUIDES },
 		{ name: "NPM Packages", href: "/packages" },
 		{ name: "Tool IDs & Embeds", href: STATIC_ROUTES.TOOL_ID },
@@ -105,7 +106,7 @@ export function Footer() {
 								{productLinks.map((link) => (
 									<li key={link.name}>
 										<Link
-											href={link.href}
+											href={pageHref(link.href)}
 											className="hover:text-foreground transition-colors no-underline"
 										>
 											{link.name}
@@ -124,7 +125,7 @@ export function Footer() {
 								{platformLinks.map((link) => (
 									<li key={link.name}>
 										<Link
-											href={link.href}
+											href={pageHref(link.href)}
 											className="hover:text-foreground transition-colors no-underline"
 										>
 											{link.name}
@@ -172,7 +173,7 @@ export function Footer() {
 								{companyLinks.map((link) => (
 									<li key={link.name}>
 										<Link
-											href={link.href}
+											href={pageHref(link.href)}
 											className="hover:text-foreground transition-colors no-underline"
 										>
 											{link.name}

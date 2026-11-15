@@ -1,27 +1,22 @@
-"use client";
-
+import { ProgressBar, type ProgressBarProps } from "@astryxdesign/core/ProgressBar";
 import * as React from "react";
-import * as ProgressPrimitive from "@radix-ui/react-progress";
 
-import { cn } from "@/lib/utils";
+interface ProgressProps extends Omit<React.ComponentProps<"div">, "children"> {
+	value?: number | null;
+	max?: number;
+}
 
-function Progress({ className, value, ...props }: React.ComponentProps<typeof ProgressPrimitive.Root>) {
-	return (
-		<ProgressPrimitive.Root
-			data-slot="progress"
-			className={cn(
-				"bg-primary/20 relative h-2 w-full overflow-hidden ",
-				className,
-			)}
-			{...props}
-		>
-			<ProgressPrimitive.Indicator
-				data-slot="progress-indicator"
-				className="bg-primary h-full w-full flex-1 transition-all"
-				style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
-			/>
-		</ProgressPrimitive.Root>
-	);
+/** Astryx ProgressBar with a visually hidden label. */
+function Progress({ value, max = 100, ...props }: ProgressProps) {
+	const barProps = {
+		...props,
+		"data-slot": "progress",
+		label: props["aria-label"] ?? "Progress",
+		isLabelHidden: true,
+		value: value ?? 0,
+		max,
+	} as unknown as ProgressBarProps;
+	return <ProgressBar {...barProps} />;
 }
 
 export { Progress };

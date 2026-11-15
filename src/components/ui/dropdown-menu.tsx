@@ -1,137 +1,317 @@
 "use client";
 
+/**
+ * DropdownMenu — shadcn-compatible compound API backed by the Astryx
+ * `DropdownMenu` (APG menu-button: roving focus, typeahead, Escape, focus
+ * return). `DropdownMenu` reads its `DropdownMenuTrigger` / `DropdownMenuContent`
+ * slots and renders one Astryx menu whose trigger is the caller's element
+ * (via `renderTrigger`) and whose rows are Astryx menu items.
+ *
+ *   <DropdownMenu>
+ *     <DropdownMenuTrigger asChild><Button>Open</Button></DropdownMenuTrigger>
+ *     <DropdownMenuContent align="end">
+ *       <DropdownMenuItem asChild><Link href="/a">A</Link></DropdownMenuItem>
+ *       <DropdownMenuItem onSelect={…}>B</DropdownMenuItem>
+ *     </DropdownMenuContent>
+ *   </DropdownMenu>
+ */
+
 import * as React from "react";
-import * as DropdownMenuPrimitive from "@radix-ui/react-dropdown-menu";
-import { CheckIcon, ChevronRightIcon, CircleIcon } from "lucide-react";
+import {
+	DropdownMenu as AstryxDropdownMenu,
+	DropdownMenuItem as AstryxDropdownMenuItem,
+	DropdownMenuCheckboxItem as AstryxDropdownMenuCheckboxItem,
+	DropdownMenuRadioGroup as AstryxDropdownMenuRadioGroup,
+	DropdownMenuRadioItem as AstryxDropdownMenuRadioItem,
+	DropdownMenuGroup as AstryxDropdownMenuGroup,
+	DropdownMenuDivider as AstryxDropdownMenuDivider,
+	DropdownMenuSubMenu as AstryxDropdownMenuSubMenu,
+} from "@astryxdesign/core/DropdownMenu";
+import type { DropdownMenuTriggerProps as AstryxTriggerProps } from "@astryxdesign/core/DropdownMenu";
 
 import { cn } from "@/lib/utils";
 
-function DropdownMenu({ ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Root>) {
-	return <DropdownMenuPrimitive.Root data-slot="dropdown-menu" {...props} />;
+type AnyElement = React.ReactElement<Record<string, unknown> & { children?: React.ReactNode }>;
+
+function findElement(children: React.ReactNode, type: unknown): AnyElement | null {
+	let found: AnyElement | null = null;
+	React.Children.forEach(children, (child) => {
+		if (found || !React.isValidElement(child)) return;
+		const el = child as AnyElement;
+		if (el.type === type) {
+			found = el;
+			return;
+		}
+		if (el.type === React.Fragment) found = findElement(el.props.children, type);
+	});
+	return found;
 }
 
-function DropdownMenuPortal({ ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Portal>) {
+/* Popover width from a Tailwind `w-[Npx]` / `min-w-[Npx]` class on the content. */
+function menuWidthFrom(className: string | undefined): string | undefined {
+	if (!className) return undefined;
+	const m = /(?:^|\s)(?:min-)?w-\[([^\]]+)\]/.exec(className);
+	return m ? m[1] : undefined;
+}
+
+/* ------------------------------------------------------------------ */
+/* Root + slots                                                        */
+/* ------------------------------------------------------------------ */
+
+interface DropdownMenuProps {
+	open?: boolean;
+	defaultOpen?: boolean;
+	onOpenChange?(open: boolean): void;
+	modal?: boolean;
+	dir?: "ltr" | "rtl";
+	children?: React.ReactNode;
+}
+
+function DropdownMenuTrigger(_props: React.ComponentProps<"button"> & { asChild?: boolean }): React.ReactElement | null {
+	return null;
+}
+
+interface DropdownMenuContentProps extends React.ComponentProps<"div"> {
+	align?: "start" | "center" | "end";
+	side?: "top" | "right" | "bottom" | "left";
+	sideOffset?: number;
+	alignOffset?: number;
+}
+
+function DropdownMenuContent(_props: DropdownMenuContentProps): React.ReactElement | null {
+	return null;
+}
+
+function DropdownMenu({ open, defaultOpen, onOpenChange, children }: DropdownMenuProps) {
+	const [internalOpen, setInternalOpen] = React.useState(Boolean(defaultOpen));
+	const isControlled = open !== undefined;
+	const isOpen = isControlled ? open : internalOpen;
+	const setOpen = (next: boolean) => {
+		if (!isControlled) setInternalOpen(next);
+		onOpenChange?.(next);
+	};
+
+	const trigger = findElement(children, DropdownMenuTrigger);
+	const content = findElement(children, DropdownMenuContent);
+	const triggerProps = (trigger?.props ?? {}) as React.ComponentProps<"button"> & { asChild?: boolean };
+	const contentProps = (content?.props ?? {}) as DropdownMenuContentProps;
+
+	const renderTrigger = (astryx: AstryxTriggerProps) => {
+		const { asChild, children: triggerChildren, className, ...rest } = triggerProps;
+		if (asChild && React.isValidElement<Record<string, unknown>>(triggerChildren)) {
+			const own = triggerChildren.props as Record<string, (e: never) => void>;
+			const merged: Record<string, unknown> = { ...rest, ...astryx, "data-slot": "dropdown-menu-trigger" };
+			for (const key of ["onClick", "onClickCapture", "onPointerDown", "onKeyDown", "onFocus", "onContextMenu"] as const) {
+				const ours = astryx[key] as (e: never) => void;
+				const theirs = own[key];
+				if (theirs) merged[key] = (e: never) => {
+					theirs(e);
+					ours(e);
+				};
+			}
+			return React.cloneElement(triggerChildren, merged);
+		}
+		return (
+			<button
+				type="button"
+				data-slot="dropdown-menu-trigger"
+				className={className}
+				{...rest}
+				{...astryx}
+				ref={astryx.ref}
+			>
+				{triggerChildren}
+			</button>
+		);
+	};
+
+	const placement =
+		contentProps.side === "top" ? "above" : contentProps.side === "left" ? "start" : contentProps.side === "right" ? "end" : "below";
+
 	return (
-		<DropdownMenuPrimitive.Portal data-slot="dropdown-menu-portal" {...props} />
+		<AstryxDropdownMenu
+			renderTrigger={renderTrigger}
+			isMenuOpen={isOpen}
+			onOpenChange={setOpen}
+			alignment={contentProps.align ?? "start"}
+			placement={placement}
+			menuWidth={menuWidthFrom(contentProps.className)}
+		>
+			{contentProps.children}
+		</AstryxDropdownMenu>
 	);
 }
 
-function DropdownMenuTrigger({ ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Trigger>) {
-	return (
-		<DropdownMenuPrimitive.Trigger
-			data-slot="dropdown-menu-trigger"
-			{...props}
-		/>
-	);
+/* ------------------------------------------------------------------ */
+/* Items                                                               */
+/* ------------------------------------------------------------------ */
+
+interface DropdownMenuItemProps extends Omit<React.ComponentProps<"div">, "onSelect"> {
+	inset?: boolean;
+	variant?: "default" | "destructive";
+	disabled?: boolean;
+	asChild?: boolean;
+	onSelect?: (event: Event) => void;
 }
 
-function DropdownMenuContent({ className, sideOffset = 4, ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Content>) {
-	return (
-		<DropdownMenuPrimitive.Portal>
-			<DropdownMenuPrimitive.Content
-				data-slot="dropdown-menu-content"
-				sideOffset={sideOffset}
-				className={cn(
-					"bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 max-h-(--radix-dropdown-menu-content-available-height) min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto shadow-md",
-					className,
-				)}
-				{...props}
-			/>
-		</DropdownMenuPrimitive.Portal>
-	);
-}
+function DropdownMenuItem({
+	className,
+	inset,
+	variant = "default",
+	disabled,
+	asChild,
+	onSelect,
+	onClick,
+	children,
+	...props
+}: DropdownMenuItemProps) {
+	let label: React.ReactNode = children;
+	let href: string | undefined;
+	let target: "_blank" | "_self" | undefined;
+	let rel: string | undefined;
+	let childClick: React.MouseEventHandler<HTMLElement> | undefined;
 
-function DropdownMenuGroup({ ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Group>) {
-	return (
-		<DropdownMenuPrimitive.Group data-slot="dropdown-menu-group" {...props} />
-	);
-}
+	if (asChild && React.isValidElement<Record<string, unknown>>(children)) {
+		const p = children.props;
+		label = p.children as React.ReactNode;
+		href = typeof p.href === "string" ? p.href : p.href != null ? String(p.href) : undefined;
+		target = p.target === "_blank" || p.target === "_self" ? p.target : undefined;
+		rel = typeof p.rel === "string" ? p.rel : undefined;
+		childClick = p.onClick as React.MouseEventHandler<HTMLElement> | undefined;
+	}
 
-function DropdownMenuItem({ className, inset, variant = "default", ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Item> & { inset?: boolean; variant?: "default" | "destructive" }) {
 	return (
-		<DropdownMenuPrimitive.Item
+		<AstryxDropdownMenuItem
+			{...(props as Record<string, unknown>)}
 			data-slot="dropdown-menu-item"
-			data-inset={inset}
-			data-variant={variant}
-			className={cn(
-				"focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-				className,
-			)}
-			{...props}
+			data-inset={inset || undefined}
+			className={cn(inset && "pl-8", className)}
+			label={<span className="flex w-full items-center justify-between gap-2">{label}</span>}
+			href={href}
+			target={target}
+			rel={rel}
+			isDisabled={disabled}
+			variant={variant}
+			onClick={(event) => {
+				childClick?.(event as React.MouseEvent<HTMLElement>);
+				onClick?.(event as React.MouseEvent<HTMLDivElement>);
+				onSelect?.(event.nativeEvent);
+			}}
 		/>
 	);
 }
 
-function DropdownMenuCheckboxItem({ className, children, checked, ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.CheckboxItem>) {
+interface DropdownMenuCheckboxItemProps extends Omit<React.ComponentProps<"div">, "onChange" | "onSelect"> {
+	checked?: boolean | "indeterminate";
+	onCheckedChange?(checked: boolean): void;
+	disabled?: boolean;
+	onSelect?: (event: Event) => void;
+}
+
+function DropdownMenuCheckboxItem({
+	className,
+	children,
+	checked,
+	onCheckedChange,
+	disabled,
+	onSelect: _onSelect,
+	...props
+}: DropdownMenuCheckboxItemProps) {
 	return (
-		<DropdownMenuPrimitive.CheckboxItem
+		<AstryxDropdownMenuCheckboxItem
+			{...(props as Record<string, unknown>)}
 			data-slot="dropdown-menu-checkbox-item"
-			className={cn(
-				"focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 sm py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-				className,
-			)}
-			checked={checked}
-			{...props}
-		>
-			<span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
-				<DropdownMenuPrimitive.ItemIndicator>
-					<CheckIcon className="size-4" />
-				</DropdownMenuPrimitive.ItemIndicator>
-			</span>
-			{children}
-		</DropdownMenuPrimitive.CheckboxItem>
+			className={className}
+			label={children}
+			value={checked === true}
+			onChange={(next) => onCheckedChange?.(next)}
+			isDisabled={disabled}
+		/>
 	);
 }
 
-function DropdownMenuRadioGroup({ ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.RadioGroup>) {
+interface DropdownMenuRadioGroupProps extends Omit<React.ComponentProps<"div">, "onChange"> {
+	value?: string;
+	onValueChange?(value: string): void;
+	label?: string;
+}
+
+function DropdownMenuRadioGroup({ value, onValueChange, label = "Options", children, className, ...props }: DropdownMenuRadioGroupProps) {
 	return (
-		<DropdownMenuPrimitive.RadioGroup
+		<AstryxDropdownMenuRadioGroup
+			{...(props as Record<string, unknown>)}
 			data-slot="dropdown-menu-radio-group"
-			{...props}
-		/>
-	);
-}
-
-function DropdownMenuRadioItem({ className, children, ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.RadioItem>) {
-	return (
-		<DropdownMenuPrimitive.RadioItem
-			data-slot="dropdown-menu-radio-item"
-			className={cn(
-				"focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 sm py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
-				className,
-			)}
-			{...props}
+			className={className}
+			value={value}
+			onChange={(next) => onValueChange?.(next)}
+			label={label}
 		>
-			<span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
-				<DropdownMenuPrimitive.ItemIndicator>
-					<CircleIcon className="size-2 fill-current" />
-				</DropdownMenuPrimitive.ItemIndicator>
-			</span>
 			{children}
-		</DropdownMenuPrimitive.RadioItem>
+		</AstryxDropdownMenuRadioGroup>
 	);
 }
 
-function DropdownMenuLabel({ className, inset, ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Label> & { inset?: boolean }) {
+interface DropdownMenuRadioItemProps extends Omit<React.ComponentProps<"div">, "value"> {
+	value: string;
+	disabled?: boolean;
+}
+
+function DropdownMenuRadioItem({ className, children, value, disabled, ...props }: DropdownMenuRadioItemProps) {
 	return (
-		<DropdownMenuPrimitive.Label
-			data-slot="dropdown-menu-label"
-			data-inset={inset}
-			className={cn(
-				"px-2 py-1.5 text-sm font-medium data-[inset]:pl-8",
-				className,
-			)}
-			{...props}
+		<AstryxDropdownMenuRadioItem
+			{...(props as Record<string, unknown>)}
+			data-slot="dropdown-menu-radio-item"
+			className={className}
+			value={value}
+			label={children}
+			isDisabled={disabled}
 		/>
 	);
 }
 
-function DropdownMenuSeparator({ className, ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Separator>) {
+/* ------------------------------------------------------------------ */
+/* Structure                                                           */
+/* ------------------------------------------------------------------ */
+
+/** Astryx renders the menu in its own layer; kept for API compatibility. */
+function DropdownMenuPortal({ children }: { children?: React.ReactNode }) {
+	return <>{children}</>;
+}
+
+/** A `DropdownMenuLabel` as the first child becomes the Astryx group title. */
+function DropdownMenuGroup({ children, className, ...props }: React.ComponentProps<"div">) {
+	const labelEl = findElement(children, DropdownMenuLabel);
+	const rest = labelEl ? React.Children.toArray(children).filter((c) => c !== labelEl && !(React.isValidElement(c) && c.type === DropdownMenuLabel)) : children;
 	return (
-		<DropdownMenuPrimitive.Separator
+		<AstryxDropdownMenuGroup
+			{...(props as Record<string, unknown>)}
+			data-slot="dropdown-menu-group"
+			className={className}
+			title={labelEl ? (labelEl.props.children as React.ReactNode) : undefined}
+		>
+			{rest}
+		</AstryxDropdownMenuGroup>
+	);
+}
+
+/** Standalone label row (outside a group): a titled, empty Astryx group. */
+function DropdownMenuLabel({ className, inset, children, ...props }: React.ComponentProps<"div"> & { inset?: boolean }) {
+	return (
+		<AstryxDropdownMenuGroup
+			{...(props as Record<string, unknown>)}
+			data-slot="dropdown-menu-label"
+			className={cn(inset && "pl-8", className)}
+			title={children}
+		/>
+	);
+}
+
+function DropdownMenuSeparator({ className, ...props }: React.ComponentProps<"div">) {
+	return (
+		<AstryxDropdownMenuDivider
+			{...(props as Record<string, unknown>)}
 			data-slot="dropdown-menu-separator"
-			className={cn("bg-border -mx-1 my-1 h-px", className)}
-			{...props}
+			className={className}
 		/>
 	);
 }
@@ -140,46 +320,36 @@ function DropdownMenuShortcut({ className, ...props }: React.ComponentProps<"spa
 	return (
 		<span
 			data-slot="dropdown-menu-shortcut"
-			className={cn(
-				"text-muted-foreground ml-auto text-xs tracking-widest",
-				className,
-			)}
+			className={cn("text-muted-foreground ml-auto text-xs tracking-widest", className)}
 			{...props}
 		/>
 	);
 }
 
-function DropdownMenuSub({ ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.Sub>) {
-	return <DropdownMenuPrimitive.Sub data-slot="dropdown-menu-sub" {...props} />;
+/* Sub-menus: `DropdownMenuSub` reads its SubTrigger (label) and SubContent (rows). */
+
+function DropdownMenuSubTrigger(_props: React.ComponentProps<"div"> & { inset?: boolean; disabled?: boolean }): React.ReactElement | null {
+	return null;
 }
 
-function DropdownMenuSubTrigger({ className, inset, children, ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.SubTrigger> & { inset?: boolean }) {
+function DropdownMenuSubContent(_props: React.ComponentProps<"div">): React.ReactElement | null {
+	return null;
+}
+
+function DropdownMenuSub({ children, onOpenChange }: { children?: React.ReactNode; open?: boolean; defaultOpen?: boolean; onOpenChange?(open: boolean): void }) {
+	const trigger = findElement(children, DropdownMenuSubTrigger);
+	const content = findElement(children, DropdownMenuSubContent);
+	const triggerProps = (trigger?.props ?? {}) as { children?: React.ReactNode; disabled?: boolean; className?: string };
 	return (
-		<DropdownMenuPrimitive.SubTrigger
-			data-slot="dropdown-menu-sub-trigger"
-			data-inset={inset}
-			className={cn(
-				"focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center sm px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:pl-8",
-				className,
-			)}
-			{...props}
+		<AstryxDropdownMenuSubMenu
+			data-slot="dropdown-menu-sub"
+			label={triggerProps.children}
+			isDisabled={triggerProps.disabled}
+			className={triggerProps.className}
+			onOpenChange={onOpenChange}
 		>
-			{children}
-			<ChevronRightIcon className="ml-auto size-4" />
-		</DropdownMenuPrimitive.SubTrigger>
-	);
-}
-
-function DropdownMenuSubContent({ className, ...props }: React.ComponentProps<typeof DropdownMenuPrimitive.SubContent>) {
-	return (
-		<DropdownMenuPrimitive.SubContent
-			data-slot="dropdown-menu-sub-content"
-			className={cn(
-				"bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-hidden shadow-lg",
-				className,
-			)}
-			{...props}
-		/>
+			{(content?.props.children as React.ReactNode) ?? null}
+		</AstryxDropdownMenuSubMenu>
 	);
 }
 

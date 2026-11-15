@@ -5,12 +5,6 @@
  */
 
 import { Check, HelpCircle, ArrowRight } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 /**
  * Deprecated generic trust banner: returns null to eliminate repeated boilerplate cards.
@@ -128,18 +122,19 @@ export const ToolFAQ = ({ faqs, toolName }: ToolFAQProps) => {
         </p>
       </div>
 
-      <Accordion type="single" collapsible className="w-full divide-y divide-border/60 pt-1">
+      {/* Native <details> keeps every answer in the server HTML, so crawlers
+          see the same text the FAQPage JSON-LD describes. */}
+      <div className="w-full divide-y divide-border/60 pt-1">
         {faqs.map((faq, idx) => (
-          <AccordionItem key={idx} value={`faq-${idx}`} className="border-b border-border/60">
-            <AccordionTrigger className="text-left text-sm font-semibold text-foreground hover:no-underline hover:text-primary py-3.5">
-              {faq.question}
-            </AccordionTrigger>
-            <AccordionContent className="text-xs sm:text-sm text-muted-foreground leading-relaxed pb-4">
-              {faq.answer}
-            </AccordionContent>
-          </AccordionItem>
+          <details key={idx} className="group border-b border-border/60">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-3.5 text-left text-sm font-semibold text-foreground hover:text-primary [&::-webkit-details-marker]:hidden">
+              <h3 className="text-sm font-semibold">{faq.question}</h3>
+              <span aria-hidden="true" className="text-muted-foreground transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <p className="pb-4 text-xs sm:text-sm text-muted-foreground leading-relaxed">{faq.answer}</p>
+          </details>
         ))}
-      </Accordion>
+      </div>
     </section>
   );
 };

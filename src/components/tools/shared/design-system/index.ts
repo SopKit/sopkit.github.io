@@ -1,5 +1,7 @@
 /**
- * SopKit Tool Design System — import everything tool components need
+ * SopKit Tool Design System — built on Astryx (`@astryxdesign/core`):
+ * ToolPanel → Card, ToolField → Field, ToolModeTabs → TabList, and `DS`
+ * classes resolve to Astryx tokens. Import everything tool components need
  * from here:
  *
  *   import {

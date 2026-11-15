@@ -1,22 +1,23 @@
-import { SITE_URL } from "@/constants/config";
+import { SITE_URL, TOOL_COUNT_STRING } from "@/constants/config";
 import Link from "next/link";
 import { ArrowRight, Search } from "lucide-react";
 import { GridPattern } from "@/components/shared/GridPattern";
 import { getAllCategories, type Category, type Tool } from "@/lib/tools";
+import { pageHref } from "@/seo/canonical";
 
 export const metadata = {
-	title: "Free Online Tools — 600+ Browser-Based Utilities | SopKit",
+	title: `Free Online Tools — ${TOOL_COUNT_STRING} Browser Utilities`,
 	description:
-		"Browse 600+ free online tools for images, PDFs, text, video, SEO, and code. Everything runs in your browser — no signup, no uploads, no limits.",
+		`Browse ${TOOL_COUNT_STRING} free online tools for images, PDFs, text, video, SEO, and code. Most run in your browser, with no signup.`,
 	keywords:
 		"online tools, free online tools, browser tools, web utilities, image tools, pdf tools, text tools, developer tools, seo tools, converters, calculators, sopkit",
 	alternates: {
 		canonical: `${SITE_URL}/online-tools`,
 	},
 	openGraph: {
-		title: "Free Online Tools — 600+ Browser-Based Utilities | SopKit",
+		title: `Free Online Tools — ${TOOL_COUNT_STRING} Browser Utilities`,
 		description:
-			"Browse 600+ free online tools for images, PDFs, text, video, SEO, and code. Everything runs in your browser — no signup, no uploads, no limits.",
+			`Browse ${TOOL_COUNT_STRING} free online tools for images, PDFs, text, video, SEO, and code. Most run in your browser, with no signup.`,
 		url: `${SITE_URL}/online-tools`,
 		siteName: "SopKit",
 		images: [{ url: "/og-image.jpg" }],
@@ -24,9 +25,9 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Free Online Tools — 600+ Browser-Based Utilities | SopKit",
+		title: `Free Online Tools — ${TOOL_COUNT_STRING} Browser Utilities`,
 		description:
-			"Browse 600+ free online tools for images, PDFs, text, video, SEO, and code. Everything runs in your browser — no signup, no uploads, no limits.",
+			`Browse ${TOOL_COUNT_STRING} free online tools for images, PDFs, text, video, SEO, and code. Most run in your browser, with no signup.`,
 		images: ["/og-image.jpg"],
 	},
 	robots: { index: true, follow: true },
@@ -37,7 +38,7 @@ const EXCLUDED_CATEGORY_SLUGS = new Set(["company", "guides", "blog"]);
 function ToolCard({ tool }: { tool: Tool }) {
 	return (
 		<Link
-			href={tool.route}
+			href={pageHref(tool.route)}
 			className="group flex items-start justify-between gap-2 rounded-xl border border-border/60 bg-card/50 px-3.5 py-3 hover:border-primary/40 hover:bg-card transition-colors"
 		>
 			<span className="text-sm font-medium leading-snug text-foreground group-hover:text-primary transition-colors">
@@ -119,7 +120,7 @@ export default function OnlineToolsHub() {
 						</p>
 						<p className="mt-3 text-sm text-muted-foreground flex items-center gap-1.5">
 							Looking for something specific?
-							<Link href="/search" className="inline-flex items-center gap-1 font-semibold text-primary hover:text-primary/80 transition-colors">
+							<Link href="/search/" className="inline-flex items-center gap-1 font-semibold text-primary hover:text-primary/80 transition-colors">
 								<Search className="h-3.5 w-3.5" />
 								Search all tools
 							</Link>
@@ -138,7 +139,7 @@ export default function OnlineToolsHub() {
 							Want these tools on your own website? Every SopKit tool ships as a sandboxed iframe widget
 							with light/dark themes and accent colors — copy one snippet and you are done. Grab ready-made
 							code on our{" "}
-							<Link href="/embed-tools" className="font-semibold text-primary hover:text-primary/80 inline-flex items-center gap-1 transition-colors">
+							<Link href="/embed-tools/" className="font-semibold text-primary hover:text-primary/80 inline-flex items-center gap-1 transition-colors">
 								embed widgets page
 								<ArrowRight className="h-3.5 w-3.5" />
 							</Link>

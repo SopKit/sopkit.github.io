@@ -18,7 +18,7 @@
           "description": "Describe a scene, choose a style, size and optional seed, and the Flux model behind Pollinations renders it, with results kept in a local history.",
           "route": "/ai-image-generator",
           "popular": true,
-          "seoDescription": "Turn text prompts into stunning AI images free — photorealistic photos, anime, digital art and illustrations. Unlimited generations, private, no signup.",
+          "seoDescription": "Turn text prompts into AI images for free — photos, anime, digital art and illustrations, rendered by the Flux model via Pollinations. No signup.",
           "seoTitle": "AI Image Generator — Free Text-to-Art, No Signup"
         },
         {
@@ -3783,7 +3783,7 @@
         {
           "id": "rent-affordability-calculator",
           "name": "Rent Affordability Calculator",
-          "description": "Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "description": "Share monthly income and existing debts to see conservative, moderate and stretched rent budgets based on the 25, 30 and 40 percent of income rules.",
           "route": "/rent-affordability-calculator",
           "popular": false,
           "seoDescription": "Share monthly income and existing debts to see conservative, moderate and stretched rent budgets based on the 25, 30 and 40 percent of income rules.",
@@ -3792,7 +3792,7 @@
         {
           "id": "home-loan-eligibility-calculator",
           "name": "Home Loan Eligibility Calculator",
-          "description": "Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "description": "Find the home loan amount a bank might sanction from monthly salary, existing EMIs, tenure and rate, starting from its affordable monthly EMI cap.",
           "route": "/home-loan-eligibility-calculator",
           "popular": false,
           "seoDescription": "Find the home loan amount a bank might sanction from monthly salary, existing EMIs, tenure and rate, starting from its affordable monthly EMI cap.",
@@ -3801,7 +3801,7 @@
         {
           "id": "property-roi-calculator",
           "name": "Property ROI Calculator",
-          "description": "Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "description": "Weigh a rental property's numbers: gross yield from annual rent against the purchase price, plus net annual return once running costs are paid off.",
           "route": "/property-roi-calculator",
           "popular": false,
           "seoDescription": "Weigh a rental property's numbers: gross yield from annual rent against the purchase price, plus net annual return once running costs are paid off.",
@@ -3810,7 +3810,7 @@
         {
           "id": "calorie-deficit-calculator",
           "name": "Calorie Deficit Calculator",
-          "description": "Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "description": "Gauge your BMR and daily energy expenditure, then a sensible calorie target roughly 500 calories below maintenance for steady, sustainable weight loss.",
           "route": "/calorie-deficit-calculator",
           "popular": false,
           "seoDescription": "Gauge your BMR and daily energy expenditure, then a sensible calorie target roughly 500 calories below maintenance for steady, sustainable weight loss.",
@@ -3819,7 +3819,7 @@
         {
           "id": "protein-intake-calculator",
           "name": "Protein Intake Calculator",
-          "description": "Calculate your protein intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "description": "Work out daily protein targets from your body weight: a lower gram range for an active lifestyle, a higher range for muscle building and recovery.",
           "route": "/protein-intake-calculator",
           "popular": false,
           "seoDescription": "Work out daily protein targets from your body weight: a lower gram range for an active lifestyle, a higher range for muscle building and recovery.",
@@ -3828,7 +3828,7 @@
         {
           "id": "water-intake-calculator",
           "name": "Daily Water Intake Calculator",
-          "description": "Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "description": "Plan daily hydration around your body weight, adding extra millilitres and fluid ounces for every half hour of exercise you record during the day.",
           "route": "/water-intake-calculator",
           "popular": false,
           "seoDescription": "Plan daily hydration around your body weight, adding extra millilitres and fluid ounces for every half hour of exercise you record during the day.",
@@ -3837,7 +3837,7 @@
         {
           "id": "profit-margin-calculator",
           "name": "Profit Margin Calculator",
-          "description": "Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.",
+          "description": "Pair cost price with selling price to get gross profit per unit, the margin percentage taken from revenue and the markup applied on top of cost price.",
           "route": "/profit-margin-calculator",
           "popular": true,
           "seoDescription": "Pair cost price with selling price to get gross profit per unit, the margin percentage taken from revenue and the markup applied on top of cost price.",

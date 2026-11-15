@@ -90,7 +90,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Pass one: validate before touching anything. Paste your payload
 						into the{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON validator</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON validator</Link>{" "}
 						and read the error position it reports — most validators point at
 						the exact character that broke parsing. Fixing an invalid file by
 						reformatting it just rearranges the wreckage; formatting only
@@ -98,7 +98,7 @@ export default async function ToolPage() {
 					</p>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Pass two: pretty-print with the{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON formatter</Link>.
+						<Link href="/json-formatter/" className="text-primary underline">JSON formatter</Link>.
 						It re-indents nested objects so you can actually see array
 						boundaries and mismatched braces. Two-space indentation is the
 						de facto standard for configs; four spaces read better for
@@ -107,7 +107,7 @@ export default async function ToolPage() {
 					</p>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Pass three (only when shipping): strip whitespace with the{" "}
-						<Link href="/json-minify" className="text-primary underline">JSON minifier</Link>{" "}
+						<Link href="/json-minify/" className="text-primary underline">JSON minifier</Link>{" "}
 						to cut bytes from API responses or embedded payloads. Keep the
 						formatted version as your source of truth and treat the minified
 						output as disposable build output.
@@ -118,11 +118,11 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						A formatted wall of nested arrays is still hard to reason about. A{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON viewer</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON viewer</Link>{" "}
 						lets you collapse branches and inspect nodes interactively, which
 						is far quicker than scrolling. When two versions of a config
 						disagree and CI is red, a{" "}
-						<Link href="/json-diff-checker" className="text-primary underline">JSON diff checker</Link>{" "}
+						<Link href="/json-diff-checker/" className="text-primary underline">JSON diff checker</Link>{" "}
 						shows exactly which keys changed — including subtle type changes
 						like <code>"1"</code> versus <code>1</code> that eyeballs miss.
 					</p>
@@ -132,11 +132,11 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						JSON rarely stays alone. Spreadsheets become config files via a{" "}
-						<Link href="/csv-to-json-converter" className="text-primary underline">CSV to JSON converter</Link>,
+						<Link href="/csv-to-json-converter/" className="text-primary underline">CSV to JSON converter</Link>,
 						YAML-heavy DevOps pipelines exchange data through a{" "}
-						<Link href="/json-to-yaml-converter" className="text-primary underline">JSON to YAML converter</Link>,
+						<Link href="/json-to-yaml-converter/" className="text-primary underline">JSON to YAML converter</Link>,
 						and typed codebases generate interfaces with a{" "}
-						<Link href="/json-to-typescript" className="text-primary underline">JSON to TypeScript converter</Link>.
+						<Link href="/json-to-typescript/" className="text-primary underline">JSON to TypeScript converter</Link>.
 						The rule of thumb after any conversion: round-trip the output back
 						through validation once. Conversions preserve data but occasionally
 						change shape — empty strings becoming nulls, numbers becoming
@@ -201,7 +201,7 @@ export default async function ToolPage() {
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						Need more than formatting — schema checks, XML bridges, CSV
 						pipelines? The full toolkit is searchable via{" "}
-						<Link href="/search" className="text-primary underline">SopKit search</Link>.
+						<Link href="/search/" className="text-primary underline">SopKit search</Link>.
 					</p>
 				</div>
 			</ToolLayout>

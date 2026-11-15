@@ -12,6 +12,7 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { STATIC_ROUTES } from "@/constants/routes";
+import { pageHref } from "@/seo/canonical";
 
 export interface NotFoundSuggestedTool {
 	id: string;
@@ -102,7 +103,7 @@ export default function NotFoundView({
 					</h3>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 						{popularTools.map((tool) => (
-							<Link key={tool.id} href={tool.route} className="block">
+							<Link key={tool.id} href={pageHref(tool.route)} className="block">
 								<Card className="hover:shadow-md transition-shadow cursor-pointer group h-full">
 									<CardHeader className="pb-3">
 										<CardTitle className="text-base group-hover:text-primary transition-colors">

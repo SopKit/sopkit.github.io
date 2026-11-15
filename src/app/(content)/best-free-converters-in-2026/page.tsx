@@ -59,17 +59,17 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						The everyday cases are covered by dedicated tools rather than one
 						do-everything app. The{" "}
-						<Link href="/png-to-jpg" className="text-primary underline">PNG to JPG converter</Link>{" "}
+						<Link href="/png-to-jpg/" className="text-primary underline">PNG to JPG converter</Link>{" "}
 						handles the classic compatibility job, while{" "}
-						<Link href="/webp-to-jpg" className="text-primary underline">WebP to JPG</Link>{" "}
+						<Link href="/webp-to-jpg/" className="text-primary underline">WebP to JPG</Link>{" "}
 						rescues images saved from modern websites that older software
 						still refuses to open. Going the other direction,{" "}
-						<Link href="/png-to-webp-converter" className="text-primary underline">PNG to WebP conversion</Link>{" "}
+						<Link href="/png-to-webp-converter/" className="text-primary underline">PNG to WebP conversion</Link>{" "}
 						shrinks web assets meaningfully. For vector work, the{" "}
-						<Link href="/svg-to-png" className="text-primary underline">SVG to PNG rasterizer</Link>{" "}
+						<Link href="/svg-to-png/" className="text-primary underline">SVG to PNG rasterizer</Link>{" "}
 						bakes scalable art into shareable pixels at your chosen size.
 						When you're not sure which target format fits, the general{" "}
-						<Link href="/image-converter" className="text-primary underline">image converter</Link>{" "}
+						<Link href="/image-converter/" className="text-primary underline">image converter</Link>{" "}
 						is the sensible front door.
 					</p>
 
@@ -80,15 +80,15 @@ export default async function ToolPage() {
 						Documents are where server-side converters get risky — contracts,
 						invoices, ID scans all flow through them. Client-side tools keep
 						files local:{" "}
-						<Link href="/word-to-pdf" className="text-primary underline">Word to PDF</Link>{" "}
+						<Link href="/word-to-pdf/" className="text-primary underline">Word to PDF</Link>{" "}
 						for submissions that demand locked formatting,{" "}
-						<Link href="/pdf-to-word" className="text-primary underline">PDF to Word</Link>{" "}
+						<Link href="/pdf-to-word/" className="text-primary underline">PDF to Word</Link>{" "}
 						when you need to edit text someone else sent as a PDF, and{" "}
 						{" "}
-						<Link href="/image-to-pdf" className="text-primary underline">image to PDF</Link>{" "}
+						<Link href="/image-to-pdf/" className="text-primary underline">image to PDF</Link>{" "}
 						converter when a portal only accepts PDF
 						uploads of scanned pages or screenshots. The{" "}
-						<Link href="/html-to-pdf" className="text-primary underline">HTML to PDF converter</Link>{" "}
+						<Link href="/html-to-pdf/" className="text-primary underline">HTML to PDF converter</Link>{" "}
 						rounds it out for saving receipts and confirmations exactly as
 						rendered.
 					</p>
@@ -98,12 +98,12 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Data rarely stays in the shape you received it. A{" "}
-						<Link href="/csv-to-json-converter" className="text-primary underline">CSV to JSON converter</Link>{" "}
+						<Link href="/csv-to-json-converter/" className="text-primary underline">CSV to JSON converter</Link>{" "}
 						turns exports into API-ready payloads; the{" "}
-						<Link href="/json-to-csv-converter" className="text-primary underline">JSON to CSV converter</Link>{" "}
+						<Link href="/json-to-csv-converter/" className="text-primary underline">JSON to CSV converter</Link>{" "}
 						flattens responses into something Excel can open. YAML shows up
 						in every DevOps pipeline, so a{" "}
-						<Link href="/yaml-to-json-converter" className="text-primary underline">YAML to JSON converter</Link>{" "}
+						<Link href="/yaml-to-json-converter/" className="text-primary underline">YAML to JSON converter</Link>{" "}
 						earns its bookmark the first time a Kubernetes manifest needs
 						debugging from a JSON-first toolchain.
 					</p>
@@ -113,11 +113,11 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Video containers trip people up constantly; the{" "}
-						<Link href="/video-converter" className="text-primary underline">video converter</Link>{" "}
+						<Link href="/video-converter/" className="text-primary underline">video converter</Link>{" "}
 						handles the common remuxes without a desktop suite. Caption files
 						are their own genre of annoyance — platforms split between SRT
 						and VTT, and the{" "}
-						<Link href="/convert-srt-to-vtt" className="text-primary underline">SRT to VTT converter</Link>{" "}
+						<Link href="/convert-srt-to-vtt/" className="text-primary underline">SRT to VTT converter</Link>{" "}
 						settles it both directions in seconds.
 					</p>
 
@@ -126,10 +126,10 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Some conversions happen dozens of times a day. A{" "}
-						<Link href="/length-converter" className="text-primary underline">length converter</Link>{" "}
-						and <Link href="/temperature-converter" className="text-primary underline">temperature converter</Link>{" "}
+						<Link href="/length-converter/" className="text-primary underline">length converter</Link>{" "}
+						and <Link href="/temperature-converter/" className="text-primary underline">temperature converter</Link>{" "}
 						settle recipe and hardware arguments instantly, while a{" "}
-						<Link href="/currency-converter" className="text-primary underline">currency converter</Link>{" "}
+						<Link href="/currency-converter/" className="text-primary underline">currency converter</Link>{" "}
 						checks invoice amounts before you quote international clients.
 						These aren't glamorous, but they're opened more often than any
 						file converter on this page.
@@ -192,7 +192,7 @@ export default async function ToolPage() {
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						This list keeps growing alongside the toolkit itself — explore
 						the full catalog any time via{" "}
-						<Link href="/search" className="text-primary underline">SopKit search</Link>.
+						<Link href="/search/" className="text-primary underline">SopKit search</Link>.
 					</p>
 				</div>
 			</ToolLayout>

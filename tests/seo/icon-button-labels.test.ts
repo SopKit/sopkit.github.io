@@ -52,8 +52,9 @@ describe("Icon-only controls carry an accessible name", () => {
       // not give a button an accessible name).
       ["src/components/tools/image/LogoGeneratorTool.tsx", 'aria-label="Undo"'],
       ["src/components/tools/image/LogoGeneratorTool.tsx", 'aria-label="Redo"'],
-      // Shared code block copy button.
-      ["src/components/ui/code-block.tsx", 'aria-label="Copy code"'],
+      // Shared code block copy button: Astryx CodeBlock names it
+      // ("Copy code", localized) when hasCopyButton is set.
+      ["src/components/ui/code-block.tsx", "hasCopyButton"],
     ];
     for (const [file, label] of cases) {
       expect(readSource(file)).toContain(label);

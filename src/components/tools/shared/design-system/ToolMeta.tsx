@@ -28,7 +28,7 @@ interface ToolSectionTitleProps {
 	className?: string;
 }
 
-/** Small primary-colored section heading inside panels ("Resize Settings"). */
+/** Small mono section heading inside panels ("Resize Settings"), Astryx secondary text. */
 export function ToolSectionTitle({
 	icon,
 	title,
@@ -45,7 +45,7 @@ export function ToolSectionTitle({
 				<span>{children ?? title}</span>
 			</div>
 			{desc && (
-				<p className="text-xs text-muted-foreground">{desc}</p>
+				<p className="text-xs text-(--color-text-secondary)">{desc}</p>
 			)}
 		</div>
 	);
@@ -60,7 +60,7 @@ interface ToolPrivacyNoteProps {
 export function ToolPrivacyNote({ children, className }: ToolPrivacyNoteProps) {
 	return (
 		<span className={cn(DS.privacyNote, className)}>
-			<Shield className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
+			<Shield aria-hidden="true" className="h-3.5 w-3.5 text-(--color-text-success) shrink-0" />
 			{children}
 		</span>
 	);

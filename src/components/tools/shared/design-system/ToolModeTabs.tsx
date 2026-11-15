@@ -1,8 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { cn } from "@/lib/utils";
-import { DS } from "./tokens";
+import { TabList, Tab } from "@astryxdesign/core/TabList";
 
 export interface ToolModeTab {
 	value: string;
@@ -24,9 +23,9 @@ interface ToolModeTabsProps {
 }
 
 /**
- * Canonical segmented control for switching tool modes (photo/signature,
- * encode/decode, …). Renders as a real tablist for keyboard + screen-reader
- * users — arrow keys move between tabs.
+ * Canonical control for switching tool modes (photo/signature, encode/decode,
+ * …), built on the Astryx `TabList` with `role="tablist"`: a single Tab stop
+ * with roving tabindex, Arrow/Home/End navigation and equal-width tabs.
  */
 export function ToolModeTabs({
 	tabs,
@@ -36,59 +35,29 @@ export function ToolModeTabs({
 	ariaLabel = "Tool mode",
 	className,
 }: ToolModeTabsProps) {
-	const handleSelect = (val: string) => {
-		onChange?.(val);
-		onValueChange?.(val);
-	};
-	const selectedIndex = Math.max(
-		0,
-		tabs.findIndex((tab) => tab.value === value),
+	const handleSelect = React.useCallback(
+		(val: string) => {
+			onChange?.(val);
+			onValueChange?.(val);
+		},
+		[onChange, onValueChange],
 	);
-	const buttonRefs = React.useRef<(HTMLButtonElement | null)[]>([]);
-
-	const handleKeyDown = (event: React.KeyboardEvent, index: number) => {
-		let next: number | null = null;
-		if (event.key === "ArrowRight" || event.key === "ArrowDown") next = index + 1;
-		if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = index - 1;
-		if (event.key === "Home") next = 0;
-		if (event.key === "End") next = tabs.length - 1;
-		if (next === null) return;
-		event.preventDefault();
-		const wrapped = (next + tabs.length) % tabs.length;
-		handleSelect(tabs[wrapped].value);
-		buttonRefs.current[wrapped]?.focus();
-	};
+	// An unknown value falls back to the first tab, as before.
+	const selected = tabs.some((tab) => tab.value === value) ? value : (tabs[0]?.value ?? "");
 
 	return (
-	<div
-		role="tablist"
-		aria-label={ariaLabel}
-			className={cn(DS.tabs.container, className)}
-			style={{ gridTemplateColumns: `repeat(${tabs.length}, minmax(0, 1fr))` }}
+		<TabList
+			role="tablist"
+			aria-label={ariaLabel}
+			value={selected}
+			onChange={handleSelect}
+			layout="fill"
+			size="md"
+			className={className}
 		>
-			{tabs.map((tab, index) => {
-				const selected = tab.value === tabs[selectedIndex]?.value;
-				return (
-					<button
-						key={tab.value}
-						ref={(node) => {
-							buttonRefs.current[index] = node;
-						}}
-						type="button"
-						role="tab"
-						aria-selected={selected}
-						tabIndex={selected ? 0 : -1}
-						onClick={() => handleSelect(tab.value)}
-						onKeyDown={(event) => handleKeyDown(event, index)}
-						className={cn(
-							DS.tabs.button,
-							selected ? DS.tabs.active : DS.tabs.inactive,
-						)}
-					>
-						{tab.label}
-					</button>
-				);
-			})}
-		</div>
+			{tabs.map((tab) => (
+				<Tab key={tab.value} value={tab.value} label={tab.label} />
+			))}
+		</TabList>
 	);
 }

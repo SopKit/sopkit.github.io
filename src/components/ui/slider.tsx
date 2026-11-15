@@ -1,59 +1,77 @@
 "use client";
 
-import * as SliderPrimitive from "@radix-ui/react-slider";
+import { Slider as AstryxSlider, type SliderProps as AstryxSliderProps } from "@astryxdesign/core/Slider";
 import * as React from "react";
 
-import { cn } from "@/lib/utils";
+interface SliderProps {
+	value?: number[];
+	defaultValue?: number[];
+	onValueChange?: (value: number[]) => void;
+	onValueCommit?: (value: number[]) => void;
+	min?: number;
+	max?: number;
+	step?: number;
+	disabled?: boolean;
+	orientation?: "horizontal" | "vertical";
+	id?: string;
+	name?: string;
+	className?: string;
+	"aria-label"?: string;
+}
 
+/** "font-size" → "font size", so the hidden Astryx label stays meaningful. */
+const humanize = (id?: string) => id?.replace(/[-_]+/g, " ").replace(/([a-z])([A-Z])/g, "$1 $2").trim();
+
+/**
+ * Astryx Slider keeping the array-based `value`/`onValueChange` contract.
+ * One value renders a single thumb; two values render a range.
+ */
 function Slider({
-	className,
-	defaultValue,
 	value,
+	defaultValue,
+	onValueChange,
+	onValueCommit,
 	min = 0,
 	max = 100,
-	...props
-}: React.ComponentProps<typeof SliderPrimitive.Root>) {
-	const _values = React.useMemo(
-		() =>
-			Array.isArray(value) ? value : Array.isArray(defaultValue) ? defaultValue : [min, max],
-		[value, defaultValue, min, max],
-	);
+	step = 1,
+	disabled,
+	orientation,
+	id,
+	name,
+	className,
+	"aria-label": ariaLabel,
+}: SliderProps) {
+	const [inner, setInner] = React.useState<number[]>(defaultValue ?? [min]);
+	const current = value ?? inner;
+	const isRange = current.length > 1;
 
-	return (
-		<SliderPrimitive.Root
-			data-slot="slider"
-			defaultValue={defaultValue}
-			value={value}
-			min={min}
-			max={max}
-			className={cn(
-				"relative flex w-full touch-none items-center select-none data-[disabled]:opacity-50 data-[orientation=vertical]:h-full data-[orientation=vertical]:min-h-44 data-[orientation=vertical]:w-auto data-[orientation=vertical]:flex-col",
-				className,
-			)}
-			{...props}
-		>
-			<SliderPrimitive.Track
-				data-slot="slider-track"
-				className={cn(
-					"bg-muted relative grow overflow-hidden ",
-				)}
-			>
-				<SliderPrimitive.Range
-					data-slot="slider-range"
-					className={cn(
-						"bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full",
-					)}
-				/>
-			</SliderPrimitive.Track>
-			{Array.from({ length: _values.length }, (_, index) => (
-				<SliderPrimitive.Thumb
-					data-slot="slider-thumb"
-					key={index}
-					className="border-primary bg-background ring-ring/50 block size-4 shrink-0 shadow-sm transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
-				/>
-			))}
-		</SliderPrimitive.Root>
-	);
+	const emit = (next: number | [number, number]) => {
+		const arr = Array.isArray(next) ? [...next] : [next];
+		if (value === undefined) setInner(arr);
+		onValueChange?.(arr);
+	};
+	const commit = (next: number | [number, number]) =>
+		onValueCommit?.(Array.isArray(next) ? [...next] : [next]);
+
+	const sliderProps = {
+		"data-slot": "slider",
+		id,
+		label: ariaLabel ?? humanize(id) ?? "Value",
+		isLabelHidden: true,
+		value: isRange ? [current[0], current[1]] : (current[0] ?? min),
+		onChange: emit,
+		onChangeEnd: onValueCommit ? commit : undefined,
+		min,
+		max,
+		step,
+		isDisabled: disabled,
+		orientation,
+		htmlName: name,
+		width: "100%",
+		containerClassName: className,
+	} as unknown as AstryxSliderProps;
+
+	return <AstryxSlider {...sliderProps} />;
 }
 
 export { Slider };

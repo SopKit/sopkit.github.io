@@ -57,14 +57,14 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						The{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON formatter</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON formatter</Link>{" "}
 						is the anchor — paste minified API responses, get readable
 						structure. Around it: the{" "}
-						<Link href="/json-formatter" className="text-primary underline">JSON validator</Link>{" "}
+						<Link href="/json-formatter/" className="text-primary underline">JSON validator</Link>{" "}
 						for pinpointing syntax errors, the{" "}
-						<Link href="/json-diff-checker" className="text-primary underline">diff checker</Link>{" "}
+						<Link href="/json-diff-checker/" className="text-primary underline">diff checker</Link>{" "}
 						for comparing staging against production payloads, and the{" "}
-						<Link href="/json-to-typescript" className="text-primary underline">JSON to TypeScript converter</Link>{" "}
+						<Link href="/json-to-typescript/" className="text-primary underline">JSON to TypeScript converter</Link>{" "}
 						for generating interfaces straight from real response bodies
 						instead of hand-writing them.
 					</p>
@@ -74,9 +74,9 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						The{" "}
-						<Link href="/base64-tool" className="text-primary underline">Base64 encoder/decoder</Link>{" "}
+						<Link href="/base64-tool/" className="text-primary underline">Base64 encoder/decoder</Link>{" "}
 						settles every "is this encoded or broken?" question, while the{" "}
-						<Link href="/jwt-decoder" className="text-primary underline">JWT decoder</Link>{" "}
+						<Link href="/jwt-decoder/" className="text-primary underline">JWT decoder</Link>{" "}
 						unwraps auth tokens to inspect claims and expiry without shipping
 						them to a third-party site — which, given that tokens are
 						credentials, is exactly how it should be done.
@@ -87,12 +87,12 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Not every project has prettier configured yet. The{" "}
-						<Link href="/code-formatter" className="text-primary underline">code formatter</Link>{" "}
+						<Link href="/code-formatter/" className="text-primary underline">code formatter</Link>{" "}
 						cleans up generic snippets, the{" "}
-						<Link href="/sql-formatter" className="text-primary underline">SQL formatter</Link>{" "}
+						<Link href="/sql-formatter/" className="text-primary underline">SQL formatter</Link>{" "}
 						makes a 40-line query readable before you touch it, and the{" "}
-						<Link href="/css-beautifier" className="text-primary underline">CSS beautifier</Link>{" "}
-						plus <Link href="/html-beautifier" className="text-primary underline">HTML beautifier</Link>{" "}
+						<Link href="/css-beautifier/" className="text-primary underline">CSS beautifier</Link>{" "}
+						plus <Link href="/html-beautifier/" className="text-primary underline">HTML beautifier</Link>{" "}
 						rescue minified frontend code you inherit from build artifacts.
 					</p>
 
@@ -101,23 +101,23 @@ export default async function ToolPage() {
 					</h2>
 					<ul className="mt-4 list-disc space-y-2 pl-6 text-muted-foreground">
 						<li>
-							<Link href="/uuid-generator" className="text-primary underline">UUID generator</Link>{" "}
+							<Link href="/uuid-generator/" className="text-primary underline">UUID generator</Link>{" "}
 							for IDs that won't collide — stop inventing them by hand.
 						</li>
 						<li>
-							<Link href="/lorem-ipsum" className="text-primary underline">Lorem ipsum generator</Link>{" "}
+							<Link href="/lorem-ipsum/" className="text-primary underline">Lorem ipsum generator</Link>{" "}
 							for realistic-length placeholder copy in mockups.
 						</li>
 						<li>
-							<Link href="/crontab-generator" className="text-primary underline">Crontab generator</Link>{" "}
+							<Link href="/crontab-generator/" className="text-primary underline">Crontab generator</Link>{" "}
 							because nobody remembers which field is day-of-month.
 						</li>
 						<li>
-							<Link href="/markdown-table-generator" className="text-primary underline">Markdown table generator</Link>{" "}
+							<Link href="/markdown-table-generator/" className="text-primary underline">Markdown table generator</Link>{" "}
 							for README tables without counting pipes manually.
 						</li>
 						<li>
-							<Link href="/password-generator" className="text-primary underline">Password generator</Link>{" "}
+							<Link href="/password-generator/" className="text-primary underline">Password generator</Link>{" "}
 							for local dev credentials and service secrets.
 						</li>
 					</ul>
@@ -127,11 +127,11 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Color math appears in every design handoff; the{" "}
-						<Link href="/hex-to-rgb-converter" className="text-primary underline">color converter</Link>{" "}
+						<Link href="/hex-to-rgb-converter/" className="text-primary underline">color converter</Link>{" "}
 						translates between HEX, RGB, and HSL without opening an editor.
 						When bundling assets for production, the{" "}
-						<Link href="/html-minifier" className="text-primary underline">HTML minifier</Link>{" "}
-						and <Link href="/css-minifier" className="text-primary underline">CSS minifier</Link>{" "}
+						<Link href="/html-minifier/" className="text-primary underline">HTML minifier</Link>{" "}
+						and <Link href="/css-minifier/" className="text-primary underline">CSS minifier</Link>{" "}
 						strip dead bytes from templates and stylesheets. None of these
 						are hard to write yourself — which is precisely why wasting time
 						rewriting them makes no sense.
@@ -143,14 +143,14 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Naming things generates constant micro-jobs. Turning a feature
 						title into a URL-safe route takes one trip through the{" "}
-						<Link href="/slug-generator" className="text-primary underline">slug converter</Link>,
+						<Link href="/slug-generator/" className="text-primary underline">slug converter</Link>,
 						constant-case refactors go faster with the{" "}
-						<Link href="/case-converter" className="text-primary underline">case converter</Link>, and
+						<Link href="/case-converter/" className="text-primary underline">case converter</Link>, and
 						when documentation needs embedding code samples safely, the{" "}
-						<Link href="/html-encoder" className="text-primary underline">HTML encoder</Link>{" "}
+						<Link href="/html-encoder/" className="text-primary underline">HTML encoder</Link>{" "}
 						escapes entities correctly instead of relying on find-and-replace.
 						Writing README content directly? The{" "}
-						<Link href="/markdown-to-html" className="text-primary underline">Markdown to HTML converter</Link>{" "}
+						<Link href="/markdown-to-html/" className="text-primary underline">Markdown to HTML converter</Link>{" "}
 						previews exactly what will render before you commit it.
 					</p>
 
@@ -210,7 +210,7 @@ export default async function ToolPage() {
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						This stack grows constantly alongside the main catalog — find any
 						utility fast through{" "}
-						<Link href="/search" className="text-primary underline">SopKit search</Link>.
+						<Link href="/search/" className="text-primary underline">SopKit search</Link>.
 					</p>
 				</div>
 			</ToolLayout>

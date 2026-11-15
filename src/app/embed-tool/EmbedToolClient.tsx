@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from "next-themes";
 import { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import IntentToolDispatcher from "@/components/tools/shared/IntentToolDispatcher";
@@ -20,27 +21,23 @@ function EmbedToolContent({ tools }: { tools: EmbedToolRecord[] }) {
 	const themeParam = searchParams.get("theme") || "dark";
 	const accentParam = searchParams.get("accent") || "blue";
 
+	const { setTheme } = useTheme();
+
 	useEffect(() => {
-		const htmlEl = document.documentElement;
-		if (themeParam === "light") {
-			htmlEl.classList.remove("dark");
-			htmlEl.classList.add("light");
-		} else {
-			htmlEl.classList.remove("light");
-			htmlEl.classList.add("dark");
-		}
+		// Astryx reads data-theme (managed by next-themes) for light/dark tokens.
+		setTheme(themeParam === "light" ? "light" : "dark");
 
 		const accentColors: Record<string, string> = {
-			blue: "210 100% 58%",
-			purple: "270 95% 60%",
-			emerald: "150 90% 40%",
-			orange: "25 95% 50%",
+			blue: "#2b8cff",
+			purple: "#9a3cf7",
+			emerald: "#0a9a55",
+			orange: "#f26b0d",
 		};
 
 		if (accentColors[accentParam]) {
-			htmlEl.style.setProperty("--primary", accentColors[accentParam]);
+			document.documentElement.style.setProperty("--color-accent", accentColors[accentParam]);
 		}
-	}, [themeParam, accentParam]);
+	}, [themeParam, accentParam, setTheme]);
 
 	if (!toolId) {
 		return (

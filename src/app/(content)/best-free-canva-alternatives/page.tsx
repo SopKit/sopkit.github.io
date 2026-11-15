@@ -63,13 +63,13 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						A favicon needs to exist, not to be beautiful. The{" "}
-						<Link href="/favicon-generator" className="text-primary underline">favicon generator</Link>{" "}
+						<Link href="/favicon-generator/" className="text-primary underline">favicon generator</Link>{" "}
 						turns text or an image into a working set of icon sizes, while{" "}
-						<Link href="/favicon-generator" className="text-primary underline">ICO conversion</Link>{" "}
-						and <Link href="/favicon-generator" className="text-primary underline">PNG to ICO conversion</Link>{" "}
+						<Link href="/favicon-generator/" className="text-primary underline">ICO conversion</Link>{" "}
+						and <Link href="/favicon-generator/" className="text-primary underline">PNG to ICO conversion</Link>{" "}
 						produce the exact formats browsers and Windows shortcuts expect.
 						For broader app-icon work, the{" "}
-						<Link href="/favicon-generator" className="text-primary underline">icon generator</Link>{" "}
+						<Link href="/favicon-generator/" className="text-primary underline">icon generator</Link>{" "}
 						outputs consistent sizes from one source image. Total time from
 						idea to shipped file: under a minute, with nothing uploaded.
 					</p>
@@ -82,11 +82,11 @@ export default async function ToolPage() {
 						businesses ship with the same skeleton. A different route for
 						early-stage projects: generate distinctive marks instantly with
 						the{" "}
-						<Link href="/logo-generator" className="text-primary underline">logo generator</Link>, explore
+						<Link href="/logo-generator/" className="text-primary underline">logo generator</Link>, explore
 						directions quickly using{" "}
-						<Link href="/logo-idea-generator" className="text-primary underline">logo idea generation</Link>, or
+						<Link href="/logo-idea-generator/" className="text-primary underline">logo idea generation</Link>, or
 						create fully custom imagery with the{" "}
-						<Link href="/ai-image-generator" className="text-primary underline">AI image generator</Link>. None of
+						<Link href="/ai-image-generator/" className="text-primary underline">AI image generator</Link>. None of
 						it replaces a designer for a funded brand — it removes the
 						excuse for launching with a placeholder rectangle.
 					</p>
@@ -100,27 +100,27 @@ export default async function ToolPage() {
 					<ul className="mt-4 list-disc space-y-2 pl-6 text-muted-foreground">
 						<li>
 							Exact dimensions via the{" "}
-							<Link href="/image-resizer" className="text-primary underline">image resizer</Link> —
+							<Link href="/image-resizer/" className="text-primary underline">image resizer</Link> —
 							social platforms demand precise pixel counts and punish
 							guesswork.
 						</li>
 						<li>
 							Faster pages through the{" "}
-							<Link href="/image-compressor" className="text-primary underline">image compressor</Link>,
+							<Link href="/image-compressor/" className="text-primary underline">image compressor</Link>,
 							or targeted budgets like{" "}
-							<Link href="/compress-image-to-100kb" className="text-primary underline">compression to exactly 100 KB</Link>{" "}
+							<Link href="/compress-image-to-100kb/" className="text-primary underline">compression to exactly 100 KB</Link>{" "}
 							for forms with upload limits.
 						</li>
 						<li>
 							Clean product shots from the{" "}
-							<Link href="/background-remover" className="text-primary underline">background remover</Link>,
+							<Link href="/background-remover/" className="text-primary underline">background remover</Link>,
 							processing entirely on-device.
 						</li>
 						<li>
 							Square avatars via{" "}
-							<Link href="/circular-image-crop" className="text-primary underline">circular cropping</Link>{" "}
+							<Link href="/circular-image-crop/" className="text-primary underline">circular cropping</Link>{" "}
 							and framing control with the{" "}
-							<Link href="/circular-image-crop" className="text-primary underline">image cropper</Link>.
+							<Link href="/circular-image-crop/" className="text-primary underline">image cropper</Link>.
 						</li>
 					</ul>
 
@@ -130,15 +130,15 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Picking brand colors in a full design tool means opening a
 						project first. The{" "}
-						<Link href="/color-palette-generator" className="text-primary underline">color palette generator</Link>{" "}
+						<Link href="/color-palette-generator/" className="text-primary underline">color palette generator</Link>{" "}
 						builds harmonious sets immediately, gradients come ready-made
 						from the{" "}
-						<Link href="/css-gradient-generator" className="text-primary underline">CSS gradient generator</Link>, and
+						<Link href="/css-gradient-generator/" className="text-primary underline">CSS gradient generator</Link>, and
 						existing colors get extracted from any reference image with the{" "}
-						<Link href="/image-color-picker" className="text-primary underline">image color picker</Link>. For
+						<Link href="/image-color-picker/" className="text-primary underline">image color picker</Link>. For
 						handoffs, protecting ownership of shared assets is covered too —
 						stamp drafts via{" "}
-						<Link href="/image-watermark" className="text-primary underline">image watermarking</Link>{" "}
+						<Link href="/image-watermark/" className="text-primary underline">image watermarking</Link>{" "}
 						before sending previews anywhere.
 					</p>
 
@@ -147,12 +147,12 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Two more frequent fliers: a{" "}
-						<Link href="/qr-code-generator" className="text-primary underline">QR code generator</Link>{" "}
+						<Link href="/qr-code-generator/" className="text-primary underline">QR code generator</Link>{" "}
 						for print materials and menus, and the{" "}
-						<Link href="/meme-generator" className="text-primary underline">meme generator</Link>{" "}
+						<Link href="/meme-generator/" className="text-primary underline">meme generator</Link>{" "}
 						for content calendars that need personality on a budget.
 						Character-consistent profile art comes from the{" "}
-						<Link href="/avatar-generator" className="text-primary underline">avatar generator</Link>{" "}
+						<Link href="/avatar-generator/" className="text-primary underline">avatar generator</Link>{" "}
 						when stock photos feel wrong for the brand voice.
 					</p>
 
@@ -214,7 +214,7 @@ export default async function ToolPage() {
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						Pick your next five-minute job and skip the canvas — everything
 						mentioned lives in SopKit, findable via{" "}
-						<Link href="/search" className="text-primary underline">SopKit search</Link>.
+						<Link href="/search/" className="text-primary underline">SopKit search</Link>.
 					</p>
 				</div>
 			</ToolLayout>

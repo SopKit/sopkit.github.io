@@ -76,3 +76,17 @@ export function buildCanonicalUrl(pathOrUrl: string): string {
     return `${SEO_CONFIG.siteUrl}/`;
   }
 }
+
+/**
+ * Internal link href in the served (trailing-slash) form, so links never
+ * cost a 301 hop. External URLs, anchors and file-like paths pass through;
+ * query strings and hashes are preserved.
+ */
+export function pageHref(href: string): string {
+  if (!href || !href.startsWith("/") || href.startsWith("//")) return href;
+  const cut = href.search(/[?#]/);
+  const path = cut === -1 ? href : href.slice(0, cut);
+  const rest = cut === -1 ? "" : href.slice(cut);
+  if (path.endsWith("/") || isFileLikePath(path)) return href;
+  return `${path}/${rest}`;
+}

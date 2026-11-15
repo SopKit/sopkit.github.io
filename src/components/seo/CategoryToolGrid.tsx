@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { getAllToolsByCategory } from "@/lib/tools";
+import { pageHref } from "@/seo/canonical";
 
 type Props = {
 	/** Registry category key or slug accepted by getAllToolsByCategory. */
@@ -33,7 +34,7 @@ export default function CategoryToolGrid({ categorySlug, heading, intro }: Props
 				{tools.map((tool) => (
 					<li key={tool.id}>
 						<Link
-							href={tool.route}
+							href={pageHref(tool.route)}
 							className="group block h-full rounded-xl border border-border/60 bg-card/40 p-5 transition-colors hover:border-primary/30"
 						>
 							<div className="flex items-start justify-between gap-4">

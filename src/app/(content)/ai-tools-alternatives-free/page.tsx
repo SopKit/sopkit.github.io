@@ -82,7 +82,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Paid image generators are great when you need fine-grained art
 						direction. For thumbnails, placeholders, avatars, and social posts,
-						a free <Link href="/ai-image-generator" className="text-primary underline">AI image generator</Link>{" "}
+						a free <Link href="/ai-image-generator/" className="text-primary underline">AI image generator</Link>{" "}
 						covers most of it — you describe what you want, get a downloadable
 						image, and move on. No credits metered per render, no watermark on
 						the free tier.
@@ -90,7 +90,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						The bigger lever, honestly, is prompting skill. If you do use a paid
 						generator occasionally, spending ten minutes with a{" "}
-						<Link href="/midjourney-prompt-builder" className="text-primary underline">prompt builder</Link>{" "}
+						<Link href="/midjourney-prompt-builder/" className="text-primary underline">prompt builder</Link>{" "}
 						improves results more than upgrading a plan. Structure — subject,
 						style, lighting, composition — beats adjectives every time.
 					</p>
@@ -102,10 +102,10 @@ export default async function ToolPage() {
 						Voice AI pricing is where budgets really bleed. Yet plenty of jobs —
 						a rough narrated draft, an accessibility track, a quick explainer —
 						don't need studio-grade synthesis. A free{" "}
-						<Link href="/text-to-speech" className="text-primary underline">text-to-speech tool</Link>{" "}
+						<Link href="/text-to-speech/" className="text-primary underline">text-to-speech tool</Link>{" "}
 						handles straightforward narration instantly in the browser. When
 						you want more expressive delivery, an{" "}
-						<Link href="/ai-voice-generator" className="text-primary underline">AI voice generator</Link>{" "}
+						<Link href="/ai-voice-generator/" className="text-primary underline">AI voice generator</Link>{" "}
 						gives you characterful output without a subscription wall.
 					</p>
 
@@ -119,18 +119,18 @@ export default async function ToolPage() {
 					<ul className="mt-4 list-disc space-y-2 pl-6 text-muted-foreground">
 						<li>
 							Poems and creative sparks on demand with an{" "}
-							<Link href="/poetry-generator" className="text-primary underline">AI poem generator</Link>{" "}
+							<Link href="/poetry-generator/" className="text-primary underline">AI poem generator</Link>{" "}
 							— handy for cards, captions, and classroom icebreakers.
 						</li>
 						<li>
 							Captions and tag ideas from a{" "}
-							<Link href="/hashtag-generator" className="text-primary underline">hashtag generator</Link>{" "}
+							<Link href="/hashtag-generator/" className="text-primary underline">hashtag generator</Link>{" "}
 							instead of asking a model to "suggest relevant hashtags."
 						</li>
 						<li>
 							Stylized bios and usernames via a{" "}
-							<Link href="/fancy-text-generator" className="text-primary underline">fancy text generator</Link>{" "}
-							or <Link href="/font-generator" className="text-primary underline">font generator</Link> —
+							<Link href="/fancy-text-generator/" className="text-primary underline">fancy text generator</Link>{" "}
+							or <Link href="/font-generator/" className="text-primary underline">font generator</Link> —
 							deterministic Unicode output, not hallucinated characters.
 						</li>
 					</ul>
@@ -194,7 +194,7 @@ export default async function ToolPage() {
 
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						Ready to trim a subscription or two? Browse the full directory on
-						the <Link href="/search" className="text-primary underline">SopKit search page</Link>{" "}
+						the <Link href="/search/" className="text-primary underline">SopKit search page</Link>{" "}
 						and see how much of your AI stack can quietly become free.
 					</p>
 				</div>

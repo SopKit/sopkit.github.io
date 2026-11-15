@@ -19,6 +19,13 @@ const cats = Object.values(categories);
 const uniqueness = JSON.parse(readFileSync("src/data/content-uniqueness.json", "utf8"));
 const curatedIds = new Set(uniqueness.curated || []);
 
+// Pages are served with a trailing slash (next.config trailingSlash: true);
+// linking the slash form avoids a 301 hop for every URL in the index.
+const page = (path) => {
+	if (!path || path === "/") return `${BASE}/`;
+	return `${BASE}${path.endsWith("/") ? path : `${path}/`}`;
+};
+
 const clean = (s) =>
 	s
 		.replace(/\s+/g, " ")
@@ -39,8 +46,7 @@ const HUB_MAP = {
 	youtube: "/youtube-tools",
 	calculators: "/calculators",
 	"exam-tools": "/exam-tools",
-	health: "/calculators",
-	company: "/about",
+	health: "/health",
 	content: "/tool-guides",
 	blog: "/blog",
 };
@@ -55,8 +61,7 @@ llmsSummaryLines.push(
 	"> SopKit is a free online toolkit with browser-based tools for image, PDF, video, audio, text, SEO, and developer workflows. No signup required. Privacy-first — most tools process data locally in the browser.",
 );
 llmsSummaryLines.push("");
-llmsSummaryLines.push(`Canonical: ${BASE}`);
-llmsSummaryLines.push(`Search: ${BASE}/search`);
+llmsSummaryLines.push(`Canonical: ${BASE}/`);
 llmsSummaryLines.push(`Sitemap: ${BASE}/sitemap.xml`);
 llmsSummaryLines.push(`RSS: ${BASE}/feed.xml`);
 llmsSummaryLines.push("");
@@ -71,7 +76,7 @@ llmsSummaryLines.push("");
 for (const c of cats) {
 	const hub = HUB_MAP[c.slug] || HUB_MAP[c.key];
 	if (!hub) continue;
-	llmsSummaryLines.push(`- [${c.name}](${BASE}${hub}) - ${clean(c.description || "")}`);
+	llmsSummaryLines.push(`- [${c.name}](${page(hub)}) - ${clean(c.description || "")}`);
 }
 llmsSummaryLines.push("");
 llmsSummaryLines.push("## Tools by category");
@@ -83,7 +88,7 @@ for (const c of cats) {
 	const tools = c.tools || [];
 	for (const t of tools) {
 		const route = t.route || "";
-		const url = `${BASE}${route}`;
+		const url = page(route);
 		const desc = clean(t.description || t.seoDescription || "");
 		llmsSummaryLines.push(`- [${t.name}](${url}) - ${desc}`);
 	}
@@ -111,7 +116,7 @@ llmsFullLines.push("");
 llmsFullLines.push("## Core Architecture & Security Model");
 llmsFullLines.push("");
 llmsFullLines.push("- **Browser-First sandboxed execution**: Utilizes client-side WebAssembly, Canvas, and DOM APIs where applicable. Files remain in local browser memory.");
-llmsFullLines.push("- **Transparent processing notices**: Every tool explicitly discloses its execution model (client-side vs external service) in visible page badges, structured data, and headers.");
+llmsFullLines.push("- **Transparent processing notices**: Every tool explicitly discloses its execution model (client-side vs external service) in a visible badge on the tool page.");
 llmsFullLines.push("- **Zero account requirement**: Core utilities operate without login, registration, or tracking cookies.");
 llmsFullLines.push("");
 llmsFullLines.push("## Full Tools Catalog & Niche Search Intents");
@@ -123,7 +128,7 @@ for (const c of cats) {
 	const tools = c.tools || [];
 	for (const t of tools) {
 		const route = t.route || "";
-		const url = `${BASE}${route}`;
+		const url = page(route);
 		const desc = clean(t.description || t.seoDescription || "");
 		llmsFullLines.push(`#### [${t.name}](${url})`);
 		llmsFullLines.push(`- **Description**: ${desc}`);

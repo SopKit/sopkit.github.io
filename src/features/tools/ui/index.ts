@@ -1,6 +1,7 @@
 /**
  * @file src/features/tools/ui/index.ts
- * @description Standardized presentation components for SopKit tools platform.
+ * @description Standardized presentation components for SopKit tools platform,
+ * built on the Astryx design system (see src/components/tools/shared/design-system).
  */
 
 export {

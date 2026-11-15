@@ -26,6 +26,7 @@ import { trackCategorySelect, trackToolAction, trackSearch } from "@/lib/analyti
 import { useUserToolbox } from "@/hooks/useUserToolbox";
 import { ProcessingBadge } from "@/components/shared/ProcessingBadge";
 import { resolveDataProcessing } from "@/features/tools/archetypes";
+import { pageHref } from "@/seo/canonical";
 
 interface ToolDirectorySectionProps {
 	tools: SearchToolRecord[];
@@ -276,7 +277,7 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 									<div className="space-y-2">
 										<div className="flex items-start justify-between gap-2">
 											<Link
-												href={tool.route}
+												href={pageHref(tool.route)}
 												onClick={() => {
 													recordRecent(tool);
 													trackToolAction(tool.id, "start");
@@ -316,7 +317,7 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 										/>
 
 										<Link
-											href={tool.route}
+											href={pageHref(tool.route)}
 											onClick={() => {
 												recordRecent(tool);
 												trackToolAction(tool.id, "start");
@@ -362,7 +363,7 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 										<div className="min-w-0 flex-1">
 											<div className="flex items-center gap-2">
 												<Link
-													href={tool.route}
+													href={pageHref(tool.route)}
 													onClick={() => {
 														recordRecent(tool);
 														trackToolAction(tool.id, "start");
@@ -391,7 +392,7 @@ export function ToolDirectorySection({ tools }: ToolDirectorySectionProps) {
 										/>
 
 										<Link
-											href={tool.route}
+											href={pageHref(tool.route)}
 											onClick={() => {
 												recordRecent(tool);
 												trackToolAction(tool.id, "start");

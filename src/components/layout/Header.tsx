@@ -8,8 +8,9 @@ import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { PillButton } from "@/components/ui/pill-button";
 import { Container } from "@/components/layout/Container";
 import { STATIC_ROUTES } from "@/constants/routes";
-import { GITHUB_REPO_URL } from "@/constants/config";
+import { GITHUB_REPO_URL, TOOL_COUNT_STRING } from "@/constants/config";
 import { openUnifiedSearch } from "@/components/shared/search-events";
+import { pageHref } from "@/seo/canonical";
 
 export function Header() {
 	const pathname = usePathname() || "";
@@ -89,7 +90,6 @@ export function Header() {
 							alt="SopKit Logo"
 							width={32}
 							height={32}
-							fetchPriority="high"
 							className="w-8 h-8 rounded-lg object-contain transition-transform duration-200 group-hover:scale-105"
 						/>
 						<span className="font-serif text-2xl font-bold tracking-tight group-hover:opacity-90 transition-opacity">
@@ -108,7 +108,7 @@ export function Header() {
 							return (
 								<Link
 									key={item.label}
-									href={item.href}
+									href={pageHref(item.href)}
 									className={`px-3.5 py-1 text-xs font-medium rounded-full transition-all duration-150 no-underline ${
 										active
 											? "bg-primary text-primary-foreground font-semibold shadow-xs"
@@ -131,7 +131,7 @@ export function Header() {
 							aria-label="Search all tools (Press Command K)"
 						>
 							<Search className="h-3.5 w-3.5" />
-							<span>Search 600+ tools...</span>
+							<span>Search {TOOL_COUNT_STRING} tools...</span>
 							<kbd className="inline-flex items-center px-1.5 py-0.5 rounded-md bg-background/80 border border-border/60 text-[10px] font-mono text-muted-foreground">
 								⌘K
 							</kbd>
@@ -183,7 +183,7 @@ export function Header() {
 								return (
 									<Link
 										key={item.label}
-										href={item.href}
+										href={pageHref(item.href)}
 										onClick={() => setMobileOpen(false)}
 										className={`flex items-center justify-between px-3 py-2.5 text-sm rounded-xl transition-colors no-underline ${
 											active
@@ -205,7 +205,7 @@ export function Header() {
 							{secondaryNavItems.map((item) => (
 								<Link
 									key={item.label}
-									href={item.href}
+									href={pageHref(item.href)}
 									onClick={() => setMobileOpen(false)}
 									className="flex items-center justify-between px-3 py-2 text-xs text-muted-foreground hover:text-foreground rounded-lg hover:bg-muted/50 transition-colors no-underline"
 								>
@@ -232,7 +232,7 @@ export function Header() {
 								className="w-full justify-between"
 								onClick={() => setMobileOpen(false)}
 							>
-								Explore All 600+ Tools
+								Explore All {TOOL_COUNT_STRING} Tools
 							</PillButton>
 						</div>
 					</div>

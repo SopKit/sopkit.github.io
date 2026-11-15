@@ -7,6 +7,7 @@ import { Search, ArrowRight, Sparkles, X } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import AdPlacement from "@/components/ads/AdPlacement";
+import { pageHref } from "@/seo/canonical";
 
 interface Tool {
 	id: string;
@@ -187,7 +188,7 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 						{suggestions.map((tool, idx) => (
 							<Link
 								key={tool.id}
-								href={tool.route}
+								href={pageHref(tool.route)}
 								className="flex items-center justify-between px-4 py-3 hover:bg-muted/60 transition-colors border-b border-border/10 last:border-b-0"
 								onClick={() => {
 									setQuery(tool.name);
@@ -251,7 +252,7 @@ function SearchResults({ initialTools, initialCategories }: SearchContentProps) 
 					results.map((tool) => (
 						<Link 
 							key={tool.id} 
-							href={tool.route}
+							href={pageHref(tool.route)}
 							className="group relative bg-card border border-border/50 rounded-xl hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition-all duration-200 p-6 flex flex-col h-full"
 						>
 							<div className="space-y-3 flex-1">

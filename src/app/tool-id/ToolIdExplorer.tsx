@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
 import { toast } from "sonner";
+import { pageHref } from "@/seo/canonical";
 
 export interface ToolSummary {
     id: string;
@@ -187,7 +188,7 @@ export default function ToolIdExplorer({ initialTools, categories }: ToolIdExplo
                                     <p className="text-xs text-muted-foreground line-clamp-2">{activeTool.description}</p>
                                 </div>
                                 <Button asChild size="sm" variant="outline" className="rounded-xl shrink-0 gap-1.5 text-xs font-semibold">
-                                    <Link href={activeTool.route} target="_blank" rel="noopener noreferrer">
+                                    <Link href={pageHref(activeTool.route)} target="_blank" rel="noopener noreferrer">
                                         Open Tool <ExternalLink className="h-3.5 w-3.5" />
                                     </Link>
                                 </Button>

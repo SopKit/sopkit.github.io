@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Info, Layers, Wrench } from "lucide-react";
 import { ToolTrust } from "@/components/tools/shared/ToolSharedComponents";
+import { TOOL_COUNT_STRING } from "@/constants/config";
 
 export const metadata = {
 	title: "New Tools & Updates — Latest Free Tools | SopKit",
@@ -33,7 +34,7 @@ export default async function NewToolsPage() {
 	const tool = {
 		id: "new-tools",
 		name: "New Tools & Updates — Latest Free Online Tools",
-		description: "Track newly added tools, release updates, and codebase expansion history of SopKit's growing library of 600+ free online tools.",
+		description: `New tools and release updates in SopKit's library of ${TOOL_COUNT_STRING} free online tools, newest first.`,
 		route: "/new-tools",
 		category: "company",
 	};

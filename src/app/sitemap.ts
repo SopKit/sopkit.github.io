@@ -89,7 +89,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{ url: `${SITE_URL}/tools-for-developers`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${SITE_URL}/top-10-json-tools-online`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{url: `${SITE_URL}/new-tools`, lastModified: siteUpdated, changeFrequency: "daily", priority: 0.8 },
-		{ url: `${SITE_URL}/online-tools`, lastModified: siteUpdated, changeFrequency: "weekly", priority: 0.8 },
 		{ url: `${SITE_URL}/embed-tools`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.7 },
 		{ url: `${SITE_URL}/best-free-ilovepdf-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },
 		{ url: `${SITE_URL}/best-free-adobe-acrobat-alternatives`, lastModified: siteUpdated, changeFrequency: "monthly", priority: 0.65 },

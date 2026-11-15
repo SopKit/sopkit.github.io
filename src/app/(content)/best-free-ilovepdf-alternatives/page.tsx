@@ -80,14 +80,14 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						This is the task most people open a PDF site for, and it's fully
 						covered locally. The{" "}
-						<Link href="/pdf-merger" className="text-primary underline">PDF merger</Link>{" "}
+						<Link href="/pdf-merger/" className="text-primary underline">PDF merger</Link>{" "}
 						combines documents in any order you arrange them, while{" "}
-						<Link href="/pdf-merger" className="text-primary underline">merge PDF online</Link>{" "}
+						<Link href="/pdf-merger/" className="text-primary underline">merge PDF online</Link>{" "}
 						handles quick two-file jobs when you're in a hurry. On the
 						reverse side, the{" "}
-						<Link href="/pdf-splitter" className="text-primary underline">PDF splitter</Link>{" "}
+						<Link href="/pdf-splitter/" className="text-primary underline">PDF splitter</Link>{" "}
 						breaks a document into ranges or single pages, and{" "}
-						<Link href="/remove-pages-from-pdf" className="text-primary underline">remove pages from PDF</Link>{" "}
+						<Link href="/remove-pages-from-pdf/" className="text-primary underline">remove pages from PDF</Link>{" "}
 						 excises just the pages you don't want without generating extra
 						files. Both platforms handle these well; the difference is that
 						SopKit does it with zero upload wait, which matters on slow
@@ -101,28 +101,28 @@ export default async function ToolPage() {
 						Server-side compressors sometimes squeeze harder because they can
 						throw serious CPU at rasterized pages. Client-side compression
 						is nonetheless strong on typical documents. The{" "}
-						<Link href="/pdf-compressor" className="text-primary underline">PDF compressor</Link>{" "}
+						<Link href="/pdf-compressor/" className="text-primary underline">PDF compressor</Link>{" "}
 						reduces size with sensible defaults, and if a portal enforces a
 						specific ceiling, the{" "}
-						<Link href="/pdf-compressor" className="text-primary underline">compress to exact KB tool</Link>{" "}
+						<Link href="/pdf-compressor/" className="text-primary underline">compress to exact KB tool</Link>{" "}
 						targets a precise budget — useful for government forms that
 						reject anything over their stated limit. For exam applications
 						in particular, the{" "}
-						<Link href="/pdf-compressor-under-200kb" className="text-primary underline">under 200 KB compressor</Link>{" "}
+						<Link href="/pdf-compressor-under-200kb/" className="text-primary underline">under 200 KB compressor</Link>{" "}
 						matches common upload rules exactly.
 					</p>
 
 					<h2 className="mt-8 text-2xl font-semibold">Conversions</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Both ecosystems convert between PDF and other formats. Locally,
-						you get <Link href="/pdf-to-word" className="text-primary underline">PDF to Word</Link> for
+						you get <Link href="/pdf-to-word/" className="text-primary underline">PDF to Word</Link> for
 						editable text,{" "}
-						<Link href="/pdf-to-jpg-converter" className="text-primary underline">PDF to JPG</Link> and{" "}
-						<Link href="/pdf-to-jpg-converter" className="text-primary underline">PDF to image</Link>{" "}
+						<Link href="/pdf-to-jpg-converter/" className="text-primary underline">PDF to JPG</Link> and{" "}
+						<Link href="/pdf-to-jpg-converter/" className="text-primary underline">PDF to image</Link>{" "}
 						for visual exports, plus inbound conversion via{" "}
-						<Link href="/image-to-pdf" className="text-primary underline">image to PDF</Link>,{" "}
-						<Link href="/word-to-pdf" className="text-primary underline">Word to PDF</Link>, and{" "}
-						<Link href="/html-to-pdf" className="text-primary underline">HTML to PDF</Link>. One
+						<Link href="/image-to-pdf/" className="text-primary underline">image to PDF</Link>,{" "}
+						<Link href="/word-to-pdf/" className="text-primary underline">Word to PDF</Link>, and{" "}
+						<Link href="/html-to-pdf/" className="text-primary underline">HTML to PDF</Link>. One
 						honest caveat: scanned image-PDFs converted to Word won't gain
 						real text recognition without OCR — that limitation is physics
 						of the input, not of any particular converter.
@@ -134,17 +134,17 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						The long tail of PDF chores is where dedicated single-purpose
 						tools beat navigating a menu system: page numbers with the{" "}
-						<Link href="/pdf-page-numbers" className="text-primary underline">page number adder</Link>,
+						<Link href="/pdf-page-numbers/" className="text-primary underline">page number adder</Link>,
 						fixing sideways scans via{" "}
-						<Link href="/pdf-rotation" className="text-primary underline">PDF rotation</Link>,
+						<Link href="/pdf-rotation/" className="text-primary underline">PDF rotation</Link>,
 						locking documents with{" "}
-						<Link href="/pdf-protect" className="text-primary underline">password protection</Link>,
+						<Link href="/pdf-protect/" className="text-primary underline">password protection</Link>,
 						regaining access through{" "}
-						<Link href="/pdf-unlocker" className="text-primary underline">PDF unlocking</Link>{" "}
+						<Link href="/pdf-unlocker/" className="text-primary underline">PDF unlocking</Link>{" "}
 						(for documents you own), cleaning metadata with the{" "}
-						<Link href="/pdf-metadata-editor" className="text-primary underline">metadata editor</Link>, and
+						<Link href="/pdf-metadata-editor/" className="text-primary underline">metadata editor</Link>, and
 						print-friendly output from the{" "}
-						<Link href="/pdf-grayscale" className="text-primary underline">grayscale converter</Link>.
+						<Link href="/pdf-grayscale/" className="text-primary underline">grayscale converter</Link>.
 					</p>
 
 					<h2 className="mt-8 text-2xl font-semibold">
@@ -229,9 +229,9 @@ export default async function ToolPage() {
 
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						Try one task and compare the experience yourself — start from the{" "}
-						<Link href="/pdf-tools" className="text-primary underline">PDF tools hub</Link>{" "}
+						<Link href="/pdf-tools/" className="text-primary underline">PDF tools hub</Link>{" "}
 						or browse every category via{" "}
-						<Link href="/search" className="text-primary underline">SopKit search</Link>.
+						<Link href="/search/" className="text-primary underline">SopKit search</Link>.
 					</p>
 				</div>
 			</ToolLayout>

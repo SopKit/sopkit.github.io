@@ -3,6 +3,7 @@ import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/shared/theme-provider";
 import { SITE_URL, TOOL_COUNT_STRING, GITHUB_REPO_URL } from "@/constants/config";
 import "./globals.css";
+import { Figtree } from "next/font/google";
 import Script from "next/script";
 // NOTE: Do NOT use next/dynamic inside this Server Component.
 // In Next 16, next/dynamic within an RSC throws an uncaught
@@ -10,7 +11,6 @@ import Script from "next/script";
 // entire page HTML for crawlers (site-wide SEO regression). Use direct
 // imports for any component rendered by the root layout.
 import { Suspense } from "react";
-import { PWARegistration } from "@/components/shared/PWARegistration";
 import { OfflineIndicator } from "@/components/shared/OfflineIndicator";
 import { GA4RouteTracker } from "@/components/shared/GA4RouteTracker";
 import { WebVitalsReporter } from "@/components/shared/WebVitalsReporter";
@@ -158,6 +158,13 @@ export const metadata: Metadata = {
 	},
 };
 
+const figtree = Figtree({
+	subsets: ["latin"],
+	weight: ["400", "500", "600", "700"],
+	display: "swap",
+	variable: "--font-figtree",
+});
+
 export default function RootLayout({
 	children,
 }: {
@@ -165,12 +172,10 @@ export default function RootLayout({
 }) {
 
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en" data-astryx-theme="neutral" className={figtree.variable} suppressHydrationWarning>
 			<head>
 				{/* gtag loads lazyOnload without CORS, so a preconnect is never reused; dns-prefetch only. */}
 				<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-				<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
-				<link rel="dns-prefetch" href="https://www.clarity.ms" />
 
 				<meta httpEquiv="Content-Language" content="en" />
 
@@ -251,13 +256,12 @@ gtag("consent", "default", {
 					Skip to main content
 				</a>
 				<ClientStackAuthProvider>
-					<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+					<ThemeProvider>
 						<Header />
 						{children}
 						<Footer />
 						<Toaster />
 						<SearchModalHost />
-						<PWARegistration />
 						<OfflineIndicator />
 					<ConsentAwareThirdPartyScripts enableAds={process.env.NEXT_PUBLIC_ENABLE_ADS === "true"} />
 					<ConsentBanner />

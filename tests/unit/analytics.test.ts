@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach } from "bun:test";
+import { describe, it, expect, beforeEach, afterEach } from "bun:test";
 import {
 	sanitizeSearchQuery,
 	getFileSizeBracket,
@@ -78,6 +78,12 @@ describe("GA4 Custom User Properties & Event Dispatcher", () => {
 				hostname: "sopkit.space",
 			},
 		};
+	});
+
+	// Don't leak the stub: later test files import browser-guarded modules
+	// (Astryx) that treat a defined `window` as a real DOM.
+	afterEach(() => {
+		delete (globalThis as any).window;
 	});
 
 	it("detects user properties with safe fallbacks in server/test environments", () => {

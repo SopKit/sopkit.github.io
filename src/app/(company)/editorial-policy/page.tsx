@@ -61,7 +61,7 @@ export default function EditorialPolicyPage() {
             Advertising and analytics are optional services controlled through the site's privacy choices.
           </p>
           <p className="leading-7 text-muted-foreground">
-            See the <Link href="/privacy" className="text-primary underline underline-offset-2">Privacy Policy</Link> for
+            See the <Link href="/privacy/" className="text-primary underline underline-offset-2">Privacy Policy</Link> for
             the detailed data-flow description.
           </p>
         </section>
@@ -70,7 +70,7 @@ export default function EditorialPolicyPage() {
           <h2 className="text-xl font-bold">Corrections and feedback</h2>
           <p className="leading-7 text-muted-foreground">
             Readers can report incorrect, outdated, or misleading information through the
-            <Link href="/contact" className="ml-1 text-primary underline underline-offset-2">Contact page</Link>
+            <Link href="/contact/" className="ml-1 text-primary underline underline-offset-2">Contact page</Link>
             or the project's GitHub repository. Include the page URL and the specific statement that needs review.
           </p>
         </section>

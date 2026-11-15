@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { buildCanonicalUrl } from "@/seo/canonical";
+import { pageHref } from "@/seo/canonical";
 
 export interface Breadcrumb {
 	name: string;
@@ -118,7 +119,7 @@ function BreadcrumbsInner({
 								</span>
 							) : (
 								<Link
-									href={crumb.url}
+									href={pageHref(crumb.url)}
 									className="hover:text-foreground transition-colors underline-offset-4 hover:underline"
 									title={`Go to ${crumb.name}`}
 								>
@@ -207,7 +208,7 @@ export function RichBreadcrumbs({
 										</span>
 									) : (
 										<Link
-											href={crumb.url}
+											href={pageHref(crumb.url)}
 											className={`hover:text-foreground transition-colors ${
 												variant === "pills"
 													? "bg-muted px-2 py-1 "

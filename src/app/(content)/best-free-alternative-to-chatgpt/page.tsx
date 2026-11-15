@@ -61,12 +61,12 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Asking a chatbot for an image means negotiating through prose.
 						The{" "}
-						<Link href="/ai-image-generator" className="text-primary underline">AI image generator</Link>{" "}
+						<Link href="/ai-image-generator/" className="text-primary underline">AI image generator</Link>{" "}
 						cuts straight to the point — describe the visual, receive a
 						downloadable file. For avatars, thumbnails, and post graphics,
 						that's the entire workflow. And if prompt quality is your actual
 						bottleneck on paid platforms, building structure with the{" "}
-						<Link href="/midjourney-prompt-builder" className="text-primary underline">Midjourney prompt builder</Link>{" "}
+						<Link href="/midjourney-prompt-builder/" className="text-primary underline">Midjourney prompt builder</Link>{" "}
 						improves output more than any subscription tier bump.
 					</p>
 
@@ -75,10 +75,10 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Chatbots can't hand you an audio file. A{" "}
-						<Link href="/text-to-speech" className="text-primary underline">text to speech converter</Link>{" "}
+						<Link href="/text-to-speech/" className="text-primary underline">text to speech converter</Link>{" "}
 						produces narration instantly for drafts, accessibility checks,
 						and video scratch tracks, while the{" "}
-						<Link href="/ai-voice-generator" className="text-primary underline">AI voice generator</Link>{" "}
+						<Link href="/ai-voice-generator/" className="text-primary underline">AI voice generator</Link>{" "}
 						offers more characterful synthetic voices when the project needs
 						personality instead of plainness.
 					</p>
@@ -90,12 +90,12 @@ export default async function ToolPage() {
 						When you need Unicode-styled text, asking a language model is
 						genuinely risky — models sometimes produce lookalike characters
 						that break in certain apps. The{" "}
-						<Link href="/fancy-text-generator" className="text-primary underline">fancy text generator</Link>{" "}
-						and <Link href="/font-generator" className="text-primary underline">font generator</Link>{" "}
+						<Link href="/fancy-text-generator/" className="text-primary underline">fancy text generator</Link>{" "}
+						and <Link href="/font-generator/" className="text-primary underline">font generator</Link>{" "}
 						output exact, tested Unicode transformations. Same logic applies
 						to tags: the{" "}
-						<Link href="/hashtag-generator" className="text-primary underline">hashtag generator</Link>{" "}
-						and <Link href="/poetry-generator" className="text-primary underline">AI poem generator</Link>{" "}
+						<Link href="/hashtag-generator/" className="text-primary underline">hashtag generator</Link>{" "}
+						and <Link href="/poetry-generator/" className="text-primary underline">AI poem generator</Link>{" "}
 						handle their niches instantly, with zero chance of a lecture
 						about responsible hashtag use preceding your results.
 					</p>
@@ -107,9 +107,9 @@ export default async function ToolPage() {
 						Pasting anything secret into a hosted AI service sends it to
 						someone else's servers — that's how the technology works. For
 						security-adjacent jobs, dedicated local tools are simply correct:
-						a <Link href="/password-generator" className="text-primary underline">password generator</Link>{" "}
+						a <Link href="/password-generator/" className="text-primary underline">password generator</Link>{" "}
 						creates strong credentials entirely client-side, and a{" "}
-						<Link href="/qr-code-generator" className="text-primary underline">QR code generator</Link>{" "}
+						<Link href="/qr-code-generator/" className="text-primary underline">QR code generator</Link>{" "}
 						builds codes from links or text without either tool's input ever
 						leaving your browser.
 					</p>
@@ -120,7 +120,7 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						Dropping a two-hour video transcript into a chat to get key
 						points works, but it burns tokens and context. A specialized{" "}
-						<Link href="/ai-video-summarizer" className="text-primary underline">AI video summarizer</Link>{" "}
+						<Link href="/ai-video-summarizer/" className="text-primary underline">AI video summarizer</Link>{" "}
 						is built for exactly this input, returning structured takeaways
 						rather than conversational padding.
 					</p>
@@ -132,11 +132,11 @@ export default async function ToolPage() {
 						A chat model can describe how to compress a PDF; it cannot compress
 						your PDF. File work belongs to file tools, full stop. Count a draft
 						to length with the{" "}
-						<Link href="/word-counter" className="text-primary underline">word counter</Link>,
+						<Link href="/word-counter/" className="text-primary underline">word counter</Link>,
 						shrink an oversized scan with the{" "}
-						<Link href="/image-compressor" className="text-primary underline">image compressor</Link>, or
+						<Link href="/image-compressor/" className="text-primary underline">image compressor</Link>, or
 						handle the whole document family from the{" "}
-						<Link href="/pdf-tools" className="text-primary underline">PDF tools hub</Link> —
+						<Link href="/pdf-tools/" className="text-primary underline">PDF tools hub</Link> —
 						each one deterministic, instant, and processed on your device
 						rather than described back to you in confident prose.
 					</p>
@@ -187,7 +187,7 @@ export default async function ToolPage() {
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						The smartest setup keeps both: your chatbot for thinking, these
 						tools for doing. Explore the whole catalog via{" "}
-						<Link href="/search" className="text-primary underline">SopKit search</Link>.
+						<Link href="/search/" className="text-primary underline">SopKit search</Link>.
 					</p>
 				</div>
 			</ToolLayout>

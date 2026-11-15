@@ -27,6 +27,7 @@ import { type SearchToolRecord } from "@/lib/tools";
 import { SITE_CONFIG } from "@/constants/config";
 import { useUserToolbox } from "@/hooks/useUserToolbox";
 import { trackSearch, trackToolAction } from "@/lib/analytics";
+import { pageHref } from "@/seo/canonical";
 
 const CYCLING_INTENTS = [
 	"compress an image to 50KB...",
@@ -345,7 +346,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 										</>
 									) : (
 										<div className="p-4 text-center text-xs text-muted-foreground">
-											No direct match found. Press Enter to search all 600+ tools for &ldquo;{query}&rdquo;.
+											No direct match found. Press Enter to search all {SITE_CONFIG.toolCountString} tools for &ldquo;{query}&rdquo;.
 										</div>
 									)}
 								</div>
@@ -361,7 +362,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 							{QUICK_TASK_CHIPS.map((chip) => (
 								<Link
 									key={chip.href}
-									href={chip.href}
+									href={pageHref(chip.href)}
 									className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full bg-surface-muted/90 hover:bg-primary hover:text-primary-foreground border border-border/80 hover:border-transparent text-foreground font-medium transition-all duration-150 no-underline shadow-2xs"
 								>
 									<span>{chip.icon}</span>
@@ -380,7 +381,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 									Your Recent Workspace
 								</span>
 								<Link
-									href="/tools"
+									href="/tools/"
 									className="text-xs text-primary hover:underline font-medium"
 								>
 									View All Tools →
@@ -391,7 +392,7 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 								{recents.slice(0, 4).map((item) => (
 									<Link
 										key={item.id}
-										href={item.route}
+										href={pageHref(item.route)}
 										className="p-3 rounded-xl bg-card border border-border/70 hover:border-primary/50 hover:shadow-xs transition-all no-underline group block"
 									>
 										<p className="text-xs font-semibold text-foreground truncate group-hover:text-primary transition-colors">
@@ -413,11 +414,11 @@ export function HeroSection({ tools = [] }: { tools?: SearchToolRecord[] }) {
 								</span>
 								<span className="flex items-center gap-1.5">
 									<Zap className="h-3.5 w-3.5 text-amber-500" />
-									Sub-Millisecond WebAssembly
+									No Account Needed
 								</span>
 								<span className="flex items-center gap-1.5">
 									<Cpu className="h-3.5 w-3.5 text-sky-500" />
-									Local Client Hardware Acceleration
+									Free to Use
 								</span>
 							</div>
 						</div>

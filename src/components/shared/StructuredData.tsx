@@ -1,5 +1,6 @@
 import { getAllCategories, type Tool } from "@/lib/tools";
 import { LAST_UPDATED, SITE_URL } from "@/constants/config";
+import toolLastmod from "@/data/tool-lastmod.json";
 import { buildCanonicalUrl } from "@/seo/canonical";
 import { isCuratedContent } from "@/data/content-curation";
 
@@ -106,7 +107,29 @@ export default function StructuredData({
 		const curatedFeatures = hasCuratedContent && tool.features?.length ? tool.features : null;
 		const curatedFaqs = hasCuratedContent && tool.faqs?.length ? tool.faqs : null;
 
-		const toolStructuredData: Record<string, any> = {
+		// Company pages (about/contact/terms/privacy…), guides and category hubs
+		// are not software; describe them as plain web pages.
+		const isNonToolPage =
+			tool.category === "company" ||
+			tool.category === "content" ||
+			tool.route.endsWith("-tools") ||
+			tool.route === "/calculators" ||
+			tool.route === "/new-tools";
+		const lastmodMap = (toolLastmod as { lastmod?: Record<string, string> }).lastmod ?? {};
+		const dateModified = lastmodMap[tool.route] ?? LAST_UPDATED;
+
+		const toolStructuredData: Record<string, any> = isNonToolPage
+			? {
+					"@context": "https://schema.org",
+					"@type": "WebPage",
+					name: tool.name,
+					description: tool.description,
+					url: toolUrl,
+					inLanguage: "en",
+					dateModified,
+					isPartOf: { "@type": "WebSite", name: "SopKit", url: `${SITE_URL}/` },
+				}
+			: {
 			"@context": "https://schema.org",
 			"@type": ["SoftwareApplication", "WebApplication"],
 			name: tool.name,
@@ -117,8 +140,7 @@ export default function StructuredData({
 			url: toolUrl,
 			isAccessibleForFree: true,
 			inLanguage: "en",
-			screenshot: `${SITE_URL}/og-image.png`,
-			dateModified: LAST_UPDATED,
+			dateModified,
 			offers: {
 				"@type": "Offer",
 				price: "0",

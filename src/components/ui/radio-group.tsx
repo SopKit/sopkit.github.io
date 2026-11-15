@@ -1,38 +1,89 @@
 "use client";
 
+import { RadioList, RadioListContext, type RadioListProps } from "@astryxdesign/core/RadioList";
 import * as React from "react";
-import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
-import { CircleIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
-function RadioGroup({ className, ...props }: React.ComponentProps<typeof RadioGroupPrimitive.Root>) {
-	return (
-		<RadioGroupPrimitive.Root
-			data-slot="radio-group"
-			className={cn("grid gap-3", className)}
-			{...props}
-		/>
-	);
+interface RadioGroupProps {
+	value?: string;
+	defaultValue?: string;
+	onValueChange?: (value: string) => void;
+	disabled?: boolean;
+	required?: boolean;
+	name?: string;
+	orientation?: "horizontal" | "vertical";
+	className?: string;
+	children?: React.ReactNode;
+	"aria-label"?: string;
 }
 
-function RadioGroupItem({ className, ...props }: React.ComponentProps<typeof RadioGroupPrimitive.Item>) {
+/**
+ * Astryx RadioList (group semantics, name, keyboard entry). Children keep the
+ * free-form `<RadioGroupItem>` + `<Label htmlFor>` composition.
+ */
+function RadioGroup({
+	value,
+	defaultValue = "",
+	onValueChange,
+	disabled,
+	required,
+	name,
+	orientation,
+	className,
+	children,
+	"aria-label": ariaLabel,
+}: RadioGroupProps) {
+	const [inner, setInner] = React.useState(defaultValue);
+	const current = value ?? inner;
+	const handleChange = React.useCallback(
+		(next: string) => {
+			if (value === undefined) setInner(next);
+			onValueChange?.(next);
+		},
+		[value, onValueChange],
+	);
+
+	const listProps = {
+		"data-slot": "radio-group",
+		label: ariaLabel ?? "Options",
+		isLabelHidden: true,
+		value: current,
+		onChange: handleChange,
+		isDisabled: disabled,
+		isRequired: required,
+		htmlName: name,
+		orientation,
+		controlClassName: cn("grid gap-3", className),
+		children,
+	} as unknown as RadioListProps;
+
+	return <RadioList {...listProps} />;
+}
+
+interface RadioGroupItemProps
+	extends Omit<React.ComponentProps<"input">, "type" | "value" | "checked" | "onChange"> {
+	value: string;
+}
+
+/** Native radio bound to the enclosing Astryx RadioList context. */
+function RadioGroupItem({ className, value, disabled, ...props }: RadioGroupItemProps) {
+	const ctx = React.use(RadioListContext);
 	return (
-		<RadioGroupPrimitive.Item
+		<input
+			type="radio"
 			data-slot="radio-group-item"
+			name={ctx?.name}
+			value={value}
+			checked={ctx ? ctx.value === value : undefined}
+			disabled={disabled || ctx?.isDisabled}
+			onChange={() => ctx?.onChange(value)}
 			className={cn(
-				"border-input text-primary focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square size-4 shrink-0 shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50",
+				"size-4 shrink-0 cursor-pointer accent-[var(--color-accent)] disabled:cursor-not-allowed disabled:opacity-50",
 				className,
 			)}
 			{...props}
-		>
-			<RadioGroupPrimitive.Indicator
-				data-slot="radio-group-indicator"
-				className="relative flex items-center justify-center"
-			>
-				<CircleIcon className="fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -transpace-y-1/2" />
-			</RadioGroupPrimitive.Indicator>
-		</RadioGroupPrimitive.Item>
+		/>
 	);
 }
 

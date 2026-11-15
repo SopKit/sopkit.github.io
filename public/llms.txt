@@ -2,8 +2,7 @@
 
 > SopKit is a free online toolkit with browser-based tools for image, PDF, video, audio, text, SEO, and developer workflows. No signup required. Privacy-first — most tools process data locally in the browser.
 
-Canonical: https://sopkit.space
-Search: https://sopkit.space/search
+Canonical: https://sopkit.space/
 Sitemap: https://sopkit.space/sitemap.xml
 RSS: https://sopkit.space/feed.xml
 
@@ -13,535 +12,534 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 
 ## Category hubs
 
-- [Fun Generators](https://sopkit.space/generators) - Create viral content with AI-powered fun generators
-- [Company](https://sopkit.space/about) - 
-- [Blog](https://sopkit.space/blog) - Tech blog and tool deep-dives
-- [Calculators](https://sopkit.space/calculators) - Calculate academic grades, attendance shortage, and construction materials with ease.
-- [Exam Image & Form Tools](https://sopkit.space/exam-tools) - Resize and compress photos, signatures, and PDFs to fit exact official requirements for UPSC, SSC, NEET, JEE, and other major exams.
-- [Health & Fitness](https://sopkit.space/calculators) - Calculate BMI, BMR, TDEE, and other health metrics to stay on track with your fitness goals.
+- [Fun Generators](https://sopkit.space/generators/) - Create viral content with AI-powered fun generators
+- [Blog](https://sopkit.space/blog/) - Tech blog and tool deep-dives
+- [Calculators](https://sopkit.space/calculators/) - Calculate academic grades, attendance shortage, and construction materials with ease.
+- [Exam Image & Form Tools](https://sopkit.space/exam-tools/) - Resize and compress photos, signatures, and PDFs to fit exact official requirements for UPSC, SSC, NEET, JEE, and other major exams.
+- [Health & Fitness](https://sopkit.space/health/) - Calculate BMI, BMR, TDEE, and other health metrics to stay on track with your fitness goals.
 
 ## Tools by category
 
 ### Fun Generators
 
-- [AI Image Generator](https://sopkit.space/ai-image-generator) - Describe a scene, choose a style, size and optional seed, and the Flux model behind Pollinations renders it, with results kept in a local history.
-- [AI Voice Generator](https://sopkit.space/ai-voice-generator) - Send a line of text to the openai-audio model on Pollinations and get back a spoken clip you can replay, download or share by its link.
-- [QR Code Reader](https://sopkit.space/qr-code-reader) - Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.
-- [Bio Generator](https://sopkit.space/bio-generator) - Create compelling, aesthetic social media bios and profile elevator pitches tailored for Instagram, Twitter/X, TikTok, and LinkedIn.
-- [Business Name Generator](https://sopkit.space/business-name-generator) - Combine prefixes, suffixes and punchy word pairs into ten brandable name ideas per press, optionally anchored to your industry keyword.
-- [Fake Chat Generator](https://sopkit.space/fake-chat-generator) - Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage with customizable profiles, timestamps, and messages.
-- [Excuse Generator](https://sopkit.space/excuse-generator) - Fills polite bow-out templates with random pets, relatives, appliances and traffic mishaps, producing three ready-to-send excuses per press.
-- [Font Generator](https://sopkit.space/font-generator) - Transform plain text into stylish Unicode fonts, cursive scripts, and aesthetic typography for Instagram, Twitter, and Discord.
-- [Number Generator](https://sopkit.space/number-generator) - Draw lottery numbers, PINs, dice rolls or custom ranges from either quick pseudo-random maths or the cryptographic Web Crypto source.
-- [Poetry Generator](https://sopkit.space/poetry-generator) - Slots nature, emotion and time-of-day words into three rhyming stanza patterns to sketch a short verse ready to copy and refine.
-- [Rent Receipt Generator](https://sopkit.space/rent-receipt-generator) - Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.
-- [Leave Application Generator](https://sopkit.space/leave-application-generator) - Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.
-- [Resignation Letter Generator](https://sopkit.space/resignation-letter-generator) - Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.
-- [Bio Data Maker](https://sopkit.space/bio-data-maker) - Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.
-- [Instagram Bio Generator](https://sopkit.space/instagram-bio-generator) - Turns a keyword such as a niche, hobby or city into five bio formats with emojis, line breaks and call-to-action hooks, each copyable.
-- [Instagram Caption Generator](https://sopkit.space/instagram-caption-generator) - Generate scroll-stopping Instagram captions with hooks, CTAs and hashtag sets tailored to your topic. Customize and copy in one click — free.
-- [Hashtag Generator](https://sopkit.space/hashtag-generator) - Generate reach-boosting hashtags for Instagram Reels, TikTok, YouTube and X. Mix niche and trending tags, copy the full set in one click — free.
-- [Slogan Generator](https://sopkit.space/slogan-generator) - Matches your brand name against eight familiar slogan patterns to produce taglines like Simply the Best or Built for Success.
-- [Logo Idea Generator](https://sopkit.space/logo-idea-generator) - Brainstorm logo concepts with style directions, icon ideas, color moods and font pairings for your brand. Free creative brief in one click.
-- [GBP Description Generator](https://sopkit.space/google-business-profile-description-generator) - Wraps a business name and service keywords into a single plain paragraph covering experience, reliability and a call to get in touch.
-- [Review Reply Generator](https://sopkit.space/review-reply-generator) - Reply to Google, Yelp and Trustpilot reviews like a pro — polite thanks for praise, calm recovery for complaints. Copy-ready drafts, free.
-- [Menu Description Generator](https://sopkit.space/restaurant-menu-description-generator) - Write mouth-watering menu descriptions for dishes, cafes and restaurants. Sensory words that sell specials, combos and chef signatures — free.
-- [Client Proposal Generator](https://sopkit.space/client-proposal-generator) - Builds a short markdown proposal with scope, deliverables, pricing and next steps already filled in around your project name.
-- [Payment Reminder Generator](https://sopkit.space/payment-reminder-generator) - Write firm-but-polite payment reminders and overdue invoice emails. Escalating tones from nudge to final notice — copy and send free.
-- [Product Description Generator](https://sopkit.space/product-description-generator) - Write benefit-driven product descriptions for Shopify, Amazon and Etsy with features, specs and SEO keywords. Copy-ready listings, free.
-- [Refund Policy Generator](https://sopkit.space/refund-policy-generator) - Generate a clear refund and returns policy for your store — windows, conditions, exclusions and process steps. Store-ready text, free.
-- [Love Calculator](https://sopkit.space/love-calculator) - Calculate relationship compatibility based on name numerology and astronomical alignment. Discover your love score instantly with our free interactive compatibility calculator.
-- [Color Palette Generator](https://sopkit.space/color-palette-generator) - Generate beautiful color palettes with harmony rules. Explore complementary, analogous, triadic, and tetradic color schemes. Copy hex codes and export CSS variables.
-- [Meme Generator](https://sopkit.space/meme-generator) - Create viral memes online for free. Add custom text to images with classic meme styling. Export as PNG with zero data uploads.
-- [Story Idea Generator](https://sopkit.space/story-idea-generator) - Get unlimited creative writing prompts and story ideas. Generate characters, settings, conflicts, and themes across multiple genres instantly.
-- [Pixel Art Maker](https://sopkit.space/pixel-art-maker) - Create pixel art with an interactive grid-based editor. Choose colors, draw pixel by pixel, and export as PNG. Free and private.
-- [Avatar Generator](https://sopkit.space/avatar-generator) - Generate unique identicon-style avatars from any seed text. Customize colors and export as PNG. Perfect for profiles, forums, and placeholders.
-- [Ascii Art Generator](https://sopkit.space/ascii-art-generator) - Samples a photo's brightness and maps it to text characters, with width and contrast sliders plus copy and download for the finished art.
+- [AI Image Generator](https://sopkit.space/ai-image-generator/) - Describe a scene, choose a style, size and optional seed, and the Flux model behind Pollinations renders it, with results kept in a local history.
+- [AI Voice Generator](https://sopkit.space/ai-voice-generator/) - Send a line of text to the openai-audio model on Pollinations and get back a spoken clip you can replay, download or share by its link.
+- [QR Code Reader](https://sopkit.space/qr-code-reader/) - Scan and decode QR codes from images or using your camera online for free. Secure, browser-based QR reader with instant results and no data storage.
+- [Bio Generator](https://sopkit.space/bio-generator/) - Create compelling, aesthetic social media bios and profile elevator pitches tailored for Instagram, Twitter/X, TikTok, and LinkedIn.
+- [Business Name Generator](https://sopkit.space/business-name-generator/) - Combine prefixes, suffixes and punchy word pairs into ten brandable name ideas per press, optionally anchored to your industry keyword.
+- [Fake Chat Generator](https://sopkit.space/fake-chat-generator/) - Create realistic-looking fake chat screenshots for WhatsApp, Discord, and iMessage with customizable profiles, timestamps, and messages.
+- [Excuse Generator](https://sopkit.space/excuse-generator/) - Fills polite bow-out templates with random pets, relatives, appliances and traffic mishaps, producing three ready-to-send excuses per press.
+- [Font Generator](https://sopkit.space/font-generator/) - Transform plain text into stylish Unicode fonts, cursive scripts, and aesthetic typography for Instagram, Twitter, and Discord.
+- [Number Generator](https://sopkit.space/number-generator/) - Draw lottery numbers, PINs, dice rolls or custom ranges from either quick pseudo-random maths or the cryptographic Web Crypto source.
+- [Poetry Generator](https://sopkit.space/poetry-generator/) - Slots nature, emotion and time-of-day words into three rhyming stanza patterns to sketch a short verse ready to copy and refine.
+- [Rent Receipt Generator](https://sopkit.space/rent-receipt-generator/) - Generate HRA-compliant rent receipts online for free. Fill in tenant, landlord, and rent details, and download print-ready receipts instantly.
+- [Leave Application Generator](https://sopkit.space/leave-application-generator/) - Draft professional leave applications for office, school, or college online. Customize dates, reason, and print or copy instantly.
+- [Resignation Letter Generator](https://sopkit.space/resignation-letter-generator/) - Generate professional resignation letters in seconds. Choose between formal, polite, or short-notice templates and print or download instantly.
+- [Bio Data Maker](https://sopkit.space/bio-data-maker/) - Create beautiful marriage biodata sheets or professional resumes. Upload photos, input family or job details, and print a custom layout.
+- [Instagram Bio Generator](https://sopkit.space/instagram-bio-generator/) - Turns a keyword such as a niche, hobby or city into five bio formats with emojis, line breaks and call-to-action hooks, each copyable.
+- [Instagram Caption Generator](https://sopkit.space/instagram-caption-generator/) - Generate scroll-stopping Instagram captions with hooks, CTAs and hashtag sets tailored to your topic. Customize and copy in one click — free.
+- [Hashtag Generator](https://sopkit.space/hashtag-generator/) - Generate reach-boosting hashtags for Instagram Reels, TikTok, YouTube and X. Mix niche and trending tags, copy the full set in one click — free.
+- [Slogan Generator](https://sopkit.space/slogan-generator/) - Matches your brand name against eight familiar slogan patterns to produce taglines like Simply the Best or Built for Success.
+- [Logo Idea Generator](https://sopkit.space/logo-idea-generator/) - Brainstorm logo concepts with style directions, icon ideas, color moods and font pairings for your brand. Free creative brief in one click.
+- [GBP Description Generator](https://sopkit.space/google-business-profile-description-generator/) - Wraps a business name and service keywords into a single plain paragraph covering experience, reliability and a call to get in touch.
+- [Review Reply Generator](https://sopkit.space/review-reply-generator/) - Reply to Google, Yelp and Trustpilot reviews like a pro — polite thanks for praise, calm recovery for complaints. Copy-ready drafts, free.
+- [Menu Description Generator](https://sopkit.space/restaurant-menu-description-generator/) - Write mouth-watering menu descriptions for dishes, cafes and restaurants. Sensory words that sell specials, combos and chef signatures — free.
+- [Client Proposal Generator](https://sopkit.space/client-proposal-generator/) - Builds a short markdown proposal with scope, deliverables, pricing and next steps already filled in around your project name.
+- [Payment Reminder Generator](https://sopkit.space/payment-reminder-generator/) - Write firm-but-polite payment reminders and overdue invoice emails. Escalating tones from nudge to final notice — copy and send free.
+- [Product Description Generator](https://sopkit.space/product-description-generator/) - Write benefit-driven product descriptions for Shopify, Amazon and Etsy with features, specs and SEO keywords. Copy-ready listings, free.
+- [Refund Policy Generator](https://sopkit.space/refund-policy-generator/) - Generate a clear refund and returns policy for your store — windows, conditions, exclusions and process steps. Store-ready text, free.
+- [Love Calculator](https://sopkit.space/love-calculator/) - Calculate relationship compatibility based on name numerology and astronomical alignment. Discover your love score instantly with our free interactive compatibility calculator.
+- [Color Palette Generator](https://sopkit.space/color-palette-generator/) - Generate beautiful color palettes with harmony rules. Explore complementary, analogous, triadic, and tetradic color schemes. Copy hex codes and export CSS variables.
+- [Meme Generator](https://sopkit.space/meme-generator/) - Create viral memes online for free. Add custom text to images with classic meme styling. Export as PNG with zero data uploads.
+- [Story Idea Generator](https://sopkit.space/story-idea-generator/) - Get unlimited creative writing prompts and story ideas. Generate characters, settings, conflicts, and themes across multiple genres instantly.
+- [Pixel Art Maker](https://sopkit.space/pixel-art-maker/) - Create pixel art with an interactive grid-based editor. Choose colors, draw pixel by pixel, and export as PNG. Free and private.
+- [Avatar Generator](https://sopkit.space/avatar-generator/) - Generate unique identicon-style avatars from any seed text. Customize colors and export as PNG. Perfect for profiles, forums, and placeholders.
+- [Ascii Art Generator](https://sopkit.space/ascii-art-generator/) - Samples a photo's brightness and maps it to text characters, with width and contrast sliders plus copy and download for the finished art.
 
 ### Image Tools
 
-- [Gemini Watermark Remover](https://sopkit.space/gemini-watermark-remover) - Remove the Google Gemini AI logo and watermarks from your images online. Process 100% client-side inside your browser for complete privacy.
-- [SVG to PNG Converter](https://sopkit.space/svg-to-png) - Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.
-- [WEBP to PNG Converter](https://sopkit.space/webp-to-png) - Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
-- [ICO to PNG Converter](https://sopkit.space/ico-to-png) - Unpacks an ICO favicon or app icon into its individual sizes and saves the frame you choose as a PNG with transparency preserved.
-- [JPG to PNG Converter](https://sopkit.space/jpg-to-png) - Re-saves a JPEG as a lossless PNG so further edits, layers and re-exports stop stacking fresh compression artifacts on every save.
-- [PNG to JPG Converter](https://sopkit.space/png-to-jpg) - Turns a PNG graphic into a lighter JPEG, with a quality slider so you decide how much detail the smaller file keeps.
-- [SVG to JPG Converter](https://sopkit.space/svg-to-jpg) - Convert SVG vector files into standard JPG images with custom background colors.
-- [WEBP to JPG Converter](https://sopkit.space/webp-to-jpg) - Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail.
-- [Advanced Favicon Generator](https://sopkit.space/favicon-generator-pro) - Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image.
-- [Image Metadata (EXIF) Remover](https://sopkit.space/remove-image-metadata) - Remove sensitive GPS, camera, and author metadata from your images before sharing online.
-- [Pro Image Color Picker](https://sopkit.space/image-color-picker) - Click any pixel for HEX, RGB, HSL and CMYK values, zoom in for precision and stack a swatch history while assembling a palette.
-- [Background Remover](https://sopkit.space/background-remover) - Cuts a subject away from a plain or solid backdrop and returns a transparent PNG cutout for listings, slide decks or headshots.
-- [Base64 to Image Converter](https://sopkit.space/base64-to-image-converter) - Paste a Base64 string or data URI and the decoded image appears for preview, ready to download in its detected PNG, JPG or WebP form.
-- [EXIF Reader](https://sopkit.space/exif-reader) - Extract metadata and EXIF data from images including camera settings and GPS location.
-- [Favicon Generator](https://sopkit.space/favicon-generator) - Generate favicons from text, images, or emojis for websites.
-- [Image Compressor](https://sopkit.space/image-compressor) - Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.
-- [Image Converter](https://sopkit.space/image-converter) - Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy.
-- [Circular Image Crop](https://sopkit.space/circular-image-crop) - Crop images into perfect circular shapes online. Ideal for profile pictures and social media avatars.
-- [Image Watermark Adder](https://sopkit.space/image-watermark) - Add text or image logo watermarks to your pictures. Customize opacity, size, positioning, and rotation to protect your images online.
-- [GIF Generator](https://sopkit.space/gif-generator) - Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.
-- [Image Resizer](https://sopkit.space/image-resizer) - Resize images with custom dimensions and aspect ratios.
-- [Image to Base64 Converter](https://sopkit.space/image-to-base64) - Encode any image to a Base64 data URI for embedding in HTML, CSS and JSON. Instant output with copy button — free, private.
-- [JPG Converter](https://sopkit.space/jpg-converter) - Export almost any picture to JPEG and dial the quality setting until the file size and visible detail meet your target.
-- [JPG to WebP Converter](https://sopkit.space/jpg-to-webp-converter) - Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly.
-- [Logo Generator](https://sopkit.space/logo-generator) - Create professional logos with text, fonts, and custom colors for your brand or business. Design unique logos instantly with our free online logo maker — advanced text effects, presets, and SVG export included.
-- [Photo Enhancer](https://sopkit.space/photo-enhancer) - Enhance photo quality with AI-powered image enhancement.
-- [PNG to WebP Converter](https://sopkit.space/png-to-webp-converter) - Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool.
-- [Free Image Tools Online](https://sopkit.space/image-tools) - SopKit's image toolbox, grouped into compression, creative editing and format conversion so you can jump straight to the right utility.
-- [Compress Image to 20KB](https://sopkit.space/compress-image-to-20kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity.
-- [Resize Image in CM](https://sopkit.space/resize-image-in-cm) - Resize your images by specifying width and height in centimeters (cm), millimeters (mm), or inches for printing and forms.
-- [Compress Image to 10KB](https://sopkit.space/compress-image-to-10kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 10KB while maintaining the best possible visual clarity.
-- [Compress Image to 30KB](https://sopkit.space/compress-image-to-30kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 30KB while maintaining the best possible visual clarity.
-- [Compress Image to 100KB](https://sopkit.space/compress-image-to-100kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.
-- [Compress Image to 200KB](https://sopkit.space/compress-image-to-200kb) - Compress any image file (JPG, PNG, WebP) to fit strictly under 200KB while maintaining the best possible visual clarity.
-- [Resize Image in MM](https://sopkit.space/resize-image-in-mm) - Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.
-- [Resize Image in Pixels](https://sopkit.space/resize-image-in-pixels) - Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.
-- [Image DPI Converter](https://sopkit.space/image-dpi-converter) - Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.
+- [Gemini Watermark Remover](https://sopkit.space/gemini-watermark-remover/) - Remove the Google Gemini AI logo and watermarks from your images online. Process 100% client-side inside your browser for complete privacy.
+- [SVG to PNG Converter](https://sopkit.space/svg-to-png/) - Convert scalable vector graphics (SVG) into high-quality PNG images with transparent backgrounds.
+- [WEBP to PNG Converter](https://sopkit.space/webp-to-png/) - Convert WebP to PNG to restore transparency and compatibility with all image editors. High-quality, free, and privacy-focused online conversion tool.
+- [ICO to PNG Converter](https://sopkit.space/ico-to-png/) - Unpacks an ICO favicon or app icon into its individual sizes and saves the frame you choose as a PNG with transparency preserved.
+- [JPG to PNG Converter](https://sopkit.space/jpg-to-png/) - Re-saves a JPEG as a lossless PNG so further edits, layers and re-exports stop stacking fresh compression artifacts on every save.
+- [PNG to JPG Converter](https://sopkit.space/png-to-jpg/) - Turns a PNG graphic into a lighter JPEG, with a quality slider so you decide how much detail the smaller file keeps.
+- [SVG to JPG Converter](https://sopkit.space/svg-to-jpg/) - Convert SVG vector files into standard JPG images with custom background colors.
+- [WEBP to JPG Converter](https://sopkit.space/webp-to-jpg/) - Convert WebP images to JPG format for maximum compatibility across all devices and platforms. Our free online converter is fast, secure, and preserves image detail.
+- [Advanced Favicon Generator](https://sopkit.space/favicon-generator-pro/) - Create all required favicon sizes and formats (ICO, PNG, SVG) for modern web projects from one image.
+- [Image Metadata (EXIF) Remover](https://sopkit.space/remove-image-metadata/) - Remove sensitive GPS, camera, and author metadata from your images before sharing online.
+- [Pro Image Color Picker](https://sopkit.space/image-color-picker/) - Click any pixel for HEX, RGB, HSL and CMYK values, zoom in for precision and stack a swatch history while assembling a palette.
+- [Background Remover](https://sopkit.space/background-remover/) - Cuts a subject away from a plain or solid backdrop and returns a transparent PNG cutout for listings, slide decks or headshots.
+- [Base64 to Image Converter](https://sopkit.space/base64-to-image-converter/) - Paste a Base64 string or data URI and the decoded image appears for preview, ready to download in its detected PNG, JPG or WebP form.
+- [EXIF Reader](https://sopkit.space/exif-reader/) - Extract metadata and EXIF data from images including camera settings and GPS location.
+- [Favicon Generator](https://sopkit.space/favicon-generator/) - Generate favicons from text, images, or emojis for websites.
+- [Image Compressor](https://sopkit.space/image-compressor/) - Compress images online for free without losing quality. Reduce file size of JPG, PNG, and WebP images instantly. Secure, browser-based processing.
+- [Image Converter](https://sopkit.space/image-converter/) - Convert images between any format (PNG, JPG, WEBP, BMP, GIF, SVG) online for free. Fast, high-quality conversion with batch support and 100% privacy.
+- [Circular Image Crop](https://sopkit.space/circular-image-crop/) - Crop images into perfect circular shapes online. Ideal for profile pictures and social media avatars.
+- [Image Watermark Adder](https://sopkit.space/image-watermark/) - Add text or image logo watermarks to your pictures. Customize opacity, size, positioning, and rotation to protect your images online.
+- [GIF Generator](https://sopkit.space/gif-generator/) - Compile multiple images into an animated GIF client-side. Control delay/interval and image dimensions easily.
+- [Image Resizer](https://sopkit.space/image-resizer/) - Resize images with custom dimensions and aspect ratios.
+- [Image to Base64 Converter](https://sopkit.space/image-to-base64/) - Encode any image to a Base64 data URI for embedding in HTML, CSS and JSON. Instant output with copy button — free, private.
+- [JPG Converter](https://sopkit.space/jpg-converter/) - Export almost any picture to JPEG and dial the quality setting until the file size and visible detail meet your target.
+- [JPG to WebP Converter](https://sopkit.space/jpg-to-webp-converter/) - Convert JPG to WebP for superior web performance. Reduce file sizes significantly without losing quality. Our free online converter helps you speed up your website instantly.
+- [Logo Generator](https://sopkit.space/logo-generator/) - Create professional logos with text, fonts, and custom colors for your brand or business. Design unique logos instantly with our free online logo maker — advanced text effects, presets, and SVG export included.
+- [Photo Enhancer](https://sopkit.space/photo-enhancer/) - Enhance photo quality with AI-powered image enhancement.
+- [PNG to WebP Converter](https://sopkit.space/png-to-webp-converter/) - Convert PNG to WebP to optimize your website speed. Significantly reduce file sizes while maintaining image transparency and quality. Free, fast, and secure online tool.
+- [Free Image Tools Online](https://sopkit.space/image-tools/) - SopKit's image toolbox, grouped into compression, creative editing and format conversion so you can jump straight to the right utility.
+- [Compress Image to 20KB](https://sopkit.space/compress-image-to-20kb/) - Compress any image file (JPG, PNG, WebP) to fit strictly under 20KB while maintaining the best possible visual clarity.
+- [Resize Image in CM](https://sopkit.space/resize-image-in-cm/) - Resize your images by specifying width and height in centimeters (cm), millimeters (mm), or inches for printing and forms.
+- [Compress Image to 10KB](https://sopkit.space/compress-image-to-10kb/) - Compress any image file (JPG, PNG, WebP) to fit strictly under 10KB while maintaining the best possible visual clarity.
+- [Compress Image to 30KB](https://sopkit.space/compress-image-to-30kb/) - Compress any image file (JPG, PNG, WebP) to fit strictly under 30KB while maintaining the best possible visual clarity.
+- [Compress Image to 100KB](https://sopkit.space/compress-image-to-100kb/) - Compress any image file (JPG, PNG, WebP) to fit strictly under 100KB while maintaining the best possible visual clarity.
+- [Compress Image to 200KB](https://sopkit.space/compress-image-to-200kb/) - Compress any image file (JPG, PNG, WebP) to fit strictly under 200KB while maintaining the best possible visual clarity.
+- [Resize Image in MM](https://sopkit.space/resize-image-in-mm/) - Resize your images by specifying width and height in millimeters (mm) for printing, exam forms, and documents.
+- [Resize Image in Pixels](https://sopkit.space/resize-image-in-pixels/) - Resize your images by specifying exact width and height in pixels (px) for web, social media, and digital platforms.
+- [Image DPI Converter](https://sopkit.space/image-dpi-converter/) - Change or convert your image's DPI (Dots Per Inch) to 300, 600, or custom values for official applications and printing.
 
 ### Text Tools
 
-- [Text Reverser](https://sopkit.space/text-reverser) - Flip your text backwards or reverse the order of words instantly for creative projects and coding.
-- [Remove Duplicate Lines](https://sopkit.space/remove-duplicate-lines) - Clean up your lists and data by automatically removing identical lines of text. Fast and private.
-- [Markdown to HTML Converter](https://sopkit.space/markdown-to-html) - Convert Markdown text into clean HTML code for your website, blog, or email newsletters.
-- [Markdown to PDF Converter](https://sopkit.space/markdown-to-pdf) - Type or paste Markdown and watch a styled A4 preview form as you go, then download the finished document as a print-ready PDF file.
-- [URL Encoder Decoder](https://sopkit.space/url-encoder-decoder) - Percent-encode a query string before it travels or decode a long redirect address until its parameters read clearly, one press per direction.
-- [String Length Calculator](https://sopkit.space/string-length-calculator) - Get detailed string analytics including character, word, byte, and line counts instantly.
-- [Text to Binary/Hex/Octal Converter](https://sopkit.space/text-to-binary-hex-octal) - Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local.
-- [Slug to Text Converter](https://sopkit.space/slug-to-text-converter) - Convert URL slugs with hyphens or underscores back into clean, readable text strings.
-- [Word Frequency Counter](https://sopkit.space/word-frequency-counter) - Ranks every term in a document by occurrences and shows each one's share of the total, exposing overworked words and keyword balance.
-- [Case Converter (Sentence, Upper, Lower)](https://sopkit.space/case-converter) - Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.
-- [Emoji Text Generator](https://sopkit.space/emoji-text-generator) - Add fun emojis to your text or convert words into emoji-rich messages for social media.
-- [Random Word Generator](https://sopkit.space/random-word-generator) - Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.
-- [Resume ATS Score Checker](https://sopkit.space/resume-ats-score-checker) - Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals.
-- [Resume Keyword Matcher](https://sopkit.space/resume-keyword-matcher) - Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS.
-- [Cover Letter Generator](https://sopkit.space/cover-letter-generator) - Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit.
-- [LinkedIn Headline Generator](https://sopkit.space/linkedin-headline-generator) - Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers.
-- [Internship Application Message Generator](https://sopkit.space/internship-message-generator) - Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers.
-- [Comma Separator](https://sopkit.space/comma-separator) - Convert lists, columns, or text into comma-separated values (CSV) instantly. Our free online Comma Separator is perfect for data cleaning and formatting tasks. Privacy-focused browser tool.
-- [Line Sorter](https://sopkit.space/line-sorter) - Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Privacy-friendly and fast.
-- [Lorem Ipsum Generator](https://sopkit.space/lorem-ipsum) - Generate custom Lorem Ipsum text for your designs.
-- [Remove Line Breaks](https://sopkit.space/remove-line-breaks) - Remove line breaks, carriage returns, and extra whitespace from your text instantly. Perfect for cleaning up copied content for clean formatting. Free and privacy-focused online tool.
-- [Text Compare](https://sopkit.space/text-compare) - Compare two text snippets side-by-side to find differences instantly. Our free online Text Compare tool highlights additions, deletions, and changes with high precision. Secure and browser-based.
-- [Text Repeater](https://sopkit.space/text-repeater) - Repeat a phrase up to five thousand times and copy the enlarged block for load tests, filler copy or playful message walls.
-- [Text to Hashtags Converter](https://sopkit.space/text-to-hashtags-converter) - Convert your text into trending hashtags for social media instantly. Our free tool helps you optimize posts for Instagram, TikTok, and Twitter with relevant, search-friendly tags.
-- [Text to Tags Converter](https://sopkit.space/text-to-tags-converter) - Extract and generate relevant meta tags from your text instantly. Our free online converter helps you create SEO tags, HTML keywords, and header tags for better web visibility.
-- [Word Counter](https://sopkit.space/word-counter) - Count words, characters, sentences, and paragraphs in your text instantly. Our free online Word Counter also provides estimated reading time and text analysis. Fast and private.
-- [Word to Number Converter](https://sopkit.space/word-to-number-converter) - Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cleanup.
-- [Markdown to Text](https://sopkit.space/markdown-to-text) - Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub.
-- [Kruti Dev to Unicode Converter](https://sopkit.space/kruti-dev-to-unicode) - Convert legacy Kruti Dev 010 font layout text to standard Unicode Devanagari Hindi text dynamically.
-- [Unicode to Kruti Dev Converter](https://sopkit.space/unicode-to-kruti-dev) - Convert standard Unicode Devanagari Hindi text to legacy Kruti Dev 010 font layout text dynamically.
-- [Hinglish to Hindi Converter](https://sopkit.space/hinglish-to-hindi) - Convert phonetic Hinglish (Roman English) text into standard Unicode Hindi (Devanagari) dynamically.
-- [Hindi Typing Tool](https://sopkit.space/hindi-typing-tool) - Type in English and get it transliterated to Hindi in real-time. Free online Devanagari phonetic Hindi typing utility.
-- [Fancy Text Generator](https://sopkit.space/fancy-text-generator) - Generate stylish text, cursive fonts, gothic letters, bubble symbols, and gaming nicknames instantly. Copy and paste stylish names for Instagram, Twitter, and FreeFire.
-- [Text to Handwriting Converter](https://sopkit.space/text-to-handwriting) - Convert digital text into realistic handwritten pages. Customize paper styles (lined, grid, plain), handwriting fonts, and ink colors to download handwritten sheets as PNG.
+- [Text Reverser](https://sopkit.space/text-reverser/) - Flip your text backwards or reverse the order of words instantly for creative projects and coding.
+- [Remove Duplicate Lines](https://sopkit.space/remove-duplicate-lines/) - Clean up your lists and data by automatically removing identical lines of text. Fast and private.
+- [Markdown to HTML Converter](https://sopkit.space/markdown-to-html/) - Convert Markdown text into clean HTML code for your website, blog, or email newsletters.
+- [Markdown to PDF Converter](https://sopkit.space/markdown-to-pdf/) - Type or paste Markdown and watch a styled A4 preview form as you go, then download the finished document as a print-ready PDF file.
+- [URL Encoder Decoder](https://sopkit.space/url-encoder-decoder/) - Percent-encode a query string before it travels or decode a long redirect address until its parameters read clearly, one press per direction.
+- [String Length Calculator](https://sopkit.space/string-length-calculator/) - Get detailed string analytics including character, word, byte, and line counts instantly.
+- [Text to Binary/Hex/Octal Converter](https://sopkit.space/text-to-binary-hex-octal/) - Convert plain text strings to binary, hex, and octal formats simultaneously. 100% local.
+- [Slug to Text Converter](https://sopkit.space/slug-to-text-converter/) - Convert URL slugs with hyphens or underscores back into clean, readable text strings.
+- [Word Frequency Counter](https://sopkit.space/word-frequency-counter/) - Ranks every term in a document by occurrences and shows each one's share of the total, exposing overworked words and keyword balance.
+- [Case Converter (Sentence, Upper, Lower)](https://sopkit.space/case-converter/) - Change the case of your text to UPPERCASE, lowercase, Sentence case, or Title Case instantly.
+- [Emoji Text Generator](https://sopkit.space/emoji-text-generator/) - Add fun emojis to your text or convert words into emoji-rich messages for social media.
+- [Random Word Generator](https://sopkit.space/random-word-generator/) - Generate random words instantly for creative writing, brainstorming, or vocabulary practice. Our free online tool offers customizable options for word type and quantity. Fun and fast.
+- [Resume ATS Score Checker](https://sopkit.space/resume-ats-score-checker/) - Check your resume ATS score, keyword match, formatting issues, missing skills, and job-fit suggestions instantly. Free resume checker for students and professionals.
+- [Resume Keyword Matcher](https://sopkit.space/resume-keyword-matcher/) - Match your resume with a job description and find missing skills, keywords, tools, and role-specific terms to beat the ATS.
+- [Cover Letter Generator](https://sopkit.space/cover-letter-generator/) - Generate a personalized cover letter for internships, fresher jobs, remote jobs, and startup roles in seconds. Professional and ready to edit.
+- [LinkedIn Headline Generator](https://sopkit.space/linkedin-headline-generator/) - Create professional LinkedIn headlines that stand out. Generate multiple variations for developers, students, freelancers, and marketers.
+- [Internship Application Message Generator](https://sopkit.space/internship-message-generator/) - Generate short, human internship messages for LinkedIn, email, and founder outreach. Perfect for students and freshers.
+- [Comma Separator](https://sopkit.space/comma-separator/) - Convert lists, columns, or text into comma-separated values (CSV) instantly. Our free online Comma Separator is perfect for data cleaning and formatting tasks. Privacy-focused browser tool.
+- [Line Sorter](https://sopkit.space/line-sorter/) - Sort lists, names, or lines alphabetically or by length instantly. Our free online Line Sorter helps you organize data for cleaner documentation and code. Privacy-friendly and fast.
+- [Lorem Ipsum Generator](https://sopkit.space/lorem-ipsum/) - Generate custom Lorem Ipsum text for your designs.
+- [Remove Line Breaks](https://sopkit.space/remove-line-breaks/) - Remove line breaks, carriage returns, and extra whitespace from your text instantly. Perfect for cleaning up copied content for clean formatting. Free and privacy-focused online tool.
+- [Text Compare](https://sopkit.space/text-compare/) - Compare two text snippets side-by-side to find differences instantly. Our free online Text Compare tool highlights additions, deletions, and changes with high precision. Secure and browser-based.
+- [Text Repeater](https://sopkit.space/text-repeater/) - Repeat a phrase up to five thousand times and copy the enlarged block for load tests, filler copy or playful message walls.
+- [Text to Hashtags Converter](https://sopkit.space/text-to-hashtags-converter/) - Convert your text into trending hashtags for social media instantly. Our free tool helps you optimize posts for Instagram, TikTok, and Twitter with relevant, search-friendly tags.
+- [Text to Tags Converter](https://sopkit.space/text-to-tags-converter/) - Extract and generate relevant meta tags from your text instantly. Our free online converter helps you create SEO tags, HTML keywords, and header tags for better web visibility.
+- [Word Counter](https://sopkit.space/word-counter/) - Count words, characters, sentences, and paragraphs in your text instantly. Our free online Word Counter also provides estimated reading time and text analysis. Fast and private.
+- [Word to Number Converter](https://sopkit.space/word-to-number-converter/) - Convert words into digits instantly with our free online Word to Number converter. Perfect for data entry, educational exercises, and technical documentation cleanup.
+- [Markdown to Text](https://sopkit.space/markdown-to-text/) - Convert Markdown formatted text to clean plain text instantly. Perfect for cleaning up content from ChatGPT, Claude, and GitHub.
+- [Kruti Dev to Unicode Converter](https://sopkit.space/kruti-dev-to-unicode/) - Convert legacy Kruti Dev 010 font layout text to standard Unicode Devanagari Hindi text dynamically.
+- [Unicode to Kruti Dev Converter](https://sopkit.space/unicode-to-kruti-dev/) - Convert standard Unicode Devanagari Hindi text to legacy Kruti Dev 010 font layout text dynamically.
+- [Hinglish to Hindi Converter](https://sopkit.space/hinglish-to-hindi/) - Convert phonetic Hinglish (Roman English) text into standard Unicode Hindi (Devanagari) dynamically.
+- [Hindi Typing Tool](https://sopkit.space/hindi-typing-tool/) - Type in English and get it transliterated to Hindi in real-time. Free online Devanagari phonetic Hindi typing utility.
+- [Fancy Text Generator](https://sopkit.space/fancy-text-generator/) - Generate stylish text, cursive fonts, gothic letters, bubble symbols, and gaming nicknames instantly. Copy and paste stylish names for Instagram, Twitter, and FreeFire.
+- [Text to Handwriting Converter](https://sopkit.space/text-to-handwriting/) - Convert digital text into realistic handwritten pages. Customize paper styles (lined, grid, plain), handwriting fonts, and ink colors to download handwritten sheets as PNG.
 
 ### PDF Tools
 
-- [Remove Pages from PDF](https://sopkit.space/remove-pages-from-pdf) - Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free.
-- [PDF to JPG Converter](https://sopkit.space/pdf-to-jpg-converter) - Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file.
-- [HTML to PDF Converter](https://sopkit.space/html-to-pdf) - Convert HTML code or files to print-ready PDF documents client-side instantly.
-- [PDF Compressor](https://sopkit.space/pdf-compressor) - Compress PDF documents to reduce file size while maintaining original print quality.
-- [PDF Page Numbers Adder](https://sopkit.space/pdf-page-numbers) - Add page numbers to your PDF documents easily. Customize positioning, font size, and start index.
-- [PDF Watermark Creator](https://sopkit.space/pdf-watermark) - Stamp diagonal text or a PNG or JPG logo across every page of a PDF, tuning opacity, angle, colour and size until the mark sits right.
-- [PDF Metadata Editor](https://sopkit.space/pdf-metadata-editor) - Inspect and rewrite a PDF's title, author, subject and keyword properties so the document presents correctly in readers and results.
-- [PDF Merger](https://sopkit.space/pdf-merger) - Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly.
-- [PDF Splitter](https://sopkit.space/pdf-splitter) - Split PDF documents by page ranges or extract individual pages into separate PDF files.
-- [PDF Rotation Tool](https://sopkit.space/pdf-rotation) - Rotate single or all pages of a PDF document to landscape or portrait orientation instantly.
-- [Image to PDF](https://sopkit.space/image-to-pdf) - Combine JPG, PNG or WebP pictures into one PDF, choosing A4 or auto page size, orientation and margins for a tidy sheet.
-- [PDF Editor](https://sopkit.space/pdf-editor) - Place text annotations anywhere on a PDF's pages, colour and size them, then flatten the marks into a fresh copy you can save.
-- [PDF Password Protect](https://sopkit.space/pdf-protect) - Secure your PDF files with strong password encryption online for free. Privacy-first local processing ensures your sensitive documents never leave your browser.
-- [PDF to Word](https://sopkit.space/pdf-to-word) - Pull the text layer from a PDF into an editable DOCX built page by page, so wording can be revised instead of retyped.
-- [PDF Unlocker](https://sopkit.space/pdf-unlocker) - Enter the password you already know for a PDF and save an unprotected copy that can print, copy and edit freely again.
-- [Word to PDF](https://sopkit.space/word-to-pdf) - Parses a DOCX file page by page and renders it as a PDF, keeping headings and emphasis recognisable for printing or submission.
-- [PDF Grayscale](https://sopkit.space/pdf-grayscale) - Strips colour from a PDF's pages, swapping it for grayscale tones to cut printing ink use and shrink image-heavy files.
-- [PDF Repair](https://sopkit.space/pdf-repair) - Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF documents instantly.
-- [PDF Tools](https://sopkit.space/pdf-tools) - One index for SopKit's PDF suite: merge, split, rotate, compress, convert, watermark, renumber, protect and unlock documents.
+- [Remove Pages from PDF](https://sopkit.space/remove-pages-from-pdf/) - Delete unwanted pages from a PDF file online. Select pages, remove them, and download a clean PDF for free.
+- [PDF to JPG Converter](https://sopkit.space/pdf-to-jpg-converter/) - Convert PDF pages to high-quality JPG images online. Download each page as an image or ZIP file.
+- [HTML to PDF Converter](https://sopkit.space/html-to-pdf/) - Convert HTML code or files to print-ready PDF documents client-side instantly.
+- [PDF Compressor](https://sopkit.space/pdf-compressor/) - Compress PDF documents to reduce file size while maintaining original print quality.
+- [PDF Page Numbers Adder](https://sopkit.space/pdf-page-numbers/) - Add page numbers to your PDF documents easily. Customize positioning, font size, and start index.
+- [PDF Watermark Creator](https://sopkit.space/pdf-watermark/) - Stamp diagonal text or a PNG or JPG logo across every page of a PDF, tuning opacity, angle, colour and size until the mark sits right.
+- [PDF Metadata Editor](https://sopkit.space/pdf-metadata-editor/) - Inspect and rewrite a PDF's title, author, subject and keyword properties so the document presents correctly in readers and results.
+- [PDF Merger](https://sopkit.space/pdf-merger/) - Combine multiple PDF documents into a single file quickly. Reorder files and merge instantly.
+- [PDF Splitter](https://sopkit.space/pdf-splitter/) - Split PDF documents by page ranges or extract individual pages into separate PDF files.
+- [PDF Rotation Tool](https://sopkit.space/pdf-rotation/) - Rotate single or all pages of a PDF document to landscape or portrait orientation instantly.
+- [Image to PDF](https://sopkit.space/image-to-pdf/) - Combine JPG, PNG or WebP pictures into one PDF, choosing A4 or auto page size, orientation and margins for a tidy sheet.
+- [PDF Editor](https://sopkit.space/pdf-editor/) - Place text annotations anywhere on a PDF's pages, colour and size them, then flatten the marks into a fresh copy you can save.
+- [PDF Password Protect](https://sopkit.space/pdf-protect/) - Secure your PDF files with strong password encryption online for free. Privacy-first local processing ensures your sensitive documents never leave your browser.
+- [PDF to Word](https://sopkit.space/pdf-to-word/) - Pull the text layer from a PDF into an editable DOCX built page by page, so wording can be revised instead of retyped.
+- [PDF Unlocker](https://sopkit.space/pdf-unlocker/) - Enter the password you already know for a PDF and save an unprotected copy that can print, copy and edit freely again.
+- [Word to PDF](https://sopkit.space/word-to-pdf/) - Parses a DOCX file page by page and renders it as a PDF, keeping headings and emphasis recognisable for printing or submission.
+- [PDF Grayscale](https://sopkit.space/pdf-grayscale/) - Strips colour from a PDF's pages, swapping it for grayscale tones to cut printing ink use and shrink image-heavy files.
+- [PDF Repair](https://sopkit.space/pdf-repair/) - Fix corrupted or broken PDF files online for free. Our secure repair tool rebuilds document headers and cross-reference tables to restore access to your PDF documents instantly.
+- [PDF Tools](https://sopkit.space/pdf-tools/) - One index for SopKit's PDF suite: merge, split, rotate, compress, convert, watermark, renumber, protect and unlock documents.
 
 ### Video Tools
 
-- [Video Tools](https://sopkit.space/video-tools) - Compress videos, convert formats, and create GIFs.
-- [Video Converter](https://sopkit.space/video-converter) - Re-encode an MP4, MOV, AVI, MKV or WebM clip and save the result as WebM, MP4 or OGG, whatever codecs your device can render.
-- [Video Editor](https://sopkit.space/video-editor) - Edit, cut, and merge video files online for free.
-- [AI Video Summarizer](https://sopkit.space/ai-video-summarizer) - Paste a transcript and sentence scoring extracts the most important lines as bullet points, a flowing paragraph or an executive overview.
-- [Terabox Video Downloader](https://sopkit.space/terabox-downloader) - Paste a Terabox share link and the extracted file ID opens in an embedded player, with a new-tab option and copyable embed code.
+- [Video Tools](https://sopkit.space/video-tools/) - Compress videos, convert formats, and create GIFs.
+- [Video Converter](https://sopkit.space/video-converter/) - Re-encode an MP4, MOV, AVI, MKV or WebM clip and save the result as WebM, MP4 or OGG, whatever codecs your device can render.
+- [Video Editor](https://sopkit.space/video-editor/) - Edit, cut, and merge video files online for free.
+- [AI Video Summarizer](https://sopkit.space/ai-video-summarizer/) - Paste a transcript and sentence scoring extracts the most important lines as bullet points, a flowing paragraph or an executive overview.
+- [Terabox Video Downloader](https://sopkit.space/terabox-downloader/) - Paste a Terabox share link and the extracted file ID opens in an embedded player, with a new-tab option and copyable embed code.
 
 ### YouTube Tools
 
-- [YouTube Embed Code Generator](https://sopkit.space/youtube-embed-code-generator) - Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website.
-- [YouTube Money Calculator](https://sopkit.space/youtube-money-calculator) - Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators.
-- [YouTube Subscribe Link Generator](https://sopkit.space/youtube-subscribe-link-generator) - Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios.
-- [YouTube Timestamp Link Generator](https://sopkit.space/youtube-timestamp-link-generator) - Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your audience. Fast and easy.
-- [YouTube Title Length Checker](https://sopkit.space/youtube-title-length-checker) - Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results.
-- [Youtube Video Title Capitalizer](https://sopkit.space/youtube-title-capitalizer) - Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out.
-- [YouTube Title Generator](https://sopkit.space/youtube-title-generator) - Enter a topic to get six ready-made title patterns — how-to guides, 30-day experiments, mistake roundups — each copied in one click.
-- [YouTube Description Generator](https://sopkit.space/youtube-description-generator) - Enter a topic to get a ready-to-paste description with an intro line, four timestamped chapters, a resources block and starter hashtags.
-- [YouTube Thumbnail Text Generator](https://sopkit.space/youtube-thumbnail-text-generator) - Produces six short, shouty caption options for thumbnails — DO THIS!, STOP!, 10X FASTER and similar — each copied with one click.
-- [Youtube Thumbnail Downloader](https://sopkit.space/youtube-thumbnail-downloader) - Paste a video URL or ID to get its cover image in every size YouTube publishes, from max resolution down to the default frame.
+- [YouTube Embed Code Generator](https://sopkit.space/youtube-embed-code-generator/) - Generate customizable YouTube embed codes instantly. Our free online tool helps you create responsive iframes with specific start times, player controls, and privacy settings for your website.
+- [YouTube Money Calculator](https://sopkit.space/youtube-money-calculator/) - Estimate potential earnings for any YouTube video or channel with our free online Money Calculator. Understand revenue based on views, CPM, and engagement metrics. Perfect for creators.
+- [YouTube Subscribe Link Generator](https://sopkit.space/youtube-subscribe-link-generator/) - Create a direct YouTube subscribe link for your channel instantly. Our free online tool helps you boost your subscriber count with one-click links for social media and bios.
+- [YouTube Timestamp Link Generator](https://sopkit.space/youtube-timestamp-link-generator/) - Create direct links to specific parts of any YouTube video instantly. Our free online tool helps you share precise moments with friends, students, or your audience. Fast and easy.
+- [YouTube Title Length Checker](https://sopkit.space/youtube-title-length-checker/) - Check if your YouTube video title is the optimal length for search and browse. Our free online checker helps you avoid truncation and ensure your full title is visible in search results.
+- [Youtube Video Title Capitalizer](https://sopkit.space/youtube-title-capitalizer/) - Automatically capitalize your YouTube video titles for maximum professional impact and CTR. Our free online tool follows industry standards to make your titles stand out.
+- [YouTube Title Generator](https://sopkit.space/youtube-title-generator/) - Enter a topic to get six ready-made title patterns — how-to guides, 30-day experiments, mistake roundups — each copied in one click.
+- [YouTube Description Generator](https://sopkit.space/youtube-description-generator/) - Enter a topic to get a ready-to-paste description with an intro line, four timestamped chapters, a resources block and starter hashtags.
+- [YouTube Thumbnail Text Generator](https://sopkit.space/youtube-thumbnail-text-generator/) - Produces six short, shouty caption options for thumbnails — DO THIS!, STOP!, 10X FASTER and similar — each copied with one click.
+- [Youtube Thumbnail Downloader](https://sopkit.space/youtube-thumbnail-downloader/) - Paste a video URL or ID to get its cover image in every size YouTube publishes, from max resolution down to the default frame.
 
 ### Audio Tools
 
-- [Text to Speech](https://sopkit.space/text-to-speech) - Choose a voice, set the speed and pitch sliders, then hear the passage read back with play, pause and resume controls.
-- [Audio Tools](https://sopkit.space/audio-tools) - Compress and convert audio files between formats.
-- [Guitar Tuner](https://sopkit.space/guitar-tuner) - Free online guitar tuner. Uses your microphone to tune your guitar accurately.
-- [Audio Equalizer](https://sopkit.space/audio-equalizer) - Adjust audio frequencies with a 10-band graphic equalizer. Choose from presets like Rock, Pop, Jazz, and Vocal Boost, or customize your own profile. Free and private browser-based processing.
-- [Audio Joiner](https://sopkit.space/audio-joiner) - Drop two or more audio files, put them in order with the arrow controls, and export the merged result as one WAV track.
+- [Text to Speech](https://sopkit.space/text-to-speech/) - Choose a voice, set the speed and pitch sliders, then hear the passage read back with play, pause and resume controls.
+- [Audio Tools](https://sopkit.space/audio-tools/) - Compress and convert audio files between formats.
+- [Guitar Tuner](https://sopkit.space/guitar-tuner/) - Free online guitar tuner. Uses your microphone to tune your guitar accurately.
+- [Audio Equalizer](https://sopkit.space/audio-equalizer/) - Adjust audio frequencies with a 10-band graphic equalizer. Choose from presets like Rock, Pop, Jazz, and Vocal Boost, or customize your own profile. Free and private browser-based processing.
+- [Audio Joiner](https://sopkit.space/audio-joiner/) - Drop two or more audio files, put them in order with the arrow controls, and export the merged result as one WAV track.
 
 ### Developer Tools
 
-- [DevSpeed Code Typing Speed Test](https://sopkit.space/dev-speed) - Interactive developer typing speed test and symbol benchmark across TypeScript, Python, Rust, Go, and SQL with real-time stats, WPM/CPM, and shareable score badges.
-- [System Architecture Canvas](https://sopkit.space/architecture-canvas) - Visual drag-and-drop cloud and microservice system design visualizer with real-time latency simulation and one-click Mermaid.js export.
-- [UUID/GUID Generator](https://sopkit.space/uuid-generator) - Generate unique UUID v4 and GUID strings instantly for your applications and databases.
-- [URL Slug Generator](https://sopkit.space/slug-generator) - Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages.
-- [JSON to TypeScript Interface](https://sopkit.space/json-to-typescript) - Convert JSON objects into clean TypeScript interfaces or type definitions automatically.
-- [SQL Formatter & Beautifier](https://sopkit.space/sql-formatter) - Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.
-- [HTML Minifier](https://sopkit.space/html-minifier) - Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.
-- [User Agent Parser](https://sopkit.space/user-agent-parser) - Parse any User Agent string to detect Browser, OS, and Engine details instantly.
-- [YAML to JSON Converter](https://sopkit.space/yaml-to-json-converter) - Convert YAML configurations to clean JSON structures instantly. Safe & secure.
-- [JSON to YAML Converter](https://sopkit.space/json-to-yaml-converter) - Turn a JSON document into two-space YAML for Kubernetes manifests or app config, then copy it out or save the result as output.yaml.
-- [HTML to XML Entities Converter](https://sopkit.space/html-to-xml-entities) - Switch between escape and unescape to turn angle brackets, ampersands and quotes into XML entities, or entities back into markup.
-- [CSS Border Radius Generator](https://sopkit.space/css-border-radius-generator) - Generate CSS border-radius rules interactively with live shape previews and webkit/moz prefixes.
-- [Crontab Expression Generator](https://sopkit.space/crontab-generator) - Easily create and validate cron job expressions with our interactive visual generator.
-- [XML Formatter & Beautifier](https://sopkit.space/xml-formatter) - Clean and format messy XML data into a readable hierarchical structure.
-- [HTML Entity Encoder/Decoder](https://sopkit.space/html-entity-encoder) - Encode or decode HTML entities to prevent XSS or display special characters safely.
-- [Random Name Generator](https://sopkit.space/random-name-generator) - Generate random names for characters, personas, or test data with gender and niche options.
-- [Binary to Hex Converter](https://sopkit.space/binary-to-hex-converter) - Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
-- [JWT Decoder & Debugger](https://sopkit.space/jwt-decoder) - Paste a JWT to split it into header, payload and signature and read the exp claim, shown as expired or valid in seconds, minutes or hours.
-- [API Key Tester Suite](https://sopkit.space/api-key-tester) - Secure, client-side, browser-based API credentials validators for developers. Verify your OpenAI, Gemini, DeepSeek, Stripe, and other API keys instantly.
-- [Amazon SES API Key Tester](https://sopkit.space/api-key-tester/amazon-ses) - Safely validate your Amazon SES API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Anthropic Claude API Key Tester](https://sopkit.space/api-key-tester/anthropic) - Safely validate your Anthropic Claude API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [ASCII to Binary Converter](https://sopkit.space/ascii-to-binary-converter) - Convert ASCII text to binary code instantly. Our free online converter is perfect for computer science students, developers, and hobbyists. Fast, secure, and browser-based.
-- [ASCII to Text Converter](https://sopkit.space/ascii-to-text-converter) - Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks.
-- [Attio API Key Tester](https://sopkit.space/api-key-tester/attio) - Safely validate your Attio API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Binary to ASCII Converter](https://sopkit.space/binary-to-ascii-converter) - Convert 8-bit binary groups into ASCII letters, digits and punctuation, handling spaced octets or a single unbroken bit run and letting you swap direction.
-- [Binary to Decimal Converter](https://sopkit.space/binary-to-decimal-converter) - Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in seconds.
-- [Binary to Octal Converter](https://sopkit.space/binary-to-octal-converter) - Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students.
-- [Binary to Text Converter](https://sopkit.space/binary-to-text-converter) - Recover readable text from raw binary bytes: paste 8-bit groups separated by spaces, commas or nothing at all and copy the decoded message.
-- [Brevo API Key Tester](https://sopkit.space/api-key-tester/brevo) - Safely validate your Brevo API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Clearbit API Key Tester](https://sopkit.space/api-key-tester/clearbit) - Safely validate your Clearbit API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Cohere API Key Tester](https://sopkit.space/api-key-tester/cohere) - Safely validate your Cohere API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Coresignal API Key Tester](https://sopkit.space/api-key-tester/coresignal) - Safely validate your Coresignal API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Crunchbase API Key Tester](https://sopkit.space/api-key-tester/crunchbase) - Safely validate your Crunchbase API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [CSS Beautifier](https://sopkit.space/css-beautifier) - Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for better maintenance. Fast and secure.
-- [CSS Minifier](https://sopkit.space/css-minifier) - Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments instantly. Privacy-focused.
-- [CSV to JSON Converter](https://sopkit.space/csv-to-json-converter) - Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web applications and APIs.
-- [Data Axle API Key Tester](https://sopkit.space/api-key-tester/data-axle) - Safely validate your Data Axle API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Datanyze API Key Tester](https://sopkit.space/api-key-tester/datanyze) - Safely validate your Datanyze API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Decimal to Binary Converter](https://sopkit.space/decimal-to-binary-converter) - Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fast, secure, and accurate.
-- [Decimal to HEX Converter](https://sopkit.space/decimal-to-hex-converter) - Transform decimal numbers into hexadecimal format instantly. Our free online tool is perfect for web development, low-level programming, and color code analysis. Fast and private.
-- [Decimal to Octal Converter](https://sopkit.space/decimal-to-octal-converter) - Convert base-10 integers into base-8 octal notation live, choose how the output is delimited, and flip the direction to turn octal back into decimal.
-- [Decimal to Text Converter](https://sopkit.space/decimal-to-text-converter) - Turn space-separated decimal code points back into letters and punctuation, recovering text from numeric dumps, packet captures and old exports.
-- [DeepSeek API Key Tester](https://sopkit.space/api-key-tester/deepseek) - Safely validate your DeepSeek API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Demandbase API Key Tester](https://sopkit.space/api-key-tester/demandbase) - Safely validate your Demandbase API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Enrich API Key Tester](https://sopkit.space/api-key-tester/enrich) - Safely validate your Enrich API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Freshdesk API Key Tester](https://sopkit.space/api-key-tester/freshdesk) - Safely validate your Freshdesk API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [FullContact API Key Tester](https://sopkit.space/api-key-tester/fullcontact) - Safely validate your FullContact API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Google Gemini API Key Tester](https://sopkit.space/api-key-tester/google-gemini) - Safely validate your Google Gemini API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Groq API Key Tester](https://sopkit.space/api-key-tester/groq) - Safely validate your Groq API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [HEX to Binary Converter](https://sopkit.space/hex-to-binary-converter) - Transform hexadecimal values into binary code instantly. Our free online HEX to Binary converter is perfect for developers, hardware engineers, and technical students. Fast and secure.
-- [HEX to Decimal Converter](https://sopkit.space/hex-to-decimal-converter) - Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address analysis.
-- [HEX to Octal Converter](https://sopkit.space/hex-to-octal-converter) - Translate base-16 values such as FF, A0 or 7F into base-8 octal live, with delimiter options and a swap control for octal-to-hex work.
-- [HEX to Text Converter](https://sopkit.space/hex-to-text-converter) - Convert hexadecimal strings back to readable text instantly. Our free online HEX to Text tool is perfect for decoding data, debugging, and discovering hidden text streams.
-- [HG Insights API Key Tester](https://sopkit.space/api-key-tester/hg-insights) - Safely validate your HG Insights API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [HTML Beautifier](https://sopkit.space/html-beautifier) - Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web development.
-- [HTML Decoder](https://sopkit.space/html-decoder) - Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging and content cleaning.
-- [HTML Encoder](https://sopkit.space/html-encoder) - Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encoded strings.
-- [HubSpot API Key Tester](https://sopkit.space/api-key-tester/hubspot) - Safely validate your HubSpot API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Intercom API Key Tester](https://sopkit.space/api-key-tester/intercom) - Safely validate your Intercom API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [JavaScript Beautifier](https://sopkit.space/javascript-beautifier) - Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex scripts easily.
-- [JavaScript DeObfuscator](https://sopkit.space/javascript-deobfuscator) - Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and debugging.
-- [JavaScript Minifier](https://sopkit.space/javascript-minifier) - Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving functionality.
-- [JavaScript Obfuscator](https://sopkit.space/javascript-obfuscator) - Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent unauthorized script modification.
-- [JSON Formatter](https://sopkit.space/json-formatter) - Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of your code.
-- [JSON Minify](https://sopkit.space/json-minify) - Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly.
-- [JSON to CSV Converter](https://sopkit.space/json-to-csv-converter) - Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables.
-- [JSON to JSON Schema](https://sopkit.space/json-to-json-schema) - Generate a JSON Schema from your JSON data automatically. Our free online tool helps you define validation rules and document your JSON structure for APIs.
-- [JSON to Text Converter](https://sopkit.space/json-to-text-converter) - Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data.
-- [JSON to TSV Converter](https://sopkit.space/json-to-tsv-converter) - Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications.
-- [JSON to XML Converter](https://sopkit.space/json-to-xml-converter) - Convert JSON data to XML format instantly. Our free online tool handles nesting and attributes to ensure a clean transformation for legacy system compatibility.
-- [LeadGenius API Key Tester](https://sopkit.space/api-key-tester/leadgenius) - Safely validate your LeadGenius API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Leadspace API Key Tester](https://sopkit.space/api-key-tester/leadspace) - Safely validate your Leadspace API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Loops API Key Tester](https://sopkit.space/api-key-tester/loops) - Safely validate your Loops API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Lusha API Key Tester](https://sopkit.space/api-key-tester/lusha) - Safely validate your Lusha API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Mailgun API Key Tester](https://sopkit.space/api-key-tester/mailgun) - Safely validate your Mailgun API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Mattermark API Key Tester](https://sopkit.space/api-key-tester/mattermark) - Safely validate your Mattermark API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Melissa API Key Tester](https://sopkit.space/api-key-tester/melissa) - Safely validate your Melissa API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Octal to Binary Converter](https://sopkit.space/octal-to-binary-converter) - Convert octal numbers to binary code instantly. Our free online converter provides fast and accurate base transformations for computer science students and developers.
-- [Octal to Decimal Converter](https://sopkit.space/octal-to-decimal-converter) - Convert octal numbers to decimal (Base-10) instantly. Our free online tool makes it easy to transform numeric bases for programming and mathematical calculations.
-- [Octal to HEX Converter](https://sopkit.space/octal-to-hex-converter) - Transform octal values into hexadecimal format instantly. Our free online converter is perfect for low-level programming and memory address transformations.
-- [Octal to Text Converter](https://sopkit.space/octal-to-text-converter) - Decode octal byte values into readable characters: paste three-digit codes from manifests or escape sequences and read the plain text they spell.
-- [OpenAI API Key Tester](https://sopkit.space/api-key-tester/openai) - Safely validate your OpenAI API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [People Data Labs API Key Tester](https://sopkit.space/api-key-tester/people-data-labs) - Test your People Data Labs API key with the person enrichment endpoint to verify it works correctly. Free online API key tester that runs securely from your browser with no data storage.
-- [Pipedrive API Key Tester](https://sopkit.space/api-key-tester/pipedrive) - Test your Pipedrive API token with the deals endpoint to verify it works. Free online API key tester that runs securely from your browser — no server storage, no data collection.
-- [Pipl API Key Tester](https://sopkit.space/api-key-tester/pipl) - Safely validate your Pipl API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Postmark Server Token Tester](https://sopkit.space/api-key-tester/postmark) - Safely validate your Postmark API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Resend API Key Tester](https://sopkit.space/api-key-tester/resend) - Safely validate your Resend API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [SendGrid API Key Tester](https://sopkit.space/api-key-tester/sendgrid) - Safely validate your SendGrid API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Snov.io API Key Tester](https://sopkit.space/api-key-tester/snov-io) - Safely validate your Snov.io API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [SparkPost API Key Tester](https://sopkit.space/api-key-tester/sparkpost) - Test your SparkPost API key with the transmissions endpoint to verify it works. Free online API key validator that runs securely from your browser — no server storage, no data collection.
-- [Stripe API Key Tester](https://sopkit.space/api-key-tester/stripe) - Safely validate your Stripe API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Text to ASCII Converter](https://sopkit.space/text-to-ascii-converter) - Convert plain text into ASCII character codes instantly. Our free online tool provides decimal ASCII values for every character in your input string. Fast and secure.
-- [Text to Binary Converter](https://sopkit.space/text-to-binary-converter) - Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary messages.
-- [Text to Decimal Converter](https://sopkit.space/text-to-decimal-converter) - Convert text characters into their decimal numeric equivalents instantly. Our free online tool is useful for debugging character encoding and understanding data representations.
-- [Text to HEX Converter](https://sopkit.space/text-to-hex-converter) - Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data analysis.
-- [Text to Octal Converter](https://sopkit.space/text-to-octal-converter) - Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analysis.
-- [TSV to JSON Converter](https://sopkit.space/tsv-to-json-converter) - Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API development.
-- [Twilio API Key Tester](https://sopkit.space/api-key-tester/twilio) - Safely validate your Twilio API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [XML to JSON Converter](https://sopkit.space/xml-to-json-converter) - Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for web apps.
-- [Zendesk API Key Tester](https://sopkit.space/api-key-tester/zendesk) - Safely validate your Zendesk API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [ZoomInfo API Key Tester](https://sopkit.space/api-key-tester/zoominfo) - Safely validate your ZoomInfo API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
-- [Base64 Tool](https://sopkit.space/base64-tool) - Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text format.
-- [CSS Gradient Generator](https://sopkit.space/css-gradient-generator) - Design smooth linear, radial, and conic CSS gradients with live visual preview, color stop controls, and ready-to-copy code snippets.
-- [CSS Shadow Generator](https://sopkit.space/css-shadow-generator) - Generate modern CSS box-shadows, elevation layers, and text-shadow effects with visual sliders and instant CSS code output.
-- [Code Formatter](https://sopkit.space/code-formatter) - Beautify, format, and indent HTML, CSS, JavaScript, JSON, and SQL source code cleanly with customizable tab indentation.
-- [JavaScript Notebook](https://sopkit.space/javascript-notebook) - Interactively write, run, and debug JavaScript code with a Jupyter-style notebook. Supports multi-cell editing, console output, async/await, and ES2024 features. 100% client-side execution.
-- [CSS Glassmorphism Generator](https://sopkit.space/css-glassmorphism-generator) - Create modern frosted glass UI elements with real-time blur, opacity, saturation, and border controls. Copy instant CSS and Tailwind CSS classes with zero server processing.
-- [Markdown Table Generator](https://sopkit.space/markdown-table-generator) - Easily generate clean, formatted Markdown tables using an interactive spreadsheet visual editor. Customize column alignment, add rows, and copy syntax instantly.
-- [JSON Diff Checker](https://sopkit.space/json-diff-checker) - Compare two JSON objects side-by-side to highlight added, removed, and modified keys with precision. Format, validate, and debug JSON payloads entirely in browser memory.
-- [IP Subnet Calculator](https://sopkit.space/ip-subnet-calculator) - Calculate IPv4 subnet masks, CIDR network ranges, usable host IPs, broadcast addresses, and wildcard masks instantly with 100% local browser execution.
-- [FFmpeg Command Generator](https://sopkit.space/ffmpeg-command-generator) - Generate FFmpeg commands for video conversion, compression, trimming, GIF creation, audio extraction, and common encoding workflows with codec, bitrate, resolution, and filter controls.
+- [DevSpeed Code Typing Speed Test](https://sopkit.space/dev-speed/) - Interactive developer typing speed test and symbol benchmark across TypeScript, Python, Rust, Go, and SQL with real-time stats, WPM/CPM, and shareable score badges.
+- [System Architecture Canvas](https://sopkit.space/architecture-canvas/) - Visual drag-and-drop cloud and microservice system design visualizer with real-time latency simulation and one-click Mermaid.js export.
+- [UUID/GUID Generator](https://sopkit.space/uuid-generator/) - Generate unique UUID v4 and GUID strings instantly for your applications and databases.
+- [URL Slug Generator](https://sopkit.space/slug-generator/) - Convert any text into a SEO-friendly URL slug. Perfect for blog posts and web pages.
+- [JSON to TypeScript Interface](https://sopkit.space/json-to-typescript/) - Convert JSON objects into clean TypeScript interfaces or type definitions automatically.
+- [SQL Formatter & Beautifier](https://sopkit.space/sql-formatter/) - Format and beautify your SQL queries for better readability. Supports MySQL, PostgreSQL, and more.
+- [HTML Minifier](https://sopkit.space/html-minifier/) - Compress and minify your HTML code to improve website speed. Our free online tool removes unnecessary whitespace, comments, and line breaks for faster page load times.
+- [User Agent Parser](https://sopkit.space/user-agent-parser/) - Parse any User Agent string to detect Browser, OS, and Engine details instantly.
+- [YAML to JSON Converter](https://sopkit.space/yaml-to-json-converter/) - Convert YAML configurations to clean JSON structures instantly. Safe & secure.
+- [JSON to YAML Converter](https://sopkit.space/json-to-yaml-converter/) - Turn a JSON document into two-space YAML for Kubernetes manifests or app config, then copy it out or save the result as output.yaml.
+- [HTML to XML Entities Converter](https://sopkit.space/html-to-xml-entities/) - Switch between escape and unescape to turn angle brackets, ampersands and quotes into XML entities, or entities back into markup.
+- [CSS Border Radius Generator](https://sopkit.space/css-border-radius-generator/) - Generate CSS border-radius rules interactively with live shape previews and webkit/moz prefixes.
+- [Crontab Expression Generator](https://sopkit.space/crontab-generator/) - Easily create and validate cron job expressions with our interactive visual generator.
+- [XML Formatter & Beautifier](https://sopkit.space/xml-formatter/) - Clean and format messy XML data into a readable hierarchical structure.
+- [HTML Entity Encoder/Decoder](https://sopkit.space/html-entity-encoder/) - Encode or decode HTML entities to prevent XSS or display special characters safely.
+- [Random Name Generator](https://sopkit.space/random-name-generator/) - Generate random names for characters, personas, or test data with gender and niche options.
+- [Binary to Hex Converter](https://sopkit.space/binary-to-hex-converter/) - Transform binary code into hexadecimal format instantly. Our free online tool is perfect for low-level programming, data analysis, and memory debugging. Fast and secure.
+- [JWT Decoder & Debugger](https://sopkit.space/jwt-decoder/) - Paste a JWT to split it into header, payload and signature and read the exp claim, shown as expired or valid in seconds, minutes or hours.
+- [API Key Tester Suite](https://sopkit.space/api-key-tester/) - Secure, client-side, browser-based API credentials validators for developers. Verify your OpenAI, Gemini, DeepSeek, Stripe, and other API keys instantly.
+- [Amazon SES API Key Tester](https://sopkit.space/api-key-tester/amazon-ses/) - Safely validate your Amazon SES API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Anthropic Claude API Key Tester](https://sopkit.space/api-key-tester/anthropic/) - Safely validate your Anthropic Claude API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [ASCII to Binary Converter](https://sopkit.space/ascii-to-binary-converter/) - Convert ASCII text to binary code instantly. Our free online converter is perfect for computer science students, developers, and hobbyists. Fast, secure, and browser-based.
+- [ASCII to Text Converter](https://sopkit.space/ascii-to-text-converter/) - Convert ASCII character codes back to readable text instantly. Our free online tool makes it easy to decode ASCII sequences for development and debugging tasks.
+- [Attio API Key Tester](https://sopkit.space/api-key-tester/attio/) - Safely validate your Attio API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Binary to ASCII Converter](https://sopkit.space/binary-to-ascii-converter/) - Convert 8-bit binary groups into ASCII letters, digits and punctuation, handling spaced octets or a single unbroken bit run and letting you swap direction.
+- [Binary to Decimal Converter](https://sopkit.space/binary-to-decimal-converter/) - Convert binary numbers to decimal (Base-10) instantly. Our free online converter helps you with computer science calculations and binary data analysis in seconds.
+- [Binary to Octal Converter](https://sopkit.space/binary-to-octal-converter/) - Convert binary numbers to octal format instantly. Our free online converter provides quick and accurate base transformations for developers and technical students.
+- [Binary to Text Converter](https://sopkit.space/binary-to-text-converter/) - Recover readable text from raw binary bytes: paste 8-bit groups separated by spaces, commas or nothing at all and copy the decoded message.
+- [Brevo API Key Tester](https://sopkit.space/api-key-tester/brevo/) - Safely validate your Brevo API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Clearbit API Key Tester](https://sopkit.space/api-key-tester/clearbit/) - Safely validate your Clearbit API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Cohere API Key Tester](https://sopkit.space/api-key-tester/cohere/) - Safely validate your Cohere API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Coresignal API Key Tester](https://sopkit.space/api-key-tester/coresignal/) - Safely validate your Coresignal API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Crunchbase API Key Tester](https://sopkit.space/api-key-tester/crunchbase/) - Safely validate your Crunchbase API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [CSS Beautifier](https://sopkit.space/css-beautifier/) - Format and prettify your CSS code instantly with our free online CSS Beautifier. Improve code readability, fix indentation, and organize your stylesheets for better maintenance. Fast and secure.
+- [CSS Minifier](https://sopkit.space/css-minifier/) - Compress and minify your CSS files to reduce page load times and improve website performance. Our free online tool removes unnecessary whitespace and comments instantly. Privacy-focused.
+- [CSV to JSON Converter](https://sopkit.space/csv-to-json-converter/) - Convert CSV files to JSON format instantly. Our free online converter makes it easy to transform spreadsheet data into developer-friendly JSON code for web applications and APIs.
+- [Data Axle API Key Tester](https://sopkit.space/api-key-tester/data-axle/) - Safely validate your Data Axle API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Datanyze API Key Tester](https://sopkit.space/api-key-tester/datanyze/) - Safely validate your Datanyze API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Decimal to Binary Converter](https://sopkit.space/decimal-to-binary-converter/) - Convert decimal numbers (Base-10) to binary code (Base-2) instantly. Our free online converter is perfect for students, developers, and data analysis tasks. Fast, secure, and accurate.
+- [Decimal to HEX Converter](https://sopkit.space/decimal-to-hex-converter/) - Transform decimal numbers into hexadecimal format instantly. Our free online tool is perfect for web development, low-level programming, and color code analysis. Fast and private.
+- [Decimal to Octal Converter](https://sopkit.space/decimal-to-octal-converter/) - Convert base-10 integers into base-8 octal notation live, choose how the output is delimited, and flip the direction to turn octal back into decimal.
+- [Decimal to Text Converter](https://sopkit.space/decimal-to-text-converter/) - Turn space-separated decimal code points back into letters and punctuation, recovering text from numeric dumps, packet captures and old exports.
+- [DeepSeek API Key Tester](https://sopkit.space/api-key-tester/deepseek/) - Safely validate your DeepSeek API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Demandbase API Key Tester](https://sopkit.space/api-key-tester/demandbase/) - Safely validate your Demandbase API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Enrich API Key Tester](https://sopkit.space/api-key-tester/enrich/) - Safely validate your Enrich API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Freshdesk API Key Tester](https://sopkit.space/api-key-tester/freshdesk/) - Safely validate your Freshdesk API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [FullContact API Key Tester](https://sopkit.space/api-key-tester/fullcontact/) - Safely validate your FullContact API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Google Gemini API Key Tester](https://sopkit.space/api-key-tester/google-gemini/) - Safely validate your Google Gemini API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Groq API Key Tester](https://sopkit.space/api-key-tester/groq/) - Safely validate your Groq API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [HEX to Binary Converter](https://sopkit.space/hex-to-binary-converter/) - Transform hexadecimal values into binary code instantly. Our free online HEX to Binary converter is perfect for developers, hardware engineers, and technical students. Fast and secure.
+- [HEX to Decimal Converter](https://sopkit.space/hex-to-decimal-converter/) - Convert hexadecimal numbers to decimal (Base-10) instantly. Our free online tool provides quick and accurate base conversions for programming and memory address analysis.
+- [HEX to Octal Converter](https://sopkit.space/hex-to-octal-converter/) - Translate base-16 values such as FF, A0 or 7F into base-8 octal live, with delimiter options and a swap control for octal-to-hex work.
+- [HEX to Text Converter](https://sopkit.space/hex-to-text-converter/) - Convert hexadecimal strings back to readable text instantly. Our free online HEX to Text tool is perfect for decoding data, debugging, and discovering hidden text streams.
+- [HG Insights API Key Tester](https://sopkit.space/api-key-tester/hg-insights/) - Safely validate your HG Insights API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [HTML Beautifier](https://sopkit.space/html-beautifier/) - Format and prettify your HTML code instantly. Our free online HTML Beautifier fixes indentation, improves readability, and cleans up messy markup for better web development.
+- [HTML Decoder](https://sopkit.space/html-decoder/) - Decode HTML entities back to their original characters instantly. Our free online tool converts &amp; and similar entities into readable text for easy debugging and content cleaning.
+- [HTML Encoder](https://sopkit.space/html-encoder/) - Encode text into HTML entities instantly for secure web display. Our free online tool protects your markup by converting special characters into safe HTML-encoded strings.
+- [HubSpot API Key Tester](https://sopkit.space/api-key-tester/hubspot/) - Safely validate your HubSpot API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Intercom API Key Tester](https://sopkit.space/api-key-tester/intercom/) - Safely validate your Intercom API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [JavaScript Beautifier](https://sopkit.space/javascript-beautifier/) - Format and prettify your JavaScript code instantly. Our free online JS Beautifier improves code readability, fixes indentation, and helps you understand complex scripts easily.
+- [JavaScript DeObfuscator](https://sopkit.space/javascript-deobfuscator/) - Make obfuscated JavaScript code readable again instantly. Our free online DeObfuscator reverses common obfuscation techniques to help with code analysis and debugging.
+- [JavaScript Minifier](https://sopkit.space/javascript-minifier/) - Compress and minify your JavaScript files to reduce payload size and speed up your website. Our free online tool removes unnecessary code while preserving functionality.
+- [JavaScript Obfuscator](https://sopkit.space/javascript-obfuscator/) - Protect your JavaScript code by making it difficult to read and reverse-engineer. Our free online Obfuscator helps secure your intellectual property and prevent unauthorized script modification.
+- [JSON Formatter](https://sopkit.space/json-formatter/) - Format and beautify your JSON data instantly for better readability. Our free online tool validates your JSON structure and provides a clean, indented view of your code.
+- [JSON Minify](https://sopkit.space/json-minify/) - Compress and minify your JSON data to reduce its size for web transmission. Our free online tool removes all unnecessary whitespace and comments instantly.
+- [JSON to CSV Converter](https://sopkit.space/json-to-csv-converter/) - Convert JSON data to CSV format instantly. Our free online converter makes it easy to transform complex JSON structures into simple spreadsheet-ready tables.
+- [JSON to JSON Schema](https://sopkit.space/json-to-json-schema/) - Generate a JSON Schema from your JSON data automatically. Our free online tool helps you define validation rules and document your JSON structure for APIs.
+- [JSON to Text Converter](https://sopkit.space/json-to-text-converter/) - Convert JSON data into readable plain text instantly. Our free online tool is perfect for extracting values and creating human-readable documentation from raw data.
+- [JSON to TSV Converter](https://sopkit.space/json-to-tsv-converter/) - Convert JSON data to Tab-Separated Values (TSV) format instantly. Our free online converter helps you prepare data for Excel and other spreadsheet applications.
+- [JSON to XML Converter](https://sopkit.space/json-to-xml-converter/) - Convert JSON data to XML format instantly. Our free online tool handles nesting and attributes to ensure a clean transformation for legacy system compatibility.
+- [LeadGenius API Key Tester](https://sopkit.space/api-key-tester/leadgenius/) - Safely validate your LeadGenius API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Leadspace API Key Tester](https://sopkit.space/api-key-tester/leadspace/) - Safely validate your Leadspace API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Loops API Key Tester](https://sopkit.space/api-key-tester/loops/) - Safely validate your Loops API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Lusha API Key Tester](https://sopkit.space/api-key-tester/lusha/) - Safely validate your Lusha API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Mailgun API Key Tester](https://sopkit.space/api-key-tester/mailgun/) - Safely validate your Mailgun API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Mattermark API Key Tester](https://sopkit.space/api-key-tester/mattermark/) - Safely validate your Mattermark API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Melissa API Key Tester](https://sopkit.space/api-key-tester/melissa/) - Safely validate your Melissa API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Octal to Binary Converter](https://sopkit.space/octal-to-binary-converter/) - Convert octal numbers to binary code instantly. Our free online converter provides fast and accurate base transformations for computer science students and developers.
+- [Octal to Decimal Converter](https://sopkit.space/octal-to-decimal-converter/) - Convert octal numbers to decimal (Base-10) instantly. Our free online tool makes it easy to transform numeric bases for programming and mathematical calculations.
+- [Octal to HEX Converter](https://sopkit.space/octal-to-hex-converter/) - Transform octal values into hexadecimal format instantly. Our free online converter is perfect for low-level programming and memory address transformations.
+- [Octal to Text Converter](https://sopkit.space/octal-to-text-converter/) - Decode octal byte values into readable characters: paste three-digit codes from manifests or escape sequences and read the plain text they spell.
+- [OpenAI API Key Tester](https://sopkit.space/api-key-tester/openai/) - Safely validate your OpenAI API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [People Data Labs API Key Tester](https://sopkit.space/api-key-tester/people-data-labs/) - Test your People Data Labs API key with the person enrichment endpoint to verify it works correctly. Free online API key tester that runs securely from your browser with no data storage.
+- [Pipedrive API Key Tester](https://sopkit.space/api-key-tester/pipedrive/) - Test your Pipedrive API token with the deals endpoint to verify it works. Free online API key tester that runs securely from your browser — no server storage, no data collection.
+- [Pipl API Key Tester](https://sopkit.space/api-key-tester/pipl/) - Safely validate your Pipl API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Postmark Server Token Tester](https://sopkit.space/api-key-tester/postmark/) - Safely validate your Postmark API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Resend API Key Tester](https://sopkit.space/api-key-tester/resend/) - Safely validate your Resend API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [SendGrid API Key Tester](https://sopkit.space/api-key-tester/sendgrid/) - Safely validate your SendGrid API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Snov.io API Key Tester](https://sopkit.space/api-key-tester/snov-io/) - Safely validate your Snov.io API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [SparkPost API Key Tester](https://sopkit.space/api-key-tester/sparkpost/) - Test your SparkPost API key with the transmissions endpoint to verify it works. Free online API key validator that runs securely from your browser — no server storage, no data collection.
+- [Stripe API Key Tester](https://sopkit.space/api-key-tester/stripe/) - Safely validate your Stripe API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Text to ASCII Converter](https://sopkit.space/text-to-ascii-converter/) - Convert plain text into ASCII character codes instantly. Our free online tool provides decimal ASCII values for every character in your input string. Fast and secure.
+- [Text to Binary Converter](https://sopkit.space/text-to-binary-converter/) - Translate text into binary code (0s and 1s) instantly. Our free online converter is perfect for learning how computers represent data and creating secret binary messages.
+- [Text to Decimal Converter](https://sopkit.space/text-to-decimal-converter/) - Convert text characters into their decimal numeric equivalents instantly. Our free online tool is useful for debugging character encoding and understanding data representations.
+- [Text to HEX Converter](https://sopkit.space/text-to-hex-converter/) - Convert plain text into hexadecimal format instantly. Our free online tool provides a clean hex representation of your input string for development and data analysis.
+- [Text to Octal Converter](https://sopkit.space/text-to-octal-converter/) - Convert text into octal numeric values instantly. Our free online converter provides base-8 representations for every character in your text for technical analysis.
+- [TSV to JSON Converter](https://sopkit.space/tsv-to-json-converter/) - Convert Tab-Separated Values (TSV) into JSON format instantly. Our free online tool makes it easy to transform structured data for web applications and API development.
+- [Twilio API Key Tester](https://sopkit.space/api-key-tester/twilio/) - Safely validate your Twilio API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [XML to JSON Converter](https://sopkit.space/xml-to-json-converter/) - Convert XML documents to JSON format instantly. Our free online converter handles complex XML hierarchies to provide clean, developer-friendly JSON output for web apps.
+- [Zendesk API Key Tester](https://sopkit.space/api-key-tester/zendesk/) - Safely validate your Zendesk API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [ZoomInfo API Key Tester](https://sopkit.space/api-key-tester/zoominfo/) - Safely validate your ZoomInfo API credentials and test endpoint connectivity in real-time with 100% client-side browser execution.
+- [Base64 Tool](https://sopkit.space/base64-tool/) - Encode and decode Base64 strings instantly with our free online tool. Perfect for web development, data transmission, and working with binary data in text format.
+- [CSS Gradient Generator](https://sopkit.space/css-gradient-generator/) - Design smooth linear, radial, and conic CSS gradients with live visual preview, color stop controls, and ready-to-copy code snippets.
+- [CSS Shadow Generator](https://sopkit.space/css-shadow-generator/) - Generate modern CSS box-shadows, elevation layers, and text-shadow effects with visual sliders and instant CSS code output.
+- [Code Formatter](https://sopkit.space/code-formatter/) - Beautify, format, and indent HTML, CSS, JavaScript, JSON, and SQL source code cleanly with customizable tab indentation.
+- [JavaScript Notebook](https://sopkit.space/javascript-notebook/) - Interactively write, run, and debug JavaScript code with a Jupyter-style notebook. Supports multi-cell editing, console output, async/await, and ES2024 features. 100% client-side execution.
+- [CSS Glassmorphism Generator](https://sopkit.space/css-glassmorphism-generator/) - Create modern frosted glass UI elements with real-time blur, opacity, saturation, and border controls. Copy instant CSS and Tailwind CSS classes with zero server processing.
+- [Markdown Table Generator](https://sopkit.space/markdown-table-generator/) - Easily generate clean, formatted Markdown tables using an interactive spreadsheet visual editor. Customize column alignment, add rows, and copy syntax instantly.
+- [JSON Diff Checker](https://sopkit.space/json-diff-checker/) - Compare two JSON objects side-by-side to highlight added, removed, and modified keys with precision. Format, validate, and debug JSON payloads entirely in browser memory.
+- [IP Subnet Calculator](https://sopkit.space/ip-subnet-calculator/) - Calculate IPv4 subnet masks, CIDR network ranges, usable host IPs, broadcast addresses, and wildcard masks instantly with 100% local browser execution.
+- [FFmpeg Command Generator](https://sopkit.space/ffmpeg-command-generator/) - Generate FFmpeg commands for video conversion, compression, trimming, GIF creation, audio extraction, and common encoding workflows with codec, bitrate, resolution, and filter controls.
 
 ### Utility Tools
 
-- [AdSense Calculator](https://sopkit.space/adsense-calculator) - Model AdSense revenue from pageviews, ad slots per page, fill rate, CTR and CPC, with daily, monthly and yearly totals plus pageviews needed per goal.
-- [Age Calculator](https://sopkit.space/age-calculator) - Work out age in exact years, months and days as of any date, plus total days lived, the weekday you were born and a countdown to the next birthday.
-- [Angle Converter](https://sopkit.space/angle-converter) - Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate.
-- [Apparent Power Converter](https://sopkit.space/apparent-power-converter) - Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.
-- [Area Converter](https://sopkit.space/area-converter) - Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design projects.
-- [Average Calculator](https://sopkit.space/average-calculator) - Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in seconds.
-- [Base64 Decode](https://sopkit.space/base64-decode) - Paste a Base64 string and watch it turn back into readable text as you type, including accented and non-Latin characters, then copy or save the result.
-- [Charge Converter](https://sopkit.space/charge-converter) - Convert between coulombs, millicoulombs, and other electrical charge units instantly. Our free online tool provides quick and accurate physics base transformations.
-- [Confidence Interval Calculator](https://sopkit.space/confidence-interval-calculator) - Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research.
-- [Convert SRT to VTT](https://sopkit.space/convert-srt-to-vtt) - Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms.
-- [Convert VTT to SRT](https://sopkit.space/convert-vtt-to-srt) - Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players.
-- [CPM Calculator](https://sopkit.space/cpm-calculator) - Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency.
-- [Credit Card Generator](https://sopkit.space/credit-card-generator) - Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without being real cards.
-- [Credit Card Validator](https://sopkit.space/credit-card-validator) - Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testing purposes.
-- [Currency Converter](https://sopkit.space/currency-converter) - Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planning.
-- [Current Converter](https://sopkit.space/current-converter) - Convert between amperes, milliamperes, and other electrical current units instantly. Our free online tool is perfect for electronics and electrical engineering tasks.
-- [Digital Converter](https://sopkit.space/digital-converter) - Convert between bytes, kilobytes, megabytes, and gigabytes instantly. Our free online tool helps you understand data storage and file sizes in seconds.
-- [Disclaimer Generator](https://sopkit.space/disclaimer-generator) - Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements.
-- [Discount Calculator](https://sopkit.space/discount-calculator) - Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping.
-- [DNS Records Checker](https://sopkit.space/dns-records-checker) - Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issues.
-- [Domain to IP Converter](https://sopkit.space/domain-to-ip-converter) - Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues.
-- [Energy Converter](https://sopkit.space/energy-converter) - Enter an energy value in joules, kilojoules, calories, kilocalories, kWh or BTU and read all of the other units side by side in one view.
-- [FAQ Schema Generator](https://sopkit.space/faq-schema-generator) - Generate valid FAQPage JSON-LD schema for rich Google results. Paste Q&As, copy code — free.
-- [Frequency Converter](https://sopkit.space/frequency-converter) - Convert a frequency between Hz, kHz, MHz and RPM as you type, covering audio gear, radio bands and motor nameplate figures.
-- [GST Calculator](https://sopkit.space/gst-calculator) - Add or remove 5%, 12%, 18% and 28% GST for Indian billing. Inclusive-exclusive math — free.
-- [HEX to RGB Converter](https://sopkit.space/hex-to-rgb-converter) - Convert a #RRGGBB colour into an rgb() triplet, watch the swatch update and copy the values into CSS, canvas calls or a design tool.
-- [Htaccess Redirect Generator](https://sopkit.space/htaccess-redirect-generator) - Generate Apache .htaccess 301 redirect rules without regex pain. HTTP to HTTPS too — free.
-- [Illuminance Converter](https://sopkit.space/illuminance-converter) - Convert illuminance between lux, foot-candles and lumens. Lighting design math — free.
-- [Internet Speed Test](https://sopkit.space/internet-speed-test) - Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.
-- [IP Address Lookup](https://sopkit.space/ip-address-lookup) - Look up your public IP through an external geolocation service: city, region, ISP, ASN, timezone and map coordinates, with a button to open Maps.
-- [Length Converter](https://sopkit.space/length-converter) - Convert length between mm, cm, inches, feet, meters and miles. Everyday math — free.
-- [Loan Calculator](https://sopkit.space/loan-calculator) - Plan loans with EMI, total interest and amortization schedules. Borrow smarter — free.
-- [Margin Calculator](https://sopkit.space/margin-calculator) - Feed in cost and sell price to see the gross margin percentage, useful when quoting, listing or repricing a product or service.
-- [MD5 Generator](https://sopkit.space/md5-generator) - Hash pasted text or a text file with MD5 and see the matching SHA-1, SHA-256, SHA-512 and SHA-3 digests side by side on one screen.
-- [SHA256 Hash Generator](https://sopkit.space/sha256-hash-generator) - Compute a SHA-256 digest from pasted text or an uploaded text file, with SHA-1, SHA-512, SHA-3 and MD5 results shown alongside for comparison.
-- [Number to Roman Numerals](https://sopkit.space/number-to-roman-numerals) - Enter a whole number and get the equivalent in Roman numerals, with a copy button for homework answers, inscriptions or chapter headings.
-- [Pace Converter](https://sopkit.space/pace-converter) - Translate a running pace such as 5:30 per kilometre into minutes per mile or seconds per metre, handy when a training plan uses different units.
-- [Parts Per Converter](https://sopkit.space/parts-per-converter) - Express a concentration as a ratio, percent, ppm or ppb and see the other three forms update together, for dilution and water testing.
-- [Password Generator](https://sopkit.space/password-generator) - Generate cryptographically secure, random passwords with custom lengths, symbols, numbers, and uppercase characters locally on your device.
-- [Paypal Fee Calculator](https://sopkit.space/paypal-fee-calculator) - See exactly what PayPal takes from every sale, domestic and international. Price with fees in mind — free.
-- [Percentage Calculator](https://sopkit.space/percentage-calculator) - Type a part and a whole to see what share the first is of the second, returned as a percentage to four decimal places for quick checks.
-- [Power Converter](https://sopkit.space/power-converter) - Translate watts, kilowatts and mechanical horsepower into one another live, so an engine spec and an appliance label can be compared directly.
-- [Pressure Converter](https://sopkit.space/pressure-converter) - Convert pressure between PSI, bar, kPa, atm and mmHg. Tire and lab math — free.
-- [Privacy Policy Generator](https://sopkit.space/privacy-policy-generator) - Generate a GDPR-friendly privacy policy for your site or app in minutes. Copy-ready — free.
-- [Probability Calculator](https://sopkit.space/probability-calculator) - Plug in a success chance, a number of trials and a target count to read the binomial chance of hitting that count exactly, in scientific notation.
-- [QR Code Generator](https://sopkit.space/qr-code-generator) - Encode a link or text message as a QR code, adjust its size, quiet-zone margin and two colours, then export a PNG or SVG file for print.
-- [Reactive Power Converter](https://sopkit.space/reactive-power-converter) - Convert reactive power between kVAr, MVAr and VAr. Electrical grids simplified — free.
-- [RGB to HEX Converter](https://sopkit.space/rgb-to-hex-converter) - Convert RGB values to HEX codes with live color preview. One-click CSS copy — free.
-- [Sales Tax Calculator](https://sopkit.space/sales-tax-calculator) - Add sales tax to a net amount at any rate you enter, splitting out the tax and gross totals separately for invoices, quotes and pricing work.
-- [Speed Converter](https://sopkit.space/speed-converter) - Move a speed figure between m/s, km/h, mph, knots and feet per second as you type, with the remaining units updating in the same panel.
-- [Temperature Converter](https://sopkit.space/temperature-converter) - Convert Celsius, Fahrenheit and Kelvin with formula shown. Weather and lab — free.
-- [Time Converter](https://sopkit.space/time-converter) - Convert seconds to hours, days to weeks, and across timezones. Schedule math — free.
-- [Torque Converter](https://sopkit.space/torque-converter) - Convert torque between Nm, ft-lb, kg-m and more. Garage and engineering — free.
-- [URL Decode](https://sopkit.space/url-decode) - Read percent-encoded links and query strings as plain text again: decoding happens live as you paste, with a one-click copy of the result.
-- [URL Encode](https://sopkit.space/url-encode) - Escape spaces, accents, slashes and ampersands into percent-encoded form for query strings, emails and analytics tags, with instant output.
-- [URL Opener](https://sopkit.space/url-opener) - Paste a link, review the parsed host, path and query, then launch it in a new tab from the same panel once you know exactly where it goes.
-- [URL Parser](https://sopkit.space/url-parser) - Break an address into protocol, hostname, port, path, query string and fragment so you can see every part of a long link at a glance.
-- [URL Shortener](https://sopkit.space/url-shortener) - Shorten long web URLs into compact, easily shareable links for social media, marketing campaigns, and messages with zero tracking.
-- [UTM Builder](https://sopkit.space/utm-builder) - Build a tracked campaign URL by filling the five utm_ fields: source, medium, campaign, term and content, then copy the finished link.
-- [Voltage Converter](https://sopkit.space/voltage-converter) - Type a voltage in V, mV or kV and read the matching values instantly, helpful for battery packs, sensor datasheets and circuit diagrams.
-- [Volume Converter](https://sopkit.space/volume-converter) - Convert volume between liters, gallons, cups and mL. Cooking and lab — free.
-- [Volumetric Flow Rate Converter](https://sopkit.space/volumetric-flow-rate-converter) - Enter a flow rate in m³/s, L/min or US gallons per minute and see the same quantity expressed in the other units of the preset as you type.
-- [Weight Converter](https://sopkit.space/weight-converter) - Convert weight between kg, pounds, ounces and grams. Gym and shipping — free.
-- [What Is My Browser](https://sopkit.space/what-is-my-browser) - Instantly see your browser name, version, OS and engine. Debug compat — free.
-- [What Is My IP Address](https://sopkit.space/what-is-my-ip-address) - See your public IPv4/IPv6 address with location and ISP. One glance — free.
-- [What Is My Screen Resolution](https://sopkit.space/what-is-my-screen-resolution) - See your screen resolution, viewport and pixel ratio live. Design reference — free.
-- [What Is My User Agent](https://sopkit.space/what-is-my-user-agent) - View your full User-Agent string with parsed browser and OS. Copy ready — free.
-- [Other Tools](https://sopkit.space/other-tools) - Free Other Tools online tool. Fast and secure.
-- [Text Tools](https://sopkit.space/text-tools) - Format, convert, and manipulate text content.
-- [WhatsApp Link Generator](https://sopkit.space/whatsapp-link-generator) - Generate high-converting, customized whatsapp link ideas, copy, and templates. Easily customize and copy results in one click.
-- [QR Code Generator for Business](https://sopkit.space/qr-code-generator-business) - Generate optimized qr code generator for business details. Instantly copy or share customized outputs.
-- [Terms and Conditions Generator](https://sopkit.space/terms-and-conditions-generator) - Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.
+- [AdSense Calculator](https://sopkit.space/adsense-calculator/) - Model AdSense revenue from pageviews, ad slots per page, fill rate, CTR and CPC, with daily, monthly and yearly totals plus pageviews needed per goal.
+- [Age Calculator](https://sopkit.space/age-calculator/) - Work out age in exact years, months and days as of any date, plus total days lived, the weekday you were born and a countdown to the next birthday.
+- [Angle Converter](https://sopkit.space/angle-converter/) - Convert between degrees, radians, gradians, and more instantly. Our free online Angle Converter is perfect for students, engineers, and mathematicians. Fast and accurate.
+- [Apparent Power Converter](https://sopkit.space/apparent-power-converter/) - Convert between volt-amperes (VA), millivolt-amperes, and more instantly. Our free online tool is perfect for electrical engineers and technicians.
+- [Area Converter](https://sopkit.space/area-converter/) - Convert between square meters, square feet, acres, and more instantly. Our free online Area Converter is perfect for real estate, construction, and design projects.
+- [Average Calculator](https://sopkit.space/average-calculator/) - Calculate the mean, median, mode, and range of any dataset instantly. Our free online Average Calculator helps you analyze statistics and numeric data in seconds.
+- [Base64 Decode](https://sopkit.space/base64-decode/) - Paste a Base64 string and watch it turn back into readable text as you type, including accented and non-Latin characters, then copy or save the result.
+- [Charge Converter](https://sopkit.space/charge-converter/) - Convert between coulombs, millicoulombs, and other electrical charge units instantly. Our free online tool provides quick and accurate physics base transformations.
+- [Confidence Interval Calculator](https://sopkit.space/confidence-interval-calculator/) - Calculate the confidence interval for your statistical data instantly. Our free online tool helps you understand data precision and margin of error in your research.
+- [Convert SRT to VTT](https://sopkit.space/convert-srt-to-vtt/) - Convert subtitle files from SRT to VTT format instantly. Our free online tool ensures compatibility with web-based video players and modern streaming platforms.
+- [Convert VTT to SRT](https://sopkit.space/convert-vtt-to-srt/) - Convert subtitle files from VTT to SRT format instantly. Our free online tool makes it easy to use web captions with traditional desktop video players.
+- [CPM Calculator](https://sopkit.space/cpm-calculator/) - Calculate Cost Per Mille (CPM) for your advertising campaigns instantly. Our free online tool helps marketers and creators understand their ad spend and reach efficiency.
+- [Credit Card Generator](https://sopkit.space/credit-card-generator/) - Generate valid dummy credit card numbers for software testing and data validation. Our free online tool provides numbers that pass Luhn algorithm checks without being real cards.
+- [Credit Card Validator](https://sopkit.space/credit-card-validator/) - Check if a credit card number is valid using the Luhn algorithm instantly. Our free online tool helps you verify card formats and identify card types for testing purposes.
+- [Currency Converter](https://sopkit.space/currency-converter/) - Convert currencies with real-time exchange rates instantly. Our free online tool supports all major global currencies for travel, business, and financial planning.
+- [Current Converter](https://sopkit.space/current-converter/) - Convert between amperes, milliamperes, and other electrical current units instantly. Our free online tool is perfect for electronics and electrical engineering tasks.
+- [Digital Converter](https://sopkit.space/digital-converter/) - Convert between bytes, kilobytes, megabytes, and gigabytes instantly. Our free online tool helps you understand data storage and file sizes in seconds.
+- [Disclaimer Generator](https://sopkit.space/disclaimer-generator/) - Create professional disclaimers for your website or app instantly. Our free online generator helps you protect your business and comply with legal requirements.
+- [Discount Calculator](https://sopkit.space/discount-calculator/) - Calculate the final price after discounts and taxes instantly. Our free online tool helps you find the best deals and savings while shopping.
+- [DNS Records Checker](https://sopkit.space/dns-records-checker/) - Retrieve all DNS records (A, MX, TXT, CNAME) for any domain instantly. Our free online tool helps you troubleshoot website hosting and email configuration issues.
+- [Domain to IP Converter](https://sopkit.space/domain-to-ip-converter/) - Find the IP address of any website instantly. Our free online tool helps you identify server locations and troubleshoot network connectivity issues.
+- [Energy Converter](https://sopkit.space/energy-converter/) - Enter an energy value in joules, kilojoules, calories, kilocalories, kWh or BTU and read all of the other units side by side in one view.
+- [FAQ Schema Generator](https://sopkit.space/faq-schema-generator/) - Generate valid FAQPage JSON-LD schema for rich Google results. Paste Q&As, copy code — free.
+- [Frequency Converter](https://sopkit.space/frequency-converter/) - Convert a frequency between Hz, kHz, MHz and RPM as you type, covering audio gear, radio bands and motor nameplate figures.
+- [GST Calculator](https://sopkit.space/gst-calculator/) - Add or remove 5%, 12%, 18% and 28% GST for Indian billing. Inclusive-exclusive math — free.
+- [HEX to RGB Converter](https://sopkit.space/hex-to-rgb-converter/) - Convert a #RRGGBB colour into an rgb() triplet, watch the swatch update and copy the values into CSS, canvas calls or a design tool.
+- [Htaccess Redirect Generator](https://sopkit.space/htaccess-redirect-generator/) - Generate Apache .htaccess 301 redirect rules without regex pain. HTTP to HTTPS too — free.
+- [Illuminance Converter](https://sopkit.space/illuminance-converter/) - Convert illuminance between lux, foot-candles and lumens. Lighting design math — free.
+- [Internet Speed Test](https://sopkit.space/internet-speed-test/) - Check your internet connection speed online free. Measure your download speed, upload speed, and ping instantly.
+- [IP Address Lookup](https://sopkit.space/ip-address-lookup/) - Look up your public IP through an external geolocation service: city, region, ISP, ASN, timezone and map coordinates, with a button to open Maps.
+- [Length Converter](https://sopkit.space/length-converter/) - Convert length between mm, cm, inches, feet, meters and miles. Everyday math — free.
+- [Loan Calculator](https://sopkit.space/loan-calculator/) - Plan loans with EMI, total interest and amortization schedules. Borrow smarter — free.
+- [Margin Calculator](https://sopkit.space/margin-calculator/) - Feed in cost and sell price to see the gross margin percentage, useful when quoting, listing or repricing a product or service.
+- [MD5 Generator](https://sopkit.space/md5-generator/) - Hash pasted text or a text file with MD5 and see the matching SHA-1, SHA-256, SHA-512 and SHA-3 digests side by side on one screen.
+- [SHA256 Hash Generator](https://sopkit.space/sha256-hash-generator/) - Compute a SHA-256 digest from pasted text or an uploaded text file, with SHA-1, SHA-512, SHA-3 and MD5 results shown alongside for comparison.
+- [Number to Roman Numerals](https://sopkit.space/number-to-roman-numerals/) - Enter a whole number and get the equivalent in Roman numerals, with a copy button for homework answers, inscriptions or chapter headings.
+- [Pace Converter](https://sopkit.space/pace-converter/) - Translate a running pace such as 5:30 per kilometre into minutes per mile or seconds per metre, handy when a training plan uses different units.
+- [Parts Per Converter](https://sopkit.space/parts-per-converter/) - Express a concentration as a ratio, percent, ppm or ppb and see the other three forms update together, for dilution and water testing.
+- [Password Generator](https://sopkit.space/password-generator/) - Generate cryptographically secure, random passwords with custom lengths, symbols, numbers, and uppercase characters locally on your device.
+- [Paypal Fee Calculator](https://sopkit.space/paypal-fee-calculator/) - See exactly what PayPal takes from every sale, domestic and international. Price with fees in mind — free.
+- [Percentage Calculator](https://sopkit.space/percentage-calculator/) - Type a part and a whole to see what share the first is of the second, returned as a percentage to four decimal places for quick checks.
+- [Power Converter](https://sopkit.space/power-converter/) - Translate watts, kilowatts and mechanical horsepower into one another live, so an engine spec and an appliance label can be compared directly.
+- [Pressure Converter](https://sopkit.space/pressure-converter/) - Convert pressure between PSI, bar, kPa, atm and mmHg. Tire and lab math — free.
+- [Privacy Policy Generator](https://sopkit.space/privacy-policy-generator/) - Generate a GDPR-friendly privacy policy for your site or app in minutes. Copy-ready — free.
+- [Probability Calculator](https://sopkit.space/probability-calculator/) - Plug in a success chance, a number of trials and a target count to read the binomial chance of hitting that count exactly, in scientific notation.
+- [QR Code Generator](https://sopkit.space/qr-code-generator/) - Encode a link or text message as a QR code, adjust its size, quiet-zone margin and two colours, then export a PNG or SVG file for print.
+- [Reactive Power Converter](https://sopkit.space/reactive-power-converter/) - Convert reactive power between kVAr, MVAr and VAr. Electrical grids simplified — free.
+- [RGB to HEX Converter](https://sopkit.space/rgb-to-hex-converter/) - Convert RGB values to HEX codes with live color preview. One-click CSS copy — free.
+- [Sales Tax Calculator](https://sopkit.space/sales-tax-calculator/) - Add sales tax to a net amount at any rate you enter, splitting out the tax and gross totals separately for invoices, quotes and pricing work.
+- [Speed Converter](https://sopkit.space/speed-converter/) - Move a speed figure between m/s, km/h, mph, knots and feet per second as you type, with the remaining units updating in the same panel.
+- [Temperature Converter](https://sopkit.space/temperature-converter/) - Convert Celsius, Fahrenheit and Kelvin with formula shown. Weather and lab — free.
+- [Time Converter](https://sopkit.space/time-converter/) - Convert seconds to hours, days to weeks, and across timezones. Schedule math — free.
+- [Torque Converter](https://sopkit.space/torque-converter/) - Convert torque between Nm, ft-lb, kg-m and more. Garage and engineering — free.
+- [URL Decode](https://sopkit.space/url-decode/) - Read percent-encoded links and query strings as plain text again: decoding happens live as you paste, with a one-click copy of the result.
+- [URL Encode](https://sopkit.space/url-encode/) - Escape spaces, accents, slashes and ampersands into percent-encoded form for query strings, emails and analytics tags, with instant output.
+- [URL Opener](https://sopkit.space/url-opener/) - Paste a link, review the parsed host, path and query, then launch it in a new tab from the same panel once you know exactly where it goes.
+- [URL Parser](https://sopkit.space/url-parser/) - Break an address into protocol, hostname, port, path, query string and fragment so you can see every part of a long link at a glance.
+- [URL Shortener](https://sopkit.space/url-shortener/) - Shorten long web URLs into compact, easily shareable links for social media, marketing campaigns, and messages with zero tracking.
+- [UTM Builder](https://sopkit.space/utm-builder/) - Build a tracked campaign URL by filling the five utm_ fields: source, medium, campaign, term and content, then copy the finished link.
+- [Voltage Converter](https://sopkit.space/voltage-converter/) - Type a voltage in V, mV or kV and read the matching values instantly, helpful for battery packs, sensor datasheets and circuit diagrams.
+- [Volume Converter](https://sopkit.space/volume-converter/) - Convert volume between liters, gallons, cups and mL. Cooking and lab — free.
+- [Volumetric Flow Rate Converter](https://sopkit.space/volumetric-flow-rate-converter/) - Enter a flow rate in m³/s, L/min or US gallons per minute and see the same quantity expressed in the other units of the preset as you type.
+- [Weight Converter](https://sopkit.space/weight-converter/) - Convert weight between kg, pounds, ounces and grams. Gym and shipping — free.
+- [What Is My Browser](https://sopkit.space/what-is-my-browser/) - Instantly see your browser name, version, OS and engine. Debug compat — free.
+- [What Is My IP Address](https://sopkit.space/what-is-my-ip-address/) - See your public IPv4/IPv6 address with location and ISP. One glance — free.
+- [What Is My Screen Resolution](https://sopkit.space/what-is-my-screen-resolution/) - See your screen resolution, viewport and pixel ratio live. Design reference — free.
+- [What Is My User Agent](https://sopkit.space/what-is-my-user-agent/) - View your full User-Agent string with parsed browser and OS. Copy ready — free.
+- [Other Tools](https://sopkit.space/other-tools/) - Free Other Tools online tool. Fast and secure.
+- [Text Tools](https://sopkit.space/text-tools/) - Format, convert, and manipulate text content.
+- [WhatsApp Link Generator](https://sopkit.space/whatsapp-link-generator/) - Generate high-converting, customized whatsapp link ideas, copy, and templates. Easily customize and copy results in one click.
+- [QR Code Generator for Business](https://sopkit.space/qr-code-generator-business/) - Generate optimized qr code generator for business details. Instantly copy or share customized outputs.
+- [Terms and Conditions Generator](https://sopkit.space/terms-and-conditions-generator/) - Generate a custom Terms and Conditions page for your website, app, blog, or store. Protect your intellectual property and limit liability.
 
 ### SEO Tools
 
-- [Domain Name Generator](https://sopkit.space/domain-name-generator) - Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free.
-- [Website Cost Calculator](https://sopkit.space/website-cost-calculator) - Estimate how much a website may cost based on pages, design quality, and features like ecommerce.
-- [SEO Title & Meta Description Generator](https://sopkit.space/seo-title-meta-description-generator) - Generate SEO-friendly page titles and meta descriptions for blogs, tools, and landing pages.
-- [Keyword Density Checker](https://sopkit.space/keyword-density-checker) - Enter a base keyword to see a sample table of related search terms, each row showing an illustrative search volume, CPC figure and difficulty label.
-- [Meta Tag Generator](https://sopkit.space/meta-tag-generator) - Generate complete meta tag sets: title, description, OG, Twitter and robots. Copy all — free.
-- [Open Graph Generator](https://sopkit.space/open-graph-generator) - Build OG title, description and image tags for perfect social shares. Copy code — free.
-- [SEO Toolkit](https://sopkit.space/seotoolkit) - Comprehensive all-in-one technical SEO audit and website analysis tool covering meta tags, performance headers, mobile viewports, and links.
-- [Twitter Card Generator](https://sopkit.space/twitter-card-generator) - Generate the twitter:card meta block for a page: choose summary or summary_large_image, add title, description, image URL and a site handle.
-- [Website Ranking Checker](https://sopkit.space/website-ranking-checker) - Run a domain and the panel explains why live Google positions require SERP data feeds, then points to free routes for checking your own rankings.
+- [Domain Name Generator](https://sopkit.space/domain-name-generator/) - Generate short, brandable domain name ideas for your startup, SaaS, or blog instantly for free.
+- [Website Cost Calculator](https://sopkit.space/website-cost-calculator/) - Estimate how much a website may cost based on pages, design quality, and features like ecommerce.
+- [SEO Title & Meta Description Generator](https://sopkit.space/seo-title-meta-description-generator/) - Generate SEO-friendly page titles and meta descriptions for blogs, tools, and landing pages.
+- [Keyword Density Checker](https://sopkit.space/keyword-density-checker/) - Enter a base keyword to see a sample table of related search terms, each row showing an illustrative search volume, CPC figure and difficulty label.
+- [Meta Tag Generator](https://sopkit.space/meta-tag-generator/) - Generate complete meta tag sets: title, description, OG, Twitter and robots. Copy all — free.
+- [Open Graph Generator](https://sopkit.space/open-graph-generator/) - Build OG title, description and image tags for perfect social shares. Copy code — free.
+- [SEO Toolkit](https://sopkit.space/seotoolkit/) - Comprehensive all-in-one technical SEO audit and website analysis tool covering meta tags, performance headers, mobile viewports, and links.
+- [Twitter Card Generator](https://sopkit.space/twitter-card-generator/) - Generate the twitter:card meta block for a page: choose summary or summary_large_image, add title, description, image URL and a site handle.
+- [Website Ranking Checker](https://sopkit.space/website-ranking-checker/) - Run a domain and the panel explains why live Google positions require SERP data feeds, then points to free routes for checking your own rankings.
 
 ### AI Prompt Tools
 
-- [Midjourney Prompt Builder](https://sopkit.space/midjourney-prompt-builder) - Create high-quality Midjourney prompts with aspect ratio, style, camera angles, lighting, and version parameters instantly. Free online helper for AI artists.
-- [AI Persona & System Prompt Generator](https://sopkit.space/ai-persona-prompt-generator) - Generate optimized system prompts and expert personas for ChatGPT, Claude, and Gemini. Choose roles, tone, and formatting constraints for better AI replies.
-- [AI Prompt Improver](https://sopkit.space/ai-prompt-improver) - Score any AI prompt on role, context, constraints, and output format, then rewrite it with proven frameworks like RTF and TAG in one click. Free and 100% browser-based.
-- [AI Token Counter & Cost Calculator](https://sopkit.space/ai-token-counter) - Paste a prompt to estimate its token count and cost against a price table for GPT, Claude, Gemini and Llama models, including a batch tab for lists.
-- [Prompt Template Generator](https://sopkit.space/prompt-template-generator) - Compose reusable AI prompt templates with {{variable}} placeholders: choose a preset, fill in your values and copy the rendered prompt for later.
-- [Negative Prompt Generator](https://sopkit.space/negative-prompt-generator) - Compose effective negative prompts for Stable Diffusion, Midjourney, and Flux from categorized lists covering artifacts, anatomy, quality, and style terms.
-- [AI Image Prompt Extender](https://sopkit.space/image-prompt-extender) - Extend image prompts with curated style, lighting, camera, mood, and detail modifiers for Midjourney, Stable Diffusion, DALL·E, and Flux.
-- [LLM Output Cleaner](https://sopkit.space/llm-output-cleaner) - Strip markdown code fences, chat prefixes, and stray artifacts from AI output. Extract clean JSON, markdown, or plain text in one click, entirely offline.
-- [Text Chunk Splitter for RAG](https://sopkit.space/text-chunk-splitter) - Split long documents into overlapping chunks by tokens, words, or characters for RAG pipelines and embedding APIs. Paragraph-aware splitting with instant export.
-- [Few-Shot Prompt Formatter](https://sopkit.space/few-shot-formatter) - Convert example input/output pairs into clean few-shot prompt blocks with numbered turns, XML tags, or markdown separators for better model performance.
-- [Prompt A/B Comparator](https://sopkit.space/prompt-a-b-comparator) - Compare two AI prompts side by side with word-level diffs, token estimates, and structure scores to see exactly what changed between versions.
-- [XML Prompt Formatter for Claude](https://sopkit.space/xml-prompt-formatter) - Structure prompts with XML tags for Claude models: wrap context, instructions, examples, and thinking sections in tags, then copy the organized result.
+- [Midjourney Prompt Builder](https://sopkit.space/midjourney-prompt-builder/) - Create high-quality Midjourney prompts with aspect ratio, style, camera angles, lighting, and version parameters instantly. Free online helper for AI artists.
+- [AI Persona & System Prompt Generator](https://sopkit.space/ai-persona-prompt-generator/) - Generate optimized system prompts and expert personas for ChatGPT, Claude, and Gemini. Choose roles, tone, and formatting constraints for better AI replies.
+- [AI Prompt Improver](https://sopkit.space/ai-prompt-improver/) - Score any AI prompt on role, context, constraints, and output format, then rewrite it with proven frameworks like RTF and TAG in one click. Free and 100% browser-based.
+- [AI Token Counter & Cost Calculator](https://sopkit.space/ai-token-counter/) - Paste a prompt to estimate its token count and cost against a price table for GPT, Claude, Gemini and Llama models, including a batch tab for lists.
+- [Prompt Template Generator](https://sopkit.space/prompt-template-generator/) - Compose reusable AI prompt templates with {{variable}} placeholders: choose a preset, fill in your values and copy the rendered prompt for later.
+- [Negative Prompt Generator](https://sopkit.space/negative-prompt-generator/) - Compose effective negative prompts for Stable Diffusion, Midjourney, and Flux from categorized lists covering artifacts, anatomy, quality, and style terms.
+- [AI Image Prompt Extender](https://sopkit.space/image-prompt-extender/) - Extend image prompts with curated style, lighting, camera, mood, and detail modifiers for Midjourney, Stable Diffusion, DALL·E, and Flux.
+- [LLM Output Cleaner](https://sopkit.space/llm-output-cleaner/) - Strip markdown code fences, chat prefixes, and stray artifacts from AI output. Extract clean JSON, markdown, or plain text in one click, entirely offline.
+- [Text Chunk Splitter for RAG](https://sopkit.space/text-chunk-splitter/) - Split long documents into overlapping chunks by tokens, words, or characters for RAG pipelines and embedding APIs. Paragraph-aware splitting with instant export.
+- [Few-Shot Prompt Formatter](https://sopkit.space/few-shot-formatter/) - Convert example input/output pairs into clean few-shot prompt blocks with numbered turns, XML tags, or markdown separators for better model performance.
+- [Prompt A/B Comparator](https://sopkit.space/prompt-a-b-comparator/) - Compare two AI prompts side by side with word-level diffs, token estimates, and structure scores to see exactly what changed between versions.
+- [XML Prompt Formatter for Claude](https://sopkit.space/xml-prompt-formatter/) - Structure prompts with XML tags for Claude models: wrap context, instructions, examples, and thinking sections in tags, then copy the organized result.
 
 ### Other Tools
 
-- [Newly Added Tools](https://sopkit.space/new-tools) - Track newly added tools, release updates, and codebase expansion history of SopKit.
-- [About](https://sopkit.space/about) - Why SopKit exists, how a browser-first toolkit grew, the privacy principles behind it and the approach taken to keep every utility useful.
-- [Blog](https://sopkit.space/blog) - Tool tutorials, comparisons, privacy notes and productivity walkthroughs from the SopKit team, listed with publish dates and reading times.
-- [Contact](https://sopkit.space/contact) - Every way to reach the team: email support for tool requests and feedback, or the GitHub tracker for bug reports and code contributions.
-- [Search All Tools](https://sopkit.space/search) - Start typing in one search box or filter by category to narrow the whole SopKit library down to the converter, calculator or checker you need.
-- [Fun Generators](https://sopkit.space/generators) - Create viral content with AI-powered fun generators.
-- [Developer Tools](https://sopkit.space/developer-tools) - Format JSON, generate hashes, and developer utilities.
+- [Newly Added Tools](https://sopkit.space/new-tools/) - Track newly added tools, release updates, and codebase expansion history of SopKit.
+- [About](https://sopkit.space/about/) - Why SopKit exists, how a browser-first toolkit grew, the privacy principles behind it and the approach taken to keep every utility useful.
+- [Blog](https://sopkit.space/blog/) - Tool tutorials, comparisons, privacy notes and productivity walkthroughs from the SopKit team, listed with publish dates and reading times.
+- [Contact](https://sopkit.space/contact/) - Every way to reach the team: email support for tool requests and feedback, or the GitHub tracker for bug reports and code contributions.
+- [Search All Tools](https://sopkit.space/search/) - Start typing in one search box or filter by category to narrow the whole SopKit library down to the converter, calculator or checker you need.
+- [Fun Generators](https://sopkit.space/generators/) - Create viral content with AI-powered fun generators.
+- [Developer Tools](https://sopkit.space/developer-tools/) - Format JSON, generate hashes, and developer utilities.
 
 ### Company
 
-- [Free Privacy Policy Online](https://sopkit.space/privacy) - The SopKit privacy policy in plain language: what is collected, which tools run locally, which call outside services, and the consent choices you keep.
-- [Free Terms of Use Online](https://sopkit.space/terms) - Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.
+- [Free Privacy Policy Online](https://sopkit.space/privacy/) - The SopKit privacy policy in plain language: what is collected, which tools run locally, which call outside services, and the consent choices you keep.
+- [Free Terms of Use Online](https://sopkit.space/terms/) - Read the SopKit Terms of Use. Our privacy-first online toolkit is free, browser-based, and available without registration.
 
 ### Guides & Comparisons
 
-- [Best Free Tools for Students (2026)](https://sopkit.space/best-free-tools-for-students) - Discover the best free tools for students in 2026. Improve writing, formatting, assignments, and study productivity with no-signup online tools.
-- [Tools for Developers - Free Online Stack](https://sopkit.space/tools-for-developers) - A practical collection of free tools for developers: JSON utilities, encoding, text transformers, validators, and conversion helpers.
-- [AI Tools Alternatives Free - Practical Picks](https://sopkit.space/ai-tools-alternatives-free) - Explore free AI tool alternatives for writing, image creation, voice generation, and content ideation without subscriptions.
-- [Best Free Alternative to ChatGPT for Daily Tasks](https://sopkit.space/best-free-alternative-to-chatgpt) - Looking for a free ChatGPT alternative? Build a focused stack for writing, metadata, image generation, and voice tasks with free online tools.
-- [Top 10 JSON Tools Online for Faster Developer Workflows](https://sopkit.space/top-10-json-tools-online) - A practical list of the top 10 JSON tools online for formatting, validation, conversion, and schema-ready payload workflows.
-- [How to Format JSON Properly (Without Breaking Data)](https://sopkit.space/how-to-format-json-properly) - Learn how to format JSON correctly with a simple workflow for validation, cleanup, and conversion-safe output.
-- [Best Free Converters in 2026 (File, Data, and Media)](https://sopkit.space/best-free-converters-in-2026) - A 2026 guide to the strongest no-cost converters for files, data and media, comparing JSON, CSV and XML swaps plus image and document conversion.
+- [Best Free Tools for Students (2026)](https://sopkit.space/best-free-tools-for-students/) - Discover the best free tools for students in 2026. Improve writing, formatting, assignments, and study productivity with no-signup online tools.
+- [Tools for Developers - Free Online Stack](https://sopkit.space/tools-for-developers/) - A practical collection of free tools for developers: JSON utilities, encoding, text transformers, validators, and conversion helpers.
+- [AI Tools Alternatives Free - Practical Picks](https://sopkit.space/ai-tools-alternatives-free/) - Explore free AI tool alternatives for writing, image creation, voice generation, and content ideation without subscriptions.
+- [Best Free Alternative to ChatGPT for Daily Tasks](https://sopkit.space/best-free-alternative-to-chatgpt/) - Looking for a free ChatGPT alternative? Build a focused stack for writing, metadata, image generation, and voice tasks with free online tools.
+- [Top 10 JSON Tools Online for Faster Developer Workflows](https://sopkit.space/top-10-json-tools-online/) - A practical list of the top 10 JSON tools online for formatting, validation, conversion, and schema-ready payload workflows.
+- [How to Format JSON Properly (Without Breaking Data)](https://sopkit.space/how-to-format-json-properly/) - Learn how to format JSON correctly with a simple workflow for validation, cleanup, and conversion-safe output.
+- [Best Free Converters in 2026 (File, Data, and Media)](https://sopkit.space/best-free-converters-in-2026/) - A 2026 guide to the strongest no-cost converters for files, data and media, comparing JSON, CSV and XML swaps plus image and document conversion.
 
 ### Blog
 
 
 ### Calculators
 
-- [Roman Numerals Converter](https://sopkit.space/roman-numerals-converter) - Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats.
-- [Number to Words Converter](https://sopkit.space/number-to-words-converter) - Convert any number into words (English, Indian numbering system) for cheques, invoices, and documents.
-- [Date Difference Calculator](https://sopkit.space/date-difference-calculator) - Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes.
-- [Working Days Calculator](https://sopkit.space/working-days-calculator) - Calculate the number of working days or business days between two dates, excluding weekends and holidays.
-- [GPA to 4.0 Scale Converter](https://sopkit.space/gpa-to-4-scale-converter) - Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad.
-- [Recurring Deposit (RD) Calculator](https://sopkit.space/rd-calculator) - Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments.
-- [Gratuity Calculator (India)](https://sopkit.space/gratuity-calculator) - Estimate your gratuity amount based on your last drawn salary and years of service in India.
-- [EPF Calculator (Employee Provident Fund)](https://sopkit.space/epf-calculator) - Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate.
-- [Invoice Generator India with GST](https://sopkit.space/invoice-generator-india) - Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free.
-- [EMI Calculator for Loans](https://sopkit.space/emi-calculator) - Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans.
-- [SIP Calculator India](https://sopkit.space/sip-calculator) - Calculate estimated SIP returns and wealth growth for mutual fund investments online for free.
-- [FD Calculator India](https://sopkit.space/fd-calculator-india) - Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks.
-- [Salary Calculator India (CTC to In-Hand)](https://sopkit.space/salary-calculator-india) - Calculate your monthly in-hand salary from annual CTC with PF, professional tax, and income tax deductions.
-- [SGPA to CGPA Calculator](https://sopkit.space/sgpa-to-cgpa-calculator) - Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods.
-- [75% Attendance Calculator](https://sopkit.space/75-attendance-calculator) - Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.
-- [SGPA Calculator](https://sopkit.space/sgpa-calculator) - Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.
-- [CGPA Calculator](https://sopkit.space/cgpa-calculator) - Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.
-- [CGPA to Percentage Calculator](https://sopkit.space/cgpa-to-percentage-calculator) - Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x).
-- [Required Marks Calculator](https://sopkit.space/required-marks-calculator) - Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.
-- [Brick Calculator](https://sopkit.space/brick-calculator) - Calculate the total number of bricks, cement bags, and sand volume required for building a wall.
-- [Paint Calculator](https://sopkit.space/paint-calculator) - Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.
-- [Tile Calculator](https://sopkit.space/tile-calculator) - Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.
-- [Compound Interest Calculator](https://sopkit.space/compound-interest-calculator) - Calculate compound interest and future value with regular contributions. See how your savings or investments grow over time, free and instant.
-- [Mortgage Calculator](https://sopkit.space/mortgage-calculator) - Estimate the monthly principal-and-interest payment for a home loan, then see the amount borrowed, total interest and total paid over the term.
-- [Car Loan Calculator](https://sopkit.space/car-loan-calculator) - Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator.
-- [ROI Calculator](https://sopkit.space/roi-calculator) - Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.
-- [Savings Goal Calculator](https://sopkit.space/savings-goal-calculator) - Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.
-- [Tip Calculator](https://sopkit.space/tip-calculator) - Split a bill honestly: enter the amount, tip percentage and number of people to get the tip, grand total and each diner's share in one pass.
-- [BMI Calculator](https://sopkit.space/bmi-calculator) - Turn weight in kilograms and height in centimetres into a BMI number and its weight category, with a reminder that the figure ignores body composition.
-- [Fuel Cost Calculator](https://sopkit.space/fuel-cost-calculator) - Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.
-- [Inflation Calculator](https://sopkit.space/inflation-calculator) - See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.
-- [Break-Even Calculator](https://sopkit.space/break-even-calculator) - Calculate the break-even point in units and revenue from fixed costs, variable cost per unit, and selling price. Free business calculator.
-- [Food Cost Calculator](https://sopkit.space/food-cost-calculator) - Price menu items right with ingredient costs, margins and plate percentages. Restaurant math — free.
-- [Rent Affordability Calculator](https://sopkit.space/rent-affordability-calculator) - Calculate your rent affordability calculator instantly. Free browser-based calculator with detailed breakdowns.
-- [Home Loan Eligibility Calculator](https://sopkit.space/home-loan-eligibility-calculator) - Calculate your home loan eligibility calculator instantly. Free browser-based calculator with detailed breakdowns.
-- [Property ROI Calculator](https://sopkit.space/property-roi-calculator) - Calculate your property roi calculator instantly. Free browser-based calculator with detailed breakdowns.
-- [Calorie Deficit Calculator](https://sopkit.space/calorie-deficit-calculator) - Calculate your calorie deficit calculator instantly. Free browser-based calculator with detailed breakdowns.
-- [Protein Intake Calculator](https://sopkit.space/protein-intake-calculator) - Calculate your protein intake calculator instantly. Free browser-based calculator with detailed breakdowns.
-- [Daily Water Intake Calculator](https://sopkit.space/water-intake-calculator) - Calculate your daily water intake calculator instantly. Free browser-based calculator with detailed breakdowns.
-- [Profit Margin Calculator](https://sopkit.space/profit-margin-calculator) - Calculate your profit margin calculator instantly. Free browser-based calculator with detailed breakdowns.
-- [Income Tax Calculator FY 2026-27](https://sopkit.space/income-tax-calculator) - Calculate and compare your income tax under the Old vs New Tax Regimes for FY 2026-27 (AY 2027-28). Compare deductions, rebates, and slabs to find the optimal regime.
-- [Freelance Hourly Rate Calculator](https://sopkit.space/freelance-hourly-rate-calculator) - Calculate your target freelance hourly rate, daily rate, and monthly retainers based on desired annual salary, business expenses, taxes, and billable hours.
+- [Roman Numerals Converter](https://sopkit.space/roman-numerals-converter/) - Convert numbers to Roman numerals and vice versa instantly. Supports large numbers and historical formats.
+- [Number to Words Converter](https://sopkit.space/number-to-words-converter/) - Convert any number into words (English, Indian numbering system) for cheques, invoices, and documents.
+- [Date Difference Calculator](https://sopkit.space/date-difference-calculator/) - Calculate the exact duration between two dates in years, months, weeks, days, hours, and minutes.
+- [Working Days Calculator](https://sopkit.space/working-days-calculator/) - Calculate the number of working days or business days between two dates, excluding weekends and holidays.
+- [GPA to 4.0 Scale Converter](https://sopkit.space/gpa-to-4-scale-converter/) - Convert your Indian percentage or 10-point CGPA into the standard US 4.0 GPA scale for study abroad.
+- [Recurring Deposit (RD) Calculator](https://sopkit.space/rd-calculator/) - Calculate the maturity amount and interest earned on your monthly Recurring Deposit (RD) investments.
+- [Gratuity Calculator (India)](https://sopkit.space/gratuity-calculator/) - Estimate your gratuity amount based on your last drawn salary and years of service in India.
+- [EPF Calculator (Employee Provident Fund)](https://sopkit.space/epf-calculator/) - Calculate your EPF maturity amount based on your basic salary, monthly contribution, and current interest rate.
+- [Invoice Generator India with GST](https://sopkit.space/invoice-generator-india/) - Create professional invoices for Indian freelancers and businesses with GST, discounts, and PDF download for free.
+- [EMI Calculator for Loans](https://sopkit.space/emi-calculator/) - Calculate monthly EMI, total interest, and repayment amount for home loans, car loans, and personal loans.
+- [SIP Calculator India](https://sopkit.space/sip-calculator/) - Calculate estimated SIP returns and wealth growth for mutual fund investments online for free.
+- [FD Calculator India](https://sopkit.space/fd-calculator-india/) - Calculate fixed deposit maturity amount and interest with quarterly compounding for Indian banks.
+- [Salary Calculator India (CTC to In-Hand)](https://sopkit.space/salary-calculator-india/) - Calculate your monthly in-hand salary from annual CTC with PF, professional tax, and income tax deductions.
+- [SGPA to CGPA Calculator](https://sopkit.space/sgpa-to-cgpa-calculator/) - Calculate your cumulative GPA (CGPA) from semester-wise SGPA values. Supports credit-weighted and simple average methods.
+- [75% Attendance Calculator](https://sopkit.space/75-attendance-calculator/) - Calculate how many classes you need to attend or can safely skip to maintain a minimum 75% attendance rate.
+- [SGPA Calculator](https://sopkit.space/sgpa-calculator/) - Compute your Semester Grade Point Average (SGPA) based on course credits and grade points earned.
+- [CGPA Calculator](https://sopkit.space/cgpa-calculator/) - Calculate your Cumulative Grade Point Average (CGPA) from semester-wise SGPA or grade points.
+- [CGPA to Percentage Calculator](https://sopkit.space/cgpa-to-percentage-calculator/) - Convert your CGPA to equivalent percentage marks using standard university formulas (like CBSE 9.5x).
+- [Required Marks Calculator](https://sopkit.space/required-marks-calculator/) - Find out exactly how many marks you need to score in your final exam to achieve your target grade or pass.
+- [Brick Calculator](https://sopkit.space/brick-calculator/) - Calculate the total number of bricks, cement bags, and sand volume required for building a wall.
+- [Paint Calculator](https://sopkit.space/paint-calculator/) - Estimate the amount of paint in liters and estimated cost needed to cover walls, rooms, or ceilings.
+- [Tile Calculator](https://sopkit.space/tile-calculator/) - Calculate the total number of floor or wall tiles needed for a room, including waste margins and cost estimates.
+- [Compound Interest Calculator](https://sopkit.space/compound-interest-calculator/) - Calculate compound interest and future value with regular contributions. See how your savings or investments grow over time, free and instant.
+- [Mortgage Calculator](https://sopkit.space/mortgage-calculator/) - Estimate the monthly principal-and-interest payment for a home loan, then see the amount borrowed, total interest and total paid over the term.
+- [Car Loan Calculator](https://sopkit.space/car-loan-calculator/) - Work out your monthly car payment and total interest from vehicle price, down payment, trade-in, APR, and term. Free auto loan calculator.
+- [ROI Calculator](https://sopkit.space/roi-calculator/) - Calculate return on investment, net gain, and annualized ROI from your initial and final values. Free investment return calculator.
+- [Savings Goal Calculator](https://sopkit.space/savings-goal-calculator/) - Find the monthly deposit needed to reach a savings goal by a target date, including interest. Free savings planning calculator.
+- [Tip Calculator](https://sopkit.space/tip-calculator/) - Split a bill honestly: enter the amount, tip percentage and number of people to get the tip, grand total and each diner's share in one pass.
+- [BMI Calculator](https://sopkit.space/bmi-calculator/) - Turn weight in kilograms and height in centimetres into a BMI number and its weight category, with a reminder that the figure ignores body composition.
+- [Fuel Cost Calculator](https://sopkit.space/fuel-cost-calculator/) - Estimate the fuel needed and total cost for a trip from distance, fuel economy, and price per litre. Free trip fuel cost calculator.
+- [Inflation Calculator](https://sopkit.space/inflation-calculator/) - See how inflation changes the value of money over time, including future buying power and the nominal amount needed to keep pace. Free tool.
+- [Break-Even Calculator](https://sopkit.space/break-even-calculator/) - Calculate the break-even point in units and revenue from fixed costs, variable cost per unit, and selling price. Free business calculator.
+- [Food Cost Calculator](https://sopkit.space/food-cost-calculator/) - Price menu items right with ingredient costs, margins and plate percentages. Restaurant math — free.
+- [Rent Affordability Calculator](https://sopkit.space/rent-affordability-calculator/) - Share monthly income and existing debts to see conservative, moderate and stretched rent budgets based on the 25, 30 and 40 percent of income rules.
+- [Home Loan Eligibility Calculator](https://sopkit.space/home-loan-eligibility-calculator/) - Find the home loan amount a bank might sanction from monthly salary, existing EMIs, tenure and rate, starting from its affordable monthly EMI cap.
+- [Property ROI Calculator](https://sopkit.space/property-roi-calculator/) - Weigh a rental property's numbers: gross yield from annual rent against the purchase price, plus net annual return once running costs are paid off.
+- [Calorie Deficit Calculator](https://sopkit.space/calorie-deficit-calculator/) - Gauge your BMR and daily energy expenditure, then a sensible calorie target roughly 500 calories below maintenance for steady, sustainable weight loss.
+- [Protein Intake Calculator](https://sopkit.space/protein-intake-calculator/) - Work out daily protein targets from your body weight: a lower gram range for an active lifestyle, a higher range for muscle building and recovery.
+- [Daily Water Intake Calculator](https://sopkit.space/water-intake-calculator/) - Plan daily hydration around your body weight, adding extra millilitres and fluid ounces for every half hour of exercise you record during the day.
+- [Profit Margin Calculator](https://sopkit.space/profit-margin-calculator/) - Pair cost price with selling price to get gross profit per unit, the margin percentage taken from revenue and the markup applied on top of cost price.
+- [Income Tax Calculator FY 2026-27](https://sopkit.space/income-tax-calculator/) - Calculate and compare your income tax under the Old vs New Tax Regimes for FY 2026-27 (AY 2027-28). Compare deductions, rebates, and slabs to find the optimal regime.
+- [Freelance Hourly Rate Calculator](https://sopkit.space/freelance-hourly-rate-calculator/) - Calculate your target freelance hourly rate, daily rate, and monthly retainers based on desired annual salary, business expenses, taxes, and billable hours.
 
 ### Exam Image & Form Tools
 
-- [SSC Photo and Signature Resizer](https://sopkit.space/ssc-photo-signature-resizer) - Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements.
-- [UPSC Photo Resizer 350x350](https://sopkit.space/upsc-photo-resizer-350x350) - Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms.
-- [NEET Photo & Signature Resizer](https://sopkit.space/neet-photo-signature-resizer) - Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online.
-- [UPSC Photo Resizer](https://sopkit.space/upsc-photo-resizer) - Resize your photo and signature to meet the exact dimensions (350x350 pixels) and file size (20KB - 300KB) specified for UPSC IAS/IFS application forms.
-- [SSC Photo Resizer](https://sopkit.space/ssc-photo-resizer) - Resize an SSC photo to 350x450 pixels inside the 20-50KB band, or switch to signature mode for 350x200 pixels at 10-20KB, then save the JPEG.
-- [Signature Resizer Under 20KB](https://sopkit.space/signature-resizer-under-20kb) - Resize and compress signatures under 20KB for exam forms, job applications, and government portals. Free browser-based signature compressor.
-- [NEET Photo Resizer](https://sopkit.space/neet-photo-resizer) - Fit a NEET photo to 480x640 pixels between 10KB and 200KB, or resize a signature to 350x150 pixels at 4-30KB, with a compliance check.
-- [JEE Photo Resizer](https://sopkit.space/jee-photo-resizer) - Prepare JEE Main photo and signature images for online application forms with browser-based resize and compression.
-- [CUET Photo Resizer](https://sopkit.space/cuet-photo-resizer) - Resize CUET photos and signatures for application forms using a free browser-based image resizer and compressor.
-- [Railway Exam Photo Resizer](https://sopkit.space/railway-exam-photo-resizer) - Resize photos and signatures for railway exam forms, including RRB and recruitment portal uploads.
-- [Bank Exam Photo Resizer](https://sopkit.space/ibps-photo-resizer) - Tune width, height and the KB window for a bank-exam photo or signature, starting from 350x350 pixels and 20-300KB, then export the JPEG.
-- [PAN Card Photo Resizer](https://sopkit.space/pan-card-photo-resizer) - Resize PAN card photos and signatures for online application forms with safe browser processing.
-- [Passport Photo Maker India](https://sopkit.space/passport-photo-maker) - Create passport-style photos for Indian forms and documents with crop, resize, and compression controls.
-- [Photo Compressor Under 50KB](https://sopkit.space/photo-compressor-under-50kb) - Compress application photos under 50KB for online exam portals, job applications, and official government registration forms.
-- [Form Image Size Checker](https://sopkit.space/form-image-size-checker) - Check image dimensions, file size, format, and DPI before uploading photos or signatures to online forms.
-- [Photo Name Date Editor](https://sopkit.space/photo-name-date-editor) - Add custom applicant name and date of photograph stamps onto exam application photos according to official recruitment standards.
-- [JPG to PDF for Exam Forms](https://sopkit.space/jpg-to-pdf-exam-forms) - Convert scanned JPG photos, signatures, and certificates into a single, compact PDF document optimized for online exam submissions.
-- [PDF Compressor Under 200KB](https://sopkit.space/pdf-compressor-under-200kb) - Compress PDF documents under 200KB for government job portals, university admissions, and exam application uploads without losing text clarity.
-- [SSC MTS Photo Resizer](https://sopkit.space/ssc-mts-photo-resizer) - Resize and compress your passport photo and signature to meet the official SSC MTS online application requirements. Convert photos to 3.5 x 4.5 cm (20KB-50KB) and signatures to 10-20KB.
-- [RRB Group D Photo Resizer](https://sopkit.space/rrb-group-d-photo-resizer) - Resize and compress your passport photo and signature for RRB Group D / Railway recruitment online applications. Pre-configured to official size and KB boundaries.
+- [SSC Photo and Signature Resizer](https://sopkit.space/ssc-photo-signature-resizer/) - Resize and compress SSC photo (20-50KB) and signature (10-20KB) online for government exam forms. 100% compliant with SSC requirements.
+- [UPSC Photo Resizer 350x350](https://sopkit.space/upsc-photo-resizer-350x350/) - Resize UPSC photo to 350x350 pixels and compress it for IAS, IFS, and other UPSC application forms.
+- [NEET Photo & Signature Resizer](https://sopkit.space/neet-photo-signature-resizer/) - Resize and compress NEET photo and signature for application forms. Adjust size, dimensions, format, and file limit online.
+- [UPSC Photo Resizer](https://sopkit.space/upsc-photo-resizer/) - Resize your photo and signature to meet the exact dimensions (350x350 pixels) and file size (20KB - 300KB) specified for UPSC IAS/IFS application forms.
+- [SSC Photo Resizer](https://sopkit.space/ssc-photo-resizer/) - Resize an SSC photo to 350x450 pixels inside the 20-50KB band, or switch to signature mode for 350x200 pixels at 10-20KB, then save the JPEG.
+- [Signature Resizer Under 20KB](https://sopkit.space/signature-resizer-under-20kb/) - Resize and compress signatures under 20KB for exam forms, job applications, and government portals. Free browser-based signature compressor.
+- [NEET Photo Resizer](https://sopkit.space/neet-photo-resizer/) - Fit a NEET photo to 480x640 pixels between 10KB and 200KB, or resize a signature to 350x150 pixels at 4-30KB, with a compliance check.
+- [JEE Photo Resizer](https://sopkit.space/jee-photo-resizer/) - Prepare JEE Main photo and signature images for online application forms with browser-based resize and compression.
+- [CUET Photo Resizer](https://sopkit.space/cuet-photo-resizer/) - Resize CUET photos and signatures for application forms using a free browser-based image resizer and compressor.
+- [Railway Exam Photo Resizer](https://sopkit.space/railway-exam-photo-resizer/) - Resize photos and signatures for railway exam forms, including RRB and recruitment portal uploads.
+- [Bank Exam Photo Resizer](https://sopkit.space/ibps-photo-resizer/) - Tune width, height and the KB window for a bank-exam photo or signature, starting from 350x350 pixels and 20-300KB, then export the JPEG.
+- [PAN Card Photo Resizer](https://sopkit.space/pan-card-photo-resizer/) - Resize PAN card photos and signatures for online application forms with safe browser processing.
+- [Passport Photo Maker India](https://sopkit.space/passport-photo-maker/) - Create passport-style photos for Indian forms and documents with crop, resize, and compression controls.
+- [Photo Compressor Under 50KB](https://sopkit.space/photo-compressor-under-50kb/) - Compress application photos under 50KB for online exam portals, job applications, and official government registration forms.
+- [Form Image Size Checker](https://sopkit.space/form-image-size-checker/) - Check image dimensions, file size, format, and DPI before uploading photos or signatures to online forms.
+- [Photo Name Date Editor](https://sopkit.space/photo-name-date-editor/) - Add custom applicant name and date of photograph stamps onto exam application photos according to official recruitment standards.
+- [JPG to PDF for Exam Forms](https://sopkit.space/jpg-to-pdf-exam-forms/) - Convert scanned JPG photos, signatures, and certificates into a single, compact PDF document optimized for online exam submissions.
+- [PDF Compressor Under 200KB](https://sopkit.space/pdf-compressor-under-200kb/) - Compress PDF documents under 200KB for government job portals, university admissions, and exam application uploads without losing text clarity.
+- [SSC MTS Photo Resizer](https://sopkit.space/ssc-mts-photo-resizer/) - Resize and compress your passport photo and signature to meet the official SSC MTS online application requirements. Convert photos to 3.5 x 4.5 cm (20KB-50KB) and signatures to 10-20KB.
+- [RRB Group D Photo Resizer](https://sopkit.space/rrb-group-d-photo-resizer/) - Resize and compress your passport photo and signature for RRB Group D / Railway recruitment online applications. Pre-configured to official size and KB boundaries.
 
 ### Health & Fitness
 
-- [BMR Calculator (Basal Metabolic Rate)](https://sopkit.space/bmr-calculator) - Compare two equations for basal metabolic rate: Mifflin-St Jeor and revised Harris-Benedict, each returning kcal/day from weight, height, age and sex.
-- [TDEE Calculator](https://sopkit.space/tdee-calculator) - Calculate your Total Daily Energy Expenditure (TDEE) based on your activity level and fitness goals.
-- [Macro Calculator](https://sopkit.space/macro-calculator) - Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance.
-- [Ideal Body Weight Calculator](https://sopkit.space/ideal-body-weight-calculator) - Determine your healthy weight range based on your height, age, and gender using standard formulas.
-- [Body Fat Percentage Calculator](https://sopkit.space/body-fat-calculator) - Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness.
+- [BMR Calculator (Basal Metabolic Rate)](https://sopkit.space/bmr-calculator/) - Compare two equations for basal metabolic rate: Mifflin-St Jeor and revised Harris-Benedict, each returning kcal/day from weight, height, age and sex.
+- [TDEE Calculator](https://sopkit.space/tdee-calculator/) - Calculate your Total Daily Energy Expenditure (TDEE) based on your activity level and fitness goals.
+- [Macro Calculator](https://sopkit.space/macro-calculator/) - Calculate your ideal macronutrient ratio (protein, carbs, fats) for weight loss, gain, or maintenance.
+- [Ideal Body Weight Calculator](https://sopkit.space/ideal-body-weight-calculator/) - Determine your healthy weight range based on your height, age, and gender using standard formulas.
+- [Body Fat Percentage Calculator](https://sopkit.space/body-fat-calculator/) - Estimate your body fat percentage using US Navy or BMI methods for a clearer picture of your fitness.
 
 ### Privacy & Security Tools
 
-- [PII Scrubber](https://sopkit.space/pii-scrubber) - Remove personal information from text before sending to AI. Scrub emails, phone numbers, SSNs, credit cards, and API keys locally.
-- [Email Subject Line Tester](https://sopkit.space/email-subject-line-tester) - Score email subject lines for open rate potential, spam risk, length, and clarity. Get instant feedback and improvement suggestions.
-- [AI Text Detector](https://sopkit.space/ai-text-detector) - Paste at least a couple of sentences to get a rough AI-likelihood percentage, calculated from sentence rhythm, stock phrase spotting and word variety.
-- [Email Validator](https://sopkit.space/email-validator) - Run an address through three checks: syntax against a practical pattern, a list of known throwaway domains and a live MX lookup via Google's DNS resolver.
-- [Spam Word Checker](https://sopkit.space/spam-word-checker) - Scan email copy for spam trigger words. Get a spam score and suggestions to improve deliverability before sending.
-- [Phishing URL Checker](https://sopkit.space/phishing-url-checker) - Check a suspicious link for brand lookalikes, raw IP hosts, punycode tricks, hyphen counts and risky TLDs, then read the risk score and flags.
-- [Password Strength Checker](https://sopkit.space/password-strength-checker) - See how a password scores out of 100 on length, character variety and pattern checks, with pointed suggestions for the exact weaknesses found.
-- [Security Headers Checker](https://sopkit.space/security-headers-checker) - Analyze website security headers like CSP, HSTS, X-Frame-Options, and more. Get a security score and recommendations for free.
-- [SSL Certificate Checker](https://sopkit.space/ssl-certificate-checker) - Check SSL certificate details, validity, and chain for any website. Verify issuer, expiration, and encryption strength privately.
-- [Domain Reputation Checker](https://sopkit.space/domain-reputation-checker) - Check domain reputation, age, and safety status. Analyze if a website is trustworthy, blacklisted, or suspicious.
-- [Cookie Consent Generator](https://sopkit.space/cookie-consent-generator) - Generate GDPR-compliant cookie consent banners and privacy notices for your website. Customize styles and export code.
-- [GDPR Compliance Checker](https://sopkit.space/gdpr-compliance-checker) - Check your website for GDPR compliance issues. Analyze privacy policy, cookie consent, data collection, and user rights — privately.
-- [Data Retention Policy Generator](https://sopkit.space/data-retention-policy-generator) - Generate a data retention policy for your business. Customize by industry, data types, and jurisdiction — export in minutes.
-- [Email Header Analyzer](https://sopkit.space/email-header-analyzer) - Analyze email headers for deliverability issues, spoofing, and routing problems. Inspect SPF, DKIM, DMARC, and IP paths.
-- [AI Image Detector](https://sopkit.space/ai-image-detector) - Load a picture to get a rough synthetic-image score that considers file format, resolution, aspect ratio and file size relative to dimensions.
-- [Data Breach Checker](https://sopkit.space/data-breach-checker) - Check if your email or phone number has appeared in a known data breach. Get breach details and security recommendations.
-- [Email Deliverability Checker](https://sopkit.space/email-deliverability-checker) - Check email deliverability by analyzing SPF, DKIM, and DMARC records. Ensure your emails reach the inbox, not spam.
-- [Privacy Policy Auditor](https://sopkit.space/privacy-policy-auditor) - Audit your privacy policy for GDPR, CCPA, and other regulation compliance. Get a checklist and improvement suggestions.
-- [Email Preview Generator](https://sopkit.space/email-preview-generator) - Generate email previews across desktop, mobile, and dark mode. Test how your email looks in different clients before sending.
-- [Spam Score Checker](https://sopkit.space/spam-score-checker) - Check the spam score of your email or message. Analyze content, links, and formatting for deliverability issues.
-- [Consent Management Generator](https://sopkit.space/consent-management-generator) - Generate consent management banners and preference centers for GDPR and CCPA compliance. Export customizable code.
-- [Breach Notification Generator](https://sopkit.space/breach-notification-generator) - Generate data breach notification templates for customers, regulators, and internal teams. Compliant with GDPR and state laws.
-- [Data Anonymization Report Generator](https://sopkit.space/data-anonymization-report-generator) - Generate data anonymization reports for GDPR Article 25 compliance. Document anonymization techniques and risk assessments.
+- [PII Scrubber](https://sopkit.space/pii-scrubber/) - Remove personal information from text before sending to AI. Scrub emails, phone numbers, SSNs, credit cards, and API keys locally.
+- [Email Subject Line Tester](https://sopkit.space/email-subject-line-tester/) - Score email subject lines for open rate potential, spam risk, length, and clarity. Get instant feedback and improvement suggestions.
+- [AI Text Detector](https://sopkit.space/ai-text-detector/) - Paste at least a couple of sentences to get a rough AI-likelihood percentage, calculated from sentence rhythm, stock phrase spotting and word variety.
+- [Email Validator](https://sopkit.space/email-validator/) - Run an address through three checks: syntax against a practical pattern, a list of known throwaway domains and a live MX lookup via Google's DNS resolver.
+- [Spam Word Checker](https://sopkit.space/spam-word-checker/) - Scan email copy for spam trigger words. Get a spam score and suggestions to improve deliverability before sending.
+- [Phishing URL Checker](https://sopkit.space/phishing-url-checker/) - Check a suspicious link for brand lookalikes, raw IP hosts, punycode tricks, hyphen counts and risky TLDs, then read the risk score and flags.
+- [Password Strength Checker](https://sopkit.space/password-strength-checker/) - See how a password scores out of 100 on length, character variety and pattern checks, with pointed suggestions for the exact weaknesses found.
+- [Security Headers Checker](https://sopkit.space/security-headers-checker/) - Analyze website security headers like CSP, HSTS, X-Frame-Options, and more. Get a security score and recommendations for free.
+- [SSL Certificate Checker](https://sopkit.space/ssl-certificate-checker/) - Check SSL certificate details, validity, and chain for any website. Verify issuer, expiration, and encryption strength privately.
+- [Domain Reputation Checker](https://sopkit.space/domain-reputation-checker/) - Check domain reputation, age, and safety status. Analyze if a website is trustworthy, blacklisted, or suspicious.
+- [Cookie Consent Generator](https://sopkit.space/cookie-consent-generator/) - Generate GDPR-compliant cookie consent banners and privacy notices for your website. Customize styles and export code.
+- [GDPR Compliance Checker](https://sopkit.space/gdpr-compliance-checker/) - Check your website for GDPR compliance issues. Analyze privacy policy, cookie consent, data collection, and user rights — privately.
+- [Data Retention Policy Generator](https://sopkit.space/data-retention-policy-generator/) - Generate a data retention policy for your business. Customize by industry, data types, and jurisdiction — export in minutes.
+- [Email Header Analyzer](https://sopkit.space/email-header-analyzer/) - Analyze email headers for deliverability issues, spoofing, and routing problems. Inspect SPF, DKIM, DMARC, and IP paths.
+- [AI Image Detector](https://sopkit.space/ai-image-detector/) - Load a picture to get a rough synthetic-image score that considers file format, resolution, aspect ratio and file size relative to dimensions.
+- [Data Breach Checker](https://sopkit.space/data-breach-checker/) - Check if your email or phone number has appeared in a known data breach. Get breach details and security recommendations.
+- [Email Deliverability Checker](https://sopkit.space/email-deliverability-checker/) - Check email deliverability by analyzing SPF, DKIM, and DMARC records. Ensure your emails reach the inbox, not spam.
+- [Privacy Policy Auditor](https://sopkit.space/privacy-policy-auditor/) - Audit your privacy policy for GDPR, CCPA, and other regulation compliance. Get a checklist and improvement suggestions.
+- [Email Preview Generator](https://sopkit.space/email-preview-generator/) - Generate email previews across desktop, mobile, and dark mode. Test how your email looks in different clients before sending.
+- [Spam Score Checker](https://sopkit.space/spam-score-checker/) - Check the spam score of your email or message. Analyze content, links, and formatting for deliverability issues.
+- [Consent Management Generator](https://sopkit.space/consent-management-generator/) - Generate consent management banners and preference centers for GDPR and CCPA compliance. Export customizable code.
+- [Breach Notification Generator](https://sopkit.space/breach-notification-generator/) - Generate data breach notification templates for customers, regulators, and internal teams. Compliant with GDPR and state laws.
+- [Data Anonymization Report Generator](https://sopkit.space/data-anonymization-report-generator/) - Generate data anonymization reports for GDPR Article 25 compliance. Document anonymization techniques and risk assessments.
 
 ### Extraction Tools
 
-- [URL Extractor](https://sopkit.space/url-extractor) - Harvest every link from pasted text, Markdown, HTML or logs, normalise bare domains, flag invalid entries, remove duplicates and export the list.
-- [Email Extractor](https://sopkit.space/email-extractor) - Extract email addresses from pasted text, contact lists, HTML, Markdown, and documents. Normalize, deduplicate, group by domain, and export clean results locally.
-- [Phone Number Extractor](https://sopkit.space/phone-number-extractor) - Extract phone-number-like sequences from notes, logs, contact lists, and copied text. Preserve source formatting while reporting digit counts and exporting results.
-- [IP Address Extractor](https://sopkit.space/ip-address-extractor) - Extract IPv4 and IPv6 addresses from server logs, headers, diagnostics, and text. Classify matches and export a compact network inventory locally.
-- [Domain Extractor](https://sopkit.space/domain-extractor) - Extract hostnames from URLs and email addresses, remove common www prefixes, deduplicate domains, sort them, and export a clean domain inventory.
-- [HTML Link Extractor](https://sopkit.space/html-link-extractor) - Parse raw HTML and extract anchor URLs, visible text, rel attributes, target values, and optionally resolved relative links using a base URL.
-- [HTML Image Extractor](https://sopkit.space/html-image-extractor) - Extract image URLs from HTML img tags, srcset, picture sources, Open Graph image tags, and Twitter image metadata for audits and research.
-- [HTML Metadata Extractor](https://sopkit.space/html-meta-extractor) - Inspect HTML title, description, canonical, robots, Open Graph, Twitter cards, favicon, language, theme color, and heading content in a structured list.
-- [JSONPath Extractor](https://sopkit.space/json-path-extractor) - Query nested JSON with property selectors, array indexes, wildcards, recursive descent, unions, slices, and simple comparison filters. Copy matching values and paths.
-- [Regex Extractor](https://sopkit.space/regex-extractor) - Run custom regular expressions against text, inspect capture groups and character positions, use common extraction presets, and export structured matches.
-- [CSV Column Extractor](https://sopkit.space/csv-column-extractor) - Load CSV locally, preview headers, choose only the columns you need, remove duplicate rows, sort records, and export clean CSV data.
+- [URL Extractor](https://sopkit.space/url-extractor/) - Harvest every link from pasted text, Markdown, HTML or logs, normalise bare domains, flag invalid entries, remove duplicates and export the list.
+- [Email Extractor](https://sopkit.space/email-extractor/) - Extract email addresses from pasted text, contact lists, HTML, Markdown, and documents. Normalize, deduplicate, group by domain, and export clean results locally.
+- [Phone Number Extractor](https://sopkit.space/phone-number-extractor/) - Extract phone-number-like sequences from notes, logs, contact lists, and copied text. Preserve source formatting while reporting digit counts and exporting results.
+- [IP Address Extractor](https://sopkit.space/ip-address-extractor/) - Extract IPv4 and IPv6 addresses from server logs, headers, diagnostics, and text. Classify matches and export a compact network inventory locally.
+- [Domain Extractor](https://sopkit.space/domain-extractor/) - Extract hostnames from URLs and email addresses, remove common www prefixes, deduplicate domains, sort them, and export a clean domain inventory.
+- [HTML Link Extractor](https://sopkit.space/html-link-extractor/) - Parse raw HTML and extract anchor URLs, visible text, rel attributes, target values, and optionally resolved relative links using a base URL.
+- [HTML Image Extractor](https://sopkit.space/html-image-extractor/) - Extract image URLs from HTML img tags, srcset, picture sources, Open Graph image tags, and Twitter image metadata for audits and research.
+- [HTML Metadata Extractor](https://sopkit.space/html-meta-extractor/) - Inspect HTML title, description, canonical, robots, Open Graph, Twitter cards, favicon, language, theme color, and heading content in a structured list.
+- [JSONPath Extractor](https://sopkit.space/json-path-extractor/) - Query nested JSON with property selectors, array indexes, wildcards, recursive descent, unions, slices, and simple comparison filters. Copy matching values and paths.
+- [Regex Extractor](https://sopkit.space/regex-extractor/) - Run custom regular expressions against text, inspect capture groups and character positions, use common extraction presets, and export structured matches.
+- [CSV Column Extractor](https://sopkit.space/csv-column-extractor/) - Load CSV locally, preview headers, choose only the columns you need, remove duplicate rows, sort records, and export clean CSV data.

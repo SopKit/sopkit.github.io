@@ -46,7 +46,7 @@ export default function ArchitectureCanvasPage() {
         <nav className="flex items-center gap-2 text-xs text-muted-foreground mb-6" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-foreground transition-colors">Home</Link>
           <ChevronRight className="w-3.5 h-3.5 opacity-60" />
-          <Link href="/developer-tools" className="hover:text-foreground transition-colors">Developer Tools</Link>
+          <Link href="/developer-tools/" className="hover:text-foreground transition-colors">Developer Tools</Link>
           <ChevronRight className="w-3.5 h-3.5 opacity-60" />
           <span className="text-foreground font-medium">Architecture Canvas</span>
         </nav>

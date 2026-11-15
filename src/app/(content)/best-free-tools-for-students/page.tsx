@@ -57,7 +57,7 @@ export default async function ToolPage() {
 						Most Indian universities enforce a 75 percent attendance floor, and
 						the worst time to discover you're below it is the week before
 						exams. A{" "}
-						<Link href="/75-attendance-calculator" className="text-primary underline">
+						<Link href="/75-attendance-calculator/" className="text-primary underline">
 							75% attendance calculator
 						</Link>{" "}
 						does the arithmetic instantly: enter classes held and attended, and
@@ -65,7 +65,7 @@ export default async function ToolPage() {
 						forward planning — it can show how many consecutive classes you can
 						safely skip, or how many you must attend in a row to climb back
 						above the line. If you're already cutting it close, the{" "}
-						<Link href="/75-attendance-calculator" className="text-primary underline">
+						<Link href="/75-attendance-calculator/" className="text-primary underline">
 							attendance shortage calculator
 						</Link>{" "}
 						breaks down precisely how much ground you need to make up.
@@ -79,12 +79,12 @@ export default async function ToolPage() {
 						format. One wants CGPA, another wants percentage, a third asks for
 						your SGPA semester by semester. Instead of hunting for your
 						university's conversion formula, use the{" "}
-						<Link href="/cgpa-calculator" className="text-primary underline">
+						<Link href="/cgpa-calculator/" className="text-primary underline">
 							CGPA calculator
 						</Link>{" "}
-						or <Link href="/sgpa-calculator" className="text-primary underline">SGPA calculator</Link>{" "}
+						or <Link href="/sgpa-calculator/" className="text-primary underline">SGPA calculator</Link>{" "}
 						to get the numbers straight, then convert with the{" "}
-						<Link href="/cgpa-to-percentage-calculator" className="text-primary underline">
+						<Link href="/cgpa-to-percentage-calculator/" className="text-primary underline">
 							CGPA to percentage calculator
 						</Link>{" "}
 						when a form demands it. They're simple tools doing simple math —
@@ -102,27 +102,27 @@ export default async function ToolPage() {
 					</p>
 					<ul className="mt-4 list-disc space-y-2 pl-6 text-muted-foreground">
 						<li>
-							<Link href="/ssc-photo-resizer" className="text-primary underline">SSC photo resizer</Link>{" "}
+							<Link href="/ssc-photo-resizer/" className="text-primary underline">SSC photo resizer</Link>{" "}
 							and{" "}
-							<Link href="/jee-photo-resizer" className="text-primary underline">JEE photo resizer</Link>{" "}
+							<Link href="/jee-photo-resizer/" className="text-primary underline">JEE photo resizer</Link>{" "}
 							for their respective portal requirements.
 						</li>
 						<li>
-							<Link href="/neet-photo-resizer" className="text-primary underline">NEET photo resizer</Link>{" "}
+							<Link href="/neet-photo-resizer/" className="text-primary underline">NEET photo resizer</Link>{" "}
 							and{" "}
-							<Link href="/upsc-photo-resizer" className="text-primary underline">UPSC photo resizer</Link>{" "}
+							<Link href="/upsc-photo-resizer/" className="text-primary underline">UPSC photo resizer</Link>{" "}
 							when those application windows open.
 						</li>
 						<li>
-							<Link href="/passport-photo-maker" className="text-primary underline">Passport photo maker</Link>{" "}
+							<Link href="/passport-photo-maker/" className="text-primary underline">Passport photo maker</Link>{" "}
 							for standard ID-style crops from any decent selfie.
 						</li>
 						<li>
-							<Link href="/signature-resizer-under-20kb" className="text-primary underline">Signature resizer</Link>{" "}
+							<Link href="/signature-resizer-under-20kb/" className="text-primary underline">Signature resizer</Link>{" "}
 							for the signature upload that always demands under 20 KB.
 						</li>
 						<li>
-							<Link href="/jpg-to-pdf-exam-forms" className="text-primary underline">JPG to PDF for exam forms</Link>{" "}
+							<Link href="/jpg-to-pdf-exam-forms/" className="text-primary underline">JPG to PDF for exam forms</Link>{" "}
 							when a portal wants documents as a single PDF rather than loose
 							images.
 						</li>
@@ -138,16 +138,16 @@ export default async function ToolPage() {
 					</h2>
 						<p className="mt-4 leading-relaxed text-muted-foreground">
 						Two assignment savers round out the kit. The{" "}
-						<Link href="/text-to-handwriting" className="text-primary underline">
+						<Link href="/text-to-handwriting/" className="text-primary underline">
 							text-to-handwriting tool
 						</Link>{" "}
 						converts typed notes into realistic handwriting pages for
 						print-and-submit assignments — controversial with some professors,
 						indispensable with others. And before you submit any essay, run it
 						through the{" "}
-						<Link href="/word-counter" className="text-primary underline">word counter</Link>{" "}
+						<Link href="/word-counter/" className="text-primary underline">word counter</Link>{" "}
 						to hit the required length, plus the{" "}
-						<Link href="/case-converter" className="text-primary underline">case converter</Link>{" "}
+						<Link href="/case-converter/" className="text-primary underline">case converter</Link>{" "}
 						when a title page needs ALL CAPS or Title Case in a hurry.
 					</p>
 
@@ -198,7 +198,7 @@ export default async function ToolPage() {
 
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						There's more where this came from — the{" "}
-						<Link href="/tool-guides" className="text-primary underline">tool guides hub</Link>{" "}
+						<Link href="/tool-guides/" className="text-primary underline">tool guides hub</Link>{" "}
 						walks through every category, from calculators to PDF utilities,
 						with student workflows first.
 					</p>

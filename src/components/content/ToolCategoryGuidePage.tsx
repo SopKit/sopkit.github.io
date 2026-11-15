@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Tool, Category } from "@/lib/tools";
+import { pageHref } from "@/seo/canonical";
 
 interface ToolCategoryGuidePageProps {
 	category: Category;
@@ -117,7 +118,7 @@ export default function ToolCategoryGuidePage({ category, relatedCategories }: T
 						{category.tools.map((tool: Tool) => (
 							<Link
 								key={tool.id}
-								href={tool.route}
+								href={pageHref(tool.route)}
 								className="group rounded-2xl border border-border/70 bg-background p-5 transition-all hover:border-primary/40 hover:shadow-lg"
 							>
 								<div className="flex items-center justify-between gap-3">

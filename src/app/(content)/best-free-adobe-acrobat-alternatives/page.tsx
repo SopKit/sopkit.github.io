@@ -72,16 +72,16 @@ export default async function ToolPage() {
 					</h2>
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						The{" "}
-						<Link href="/pdf-editor" className="text-primary underline">PDF editor</Link>{" "}
+						<Link href="/pdf-editor/" className="text-primary underline">PDF editor</Link>{" "}
 						covers structural edits — reordering pages, deleting sections,
 						inserting content from other documents. Combine it with the{" "}
-						<Link href="/pdf-splitter" className="text-primary underline">splitter</Link>{" "}
+						<Link href="/pdf-splitter/" className="text-primary underline">splitter</Link>{" "}
 						when one source file must become several deliverables, and{" "}
-						<Link href="/pdf-merger" className="text-primary underline">online merging</Link>{" "}
+						<Link href="/pdf-merger/" className="text-primary underline">online merging</Link>{" "}
 						for the reverse. Fixing orientation after a misfeed scan takes
 						seconds with{" "}
-						<Link href="/pdf-rotation" className="text-primary underline">PDF rotation</Link>, and{" "}
-						<Link href="/pdf-page-numbers" className="text-primary underline">page numbering</Link>{" "}
+						<Link href="/pdf-rotation/" className="text-primary underline">PDF rotation</Link>, and{" "}
+						<Link href="/pdf-page-numbers/" className="text-primary underline">page numbering</Link>{" "}
 						handles the formatting touch reviewers always request.
 					</p>
 
@@ -92,14 +92,14 @@ export default async function ToolPage() {
 						Acrobat's export-to-Word is genuinely good, but occasional users
 						don't need it often enough to justify rent. Free equivalents
 						handle routine cases:{" "}
-						<Link href="/pdf-to-word" className="text-primary underline">PDF to Word</Link>{" "}
+						<Link href="/pdf-to-word/" className="text-primary underline">PDF to Word</Link>{" "}
 						for editable text recovery,{" "}
-						<Link href="/word-to-pdf" className="text-primary underline">Word to PDF</Link>{" "}
+						<Link href="/word-to-pdf/" className="text-primary underline">Word to PDF</Link>{" "}
 						for the submission direction, and{" "}
-						<Link href="/image-to-pdf" className="text-primary underline">image to PDF</Link>{" "}
+						<Link href="/image-to-pdf/" className="text-primary underline">image to PDF</Link>{" "}
 						for bundling scans or screenshots into one document. When a web
 						page itself is the source, the{" "}
-						<Link href="/html-to-pdf" className="text-primary underline">HTML to PDF converter</Link>{" "}
+						<Link href="/html-to-pdf/" className="text-primary underline">HTML to PDF converter</Link>{" "}
 						preserves layout as rendered.
 					</p>
 
@@ -109,15 +109,15 @@ export default async function ToolPage() {
 					<p className="mt-4 leading-relaxed text-muted-foreground">
 						This category quietly justifies most subscriptions, yet every
 						piece runs locally here too: apply a password via{" "}
-						<Link href="/pdf-protect" className="text-primary underline">PDF protection</Link>,
+						<Link href="/pdf-protect/" className="text-primary underline">PDF protection</Link>,
 						regain access to files you own through{" "}
-						<Link href="/pdf-unlocker" className="text-primary underline">unlocking</Link>,
+						<Link href="/pdf-unlocker/" className="text-primary underline">unlocking</Link>,
 						stamp drafts with{" "}
-						<Link href="/pdf-watermark" className="text-primary underline">watermarks</Link>,
+						<Link href="/pdf-watermark/" className="text-primary underline">watermarks</Link>,
 						strip embarrassing authorship history using the{" "}
-						<Link href="/pdf-metadata-editor" className="text-primary underline">metadata editor</Link>, and
+						<Link href="/pdf-metadata-editor/" className="text-primary underline">metadata editor</Link>, and
 						prepare print-ready copies with{" "}
-						<Link href="/pdf-grayscale" className="text-primary underline">grayscale conversion</Link>.
+						<Link href="/pdf-grayscale/" className="text-primary underline">grayscale conversion</Link>.
 						Because processing is client-side, even sensitive legal files
 						pass through without touching a server — arguably safer than
 						uploading them anywhere, including to legitimate services.
@@ -206,7 +206,7 @@ export default async function ToolPage() {
 					<p className="mt-8 leading-relaxed text-muted-foreground">
 						Cancel-the-subscription season starts with one successful test
 						run — begin at the{" "}
-						<Link href="/pdf-tools" className="text-primary underline">free PDF tools hub</Link>.
+						<Link href="/pdf-tools/" className="text-primary underline">free PDF tools hub</Link>.
 					</p>
 				</div>
 			</ToolLayout>

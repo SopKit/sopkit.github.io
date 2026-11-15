@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import { useToolStorage, useCopyFeedback } from "@/hooks/useToolStorage";
 import { ToolAutoSaveIndicator } from "@/components/tools/shared/ToolAutoSaveIndicator";
 
-const SAMPLE_ESSAY = `SopKit is an open-source, client-side developer and creator platform. Every tool runs 100% locally in your web browser with zero server uploads, tracking, or subscription paywalls.
+const SAMPLE_ESSAY = `SopKit is an open-source, client-side developer and creator platform. Most tools run in your web browser, and none require an account or a subscription.
 
 Whether you are minifying JSON, inspecting a JSON Web Token, generating cryptographic hashes, or writing essays, your data remains strictly private. With local browser storage persistence, you can close your tab or return days later without losing your work.`;
 

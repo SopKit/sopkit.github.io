@@ -115,7 +115,6 @@ const staticPages = [
   { path: '/services', priority: '0.75', changefreq: 'monthly' },
   { path: '/advertise', priority: '0.70', changefreq: 'monthly' },
   { path: '/embed-tools', priority: '0.70', changefreq: 'monthly' },
-  { path: '/online-tools', priority: '0.80', changefreq: 'weekly' },
   { path: '/best-free-alternative-to-chatgpt', priority: '0.65', changefreq: 'monthly' },
   { path: '/best-free-converters-in-2026', priority: '0.65', changefreq: 'monthly' },
   { path: '/best-free-tools-for-students', priority: '0.65', changefreq: 'monthly' },

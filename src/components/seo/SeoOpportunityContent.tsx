@@ -11,6 +11,7 @@ import {
 	getRelatedSeoOpportunities,
 	type SeoOpportunity,
 } from "@/data/seo-opportunities";
+import { pageHref } from "@/seo/canonical";
 
 function getPrivacyNote(opportunity: SeoOpportunity) {
 	if (opportunity.toolPreset?.type === "api-key") {
@@ -105,7 +106,7 @@ export default function SeoOpportunityContent({
 							Need a custom API integration, private server deployment, or custom features for this tool? Contact our team.
 						</p>
 						<Button asChild size="sm" variant="outline" className="mt-4 rounded-xl">
-							<Link href="/services">Hire Us</Link>
+							<Link href="/services/">Hire Us</Link>
 						</Button>
 					</CardContent>
 				</Card>
@@ -156,7 +157,7 @@ export default function SeoOpportunityContent({
 									{opportunity.recommendedCTA}
 								</p>
 								<Button asChild className="rounded-xl">
-									<Link href="/services">View Services</Link>
+									<Link href="/services/">View Services</Link>
 								</Button>
 							</CardContent>
 						</Card>
@@ -183,7 +184,7 @@ export default function SeoOpportunityContent({
 						{related.map((item) => (
 							<Link
 								key={item.slug}
-								href={item.route}
+								href={pageHref(item.route)}
 								className="group rounded-xl border border-border/60 bg-card/40 p-4 transition-colors hover:border-primary/30"
 							>
 								<div className="flex items-start justify-between gap-4">

@@ -154,7 +154,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 							<BreadcrumbsEnhanced suppressSchema={true} />
 						</Suspense>
 						<Link
-							href="/blog"
+							href="/blog/"
 							className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors"
 						>
 							<ArrowLeft className="h-3.5 w-3.5" />
@@ -186,7 +186,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 						<div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
 							<span>Written by SopKit Editorial Team</span>
 							<span>&bull;</span>
-							<Link href="/editorial-policy" className="text-primary hover:underline underline-offset-2">Editorial policy</Link>
+							<Link href="/editorial-policy/" className="text-primary hover:underline underline-offset-2">Editorial policy</Link>
 						</div>
 					</header>
 

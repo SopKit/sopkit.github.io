@@ -3,7 +3,7 @@
  * @description Internal entity relationships and Knowledge Graph modeling for SopKit (AEO/GEO).
  */
 
-import { SITE_URL, GITHUB_REPO_URL } from "@/constants/config";
+import { SITE_URL, GITHUB_REPO_URL, TOOL_COUNT_STRING } from "@/constants/config";
 
 export interface SopKitEntity {
   id: string;
@@ -21,7 +21,7 @@ export const PLATFORM_ENTITY: SopKitEntity = {
   name: "SopKit",
   type: "Platform",
   url: SITE_URL,
-  description: "High-performance privacy-first client-side web utility platform providing 600+ browser tools.",
+  description: `Privacy-first web utility platform providing ${TOOL_COUNT_STRING} browser-based tools.`,
   sameAs: [
     GITHUB_REPO_URL,
     "https://x.com/sopkit",

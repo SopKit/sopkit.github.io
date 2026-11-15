@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, ArrowRight } from "lucide-react";
 import { generateToolMetadata } from "@/lib/seo";
 import CollectionPageJsonLd from "@/components/seo/CollectionPageJsonLd";
+import { pageHref } from "@/seo/canonical";
 
 export const metadata = generateToolMetadata({
 	name: "SEO Tools",
@@ -36,7 +37,7 @@ export default function SEOHub() {
 					
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
 						{tools.map((tool: Tool) => (
-							<Link key={tool.id} href={tool.route}>
+							<Link key={tool.id} href={pageHref(tool.route)}>
 								<Card className="h-full border border-border/80 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition-all duration-200 group overflow-hidden bg-card/60 backdrop-blur-sm">
 									<CardHeader className="pb-2">
 										<CardTitle className="flex items-center justify-between">

@@ -9,7 +9,7 @@ interface ToolShellProps extends React.HTMLAttributes<HTMLDivElement> {
 /**
  * Standard outer wrapper for every interactive tool. Replaces the dozens of
  * ad-hoc `max-w-2/3/4/5/6xl mx-auto` wrappers scattered across tool
- * components so all 600+ tools share one content width and rhythm.
+ * components so all tools share one content width and rhythm.
  */
 export function ToolShell({ children, className, ...rest }: ToolShellProps) {
 	return (

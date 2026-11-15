@@ -21,6 +21,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { type Tool } from "@/lib/tools";
+import { pageHref } from "@/seo/canonical";
 
 // Social sharing component
 export interface SocialShareProps {
@@ -127,7 +128,7 @@ export function RelatedTools({
 				{relatedTools.map((tool) => (
 					<Link
 						key={tool.id}
-						href={tool.route}
+						href={pageHref(tool.route)}
 						className="group flex items-start justify-between gap-3 p-3 rounded-xl border border-border/60 bg-muted/20 hover:bg-muted/50 hover:border-primary/40 transition-all"
 					>
 						<div className="flex-1 min-w-0">
@@ -204,7 +205,7 @@ export function PopularTools({
 								)}
 
 								<Button asChild className="w-full" size="sm">
-									<Link href={tool.route}>
+									<Link href={pageHref(tool.route)}>
 										Try Now
 										<ArrowRight className="ml-2 h-4 w-4" />
 									</Link>

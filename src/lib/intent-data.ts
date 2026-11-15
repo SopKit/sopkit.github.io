@@ -21,7 +21,7 @@ Compressing an image down to 50KB can often lead to blurring. Our algorithm uses
     },
     "resize-image-for-instagram": {
         parentToolId: "image-resizer",
-        title: "Resize Image for Instagram (1080x1920) - Post & Story",
+        title: "Resize Image for Instagram Posts & Stories",
         description: "Instantly resize your photos for Instagram Posts, Stories, and Reels with perfect 1080x1920 or 1080x1080 dimensions.",
         keywords: "resize for instagram, instagram story size, 1080x1920 resizer, instagram post dimensions",
         article: `
@@ -61,7 +61,7 @@ We use advanced OCR and layout analysis to ensure that your Word document looks 
     },
     "online-twitter-card-generator-free": {
         parentToolId: "twitter-card-generator",
-        title: "Online Twitter Card Generator Free - Preview & Meta Tag Creator",
+        title: "Twitter Card Generator - Preview & Meta Tags",
         description: "Create and preview Twitter Card meta tags (Summary, Large Image) for your website. 100% free, instant, and browser-based with no registration.",
         keywords: "online twitter card generator free, twitter card generator tool, preview twitter cards, twitter cards meta tags",
         article: `

@@ -15,7 +15,6 @@ import AdPlacement from "@/components/ads/AdPlacement";
 import { getSeoOpportunityByRoute } from "@/data/seo-opportunities";
 import { ToolToolbar } from "./ToolToolbar";
 import { EmbedWidgetGiver } from "./EmbedWidgetGiver";
-import { VisitorBadge } from "@/components/shared/VisitorBadge";
 import { ProcessingBadge } from "@/components/shared/ProcessingBadge";
 import { JumpToToolButton } from "./JumpToToolButton";
 import {
@@ -225,7 +224,7 @@ export default function ToolLayout({
 
 	return (
 		<div className="min-h-screen bg-background text-foreground relative">
-			<StructuredData tool={enrichedTool} />
+			<StructuredData tool={enrichedTool} includeFAQ={!isCompanyPage} />
 
 			{/* Top Breadcrumb Navigation */}
 			<div className="container mx-auto px-4 pt-3 pb-1">
@@ -284,7 +283,7 @@ export default function ToolLayout({
 
 				{/* Primary Tool Workspace (Visually Dominant) */}
 				{!isHubPage && (
-					<section id="tool-workspace" aria-label={`${enrichedTool.name} workspace`} className={`w-full ${workspaceClass} mx-auto transition-all scroll-mt-24`}>
+					<section id="tool-workspace" aria-label={`${enrichedTool.name} workspace`} className={`w-full ${workspaceClass} mx-auto transition-all scroll-mt-24 min-h-[28rem]`}>
 						<div className={`rounded-2xl border border-border/70 bg-card/60 shadow-xs overflow-hidden ${isDenseWorkspace ? "p-2.5 sm:p-3 lg:p-4" : "p-3 sm:p-5 lg:p-7"}`}>
 							{children}
 						</div>
@@ -346,7 +345,6 @@ export default function ToolLayout({
 								SopKit is a privacy-focused utility platform with transparent processing and privacy choices.
 							</p>
 							<div className="flex flex-wrap items-center justify-center gap-3">
-								<VisitorBadge path={tool.route || `/${tool.id}`} label="PAGE VIEWS" />
 								<Button variant="outline" size="sm" asChild className="h-7 text-xs gap-1.5 rounded-lg">
 									<a href={SITE_CONFIG.githubRepoUrl} target="_blank" rel="noreferrer">
 										<Github className="h-3.5 w-3.5" />
@@ -354,10 +352,10 @@ export default function ToolLayout({
 									</a>
 								</Button>
 								<Button variant="ghost" size="sm" asChild className="h-7 text-xs rounded-lg text-muted-foreground hover:text-foreground">
-									<Link href="/privacy">Privacy Notice</Link>
+									<Link href="/privacy/">Privacy Notice</Link>
 								</Button>
 								<Button variant="ghost" size="sm" asChild className="h-7 text-xs rounded-lg text-muted-foreground hover:text-foreground">
-									<Link href="/terms">Terms of Service</Link>
+									<Link href="/terms/">Terms of Service</Link>
 								</Button>
 							</div>
 						</footer>

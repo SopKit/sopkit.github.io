@@ -192,7 +192,7 @@ export default function EmbedToolsPage() {
 						<h2 className="text-2xl font-bold tracking-tight">Need a different tool?</h2>
 						<p className="mt-3 max-w-3xl text-sm md:text-base text-muted-foreground leading-relaxed">
 							Any tool ID from our library works with the same URL pattern. Browse everything on the{" "}
-							<Link href="/online-tools" className="font-semibold text-primary hover:text-primary/80 inline-flex items-center gap-1 transition-colors">
+							<Link href="/online-tools/" className="font-semibold text-primary hover:text-primary/80 inline-flex items-center gap-1 transition-colors">
 								online tools hub
 								<ArrowRight className="h-3.5 w-3.5" />
 							</Link>{" "}

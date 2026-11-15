@@ -18,8 +18,8 @@ import { Container } from "@/components/layout/Container";
 
 export async function generateMetadata(): Promise<Metadata> {
 	return baseGenerateMetadata({
-		title: `Free Online Tools (600+) — Fast & Private Browser Utilities | SopKit`,
-		description: `600+ free online tools for PDF, image, audio, developer code, and SEO. Most tools process files in your browser without uploading them. No signup required.`,
+		title: `Free Online Tools (${SITE_CONFIG.toolCountString}) — Private & Browser-Based`,
+		description: `${SITE_CONFIG.toolCountString} free online tools for PDF, image, audio, developer code, and SEO. Most tools process files in your browser without uploading them. No signup required.`,
 		path: "/",
 	});
 }
@@ -48,7 +48,7 @@ export default async function LandingPage() {
 				<CategoryShowcase />
 			</div>
 
-			{/* 3. Live 600+ Tool Directory with Fast Search & Category Filter Tabs */}
+			{/* 3. Live Tool Directory with Fast Search & Category Filter Tabs */}
 			<div className="[content-visibility:auto] [contain-intrinsic-size:1px_900px]">
 				<ToolDirectorySection tools={searchTools} />
 			</div>

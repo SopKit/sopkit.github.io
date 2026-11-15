@@ -1,53 +1,31 @@
-# SopKit Editorial Design System
+# SopKit Design System — Astryx
 
-A centralized, editorial design system engineered for high-density utility applications, fast discovery, and a calm reading experience.
-
----
-
-## 1. Visual Philosophy & Core Direction
-
-SopKit pairs high-contrast **Editorial Serif typography** (`Newsreader`) with a clean, modern **sans-serif** (`Inter`) and a warm, natural cream/white light mode canvas (`45 15% 98%`) alongside an obsidian dark mode (`240 10% 4%`).
-
-Key principles:
-1. **Typography as Articulation**: Large display and page titles use classic editorial serif with italic emphasis; technical data, controls, and body copy use precision geometric sans.
-2. **Pill-Centric Navigation & Actions**: Segmented capsule navigation bars and high-contrast pill action buttons with directional indicator icons (`ArrowUpRight` ↗).
-3. **Fanned & Tilted Showcase Cards**: Interactive preview elements displayed with subtle organic rotations, layered shadows, and paper-tear transition accents.
-4. **Honest Copy**: Zero fake metrics, zero unverifiable benchmark claims, and zero aggressive sales jargon. Every word serves search intent and user trust.
+SopKit's UI is built on [Astryx](https://astryx.atmeta.com) (`@astryxdesign/core` with `@astryxdesign/theme-neutral`). Astryx owns every colour, radius, shadow, spacing and type value; SopKit adds layout recipes and a small tool-composition layer on top.
 
 ---
 
-## 2. Design Tokens (`src/lib/design-system/tokens.ts`)
+## 1. Wiring
 
-### Typography Scale
-- **Display**: `font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95]`
-- **Page Title**: `font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight leading-[1.05]`
-- **Section Title**: `font-serif text-2xl sm:text-3xl md:text-4xl tracking-tight leading-snug`
-- **Card Title**: `font-sans text-base sm:text-lg font-semibold tracking-tight`
-- **Body**: `font-sans text-sm sm:text-base leading-relaxed text-muted-foreground`
-- **Body Small**: `font-sans text-xs sm:text-sm leading-normal text-muted-foreground`
-- **Label**: `font-sans text-xs font-semibold uppercase tracking-wider text-muted-foreground`
-- **Code**: `font-mono text-xs sm:text-sm`
-- **Caption**: `font-mono text-[11px] uppercase tracking-widest text-muted-foreground`
+- **Theme root**: `src/components/shared/theme-provider.tsx` wraps the app in Astryx `<Theme theme={neutralTheme}>`; `next-themes` writes `data-theme` on `<html>` and Astryx follows it (light / dark / system).
+- **Global CSS**: `src/app/globals.css` imports `@astryxdesign/core/reset.css`, `astryx.css` and the neutral theme in the Astryx layer order (Tailwind utilities sit above Astryx so `className` still wins), and maps the semantic Tailwind names (`bg-background`, `text-muted-foreground`, `border-border`, `bg-primary`, `rounded-xl` …) onto Astryx tokens.
+- **Primitives**: `src/components/ui/*` are thin adapters over Astryx components that keep the familiar compound API, e.g. `Select` → `Selector`, `Tabs` → `TabList role="tablist"`, `Dialog` → `Dialog`, `DropdownMenu` → `DropdownMenu`, `Tooltip` → `Tooltip`, `Accordion` / `Collapsible` → `CollapsibleGroup` / `Collapsible`. Import Astryx per component (`@astryxdesign/core/Selector`). No `@radix-ui/*`, no cva recipes.
 
-### Semantic Surface & Color Tokens (HSL CSS Variables)
-| Token | Light Mode (Warm Canvas) | Dark Mode (Obsidian) | Purpose |
-|---|---|---|---|
-| `--background` | `45 15% 98%` | `240 10% 4%` | Base application canvas |
-| `--foreground` | `240 10% 10%` | `0 0% 98%` | Primary text and headings |
-| `--surface` | `0 0% 100%` | `240 10% 6%` | Standard card surface |
-| `--surface-muted` | `45 10% 95%` | `240 10% 9%` | Inset backgrounds, secondary strips |
-| `--surface-elevated` | `0 0% 100%` | `240 10% 12%` | Modals, flyouts, and floating pills |
-| `--border` | `45 10% 88%` | `240 6% 16%` | Primary structural borders |
-| `--primary` | `240 10% 10%` | `0 0% 98%` | High-contrast actions |
-| `--primary-foreground`| `0 0% 98%` | `240 10% 10%` | Contrast text on primary |
-| `--accent` | `24 95% 53%` | `24 95% 53%` | Subtle warm amber branding accent |
+## 2. Tokens (Astryx)
 
-### Radius Scale
-- `sm`: `rounded-md` (Badges, inner controls)
-- `md`: `rounded-xl` (Inputs, buttons, small cards)
-- `lg`: `rounded-2xl` (Standard panels, showcase cards)
-- `xl`: `rounded-3xl` (Large callout containers)
-- `full`: `rounded-full` (Capsule navbar, pill buttons, filter chips)
+| Purpose | Astryx token | Tailwind alias |
+|---|---|---|
+| Page canvas | `--color-background-body` | `bg-background` |
+| Card / panel surface | `--color-background-card` | `bg-card` |
+| Muted / inset surface | `--color-background-muted` | `bg-muted` |
+| Popover surface | `--color-background-popover` | `bg-popover` |
+| Primary / secondary text | `--color-text-primary` / `--color-text-secondary` | `text-foreground` / `text-muted-foreground` |
+| Borders | `--color-border`, `--color-border-emphasized` | `border-border`, `border-input` |
+| Accent / focus | `--color-accent`, `--color-on-accent` | `bg-primary`, `ring-ring` |
+| Radius | `--radius-inner` · `--radius-element` · `--radius-container` · `--radius-page` · `--radius-full` | `rounded-sm` · `rounded-md` · `rounded-lg`/`rounded-xl` · `rounded-2xl` · `rounded-full` |
+| Elevation | `--shadow-low` · `--shadow-med` · `--shadow-high` | `shadow-sm` · `shadow-md` · `shadow-lg` |
+| Type | `--font-family-body` / `-heading` / `-code`, `--text-*-size` | `font-sans` / `font-serif` / `font-mono` |
+
+Use the Tailwind alias or the token directly (`bg-(--color-background-card)`); never raw hex/HSL values.
 
 ---
 
@@ -96,11 +74,14 @@ Features:
 
 ## 4. Interactive Tool Design System (`src/components/tools/shared/design-system/`)
 
-All interactive tool interfaces in `src/components/tools/**` must consume tokens from:
+All interactive tool interfaces in `src/components/tools/**` compose from:
 ```tsx
-import { DS, ToolShell, ToolGrid, ToolPanel, ToolDropzone } from "@/components/tools/shared/design-system";
+import { DS, ToolShell, ToolGrid, ToolPanel, ToolDropzone, ToolField, ToolModeTabs } from "@/components/tools/shared/design-system";
 ```
-- `DS.shell`: `w-full max-w-4xl mx-auto space-y-8`
-- `DS.grid`: `grid grid-cols-1 md:grid-cols-12 gap-8` (7-col workspace + 5-col preview/results)
-- `DS.dropzone`: Standardized keyboard-accessible dashed dropzone.
-- `DS.tabs`: Standard segmented control for tool modes.
+- `ToolShell` / `DS.shell`: `w-full max-w-4xl mx-auto space-y-6`.
+- `ToolGrid` / `DS.grid`: `grid grid-cols-1 md:grid-cols-12 gap-6` (7-col workspace + 5-col preview/results).
+- `ToolPanel`: Astryx `Card` surface + DS content rhythm.
+- `ToolField`: Astryx `Field` label over the `Input` adapter (or a custom control).
+- `ToolModeTabs`: Astryx `TabList` (`role="tablist"`, `layout="fill"`).
+- `ToolDropzone`: keyboard-accessible drag-and-drop / paste zone styled with Astryx tokens, with a polite live region.
+- `DS.radius`: `lg` → `--radius-container`, `xl` → `--radius-page`, `full` → `--radius-full`.

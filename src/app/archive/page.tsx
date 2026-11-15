@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import toolsData from "@/constants/tools.json";
+import { pageHref } from "@/seo/canonical";
 
 /**
  * Metadata for the Archive page.
@@ -100,7 +101,7 @@ export default function ArchivePage() {
 											className="group p-6 bg-card shadow-xl transition-all duration-300"
 										>
 											<h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-												<Link href={tool.route}>{tool.name}</Link>
+												<Link href={pageHref(tool.route)}>{tool.name}</Link>
 											</h3>
 											<p className="text-sm text-muted-foreground mb-4 line-clamp-2">
 												{tool.description}
