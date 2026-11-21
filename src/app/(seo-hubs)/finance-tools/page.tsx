@@ -1,13 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { constructPageMetadata } from "@/seo/metadata";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
 	title: "Finance Calculators — Loan, GST, Margin & Tax | SopKit",
 	description: "Free online finance calculators. Estimate loan EMIs, add or remove GST, check profit margins, calculate sales tax, and check PayPal fees instantly.",
-	alternates: { canonical: `${SITE_URL}/finance-tools` },
-};
+	pathname: "/finance-tools",
+});
 
 export default function FinanceToolsHub() {
 	return (

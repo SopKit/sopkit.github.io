@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { constructPageMetadata } from "@/seo/metadata";
 import { getIntentBySlug, intentData } from "@/lib/intent-data";
 import { getMonetizationDecision } from "@/data/monetization";
 import { getAllTools, getToolById, type Tool } from "@/lib/tools";
@@ -64,30 +65,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const opportunity = getSeoOpportunityBySlug(slug);
 
     if (opportunity?.standalone) {
-        const canonicalUrl = `https://sopkit.space${opportunity.route}`;
-
-        return {
+        return constructPageMetadata({
             title: opportunity.title,
             description: opportunity.metaDescription,
-            alternates: {
-                canonical: canonicalUrl,
-            },
-            openGraph: {
-                title: opportunity.title,
-                description: opportunity.metaDescription,
-                url: canonicalUrl,
-                siteName: "SopKit",
-                images: [{ url: "/og-image.jpg" }],
-                type: "website",
-            },
-            twitter: {
-                card: "summary_large_image",
-                title: opportunity.title,
-                description: opportunity.metaDescription,
-                images: ["/og-image.jpg"],
-            },
-            robots: getMonetizationDecision({ slug }).indexable ? { index: true, follow: true } : { index: false, follow: true },
-        };
+            pathname: opportunity.route,
+            noindex: !getMonetizationDecision({ slug }).indexable,
+        });
     }
 
     const intent = getIntentBySlug(slug);
@@ -96,32 +79,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const parentTool = getToolById(intent.parentToolId);
     if (!parentTool) return {};
 
-    const canonicalUrl = `https://sopkit.space/${slug}`;
-    const brandedTitle = `${intent.title} | SopKit`;
-
-    return {
-        title: brandedTitle,
+    return constructPageMetadata({
+        title: `${intent.title} | SopKit`,
         description: intent.description,
-        keywords: intent.keywords,
-        alternates: {
-            canonical: canonicalUrl,
-        },
-        openGraph: {
-            title: brandedTitle,
-            description: intent.description,
-            url: canonicalUrl,
-            siteName: "SopKit",
-            images: [{ url: "/og-image.jpg" }],
-            type: "website",
-        },
-        twitter: {
-            card: "summary_large_image",
-            title: brandedTitle,
-            description: intent.description,
-            images: ["/og-image.jpg"],
-        },
-        robots: getMonetizationDecision({ slug }).indexable ? { index: true, follow: true } : { index: false, follow: true },
-    };
+        pathname: `/${slug}`,
+        noindex: !getMonetizationDecision({ slug }).indexable,
+    });
 }
 
 export default async function IntentPage({ params }: { params: Promise<{ slug: string }> }) {

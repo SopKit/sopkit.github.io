@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
+import { constructPageMetadata } from "@/seo/metadata";
 import DevSpeedChallenge from "@/components/features/DevSpeedChallenge";
 import { Container } from "@/components/layout/Container";
 import Link from "next/link";
 import { ChevronRight, Zap, Trophy, Target, ShieldCheck } from "lucide-react";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
   title: "Free DevSpeed Online — Developer Code Typing Speed Benchmark",
   description: "Test and benchmark your coding typing speed with real syntax in TypeScript, Python, Rust, Go, and SQL. Measure WPM, CPM, accuracy, and bracket precision.",
-  alternates: {
-    canonical: "https://sopkit.space/dev-speed/",
-  },
-  openGraph: {
-    title: "DevSpeed — Developer Code Typing Speed Test",
-    description: "Benchmark your coding speed with real code snippets in TypeScript, Rust, Python, Go, and SQL. Measure WPM, CPM, accuracy, and bracket precision.",
-    url: "https://sopkit.space/dev-speed/",
-    type: "website",
-  },
-};
+  pathname: "/dev-speed",
+});
 
 export default function DevSpeedPage() {
   const jsonLd = {

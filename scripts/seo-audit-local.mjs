@@ -71,23 +71,22 @@ async function fetchPage(url, redirects = true) {
 	}
 }
 
-function parseHtml(html) {
-	const canonical =
-		html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1] || "";
+export function parseHtml(html) {
+	const attribute = (tag, name) => tag.match(new RegExp(`\\b${name}=["']([^"']*)["']`, "i"))?.[1] || "";
+	const metas = [...html.matchAll(/<meta\b[^>]*>/gi)].map((m) => m[0]);
+	const meta = (name) => metas.filter((tag) => attribute(tag, "name").toLowerCase() === name || attribute(tag, "property").toLowerCase() === name).map((tag) => attribute(tag, "content"));
+	const canonicals = [...html.matchAll(/<link\b[^>]*>/gi)].map((m) => m[0]).filter((tag) => attribute(tag, "rel").toLowerCase() === "canonical").map((tag) => attribute(tag, "href"));
 	const title = html.match(/<title[^>]*>([^<]+)<\/title>/i)?.[1] || "";
-	const metaDesc =
-		html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i)?.[1] || "";
-	const h1Matches = html.match(/<h1[^>]*>/gi) || [];
+	const metaDesc = meta("description")[0] || "";
+	const h1Matches = html.match(/<h1\b[^>]*>/gi) || [];
 	const bodyText = html
 		.replace(/<script[\s\S]*?<\/script>/gi, " ")
 		.replace(/<style[\s\S]*?<\/style>/gi, " ")
 		.replace(/<[^>]+>/g, " ")
 		.replace(/\s+/g, " ")
 		.trim();
-	const ldScripts = [...html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)].map(
-		(m) => m[1],
-	);
-	let jsonLdValid = true;
+	const ldScripts = [...html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)].map((m) => m[1]);
+	let jsonLdValid = ldScripts.length > 0;
 	let hasFaq = false;
 	try {
 		for (const s of ldScripts) {
@@ -99,24 +98,43 @@ function parseHtml(html) {
 		jsonLdValid = false;
 	}
 	return {
-		canonical,
+		canonical: canonicals[0] || "",
+		canonicalCount: canonicals.length,
 		title,
 		metaDesc,
 		h1Count: h1Matches.length,
 		bodyLength: bodyText.length,
 		hasTitle: title.length > 0,
 		hasMetaDesc: metaDesc.length > 0,
-		hasCanonical: canonical.length > 0,
-		hasNoindex: /name=["']robots["'][^>]+content=["'][^"']*noindex/i.test(html),
+		hasCanonical: canonicals.length > 0,
+		hasNoindex: [...meta("robots"), ...meta("googlebot")].some((value) => /\b(noindex|none)\b/i.test(value)),
+		ogTitle: meta("og:title")[0] || "",
+		ogDescription: meta("og:description")[0] || "",
+		ogUrl: meta("og:url")[0] || "",
+		ogImage: meta("og:image")[0] || "",
+		twitterCard: meta("twitter:card")[0] || "",
 		jsonLdValid,
 		hasFaq,
 	};
 }
 
+export function metadataProblems(p, url) {
+	const problems = [];
+	if (p.canonicalCount !== 1 || p.canonical !== url) problems.push("canonical must exactly match the sitemap URL");
+	if (p.hasNoindex) problems.push("sitemap URL is noindex");
+	if (!p.jsonLdValid) problems.push("JSON-LD missing or invalid");
+	if (!p.ogTitle) problems.push("missing og:title");
+	if (!p.ogDescription) problems.push("missing og:description");
+	if (p.ogUrl !== url) problems.push("og:url must exactly match the sitemap URL");
+	if (!/^https:\/\//i.test(p.ogImage)) problems.push("missing absolute HTTPS og:image");
+	if (!p.twitterCard) problems.push("missing twitter:card");
+	return problems;
+}
+
 async function auditUrl(url) {
 	totalChecks++;
-	const res = await fetchPage(url);
-	if (!res.ok) {
+	const res = await fetchPage(url, false);
+	if (res.status !== 200) {
 		fail(`returns ${res.status} instead of 200`, url);
 		return;
 	}
@@ -125,19 +143,13 @@ async function auditUrl(url) {
 	else pass(`has title (${p.title.length} chars)`);
 	if (!p.hasMetaDesc) fail("missing meta description", url);
 	else pass("has meta description");
-	if (!p.hasCanonical) fail("missing canonical", url);
-	else {
-		const norm = (u) => u.replace(/\/+$/, "").toLowerCase();
-		if (norm(p.canonical) === norm(url)) pass("canonical is self-referential");
-		else if (p.canonical.includes("sopkit.github.io")) warn(`canonical ${p.canonical} != ${url}`, url);
-		else fail(`canonical ${p.canonical} is off-domain`, url);
-	}
+	const problems = metadataProblems(p, url);
+	for (const problem of problems) fail(problem, url);
+	if (!problems.length) pass("canonical, indexing, structured data and social metadata are valid");
 	if (p.h1Count === 1) pass("exactly one H1");
 	else fail(`has ${p.h1Count} H1s (expected 1)`, url);
 	if (p.bodyLength > 1000) pass(`meaningful body (${p.bodyLength} chars)`);
 	else fail(`body too thin (${p.bodyLength} chars)`, url);
-	if (p.jsonLdValid) pass("JSON-LD parses");
-	else warn("JSON-LD missing or invalid", url);
 }
 
 async function checkSitemap() {
@@ -239,7 +251,9 @@ async function main() {
 	process.exit(0);
 }
 
-main().catch((error) => {
-	console.error("Fatal error:", error);
-	process.exit(1);
-});
+if (process.argv[1] && new URL(import.meta.url).pathname === process.argv[1]) {
+	main().catch((error) => {
+		console.error("Fatal error:", error);
+		process.exit(1);
+	});
+}

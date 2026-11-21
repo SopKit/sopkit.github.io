@@ -1,13 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { constructPageMetadata } from "@/seo/metadata";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
 	title: "AI Writing Tools - Free Text & Content Generators | SopKit",
 	description: "Free AI writing tools. Generate social media bios, custom poems, excuses, resignation letters, and marketing slogans instantly in your browser.",
-	alternates: { canonical: `${SITE_URL}/ai-writing-tools` },
-};
+	pathname: "/ai-writing-tools",
+});
 
 export default function AiWritingToolsHub() {
 	return (

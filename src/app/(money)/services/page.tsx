@@ -1,13 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { constructPageMetadata } from "@/seo/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
 	title: "Hire SopKit - SEO Fixes, Landing Pages and Custom Tools",
 	description: "Hire the team behind SopKit for SEO fixes, landing pages, restaurant QR menu websites, speed optimization, custom tools, and API integrations.",
-	alternates: { canonical: `${SITE_URL}/services` },
-};
+	pathname: "/services",
+});
 
 const services = [
 	"Technical SEO fixes",

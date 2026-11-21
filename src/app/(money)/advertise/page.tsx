@@ -1,13 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { constructPageMetadata } from "@/seo/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
 	title: "Advertise on SopKit - Sponsor Tools and Categories",
 	description: "Sponsor a SopKit category, tool page, newsletter placement, or contextual sponsored slot for software, education, design, and developer audiences.",
-	alternates: { canonical: `${SITE_URL}/advertise` },
-};
+	pathname: "/advertise",
+});
 
 const placements = [
 	["Small Placement", "Rs 999/month", "Contextual placement on a safe utility page."],

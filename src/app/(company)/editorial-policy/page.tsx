@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { SITE_CONFIG, SITE_URL } from "@/constants/config";
 import ToolLayout from "@/components/tools/shared/ToolLayout";
+import { constructPageMetadata } from "@/seo/metadata";
 
-export const metadata = {
+export const metadata = constructPageMetadata({
   title: "Editorial Policy — How SopKit Creates and Maintains Content",
   description: "Learn how SopKit creates, reviews, updates, and corrects tool documentation and technical guides for accuracy.",
-  alternates: { canonical: `${SITE_URL}/editorial-policy` },
-  robots: { index: true, follow: true },
-};
+  pathname: "/editorial-policy",
+});
 
 export default function EditorialPolicyPage() {
   const tool = {

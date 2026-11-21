@@ -65,12 +65,9 @@ function checkDescription(source: string, value: string): void {
   }
 }
 
-// Extract the `export const metadata = { ... }` block from a file, if any,
-// honouring nested braces. Returns null when the file builds its metadata
-// dynamically (no literal block) or via generateToolMetadata (callers of
-// that helper are in band by construction and are skipped upstream).
+// Extract literal metadata and constructPageMetadata inputs, honouring nested braces.
 function extractMetadataBlock(source: string): string | null {
-  const match = /export const metadata[^=]*=\s*\{/.exec(source);
+  const match = /export const metadata[^=]*=\s*(?:constructPageMetadata\(\s*)?\{/.exec(source);
   if (!match) return null;
   let depth = 0;
   let j = match.index + match[0].length - 1;

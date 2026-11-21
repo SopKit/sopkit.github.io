@@ -1,13 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { constructPageMetadata } from "@/seo/metadata";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
 	title: "Student Tools — Attendance, Grades & Study Tools | SopKit",
 	description: "Free student tools for attendance planning, SGPA, CGPA, CGPA to percentage, required marks, and exam image uploads.",
-	alternates: { canonical: `${SITE_URL}/student-tools` },
-};
+	pathname: "/student-tools",
+});
 
 export default function StudentToolsHub() {
 	return (

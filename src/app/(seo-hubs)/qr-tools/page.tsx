@@ -1,13 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { constructPageMetadata } from "@/seo/metadata";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
 	title: "QR Tools — Menu, Form, WiFi and UPI QR Codes | SopKit",
 	description: "Create QR codes for restaurant menus, Google Forms, WiFi passwords, UPI payments, business cards, and small business workflows.",
-	alternates: { canonical: `${SITE_URL}/qr-tools` },
-};
+	pathname: "/qr-tools",
+});
 
 export default function QrToolsHub() {
 	return (

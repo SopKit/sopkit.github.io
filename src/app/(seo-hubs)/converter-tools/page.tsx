@@ -1,13 +1,13 @@
-import { SITE_URL } from "@/constants/config";
+import { constructPageMetadata } from "@/seo/metadata";
 import type { Metadata } from "next";
 import HubPage from "@/components/seo/HubPage";
 import { getAllTools } from "@/lib/tools";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = constructPageMetadata({
 	title: "Free Converter Tools — Image, PDF & Code | SopKit",
 	description: "Free online format converter tools. Convert images to PDF, Word documents to PDF, text to binary, and format files locally and securely.",
-	alternates: { canonical: `${SITE_URL}/converter-tools` },
-};
+	pathname: "/converter-tools",
+});
 
 export default function ConverterToolsHub() {
 	return (
