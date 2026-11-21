@@ -1,6 +1,6 @@
 {
   "generated": {
-    "commit": "f2b078f9522f7bdbf3851e44a1580e374934ae04",
+    "commit": "809aeb7f49a3f25a4c83c9d1c3e691a33a19ef87",
     "method": "Author date of the most recent commit touching the tool's own page.tsx file (git log -1 --format=%ad --date=short); tools served by a dynamic [slug] page share that page's date. See scripts/generate-tool-lastmod.ts for the limits of this dating.",
     "note": "Regenerate with `bun run generate:tool-lastmod` after any commit that changes tool pages, and commit the result with that change. Registry-only metadata edits do not move these dates."
   },
