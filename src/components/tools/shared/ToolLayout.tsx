@@ -236,7 +236,7 @@ export default function ToolLayout({
 				</Suspense>
 			</div>
 
-			<div id="main-content" className="container mx-auto px-4 pb-16 space-y-6">
+			<div className="container mx-auto px-4 pb-16 space-y-6">
 				{/* Concise, Task-First Tool Header */}
 				<header className="max-w-5xl mx-auto space-y-3 pt-1 text-left">
 					<div className="flex min-w-0 items-start justify-between gap-3">

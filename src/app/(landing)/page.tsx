@@ -31,7 +31,7 @@ export default async function LandingPage() {
 	const heroSearchTools = searchTools.filter((tool) => tool.popular).slice(0, 120);
 
 	return (
-		<div id="main-content" className="flex flex-col min-h-screen bg-background text-foreground">
+		<div className="flex flex-col min-h-screen bg-background text-foreground">
 			{/* JSON-LD Structured Data (FAQ schema is provided by FAQSection) */}
 			<StructuredData isHome={true} includeFAQ={false} />
 

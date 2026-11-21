@@ -258,7 +258,9 @@ gtag("consent", "default", {
 				<ClientStackAuthProvider>
 					<ThemeProvider>
 						<Header />
-						{children}
+						<main id="main-content">
+							{children}
+						</main>
 						<Footer />
 						<Toaster />
 						<SearchModalHost />

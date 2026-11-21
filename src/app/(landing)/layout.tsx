@@ -8,7 +8,7 @@ export default function LandingGroupLayout({
 }) {
 	return (
 		<div className="min-h-screen flex flex-col bg-background selection:bg-primary/10">
-			<main className="flex-1">{children}</main>
+			<div className="flex-1">{children}</div>
 		</div>
 	);
 }

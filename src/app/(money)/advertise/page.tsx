@@ -17,7 +17,7 @@ const placements = [
 
 export default function AdvertisePage() {
 	return (
-		<main className="container mx-auto max-w-5xl px-4 py-16 space-y-12">
+		<div className="container mx-auto max-w-5xl px-4 py-16 space-y-12">
 			<section className="max-w-3xl space-y-5">
 				<h1 className="text-4xl font-extrabold tracking-tight md:text-6xl">Advertise on SopKit</h1>
 				<p className="text-lg leading-relaxed text-muted-foreground">
@@ -35,6 +35,6 @@ export default function AdvertisePage() {
 					</div>
 				))}
 			</section>
-		</main>
+		</div>
 	);
 }

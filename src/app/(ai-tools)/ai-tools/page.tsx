@@ -40,7 +40,7 @@ export default function AiToolsHub() {
 
 	return (
 		<div className="min-h-screen bg-background">
-			<main>
+			<div>
 				<PremiumHero
 					tools={getSearchToolRecords()}
 					title="AI Prompt Engineering Suite — Free Builders"
@@ -73,7 +73,7 @@ export default function AiToolsHub() {
 						))}
 					</div>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }
