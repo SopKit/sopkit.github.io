@@ -1,31 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { loadPdfJs } from "@/lib/pdfjs";
 import { FileText, Loader2, Download, Printer, Trash2, FileCheck } from "lucide-react";
 
 export default function PDFGrayscale() {
     const [file, setFile] = useState<File | null>(null);
     const [isProcessing, setIsProcessing] = useState(false);
-    const [pdfLibReady, setPdfLibReady] = useState(false);
     const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
-    const [loadError, setLoadError] = useState<string | null>(null);
-
-    useEffect(() => {
-        if (typeof window !== "undefined" && !(window as any).PDFLib) {
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => setPdfLibReady(true);
-            script.onerror = () => setLoadError("Failed to load PDF processing library. Please check your internet connection and refresh.");
-            document.head.appendChild(script);
-        } else {
-            setPdfLibReady(true);
-        }
-    }, []);
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (e.target.files && e.target.files[0]) {
@@ -39,32 +25,16 @@ export default function PDFGrayscale() {
         }
     };
 
-	const loadPdfJs = async () => {
-		if ((window as any).pdfjsLib) return (window as any).pdfjsLib;
-
-		return new Promise((resolve, reject) => {
-			const script = document.createElement("script");
-			script.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js";
-			script.onload = () => {
-				const pdfjs = (window as any).pdfjsLib;
-				pdfjs.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js";
-				resolve(pdfjs);
-			};
-			script.onerror = () => reject(new Error("Failed to load PDF.js engine."));
-			document.head.appendChild(script);
-		});
-	};
-
     const convertToGrayscale = async () => {
-        if (!file || !pdfLibReady) return;
+        if (!file) return;
 
         setIsProcessing(true);
         try {
-            const pdfjs = await loadPdfJs();
-            const { PDFDocument } = (window as any).PDFLib;
+            // Bundled pdf.js (self-hosted worker, see src/lib/pdfjs.ts) and pdf-lib, loaded on demand.
+            const [pdfjs, { PDFDocument }] = await Promise.all([loadPdfJs(), import("pdf-lib")]);
             const arrayBuffer = await file.arrayBuffer();
             
-            const pdf = await (pdfjs as any).getDocument({ data: arrayBuffer }).promise;
+            const pdf = await pdfjs.getDocument({ data: arrayBuffer }).promise;
             const numPages = pdf.numPages;
             
             const newPdfDoc = await PDFDocument.create();
@@ -82,6 +52,7 @@ export default function PDFGrayscale() {
                 canvas.height = viewport.height;
 
                 await page.render({
+                    canvas,
                     canvasContext: ctx,
                     viewport: viewport
                 }).promise;
@@ -153,11 +124,7 @@ export default function PDFGrayscale() {
                     </p>
                 </CardHeader>
                 <CardContent className="px-6 md:px-12 pb-12 space-y-8">
-                    {loadError ? (
-                        <div className="p-6 border border-destructive/50 bg-destructive/10 text-destructive text-sm">
-                            {loadError}
-                        </div>
-                    ) : !file ? (
+                    {!file ? (
                         <div className="group relative flex flex-col items-center justify-center p-16 border-2 border-dashed border-primary/20 hover:border-primary/50 bg-muted/10 hover:bg-muted/20 transition-all duration-300 cursor-pointer">
                             <Input
                                 type="file"
@@ -211,7 +178,7 @@ export default function PDFGrayscale() {
                             ) : (
                                 <Button
                                     onClick={convertToGrayscale}
-                                    disabled={isProcessing || !pdfLibReady}
+                                    disabled={isProcessing}
                                     className="w-full h-16 text-xl font-bold"
                                 >
                                     {isProcessing ? (

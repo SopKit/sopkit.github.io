@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef, useEffect } from "react";
+import { loadPdfJs } from "@/lib/pdfjs";
 import { 
     Upload, 
     FileText,
@@ -57,7 +58,7 @@ export default function PDFEditor() {
             canvas.height = viewport.height;
             canvas.width = viewport.width;
 
-            await page.render({ canvasContext: context, viewport }).promise;
+            await page.render({ canvas, canvasContext: context, viewport }).promise;
 
             // Render existing annotations for this page on canvas overlay
             drawAnnotationsOverlay();
@@ -79,8 +80,7 @@ export default function PDFEditor() {
     const loadPDF = async (pdfFile: File) => {
         setIsProcessing(true);
         try {
-            const pdfjsLib = await import("pdfjs-dist");
-            pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
+            const pdfjsLib = await loadPdfJs();
 
             const arrayBuffer = await pdfFile.arrayBuffer();
             const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });

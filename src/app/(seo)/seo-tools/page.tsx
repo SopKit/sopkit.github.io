@@ -25,7 +25,7 @@ export default function SEOHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<CollectionPageJsonLd groupKey="seo" name="Free SEO Tools Collection" description="A complete suite of free SEO tools for keyword research, backlink analysis, and website auditing." />
-			<main>
+			<div>
 				<PremiumHero
 					tools={getSearchToolRecords()}
 					title="SEO Utilities — Free Audit & Optimization Tools"
@@ -74,7 +74,7 @@ export default function SEOHub() {
 						</div>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

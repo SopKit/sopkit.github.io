@@ -38,7 +38,7 @@ export default function StartupDirectoriesClient() {
 
 	return (
 		<div className="min-h-screen bg-background flex flex-col font-sans relative overflow-hidden">
-			<main className="flex-1 relative z-10">
+			<div className="flex-1 relative z-10">
 				<GridPattern className="opacity-[0.03]" />
 
 				{/* Minimalist Hero */}
@@ -230,7 +230,7 @@ export default function StartupDirectoriesClient() {
 						</div>
 					)}
 				</section>
-			</main>
+			</div>
 		</div>
 	);
 }

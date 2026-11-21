@@ -81,7 +81,7 @@ export default function BlogArchive({ currentPage }: { currentPage: number }) {
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
 			<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-			<main className="flex-grow">
+			<div className="flex-grow">
 				<section className="relative overflow-hidden bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent py-12 md:py-20 border-b border-border/10">
 					<div className="container mx-auto max-w-6xl px-4">
 						<Suspense fallback={null}>
@@ -217,7 +217,7 @@ export default function BlogArchive({ currentPage }: { currentPage: number }) {
 						</nav>
 					)}
 				</section>
-			</main>
+			</div>
 		</div>
 	);
 }

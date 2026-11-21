@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { toast } from "sonner";
 
 export default function JpgToPdfExam() {
-    const [pdflib, setPdflib] = useState(null);
+    const [pdflib, setPdflib] = useState<typeof import("pdf-lib") | null>(null);
     const [images, setImages] = useState([]);
     const [isProcessing, setIsProcessing] = useState(false);
     
@@ -20,24 +20,18 @@ export default function JpgToPdfExam() {
     const fileInputRef = useRef(null);
 
     useEffect(() => {
-        const loadPdfLib = async () => {
-            if (window.PDFLib) {
-                setPdflib(window.PDFLib);
-                return;
-            }
-
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => {
-                setPdflib(window.PDFLib);
-            };
-            script.onerror = () => {
-                toast.error("Failed to load PDF library. Please refresh and check your internet connection.");
-            };
-            document.head.appendChild(script);
+        // pdf-lib ships in the bundle; it used to be injected from a CDN by <script>.
+        let cancelled = false;
+        import("pdf-lib")
+            .then((mod) => {
+                if (!cancelled) setPdflib(mod);
+            })
+            .catch(() => {
+                toast.error("Failed to load the PDF engine. Please refresh the page.");
+            });
+        return () => {
+            cancelled = true;
         };
-        loadPdfLib();
     }, []);
 
     const onFileChange = useCallback((e) => {
@@ -129,7 +123,7 @@ export default function JpgToPdfExam() {
             }
 
             const pdfBytes = await pdfDoc.save();
-            const blob = new Blob([pdfBytes.buffer], { type: "application/pdf" });
+            const blob = new Blob([new Uint8Array(pdfBytes)], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
             
             const link = document.createElement("a");

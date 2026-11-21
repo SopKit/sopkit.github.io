@@ -35,7 +35,7 @@ export default function CuratedContentPage({
 
 	return (
 		<div className="min-h-screen bg-background text-foreground flex flex-col">
-			<main className="flex-1">
+			<div className="flex-1">
 				<section className="border-b border-border/40 bg-gradient-to-b from-primary/5 to-transparent">
 					<div className="container mx-auto max-w-6xl px-4 py-14 md:py-20">
 						<p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary mb-4">
@@ -109,7 +109,7 @@ export default function CuratedContentPage({
 						</section>
 					)}
 				</div>
-			</main>
+			</div>
 
 			<script
 				type="application/ld+json"

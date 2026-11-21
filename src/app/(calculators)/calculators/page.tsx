@@ -21,7 +21,7 @@ export default function CalculatorsHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<CollectionPageJsonLd groupKey="calculators" name="Free Online Calculators Collection" description="A comprehensive collection of free online calculators for finance, health, math, and everyday needs." />
-			<main>
+			<div>
 				<PremiumHero
 					tools={getSearchToolRecords()}
 					title="Smart Calculators — Free Finance, Health & Math"
@@ -70,7 +70,7 @@ export default function CalculatorsHub() {
 						</div>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

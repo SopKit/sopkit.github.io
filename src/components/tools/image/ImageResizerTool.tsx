@@ -1,28 +1,35 @@
 "use client";
 
 import {
-	DownloadIcon,
+	AlertCircle,
+	Download,
+	Eraser,
 	ImageIcon,
-	LockIcon,
-	MonitorIcon,
-	RefreshCwIcon,
-	SmartphoneIcon,
-	TabletIcon,
-	UnlockIcon,
-	UploadIcon,
+	Loader2,
+	Lock,
+	Package,
+	Scaling,
+	Unlock,
+	X,
 } from "lucide-react";
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
+import {
+	DS,
+	ToolDropzone,
+	ToolField,
+	ToolFileBar,
+	ToolGrid,
+	ToolGridMain,
+	ToolGridSide,
+	ToolModeTabs,
+	ToolPanel,
+	ToolPreviewFrame,
+	ToolSectionTitle,
+	ToolShell,
+} from "@/components/tools/shared/design-system";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
 import {
 	Select,
@@ -31,681 +38,643 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select";
-import { Separator } from "@/components/ui/separator";
+import { Slider } from "@/components/ui/slider";
 import { Switch } from "@/components/ui/switch";
+import {
+	computeOutputSize,
+	type FitMode,
+	formatBytes,
+	formatPercentChange,
+	heightForWidth,
+	isEncodable,
+	isLossy,
+	isSupportedImage,
+	MAX_FILE_BYTES,
+	type OutputChoice,
+	percentChange,
+	RESIZE_PRESET_GROUPS,
+	type ResizeMode,
+	type ResizePreset,
+	resolveOutputMime,
+	type Size,
+	widthForHeight,
+} from "@/lib/image/resize-math";
+import {
+	errorMessage,
+	readImageSize,
+	type RenderOptions,
+	type RenderResult,
+	renderResized,
+	triggerDownload,
+} from "@/lib/image/resize-canvas";
+
+type FileStatus = "pending" | "processing" | "done" | "error";
+
+interface ResizeFile {
+	id: string;
+	file: File;
+	previewUrl: string;
+	width: number;
+	height: number;
+	status: FileStatus;
+	result: RenderResult | null;
+	error?: string;
+}
+
+interface ResizeSettings {
+	mode: ResizeMode;
+	pixel: Size;
+	percent: Size;
+	lockAspect: boolean;
+	fit: FitMode;
+	format: OutputChoice;
+	quality: number;
+}
+
+const INITIAL_SETTINGS: ResizeSettings = {
+	mode: "pixels",
+	pixel: { width: 1200, height: 800 },
+	percent: { width: 50, height: 50 },
+	lockAspect: true,
+	fit: "contain",
+	format: "keep",
+	quality: 90,
+};
+
+const MODE_TABS = [
+	{ value: "pixels", label: "Pixels" },
+	{ value: "percent", label: "Percentage" },
+];
+
+const STATUS_BADGE: Record<FileStatus, { label: string; variant: "default" | "secondary" | "destructive" | "outline" }> = {
+	pending: { label: "Pending", variant: "outline" },
+	processing: { label: "Resizing", variant: "secondary" },
+	done: { label: "Done", variant: "default" },
+	error: { label: "Error", variant: "destructive" },
+};
+
+const makeId = (): string =>
+	typeof crypto !== "undefined" && "randomUUID" in crypto
+		? crypto.randomUUID()
+		: `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+
+const yieldToEventLoop = (): Promise<void> => new Promise((resolve) => setTimeout(resolve, 0));
+
+function revokeEntry(entry: ResizeFile): void {
+	URL.revokeObjectURL(entry.previewUrl);
+	if (entry.result) URL.revokeObjectURL(entry.result.url);
+}
+
+function toRenderOptions(settings: ResizeSettings): RenderOptions {
+	const dims = settings.mode === "pixels" ? settings.pixel : settings.percent;
+	return {
+		mode: settings.mode,
+		width: dims.width,
+		height: dims.height,
+		lockAspect: settings.lockAspect,
+		fit: settings.fit,
+		format: settings.format,
+		quality: settings.quality,
+	};
+}
 
 export default function ImageResizerTool() {
-	const [files, setFiles] = useState<any[]>([]);
-	const [resizeOptions, setResizeOptions] = useState({
-		width: 800,
-		height: 600,
-		maintainAspectRatio: true,
-		resizeMethod: "pixels", // pixels, percentage
-		quality: 90,
-	});
+	const [files, setFiles] = useState<ResizeFile[]>([]);
+	const [settings, setSettings] = useState<ResizeSettings>(INITIAL_SETTINGS);
 	const [isProcessing, setIsProcessing] = useState(false);
 	const [progress, setProgress] = useState(0);
-	const fileInputRef = useRef<HTMLInputElement>(null);
+	const filesRef = useRef<ResizeFile[]>([]);
 
-	const supportedFormats = [
-		"image/jpeg",
-		"image/png",
-		"image/webp",
-		"image/gif",
-		"image/bmp",
-	];
-	const maxFileSize = 50 * 1024 * 1024; // 50MB
+	useEffect(() => {
+		filesRef.current = files;
+	}, [files]);
 
-	// Social media presets
-	const presets = {
-		instagram: {
-			square: {
-				width: 1080,
-				height: 1080,
-				label: "Instagram Square (1080×1080)",
-			},
-			story: {
-				width: 1080,
-				height: 1920,
-				label: "Instagram Story (1080×1920)",
-			},
-			portrait: {
-				width: 1080,
-				height: 1350,
-				label: "Instagram Portrait (1080×1350)",
-			},
-		},
-		facebook: {
-			cover: { width: 1640, height: 859, label: "Facebook Cover (1640×859)" },
-			post: { width: 1200, height: 630, label: "Facebook Post (1200×630)" },
-			profile: { width: 400, height: 400, label: "Facebook Profile (400×400)" },
-		},
-		twitter: {
-			header: { width: 1500, height: 500, label: "Twitter Header (1500×500)" },
-			post: { width: 1200, height: 675, label: "Twitter Post (1200×675)" },
-			profile: { width: 400, height: 400, label: "Twitter Profile (400×400)" },
-		},
-		youtube: {
-			thumbnail: {
-				width: 1280,
-				height: 720,
-				label: "YouTube Thumbnail (1280×720)",
-			},
-			channel: {
-				width: 2560,
-				height: 1440,
-				label: "YouTube Channel Art (2560×1440)",
-			},
-		},
-		linkedin: {
-			cover: { width: 1584, height: 396, label: "LinkedIn Cover (1584×396)" },
-			post: { width: 1200, height: 627, label: "LinkedIn Post (1200×627)" },
-		},
+	// Object URLs live until the file is removed, cleared or the tool unmounts.
+	useEffect(() => () => filesRef.current.forEach(revokeEntry), []);
+
+	const firstFile = files[0];
+	const firstRatio = firstFile ? firstFile.width / firstFile.height : null;
+	const dims = settings.mode === "pixels" ? settings.pixel : settings.percent;
+	const unit = settings.mode === "pixels" ? "px" : "%";
+
+	const previewSize: Size | null = firstFile
+		? computeOutputSize({
+				sourceWidth: firstFile.width,
+				sourceHeight: firstFile.height,
+				mode: settings.mode,
+				width: dims.width,
+				height: dims.height,
+				lockAspect: settings.lockAspect,
+				fit: settings.fit,
+			})
+		: null;
+
+	const effectiveMimes = files.map((entry) => resolveOutputMime(entry.file.type, settings.format));
+	const showQuality =
+		settings.format === "image/jpeg" ||
+		settings.format === "image/webp" ||
+		(settings.format === "keep" && effectiveMimes.some(isLossy));
+	const nonEncodableNames = files
+		.filter((entry) => !isEncodable(entry.file.type.toLowerCase()))
+		.map((entry) => entry.file.name);
+	const keepHint =
+		settings.format === "keep" && nonEncodableNames.length > 0
+			? `GIF, BMP, AVIF and SVG cannot be re-encoded by the browser; ${nonEncodableNames.length === 1 ? "that file" : `${nonEncodableNames.length} files`} will be saved as PNG.`
+			: undefined;
+
+	const doneFiles = files.filter((entry) => entry.status === "done" && entry.result);
+
+	const updateDims = useCallback((next: Size) => {
+		setSettings((prev) =>
+			prev.mode === "pixels" ? { ...prev, pixel: next } : { ...prev, percent: next },
+		);
+	}, []);
+
+	const handleWidthChange = (raw: string) => {
+		const width = Math.max(0, parseInt(raw, 10) || 0);
+		if (!settings.lockAspect) {
+			updateDims({ ...dims, width });
+			return;
+		}
+		if (settings.mode === "percent") {
+			updateDims({ width, height: width });
+			return;
+		}
+		updateDims({ width, height: firstRatio ? heightForWidth(width, firstRatio) : dims.height });
 	};
 
-	const formatFileSize = (bytes) => {
-		if (bytes === 0) return "0 Bytes";
-		const k = 1024;
-		const sizes = ["Bytes", "KB", "MB", "GB"];
-		const i = Math.floor(Math.log(bytes) / Math.log(k));
-		return `${parseFloat((bytes / k ** i).toFixed(2))} ${sizes[i]}`;
+	const handleHeightChange = (raw: string) => {
+		const height = Math.max(0, parseInt(raw, 10) || 0);
+		if (!settings.lockAspect) {
+			updateDims({ ...dims, height });
+			return;
+		}
+		if (settings.mode === "percent") {
+			updateDims({ width: height, height });
+			return;
+		}
+		updateDims({ height, width: firstRatio ? widthForHeight(height, firstRatio) : dims.width });
 	};
 
-	const handleFileSelect = (event: any) => {
-		const selectedFiles = Array.from(event.target.files || []) as File[];
-		const validFiles = selectedFiles.filter((file: File) => {
-			if (!supportedFormats.includes(file.type)) {
-				alert(`${file.name} is not a supported image format.`);
-				return false;
+	const handleLockChange = (lockAspect: boolean) => {
+		setSettings((prev) => {
+			if (!lockAspect) return { ...prev, lockAspect };
+			if (prev.mode === "percent") {
+				return { ...prev, lockAspect, percent: { ...prev.percent, height: prev.percent.width } };
 			}
-			if (file.size > maxFileSize) {
-				alert(`${file.name} is too large. Maximum file size is 50MB.`);
-				return false;
-			}
-			return true;
-		});
-
-		// Create image objects for each file
-		validFiles.forEach((file: File) => {
-			const img = new Image();
-			const url = URL.createObjectURL(file);
-
-			img.onload = () => {
-				const newFile = {
-					id: Date.now() + Math.random(),
-					file,
-					originalSize: file.size,
-					originalDimensions: { width: img.width, height: img.height },
-					url,
-					resizedBlob: null,
-					resizedDimensions: null,
-					status: "pending",
-				};
-
-				setFiles((prev) => [...prev, newFile]);
-				URL.revokeObjectURL(url);
+			if (!firstRatio) return { ...prev, lockAspect };
+			return {
+				...prev,
+				lockAspect,
+				pixel: { ...prev.pixel, height: heightForWidth(prev.pixel.width, firstRatio) },
 			};
-
-			img.src = url;
 		});
 	};
 
-	const calculateNewDimensions = (original, options) => {
-		let { width, height } = options;
-		const { width: origWidth, height: origHeight } = original;
-
-		if (options.resizeMethod === "percentage") {
-			width = Math.round(origWidth * (width / 100));
-			height = Math.round(origHeight * (height / 100));
-		}
-
-		if (options.maintainAspectRatio) {
-			const aspectRatio = origWidth / origHeight;
-
-			if (width / height > aspectRatio) {
-				width = Math.round(height * aspectRatio);
-			} else {
-				height = Math.round(width / aspectRatio);
-			}
-		}
-
-		return { width: Math.max(1, width), height: Math.max(1, height) };
+	const applyPreset = (preset: ResizePreset) => {
+		setSettings((prev) => ({
+			...prev,
+			mode: "pixels",
+			lockAspect: false,
+			fit: prev.fit === "contain" ? "cover" : prev.fit,
+			pixel: { width: preset.width, height: preset.height },
+		}));
+		toast.success(`Preset applied: ${preset.width} × ${preset.height}`);
 	};
 
-	const resizeImage = useCallback(
-		async (fileData) => {
-			return new Promise((resolve) => {
-				const canvas = document.createElement("canvas");
-				const ctx = canvas.getContext("2d");
-				const img = new Image();
+	const handleFiles = useCallback(async (incoming: File[]) => {
+		const accepted: ResizeFile[] = [];
+		for (const file of incoming) {
+			if (!isSupportedImage(file.type, file.name)) {
+				toast.error(`${file.name}: unsupported format. Use JPEG, PNG, WebP, GIF, BMP, AVIF or SVG.`);
+				continue;
+			}
+			if (file.size > MAX_FILE_BYTES) {
+				toast.error(`${file.name}: larger than ${formatBytes(MAX_FILE_BYTES, 0)}.`);
+				continue;
+			}
+			const previewUrl = URL.createObjectURL(file);
+			try {
+				const size = await readImageSize(file, previewUrl);
+				accepted.push({
+					id: makeId(),
+					file,
+					previewUrl,
+					width: size.width,
+					height: size.height,
+					status: "pending",
+					result: null,
+				});
+			} catch (error: unknown) {
+				URL.revokeObjectURL(previewUrl);
+				toast.error(`${file.name}: ${errorMessage(error)}`);
+			}
+		}
+		if (accepted.length === 0) return;
+		setFiles((prev) => [...prev, ...accepted]);
+		setSettings((prev) => {
+			if (prev.mode !== "pixels" || !prev.lockAspect || filesRef.current.length > 0) return prev;
+			const lead = accepted[0];
+			return { ...prev, pixel: { ...prev.pixel, height: heightForWidth(prev.pixel.width, lead.width / lead.height) } };
+		});
+	}, []);
 
-				img.onload = () => {
-					const newDimensions = calculateNewDimensions(
-						fileData.originalDimensions,
-						resizeOptions,
-					);
+	const removeFile = (id: string) => {
+		setFiles((prev) => {
+			const target = prev.find((entry) => entry.id === id);
+			if (target) revokeEntry(target);
+			return prev.filter((entry) => entry.id !== id);
+		});
+	};
 
-					canvas.width = newDimensions.width;
-					canvas.height = newDimensions.height;
+	const clearAll = () => {
+		setFiles((prev) => {
+			prev.forEach(revokeEntry);
+			return [];
+		});
+		setProgress(0);
+	};
 
-					// Use high-quality scaling
-					ctx.imageSmoothingEnabled = true;
-					ctx.imageSmoothingQuality = "high";
+	const patchFile = (id: string, patch: Partial<ResizeFile>) =>
+		setFiles((prev) => prev.map((entry) => (entry.id === id ? { ...entry, ...patch } : entry)));
 
-					// Draw the resized image
-					ctx.drawImage(img, 0, 0, newDimensions.width, newDimensions.height);
-
-					// Convert to blob
-					canvas.toBlob(
-						(blob) => {
-							resolve({
-								resizedBlob: blob,
-								resizedDimensions: newDimensions,
-							});
-						},
-						fileData.file.type,
-						resizeOptions.quality / 100,
-					);
-				};
-
-				img.src = fileData.url;
-			});
-		},
-		[resizeOptions, calculateNewDimensions],
-	);
-
-	const handleResize = async () => {
+	const resizeAll = async () => {
+		if (files.length === 0 || isProcessing) return;
+		const snapshot = toRenderOptions(settings);
+		const queue = filesRef.current;
 		setIsProcessing(true);
 		setProgress(0);
+		let failures = 0;
 
-		const pendingFiles = files.filter((f) => f.status === "pending");
-
-		for (let i = 0; i < pendingFiles.length; i++) {
-			const fileData = pendingFiles[i];
-
-			setFiles((prev) =>
-				prev.map((f) =>
-					f.id === fileData.id ? { ...f, status: "processing" } : f,
-				),
-			);
-
+		for (let index = 0; index < queue.length; index += 1) {
+			const entry = queue[index];
+			if (entry.result) URL.revokeObjectURL(entry.result.url);
+			patchFile(entry.id, { status: "processing", result: null, error: undefined });
 			try {
-				const result: any = await resizeImage(fileData);
-
-				setFiles((prev) =>
-					prev.map((f) =>
-						f.id === fileData.id
-							? {
-									...f,
-									status: "completed",
-									resizedBlob: result.resizedBlob,
-									resizedDimensions: result.resizedDimensions,
-								}
-							: f,
-					),
-				);
-			} catch (error) {
-				setFiles((prev) =>
-					prev.map((f) =>
-						f.id === fileData.id ? { ...f, status: "error" } : f,
-					),
-				);
+				const result = await renderResized(entry.file, entry.previewUrl, snapshot);
+				patchFile(entry.id, { status: "done", result });
+			} catch (error: unknown) {
+				failures += 1;
+				patchFile(entry.id, { status: "error", error: errorMessage(error) });
 			}
-
-			setProgress(((i + 1) / pendingFiles.length) * 100);
+			setProgress(Math.round(((index + 1) / queue.length) * 100));
+			await yieldToEventLoop();
 		}
 
 		setIsProcessing(false);
-	};
-
-	const downloadFile = (fileData) => {
-		if (fileData.resizedBlob) {
-			const url = URL.createObjectURL(fileData.resizedBlob);
-			const a = document.createElement("a");
-			a.href = url;
-			a.download = `resized_${fileData.file.name}`;
-			document.body.appendChild(a);
-			a.click();
-			document.body.removeChild(a);
-			URL.revokeObjectURL(url);
+		if (failures === 0) {
+			toast.success(queue.length === 1 ? "Image resized" : `${queue.length} images resized`);
+		} else {
+			toast.error(`${failures} of ${queue.length} image${queue.length === 1 ? "" : "s"} failed`);
 		}
 	};
 
-	const downloadAll = () => {
-		files.filter((f) => f.status === "completed").forEach(downloadFile);
-	};
-
-	const clearFiles = () => {
-		files.forEach((f) => {
-			if (f.url) URL.revokeObjectURL(f.url);
-		});
-		setFiles([]);
-	};
-
-	const removeFile = (id) => {
-		setFiles((prev) => {
-			const fileToRemove = prev.find((f) => f.id === id);
-			if (fileToRemove?.url) {
-				URL.revokeObjectURL(fileToRemove.url);
-			}
-			return prev.filter((f) => f.id !== id);
-		});
-	};
-
-	const applyPreset = (preset) => {
-		setResizeOptions((prev) => ({
-			...prev,
-			width: preset.width,
-			height: preset.height,
-			resizeMethod: "pixels",
-		}));
-	};
-
-	const handleWidthChange = (value) => {
-		const width = parseInt(value, 10) || 0;
-		setResizeOptions((prev) => {
-			if (prev.maintainAspectRatio && files.length > 0) {
-				const firstFile = files[0];
-				if (firstFile?.originalDimensions) {
-					const aspectRatio =
-						firstFile.originalDimensions.width /
-						firstFile.originalDimensions.height;
-					return {
-						...prev,
-						width,
-						height: Math.round(width / aspectRatio),
-					};
+	const downloadAll = async () => {
+		if (doneFiles.length === 0) return;
+		if (doneFiles.length === 1 && doneFiles[0].result) {
+			triggerDownload(doneFiles[0].result.url, doneFiles[0].result.name);
+			return;
+		}
+		try {
+			const JSZip = (await import("jszip")).default;
+			const zip = new JSZip();
+			const used = new Set<string>();
+			for (const entry of doneFiles) {
+				if (!entry.result) continue;
+				let name = entry.result.name;
+				let counter = 2;
+				while (used.has(name)) {
+					name = entry.result.name.replace(/(\.[a-z0-9]+)$/i, `-${counter}$1`);
+					counter += 1;
 				}
+				used.add(name);
+				zip.file(name, entry.result.blob);
 			}
-			return { ...prev, width };
-		});
-	};
-
-	const handleHeightChange = (value) => {
-		const height = parseInt(value, 10) || 0;
-		setResizeOptions((prev) => {
-			if (prev.maintainAspectRatio && files.length > 0) {
-				const firstFile = files[0];
-				if (firstFile?.originalDimensions) {
-					const aspectRatio =
-						firstFile.originalDimensions.width /
-						firstFile.originalDimensions.height;
-					return {
-						...prev,
-						height,
-						width: Math.round(height * aspectRatio),
-					};
-				}
-			}
-			return { ...prev, height };
-		});
+			const archive = await zip.generateAsync({ type: "blob" });
+			const url = URL.createObjectURL(archive);
+			triggerDownload(url, `resized-images-${doneFiles.length}.zip`);
+			setTimeout(() => URL.revokeObjectURL(url), 10_000);
+		} catch (error: unknown) {
+			toast.error(`Could not build the ZIP: ${errorMessage(error)}`);
+		}
 	};
 
 	return (
-		<div className="w-full max-w-6xl mx-auto">
-			<div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6">
-				{/* Settings Panel */}
-				<div className="lg:col-span-1">
-					<Card>
-						<CardHeader>
-							<CardTitle>Resize Settings</CardTitle>
-							<CardDescription>
-								Configure image dimensions and resize options for web, social,
-								and print
-							</CardDescription>
-						</CardHeader>
-						<CardContent className="space-y-6">
-							{/* Resize Method */}
-							<div className="space-y-3">
-								<Label className="text-base font-medium">Resize Method</Label>
-								<Select
-									value={resizeOptions.resizeMethod}
-									onValueChange={(value) =>
-										setResizeOptions((prev) => ({
-											...prev,
-											resizeMethod: value,
-										}))
-									}
-								>
-									<SelectTrigger>
-										<SelectValue />
-									</SelectTrigger>
-									<SelectContent>
-										<SelectItem value="pixels">Pixels</SelectItem>
-										<SelectItem value="percentage">Percentage</SelectItem>
-									</SelectContent>
-								</Select>
-							</div>
+		<ToolShell>
+			<ToolDropzone
+				title={files.length === 0 ? "Click or drag images here" : "Add more images"}
+				subtitle="JPEG, PNG, WebP, GIF, BMP, AVIF or SVG · up to 50 MB each · processed in your browser"
+				accept="image/*"
+				multiple
+				onFiles={handleFiles}
+				disabled={isProcessing}
+				icon={<ImageIcon aria-hidden="true" className="h-7 w-7 text-(--color-text-primary)" />}
+			/>
 
-							{/* Dimensions */}
-							<div className="space-y-3">
-								<div className="flex items-center justify-between">
-									<Label className="text-base font-medium">Dimensions</Label>
-									<Button aria-label={resizeOptions.maintainAspectRatio ? "Unlock aspect ratio" : "Lock aspect ratio"}
-										variant="ghost"
-										size="sm"
-										onClick={() =>
-											setResizeOptions((prev) => ({
-												...prev,
-												maintainAspectRatio: !prev.maintainAspectRatio,
-											}))
-										}
-									>
-										{resizeOptions.maintainAspectRatio ? (
-											<LockIcon className="h-4 w-4" />
+			<ToolGrid>
+				<ToolGridMain>
+					<ToolPanel>
+						<div className="flex items-center justify-between gap-3 flex-wrap">
+							<ToolSectionTitle
+								icon={<ImageIcon aria-hidden="true" className="h-3.5 w-3.5" />}
+								title={files.length === 0 ? "Images" : `Images (${files.length})`}
+								description={
+									files.length === 0
+										? "Your queue is empty. Drop images above to start."
+										: undefined
+								}
+							/>
+							{files.length > 0 && (
+								<Button
+									variant="ghost"
+									size="sm"
+									onClick={clearAll}
+									disabled={isProcessing}
+									type="button"
+								>
+									<Eraser aria-hidden="true" className="h-4 w-4" />
+									Clear all
+								</Button>
+							)}
+						</div>
+
+						{files.length > 0 && (
+							<ul className="space-y-3" aria-label="Images to resize">
+								{files.map((entry) => (
+									<FileRow
+										key={entry.id}
+										entry={entry}
+										disabled={isProcessing}
+										onRemove={() => removeFile(entry.id)}
+									/>
+								))}
+							</ul>
+						)}
+
+						{files.length > 0 && (
+							<div className={DS.panel.divider}>
+								{isProcessing && (
+									<div className="space-y-2 mb-4">
+										<Progress value={progress} aria-label="Resize progress" />
+										<p className="text-xs text-(--color-text-secondary)">Resizing… {progress}%</p>
+									</div>
+								)}
+								<div className={DS.actionRow}>
+									<Button onClick={resizeAll} disabled={isProcessing} type="button">
+										{isProcessing ? (
+											<Loader2 aria-hidden="true" className="h-4 w-4 animate-spin" />
 										) : (
-											<UnlockIcon className="h-4 w-4" />
+											<Scaling aria-hidden="true" className="h-4 w-4" />
 										)}
+										{isProcessing ? "Resizing…" : files.length === 1 ? "Resize image" : "Resize all"}
+									</Button>
+									<Button
+										variant="outline"
+										onClick={downloadAll}
+										disabled={isProcessing || doneFiles.length === 0}
+										type="button"
+									>
+										{doneFiles.length > 1 ? (
+											<Package aria-hidden="true" className="h-4 w-4" />
+										) : (
+											<Download aria-hidden="true" className="h-4 w-4" />
+										)}
+										{doneFiles.length > 1 ? `Download all (${doneFiles.length}) as ZIP` : "Download"}
 									</Button>
 								</div>
-
-								<div className="grid grid-cols-2 gap-2">
-									<div className="space-y-1">
-										<Label htmlFor="width" className="text-sm">
-											Width{" "}
-											{resizeOptions.resizeMethod === "percentage"
-												? "(%)"
-												: "(px)"}
-										</Label>
-										<Input
-											id="width"
-											type="number"
-											min="1"
-											value={resizeOptions.width}
-											onChange={(e) => handleWidthChange(e.target.value)}
-										/>
-									</div>
-									<div className="space-y-1">
-										<Label htmlFor="height" className="text-sm">
-											Height{" "}
-											{resizeOptions.resizeMethod === "percentage"
-												? "(%)"
-												: "(px)"}
-										</Label>
-										<Input
-											id="height"
-											type="number"
-											min="1"
-											value={resizeOptions.height}
-											onChange={(e) => handleHeightChange(e.target.value)}
-										/>
-									</div>
-								</div>
-
-								<div className="flex items-center space-x-2">
-									<Switch
-										id="aspect-ratio"
-										checked={resizeOptions.maintainAspectRatio}
-										onCheckedChange={(checked) =>
-											setResizeOptions((prev) => ({
-												...prev,
-												maintainAspectRatio: checked,
-											}))
-										}
-									/>
-									<Label htmlFor="aspect-ratio" className="text-sm">
-										Lock aspect ratio
-									</Label>
-								</div>
 							</div>
+						)}
+					</ToolPanel>
+				</ToolGridMain>
 
-							{/* Quality */}
-							<div className="space-y-3">
-								<Label className="text-base font-medium">
-									Quality: {resizeOptions.quality}%
-								</Label>
-								<Input
-									type="range"
-									min="10"
-									max="100"
-									step="5"
-									value={resizeOptions.quality}
-									onChange={(e) =>
-										setResizeOptions((prev) => ({
-											...prev,
-											quality: parseInt(e.target.value, 10),
-										}))
-									}
-									className="w-full"
+				<ToolGridSide>
+					<ToolPanel>
+						<ToolSectionTitle
+							icon={<Scaling aria-hidden="true" className="h-3.5 w-3.5" />}
+							title="Resize settings"
+						/>
+
+						<ToolModeTabs
+							tabs={MODE_TABS}
+							value={settings.mode}
+							ariaLabel="Resize by"
+							onChange={(value) => setSettings((prev) => ({ ...prev, mode: value as ResizeMode }))}
+						/>
+
+						<div className="grid grid-cols-2 gap-3">
+							<ToolField
+								label={`Width (${unit})`}
+								fieldId="resize-width"
+								type="number"
+								min={1}
+								inputMode="numeric"
+								value={dims.width === 0 ? "" : dims.width}
+								onChange={(event) => handleWidthChange(event.target.value)}
+							/>
+							<ToolField
+								label={`Height (${unit})`}
+								fieldId="resize-height"
+								type="number"
+								min={1}
+								inputMode="numeric"
+								value={dims.height === 0 ? "" : dims.height}
+								onChange={(event) => handleHeightChange(event.target.value)}
+							/>
+						</div>
+
+						<div className="flex items-center justify-between gap-3">
+							<label htmlFor="resize-lock" className="flex items-center gap-2 text-sm text-(--color-text-primary)">
+								{settings.lockAspect ? (
+									<Lock aria-hidden="true" className="h-4 w-4" />
+								) : (
+									<Unlock aria-hidden="true" className="h-4 w-4" />
+								)}
+								Lock aspect ratio
+							</label>
+							<Switch
+								id="resize-lock"
+								checked={settings.lockAspect}
+								onCheckedChange={handleLockChange}
+								aria-label="Lock aspect ratio"
+							/>
+						</div>
+
+						<ToolField label="Fit" fieldId="resize-fit">
+							<Select
+								value={settings.fit}
+								onValueChange={(value) => setSettings((prev) => ({ ...prev, fit: value as FitMode }))}
+							>
+								<SelectTrigger id="resize-fit" className="w-full" aria-label="Fit mode">
+									<SelectValue />
+								</SelectTrigger>
+								<SelectContent>
+									<SelectItem value="stretch">Exact size (stretch)</SelectItem>
+									<SelectItem value="contain">Fit inside (keep ratio)</SelectItem>
+									<SelectItem value="cover">Fill and crop (cover)</SelectItem>
+								</SelectContent>
+							</Select>
+						</ToolField>
+
+						<ToolField label="Output format" fieldId="resize-format" hint={keepHint}>
+							<Select
+								value={settings.format}
+								onValueChange={(value) =>
+									setSettings((prev) => ({ ...prev, format: value as OutputChoice }))
+								}
+							>
+								<SelectTrigger id="resize-format" className="w-full" aria-label="Output format">
+									<SelectValue />
+								</SelectTrigger>
+								<SelectContent>
+									<SelectItem value="keep">Keep original</SelectItem>
+									<SelectItem value="image/jpeg">JPEG</SelectItem>
+									<SelectItem value="image/png">PNG</SelectItem>
+									<SelectItem value="image/webp">WebP</SelectItem>
+								</SelectContent>
+							</Select>
+						</ToolField>
+
+						{showQuality && (
+							<div className="space-y-2">
+								<div className="flex items-center justify-between text-sm">
+									<span className="text-(--color-text-primary)">Quality</span>
+									<span className="font-mono text-xs text-(--color-text-secondary)">{settings.quality}%</span>
+								</div>
+								<Slider
+									id="resize-quality"
+									aria-label="Output quality"
+									min={10}
+									max={100}
+									step={1}
+									value={[settings.quality]}
+									onValueChange={([quality]) => setSettings((prev) => ({ ...prev, quality }))}
 								/>
 							</div>
+						)}
 
-							<Separator />
-
-							{/* File Upload */}
-							<div className="space-y-3">
-								<Label className="text-base font-medium">Upload Images</Label>
-								<Button
-									onClick={() => fileInputRef.current?.click()}
-									variant="outline"
-									className="w-full"
-								>
-									<UploadIcon className="h-4 w-4 mr-2" />
-									Choose Images to Resize
-								</Button>
-								<input
-									ref={fileInputRef}
-									type="file"
-									multiple
-									accept="image/*"
-									onChange={handleFileSelect}
-									className="hidden"
-								/>
-								<div className="text-xs text-muted-foreground">
-									Supports: JPEG, PNG, WebP, GIF, BMP
-									<br />
-									Max size: 50MB per file
-								</div>
-							</div>
-
-							{files.length > 0 && (
+						<ToolFileBar aria-live="polite">
+							{firstFile && previewSize ? (
 								<>
-									<Separator />
-
-									<div className="space-y-2">
-										<Button
-											onClick={handleResize}
-											disabled={
-												isProcessing ||
-												files.every((f) => f.status !== "pending")
-											}
-											className="w-full"
-										>
-											{isProcessing ? "Resizing..." : "Resize Images"}
-										</Button>
-
-										{files.some((f) => f.status === "completed") && (
-											<Button
-												onClick={downloadAll}
-												variant="outline"
-												className="w-full"
-											>
-												<DownloadIcon className="h-4 w-4 mr-2" />
-												Download All
-											</Button>
-										)}
-
-										<Button
-											onClick={clearFiles}
-											variant="ghost"
-											className="w-full"
-										>
-											Clear All Files
-										</Button>
-									</div>
-
-									{isProcessing && (
-										<div className="space-y-2">
-											<Label className="text-sm">Progress</Label>
-											<Progress value={progress} className="w-full" />
-											<div className="text-xs text-muted-foreground text-center">
-												{Math.round(progress)}%
-											</div>
-										</div>
-									)}
+									<span>
+										Output: <strong className="text-(--color-text-primary)">{previewSize.width} × {previewSize.height}</strong>
+									</span>
+									<span>
+										from {firstFile.width} × {firstFile.height}
+										{files.length > 1 ? ` (first of ${files.length})` : ""}
+									</span>
 								</>
+							) : (
+								<span>Output size appears here once an image is added.</span>
 							)}
-						</CardContent>
-					</Card>
-				</div>
+						</ToolFileBar>
+					</ToolPanel>
 
-				{/* Main Content Area */}
-				<div className="lg:col-span-3 space-y-6">
-					{/* Social Media Presets */}
-					<Card>
-						<CardHeader>
-							<CardTitle className="flex items-center gap-2">
-								<MonitorIcon className="h-5 w-5" />
-								Quick Presets
-							</CardTitle>
-							<CardDescription>
-								Popular social media and web sizes
-							</CardDescription>
-						</CardHeader>
-						<CardContent>
-							<div className="space-y-4">
-								{Object.entries(presets).map(([platform, sizes]) => (
-									<div key={platform} className="space-y-2">
-										<h4 className="font-medium capitalize flex items-center gap-2">
-											{platform === "instagram" && (
-												<SmartphoneIcon className="h-4 w-4" />
-											)}
-											{platform === "facebook" && (
-												<MonitorIcon className="h-4 w-4" />
-											)}
-											{platform === "twitter" && (
-												<MonitorIcon className="h-4 w-4" />
-											)}
-											{platform === "youtube" && (
-												<TabletIcon className="h-4 w-4" />
-											)}
-											{platform === "linkedin" && (
-												<MonitorIcon className="h-4 w-4" />
-											)}
-											{platform}
-										</h4>
-										<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
-											{Object.values(sizes).map((preset, index) => (
-												<Button
-													key={index}
-													variant="outline"
-													size="sm"
-													onClick={() => applyPreset(preset)}
-													className="text-xs h-auto py-2 px-3"
-												>
-													{preset.label}
-												</Button>
-											))}
-										</div>
+					<ToolPanel>
+						<ToolSectionTitle
+							title="Social and web presets"
+							description="Sets pixel mode and the exact size. Use “Fill and crop” to avoid distortion."
+						/>
+						<div className="space-y-3">
+							{RESIZE_PRESET_GROUPS.map((group) => (
+								<div key={group.platform} className="space-y-1.5">
+									<p className="text-xs font-medium text-(--color-text-secondary)">{group.platform}</p>
+									<div className="flex flex-wrap gap-1.5">
+										{group.presets.map((preset) => (
+											<Button
+												key={preset.label}
+												variant="outline"
+												size="sm"
+												type="button"
+												className="text-xs"
+												onClick={() => applyPreset(preset)}
+												disabled={isProcessing}
+											>
+												{preset.label}
+											</Button>
+										))}
 									</div>
-								))}
-							</div>
-						</CardContent>
-					</Card>
-
-					{/* File List */}
-					{files.length === 0 ? (
-						<Card className="h-64 flex items-center justify-center border-dashed border-2">
-							<div className="text-center space-y-4">
-								<ImageIcon className="h-12 w-12 text-muted-foreground mx-auto" />
-								<div>
-									<h3 className="text-lg font-medium">No images uploaded</h3>
-									<p className="text-muted-foreground">
-										Upload images to start resizing
-									</p>
 								</div>
-								<Button onClick={() => fileInputRef.current?.click()}>
-									<UploadIcon className="h-4 w-4 mr-2" />
-									Upload Images
-								</Button>
-							</div>
-						</Card>
-					) : (
-						<div className="space-y-4">
-							{files.map((fileData) => (
-								<Card key={fileData.id}>
-									<CardContent className="p-4">
-										<div className="flex items-center justify-between">
-											<div className="flex items-center gap-3 flex-1 min-w-0">
-												<div className="relative">
-													<img
-														src={fileData.url}
-														alt={fileData.file.name}
-														className="w-16 h-16 object-cover rounded border"
-														width={64}
-														height={64}
-													/>
-													{fileData.status === "processing" && (
-														<div className="absolute inset-0 bg-black/50 flex items-center justify-center rounded">
-															<RefreshCwIcon className="h-4 w-4 text-white animate-spin" />
-														</div>
-													)}
-												</div>
-												<div className="flex-1 min-w-0">
-													<h4 className="font-medium truncate">
-														{fileData.file.name}
-													</h4>
-													<div className="text-sm text-muted-foreground space-y-1">
-														<div>
-															Original: {fileData.originalDimensions.width} ×{" "}
-															{fileData.originalDimensions.height}(
-															{formatFileSize(fileData.originalSize)})
-														</div>
-														{fileData.resizedDimensions && (
-															<div>
-																Resized: {fileData.resizedDimensions.width} ×{" "}
-																{fileData.resizedDimensions.height}(
-																{formatFileSize(
-																	fileData.resizedBlob?.size || 0,
-																)}
-																)
-															</div>
-														)}
-													</div>
-												</div>
-											</div>
-
-											<div className="flex items-center gap-2">
-												<Badge
-													variant={
-														fileData.status === "completed"
-															? "default"
-															: fileData.status === "processing"
-																? "secondary"
-																: fileData.status === "error"
-																	? "destructive"
-																	: "outline"
-													}
-												>
-													{fileData.status}
-												</Badge>
-
-												{fileData.status === "completed" && (
-													<Button aria-label="Download resized image"
-														variant="outline"
-														size="sm"
-														onClick={() => downloadFile(fileData)}
-													>
-														<DownloadIcon className="h-4 w-4" />
-													</Button>
-												)}
-
-												<Button
-													variant="ghost"
-													size="sm"
-													onClick={() => removeFile(fileData.id)}
-												>
-													×
-												</Button>
-											</div>
-										</div>
-									</CardContent>
-								</Card>
 							))}
+						</div>
+					</ToolPanel>
+				</ToolGridSide>
+			</ToolGrid>
+		</ToolShell>
+	);
+}
+
+interface FileRowProps {
+	entry: ResizeFile;
+	disabled: boolean;
+	onRemove: () => void;
+}
+
+function FileRow({ entry, disabled, onRemove }: FileRowProps) {
+	const badge = STATUS_BADGE[entry.status];
+	const change = entry.result ? percentChange(entry.file.size, entry.result.blob.size) : null;
+
+	return (
+		<li>
+			<ToolPreviewFrame className="p-3 flex items-center gap-3">
+				<div className="relative shrink-0">
+					<img
+						src={entry.result?.url ?? entry.previewUrl}
+						alt=""
+						width={56}
+						height={56}
+						className={`h-14 w-14 object-cover ${DS.radius.lg} border border-(--color-border) bg-(--color-background-card)`}
+					/>
+					{entry.status === "processing" && (
+						<div className={`absolute inset-0 flex items-center justify-center bg-black/50 ${DS.radius.lg}`}>
+							<Loader2 aria-hidden="true" className="h-4 w-4 text-white animate-spin" />
 						</div>
 					)}
 				</div>
-			</div>
-		</div>
+
+				<div className="min-w-0 flex-1 space-y-0.5">
+					<p className="truncate text-sm font-medium text-(--color-text-primary)" title={entry.file.name}>
+						{entry.file.name}
+					</p>
+					<p className="text-xs text-(--color-text-secondary)">
+						{entry.width} × {entry.height} · {formatBytes(entry.file.size)}
+					</p>
+					{entry.result && change !== null && (
+						<p className="text-xs text-(--color-text-primary)">
+							→ {entry.result.width} × {entry.result.height} · {formatBytes(entry.result.blob.size)}{" "}
+							<span className={change <= 0 ? "text-(--color-text-success)" : "text-(--color-text-secondary)"}>
+								({formatPercentChange(change)})
+							</span>
+						</p>
+					)}
+					{entry.status === "error" && entry.error && (
+						<p className="flex items-center gap-1 text-xs text-(--color-text-error)">
+							<AlertCircle aria-hidden="true" className="h-3 w-3 shrink-0" />
+							{entry.error}
+						</p>
+					)}
+				</div>
+
+				<div className="flex items-center gap-1.5 shrink-0">
+					<Badge variant={badge.variant}>{badge.label}</Badge>
+					{entry.result && (
+						<Button asChild variant="outline" size="icon" aria-label={`Download ${entry.result.name}`}>
+							<a href={entry.result.url} download={entry.result.name}>
+								<Download aria-hidden="true" className="h-4 w-4" />
+							</a>
+						</Button>
+					)}
+					<Button
+						variant="ghost"
+						size="icon"
+						type="button"
+						aria-label={`Remove ${entry.file.name}`}
+						onClick={onRemove}
+						disabled={disabled}
+					>
+						<X aria-hidden="true" className="h-4 w-4" />
+					</Button>
+				</div>
+			</ToolPreviewFrame>
+		</li>
 	);
 }

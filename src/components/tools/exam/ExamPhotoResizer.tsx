@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import AdPlacement from "@/components/ads/AdPlacement";
+import { dataUrlToBytes, padJpegToMinimumSize } from "@/lib/image/jpeg-pad";
 import {
     ToolShell,
     ToolGrid,
@@ -67,6 +68,7 @@ function ExamPhotoResizerInner({
         dimensions: isHindi ? "डाइमेंशन्स" : "Dimensions",
         fileSize: isHindi ? "फाइल साइज" : "File Size",
         compliant: isHindi ? "टारगेट नियमों के अनुरूप है" : "Compliant with target rules",
+        padded: isHindi ? "न्यूनतम साइज पूरा करने के लिए अदृश्य मेटाडेटा जोड़ा गया। पिक्सेल अपरिवर्तित हैं।" : "Invisible metadata was added to reach the minimum size. Pixels are unchanged.",
         mismatch: isHindi ? "साइज बेमेल है। आयाम कम करने का प्रयास करें।" : "Size mismatch. Try reducing dimensions.",
         download: isHindi ? "JPEG डाउनलोड करें" : "Download JPEG",
         processing: isHindi ? "प्रोसेस हो रहा है…" : "Processing…",
@@ -91,6 +93,7 @@ function ExamPhotoResizerInner({
     const [processing, setProcessing] = useState(false);
     const [resizedUrl, setResizedUrl] = useState("");
     const [resizedSize, setResizedSize] = useState(0);
+    const [wasPadded, setWasPadded] = useState(false);
     const [resizedWidth, setResizedWidth] = useState(0);
     const [resizedHeight, setResizedHeight] = useState(0);
 
@@ -153,10 +156,17 @@ function ExamPhotoResizerInner({
         reader.readAsDataURL(file);
     };
 
+    // Padded outputs are blob URLs; release the previous one before replacing it.
+    const releaseResizedUrl = () => {
+        if (resizedUrl.startsWith("blob:")) URL.revokeObjectURL(resizedUrl);
+        setResizedUrl("");
+        setWasPadded(false);
+    };
+
     const processImage = (activeImage = image) => {
         if (!activeImage) return;
         setProcessing(true);
-        setResizedUrl("");
+        releaseResizedUrl();
         
         setTimeout(() => {
             try {
@@ -217,7 +227,22 @@ function ExamPhotoResizerInner({
                     }
                 }
                 
-                setResizedUrl(dataUrl);
+                // Portals reject files under the minimum. When even quality 0.95 is too
+                // small, pad with JPEG comment segments: the pixels stay identical and
+                // the file is still a valid JPEG. See src/lib/image/jpeg-pad.ts.
+                let outputUrl = dataUrl;
+                let padded = false;
+                const minBytes = Math.ceil(minKb * 1024);
+                if (sizeBytes < minBytes) {
+                    const bytes = padJpegToMinimumSize(dataUrlToBytes(dataUrl), minBytes);
+                    sizeBytes = bytes.length;
+                    sizeKb = sizeBytes / 1024;
+                    outputUrl = URL.createObjectURL(new Blob([new Uint8Array(bytes)], { type: "image/jpeg" }));
+                    padded = true;
+                }
+
+                setResizedUrl(outputUrl);
+                setWasPadded(padded);
                 setResizedSize(Number(sizeKb.toFixed(1)));
                 setResizedWidth(width);
                 setResizedHeight(height);
@@ -245,7 +270,7 @@ function ExamPhotoResizerInner({
     const handleClear = () => {
         setImage(null);
         setPreviewUrl("");
-        setResizedUrl("");
+        releaseResizedUrl();
         setOriginalInfo(null);
     };
 
@@ -432,6 +457,9 @@ function ExamPhotoResizerInner({
                                             <div className="flex items-center gap-1.5 justify-center text-xs text-emerald-500 font-semibold bg-emerald-500/10 py-1.5 px-3 border border-emerald-500/20">
                                                 <Check className="h-4 w-4" /> {t.compliant}
                                             </div>
+                                        )}
+                                        {wasPadded && (
+                                            <p className="text-[11px] text-muted-foreground text-center">{t.padded}</p>
                                         )}
                                         {(resizedSize > maxKb || resizedSize < minKb) && (
                                             <div className="flex items-center gap-1.5 justify-center text-xs text-red-500 font-semibold bg-red-500/10 py-1.5 px-3 border border-red-500/20">

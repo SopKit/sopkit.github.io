@@ -119,7 +119,7 @@ export default function EmbedToolsPage() {
 					}),
 				}}
 			/>
-			<main>
+			<div>
 				<header className="relative border-b border-border/40 overflow-hidden">
 					<GridPattern className="opacity-10" />
 					<div className="container mx-auto px-4 py-16 md:py-20 max-w-7xl relative z-10">
@@ -200,7 +200,7 @@ export default function EmbedToolsPage() {
 						</p>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

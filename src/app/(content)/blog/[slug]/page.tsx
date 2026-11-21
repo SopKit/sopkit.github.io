@@ -147,7 +147,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 			)}
 
-			<main className="flex-1">
+			<div className="flex-1">
 				<article className="container mx-auto max-w-3xl px-4 py-12 md:py-16">
 					<div className="flex flex-col gap-6 border-b border-border/10 pb-6 mb-8">
 						<Suspense fallback={null}>
@@ -351,7 +351,7 @@ export default async function BlogArticlePage({ params }: BlogArticlePageProps) 
 						<AdPlacement placement="footer" pageType="blog" />
 					</div>
 				</article>
-			</main>
+			</div>
 		</div>
 	);
 }

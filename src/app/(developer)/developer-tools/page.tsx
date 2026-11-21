@@ -25,7 +25,7 @@ export default function DeveloperHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<CollectionPageJsonLd groupKey="developer" name="Free Developer Tools Collection" description="Essential suite of free online developer utilities for JSON, Base64, and JWT operations." />
-			<main>
+			<div>
 				<PremiumHero
 					tools={getSearchToolRecords()}
 					title="Developer Utilities — Free JSON, Code & API Tools"
@@ -74,7 +74,7 @@ export default function DeveloperHub() {
 						</div>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

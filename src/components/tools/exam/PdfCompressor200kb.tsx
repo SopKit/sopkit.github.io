@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 export default function PdfCompressor200kb() {
-    const [pdflib, setPdflib] = useState(null);
+    const [pdflib, setPdflib] = useState<typeof import("pdf-lib") | null>(null);
     const [file, setFile] = useState(null);
     const [originalSize, setOriginalSize] = useState(0);
     const [compressedUrl, setCompressedUrl] = useState("");
@@ -17,24 +17,18 @@ export default function PdfCompressor200kb() {
     const fileInputRef = useRef(null);
 
     useEffect(() => {
-        const loadPdfLib = async () => {
-            if (window.PDFLib) {
-                setPdflib(window.PDFLib);
-                return;
-            }
-
-            const script = document.createElement("script");
-            script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-            script.async = true;
-            script.onload = () => {
-                setPdflib(window.PDFLib);
-            };
-            script.onerror = () => {
-                toast.error("Failed to load PDF processing library. Please check your internet connection.");
-            };
-            document.head.appendChild(script);
+        // pdf-lib ships in the bundle; it used to be injected from a CDN by <script>.
+        let cancelled = false;
+        import("pdf-lib")
+            .then((mod) => {
+                if (!cancelled) setPdflib(mod);
+            })
+            .catch(() => {
+                toast.error("Failed to load the PDF engine. Please refresh the page.");
+            });
+        return () => {
+            cancelled = true;
         };
-        loadPdfLib();
     }, []);
 
     const handleFileChange = (e) => {
@@ -76,12 +70,9 @@ export default function PdfCompressor200kb() {
             
             // 2. Compress PDF structure by saving with object streams option
             // (useObjectStreams: true bundles structures, yielding smaller files)
-            const pdfBytes = await pdfDoc.save({
-                useObjectStreams: true,
-                addGlossaryMap: false
-            });
+            const pdfBytes = await pdfDoc.save({ useObjectStreams: true });
 
-            const blob = new Blob([pdfBytes], { type: "application/pdf" });
+            const blob = new Blob([new Uint8Array(pdfBytes)], { type: "application/pdf" });
             const url = URL.createObjectURL(blob);
 
             setCompressedUrl(url);

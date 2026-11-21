@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
+import { loadPdfJs } from "@/lib/pdfjs";
 import { 
     Upload, 
     Download,
@@ -33,8 +34,7 @@ export default function PDFRotation() {
         setIsProcessing(true);
         setLoadingProgress(0);
         try {
-            const pdfjsLib = await import("pdfjs-dist");
-            pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
+            const pdfjsLib = await loadPdfJs();
 
             const arrayBuffer = await pdfFile.arrayBuffer();
             const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
@@ -54,7 +54,7 @@ export default function PDFRotation() {
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
-                await (page.render as any)({ canvasContext: context, viewport }).promise;
+                await page.render({ canvas, canvasContext: context, viewport }).promise;
                 
                 newPages.push({
                     pageNumber: i,

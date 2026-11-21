@@ -25,7 +25,7 @@ export default function AudioHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<CollectionPageJsonLd groupKey="audio" name="Online Audio Tools" description="Collection of free audio utilities including Text to Speech." />
-			<main>
+			<div>
 				<PremiumHero
 					tools={getSearchToolRecords()}
 					title="Audio Utilities — Free Convert & Edit Tools"
@@ -79,7 +79,7 @@ export default function AudioHub() {
 						</div>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

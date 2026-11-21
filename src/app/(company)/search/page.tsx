@@ -63,7 +63,7 @@ export default async function SearchPage() {
 
 	return (
 		<div className="min-h-screen bg-background flex flex-col">
-			<main className="flex-1">
+			<div className="flex-1">
 				<div className="container mx-auto px-4 py-12 max-w-6xl space-y-12">
 					{/* Search header — server-rendered, visible to crawlers */}
 					<div className="space-y-6 text-center max-w-3xl mx-auto">
@@ -87,7 +87,7 @@ export default async function SearchPage() {
 						/>
 					</Suspense>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

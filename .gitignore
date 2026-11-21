@@ -73,3 +73,6 @@ mcp.json
 
 # generated reports
 /reports/
+
+# Vendored browser assets copied from node_modules at predev/prebuild (scripts/copy-vendor-assets.mjs)
+public/vendor/

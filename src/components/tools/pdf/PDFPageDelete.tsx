@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
+import { loadPdfJs } from "@/lib/pdfjs";
 import { 
     Upload, 
     Trash2,
@@ -34,10 +35,7 @@ export default function PDFPageDelete() {
         setIsProcessing(true);
         setLoadingProgress(0);
         try {
-            // Dynamically import pdfjs-dist
-            const pdfjsLib = await import("pdfjs-dist");
-            // Set worker
-            pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
+            const pdfjsLib = await loadPdfJs();
 
             const arrayBuffer = await pdfFile.arrayBuffer();
             const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
@@ -57,7 +55,7 @@ export default function PDFPageDelete() {
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
-                await page.render({ canvasContext: context, viewport, canvas } as any).promise;
+                await page.render({ canvas, canvasContext: context, viewport }).promise;
                 
                 newPages.push({
                     pageNumber: i,

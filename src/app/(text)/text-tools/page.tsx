@@ -25,7 +25,7 @@ export default function TextHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<CollectionPageJsonLd groupKey="text" name="Text Tools" description="A collection of free online text utilities for sorting, cleaning, and formatting content." />
-			<main>
+			<div>
 				<PremiumHero
 					tools={getSearchToolRecords()}
 					title="Text Utilities — Free Format, Count & Analyze"
@@ -74,7 +74,7 @@ export default function TextHub() {
 						</div>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

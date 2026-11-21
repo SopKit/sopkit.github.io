@@ -55,7 +55,7 @@ export default function HubPage({
 					__html: JSON.stringify(schema).replace(/</g, "\\u003c"),
 				}}
 			/>
-			<main className="container mx-auto max-w-6xl px-4 py-12 md:py-16 space-y-12">
+			<div className="container mx-auto max-w-6xl px-4 py-12 md:py-16 space-y-12">
 				<BreadcrumbsEnhanced customBreadcrumbs={[{ name: title, url: route }]} />
 				<section className="max-w-3xl space-y-5">
 					<div className="flex flex-wrap items-center gap-3">
@@ -132,7 +132,7 @@ export default function HubPage({
 						)}
 					</section>
 				)}
-			</main>
+			</div>
 		</div>
 	);
 }

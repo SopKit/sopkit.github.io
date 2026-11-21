@@ -43,11 +43,9 @@ describe("Icon-only controls carry an accessible name", () => {
       // Password visibility toggles name the state they will switch to.
       ["src/components/tools/pdf/PDFProtect.tsx", 'aria-label={showPassword ? "Hide password" : "Show password"}'],
       ["src/components/tools/security/PasswordCheckerTool.tsx", 'aria-label={showPassword ? "Hide password" : "Show password"}'],
-      // Aspect-ratio lock toggle names the state it will switch to.
-      [
-        "src/components/tools/image/ImageResizerTool.tsx",
-        'aria-label={resizeOptions.maintainAspectRatio ? "Unlock aspect ratio" : "Lock aspect ratio"}',
-      ],
+      // Aspect-ratio lock is a Switch named after what it controls; its
+      // checked state carries on/off.
+      ["src/components/tools/image/ImageResizerTool.tsx", 'aria-label="Lock aspect ratio"'],
       // Logo undo/redo match their tooltip text (a tooltip alone does
       // not give a button an accessible name).
       ["src/components/tools/image/LogoGeneratorTool.tsx", 'aria-label="Undo"'],

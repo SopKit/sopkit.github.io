@@ -12,13 +12,6 @@ import { Button } from "@/components/ui/button";
 import { GlassCard } from "../shared/WorkspaceComponents";
 import { toast } from "sonner";
 
-declare global {
-	interface Window {
-		PDFLib: any;
-		html2canvas: any;
-	}
-}
-
 function compileMarkdown(md: string): string {
 	let rawHtml = md;
 
@@ -97,48 +90,39 @@ This is a clean, print-ready PDF document compiled directly from **Markdown** in
 
 	const html = useMemo(() => compileMarkdown(markdown), [markdown]);
 	const [isProcessing, setIsProcessing] = useState(false);
-	const [pdflib, setPdflib] = useState<any>(() =>
-		typeof window !== "undefined" ? ((window as any).PDFLib ?? null) : null,
-	);
+	const [pdflib, setPdflib] = useState<typeof import("pdf-lib") | null>(null);
+	const html2canvasRef = useRef<typeof import("html2canvas").default | null>(null);
 	const previewRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		// Load PDF-Lib from CDN
-		if (!window.PDFLib) {
-			const script = document.createElement("script");
-			script.src = "https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js";
-			script.async = true;
-			script.onload = () => setPdflib(window.PDFLib);
-			script.onerror = () => {
-				toast.error("Failed to load PDF library. Please refresh and check connection.");
-			};
-			document.head.appendChild(script);
-		}
-
-		// Load html2canvas from CDN
-		if (!window.html2canvas) {
-			const script = document.createElement("script");
-			script.src = "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js";
-			script.async = true;
-			script.onerror = () => {
-				toast.error("Failed to load page rendering library. Please refresh.");
-			};
-			document.head.appendChild(script);
-		}
+		// Both engines ship in the bundle (they used to be injected from CDNs by <script>).
+		let cancelled = false;
+		Promise.all([import("pdf-lib"), import("html2canvas")])
+			.then(([pdfLibModule, html2canvasModule]) => {
+				if (cancelled) return;
+				html2canvasRef.current = html2canvasModule.default;
+				setPdflib(pdfLibModule);
+			})
+			.catch(() => {
+				toast.error("Failed to load the PDF engine. Please refresh the page.");
+			});
+		return () => {
+			cancelled = true;
+		};
 	}, []);
 
 
 
 
 	const handleDownloadPdf = async () => {
-		if (!pdflib || !window.html2canvas || !previewRef.current) {
+		if (!pdflib || !html2canvasRef.current || !previewRef.current) {
 			toast.error("Libraries are still loading. Please wait...");
 			return;
 		}
 
 		setIsProcessing(true);
 		try {
-			const canvas = await window.html2canvas(previewRef.current, {
+			const canvas = await html2canvasRef.current(previewRef.current, {
 				scale: 2,
 				useCORS: true,
 				logging: false,
@@ -164,7 +148,7 @@ This is a clean, print-ready PDF document compiled directly from **Markdown** in
 			});
 
 			const pdfBytes = await pdfDoc.save();
-			const blob = new Blob([pdfBytes.buffer], { type: "application/pdf" });
+			const blob = new Blob([new Uint8Array(pdfBytes)], { type: "application/pdf" });
 			const url = URL.createObjectURL(blob);
 			const link = document.createElement("a");
 			link.href = url;

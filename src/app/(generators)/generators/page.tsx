@@ -21,7 +21,7 @@ export default function GeneratorsHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<CollectionPageJsonLd groupKey="generators" name="AI Generator Tools Collection" description="Suite of powerful free AI generator tools for images and voice." />
-			<main>
+			<div>
 				<PremiumHero
 					tools={getSearchToolRecords()}
 					title="AI & Fun Generators — Free Creative Tools"
@@ -72,7 +72,7 @@ export default function GeneratorsHub() {
 						</div>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

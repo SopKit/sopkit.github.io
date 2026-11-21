@@ -23,7 +23,7 @@ export default function VideoToolsHub() {
 	return (
 		<div className="min-h-screen bg-background">
 			<CollectionPageJsonLd groupKey="video" name="Online Video Tools" description="Collection of free video utilities including Terabox downloader and player." />
-			<main>
+			<div>
 				<PremiumHero tools={getSearchToolRecords()} title="Video Tools — Convert & Edit" subtitle="Convert and edit supported video files with browser-based utilities. Review each tool's processing model before using it." />
 				<div className="container mx-auto px-4 py-16 max-w-7xl relative">
 					<GridPattern className="opacity-20" />
@@ -69,7 +69,7 @@ export default function VideoToolsHub() {
 						</div>
 					</section>
 				</div>
-			</main>
+			</div>
 		</div>
 	);
 }

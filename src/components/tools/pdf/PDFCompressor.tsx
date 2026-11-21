@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Download, FileText, Loader2, Minimize2, ShieldCheck, Settings2, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import { loadPdfJs } from "@/lib/pdfjs";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
@@ -36,22 +37,6 @@ export default function PdfCompressor() {
 		}
 	}, [preset]);
 
-	const loadPdfJs = async () => {
-		if ((window as any).pdfjsLib) return (window as any).pdfjsLib;
-
-		return new Promise((resolve, reject) => {
-			const script = document.createElement("script");
-			script.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js";
-			script.onload = () => {
-				const pdfjs = (window as any).pdfjsLib;
-				pdfjs.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js";
-				resolve(pdfjs);
-			};
-			script.onerror = () => reject(new Error("Failed to load PDF.js engine."));
-			document.head.appendChild(script);
-		});
-	};
-
 	const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		const selectedFile = e.target.files?.[0];
 		if (selectedFile && selectedFile.type === "application/pdf") {
@@ -75,7 +60,7 @@ export default function PdfCompressor() {
 		setCurrentPage(0);
 
 		try {
-			// 1. Lazy load pdf-lib and PDF.js script from CDN
+			// 1. Lazy load pdf-lib and the bundled pdf.js (self-hosted worker, see src/lib/pdfjs.ts)
 			const [pdfLib, pdfjs] = await Promise.all([
 				import("pdf-lib"),
 				loadPdfJs()
@@ -84,7 +69,7 @@ export default function PdfCompressor() {
 			const fileBuffer = await file.arrayBuffer();
 
 			// 2. Load PDF document in PDF.js for rendering pages to canvas
-			const pdf = await (pdfjs as any).getDocument({ data: fileBuffer }).promise;
+			const pdf = await pdfjs.getDocument({ data: fileBuffer }).promise;
 			const numPages = pdf.numPages;
 			setTotalPages(numPages);
 
@@ -108,6 +93,7 @@ export default function PdfCompressor() {
 				canvas.height = viewport.height;
 
 				await page.render({
+					canvas,
 					canvasContext: ctx,
 					viewport: viewport
 				}).promise;

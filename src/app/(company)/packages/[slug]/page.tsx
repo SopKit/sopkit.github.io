@@ -435,7 +435,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
 					__html: JSON.stringify(packageSchema),
 				}}
 			/>
-			<main className="flex-grow">
+			<div className="flex-grow">
 				{/* Top Header */}
 				<section className="relative overflow-hidden bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent py-12 md:py-16 border-b border-border/10">
 					<div className="container mx-auto max-w-5xl px-4">
@@ -594,7 +594,7 @@ export default async function PackageDetailPage({ params }: PageProps) {
 						</div>
 					</div>
 				</section>
-			</main>
+			</div>
 		</div>
 	);
 }

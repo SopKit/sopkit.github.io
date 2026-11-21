@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
+import { loadPdfJs } from "@/lib/pdfjs";
 import { 
     Upload, 
     Download, 
@@ -43,8 +44,7 @@ export default function PDFToWord() {
         setIsProcessing(true);
         setProgress(0);
         try {
-            const pdfjsLib = await import("pdfjs-dist");
-            pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
+            const pdfjsLib = await loadPdfJs();
 
             const docx = await import("docx");
 

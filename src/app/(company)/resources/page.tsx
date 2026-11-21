@@ -65,7 +65,7 @@ export default function ResourcesPage() {
 					__html: JSON.stringify(resourcesSchema),
 				}}
 			/>
-			<main className="flex-grow">
+			<div className="flex-grow">
 				{/* Top Hero Section */}
 				<section className="relative overflow-hidden bg-gradient-to-b from-primary/[0.03] via-transparent to-transparent py-16 md:py-24 border-b border-border/10">
 					<div className="container mx-auto max-w-5xl px-4 text-center">
@@ -127,7 +127,7 @@ export default function ResourcesPage() {
 						})}
 					</div>
 				</section>
-			</main>
+			</div>
 		</div>
 	);
 }
