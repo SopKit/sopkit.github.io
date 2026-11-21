@@ -68,9 +68,15 @@ itself works. Left as is; it is a prefetch of a non-page.
    (`src/lib/image/jpeg-pad.ts`) inserts JPEG comment segments after SOI. The
    pixels are untouched, the file is still a valid JPEG, and the UI says so.
    Tested in `tests/unit/jpeg-pad.test.ts`.
-6. **One `<main>` per page.** `ToolLayout`, the landing page, hub pages and
-   content wrappers now render `<div>` (the skip-link target `#main-content`
-   is kept); the group layouts keep the landmark.
+6. **One `<main>` per page, owned by the root layout.** The first attempt
+   demoted `ToolLayout`'s `<main>` and kept the group layouts' landmark, which
+   left every route group without a `layout.tsx` (exam-tools, ai-tools,
+   privacy-tools, health, money, intent, extraction, seo-hubs: about 95 pages)
+   with no `<main>` at all. `src/app/layout.tsx` now wraps `{children}` in
+   `<main id="main-content">`; group layouts, `ToolLayout`, hub pages and the
+   few pages that rendered their own `<main>` use `<div>`.
+   `tests/unit/single-main-landmark.test.ts` pins this (one `<main>`, one
+   `main-content` id; `global-error.tsx` is the only other allowed `<main>`).
 
 ## Not changed
 
