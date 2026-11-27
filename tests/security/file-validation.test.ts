@@ -14,8 +14,25 @@ describe("File Security & Decompression Guard", () => {
     expect(validateMagicBytes(fakePng, "image/png")).toBe(false);
   });
 
+  it("validates full RIFF+WEBP signature for WebP and rejects RIFF-WAV spoofing", () => {
+    const validWebp = new Uint8Array([
+      0x52, 0x49, 0x46, 0x46, 0x24, 0x00, 0x00, 0x00,
+      0x57, 0x45, 0x42, 0x50, 0x56, 0x50, 0x38, 0x20,
+    ]);
+    expect(validateMagicBytes(validWebp, "image/webp")).toBe(true);
+
+    const wavSpoof = new Uint8Array([
+      0x52, 0x49, 0x46, 0x46, 0x24, 0x00, 0x00, 0x00,
+      0x57, 0x41, 0x56, 0x45, 0x66, 0x6d, 0x74, 0x20,
+    ]);
+    expect(validateMagicBytes(wavSpoof, "image/webp")).toBe(false);
+  });
+
   it("sanitizes malicious filenames against path traversal", () => {
     expect(sanitizeFileName("../../../etc/passwd")).toBe("etc/passwd");
+    expect(sanitizeFileName("....//....//etc/passwd")).toBe("etc/passwd");
+    expect(sanitizeFileName("..")).toBe("unnamed_file");
+    expect(sanitizeFileName("dir/..")).toBe("dir");
     expect(sanitizeFileName("..\\..\\windows\\system32\\cmd.exe")).toBe("windows\\system32\\cmd.exe");
     expect(sanitizeFileName("valid-file.pdf")).toBe("valid-file.pdf");
     expect(sanitizeFileName("")).toBe("unnamed_file");
