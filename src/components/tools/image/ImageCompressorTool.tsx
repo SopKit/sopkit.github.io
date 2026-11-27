@@ -46,6 +46,32 @@ export interface CompressorFile {
     statusMessage?: string;
 }
 
+export function resolveDownloadExtension(
+    format: "webp" | "jpeg" | "png" | "original",
+    mimeType?: string
+): string {
+    if (format === "webp") return "webp";
+    if (format === "png") return "png";
+    if (format === "jpeg") return "jpg";
+    const normalized = (mimeType || "").toLowerCase();
+    if (normalized === "image/png") return "png";
+    if (normalized === "image/webp") return "webp";
+    if (normalized === "image/avif") return "avif";
+    if (normalized === "image/gif") return "gif";
+    return "jpg";
+}
+
+function revokeFileUrls(fileItem: Pick<CompressorFile, "preview" | "compressedPreview">) {
+    try {
+        URL.revokeObjectURL(fileItem.preview);
+        if (fileItem.compressedPreview) {
+            URL.revokeObjectURL(fileItem.compressedPreview);
+        }
+    } catch {
+        // Ignore revoke errors
+    }
+}
+
 export function evaluateTargetSizeStatus(
     blobSize: number,
     targetKb: number
@@ -81,27 +107,16 @@ export default function ImageCompressorTool() {
     const [copied, setCopied] = useState(false);
 
     const isMountedRef = useRef(true);
+    const filesRef = useRef<CompressorFile[]>([]);
+    filesRef.current = files;
 
     useEffect(() => {
         isMountedRef.current = true;
         return () => {
             isMountedRef.current = false;
+            filesRef.current.forEach(revokeFileUrls);
         };
     }, []);
-
-    // Clean up created object URLs on unmount
-    useEffect(() => {
-        return () => {
-            files.forEach((f) => {
-                try {
-                    URL.revokeObjectURL(f.preview);
-                    if (f.compressedPreview) URL.revokeObjectURL(f.compressedPreview);
-                } catch {
-                    // Ignore revoke errors
-                }
-            });
-        };
-    }, [files]);
 
     const addFiles = useCallback((incoming: File[]) => {
         const imageFiles = incoming.filter((f) => f.type.startsWith("image/"));
@@ -145,6 +160,11 @@ export default function ImageCompressorTool() {
                 }
             };
             img.onerror = () => {
+                try {
+                    URL.revokeObjectURL(preview);
+                } catch {
+                    // Ignore revoke errors
+                }
                 loadedCount++;
             };
             img.src = preview;
@@ -287,36 +307,69 @@ export default function ImageCompressorTool() {
         [mode, quality, targetKb, format]
     );
 
-    // Auto-recompress active file when settings change
+    // Auto-recompress active files when settings change
     useEffect(() => {
         if (files.length === 0) return;
+        let cancelled = false;
 
         const timer = setTimeout(async () => {
             setIsProcessing(true);
+            const currentFiles = filesRef.current;
             try {
                 const updated = await Promise.all(
-                    files.map((fileItem) => compressSingleImage(fileItem))
+                    currentFiles.map((fileItem) => compressSingleImage(fileItem))
                 );
-                if (isMountedRef.current) {
-                    setFiles(updated);
+                if (cancelled || !isMountedRef.current) {
+                    updated.forEach((item, idx) => {
+                        const prevUrl = currentFiles[idx]?.compressedPreview;
+                        if (item.compressedPreview && item.compressedPreview !== prevUrl) {
+                            try {
+                                URL.revokeObjectURL(item.compressedPreview);
+                            } catch {
+                                // Ignore revoke errors
+                            }
+                        }
+                    });
+                    return;
                 }
+                setFiles((prev) => {
+                    const updatedById = new Map(updated.map((u) => [u.id, u]));
+                    return prev.map((existing) => {
+                        const next = updatedById.get(existing.id);
+                        if (!next) return existing;
+                        if (existing.compressedPreview && existing.compressedPreview !== next.compressedPreview) {
+                            try {
+                                URL.revokeObjectURL(existing.compressedPreview);
+                            } catch {
+                                // Ignore revoke errors
+                            }
+                        }
+                        return next;
+                    });
+                });
             } catch (err) {
                 console.error("Auto compression error:", err);
             } finally {
-                if (isMountedRef.current) {
+                if (!cancelled && isMountedRef.current) {
                     setIsProcessing(false);
                 }
             }
         }, 250);
 
-        return () => clearTimeout(timer);
+        return () => {
+            cancelled = true;
+            clearTimeout(timer);
+        };
     }, [quality, targetKb, mode, format, files.length, compressSingleImage]);
 
     const activeFile = files.find((f) => f.id === activeFileId) || files[0];
 
     const handleDownload = (fileItem: CompressorFile) => {
         if (!fileItem.compressedBlob) return;
-        const extension = format === "webp" ? "webp" : format === "png" ? "png" : "jpg";
+        const extension = resolveDownloadExtension(
+            format,
+            fileItem.compressedBlob.type || fileItem.file.type
+        );
         const baseName = fileItem.name.replace(/\.[^/.]+$/, "");
         const finalName = `${baseName}-compressed.${extension}`;
 
@@ -344,8 +397,16 @@ export default function ImageCompressorTool() {
             } else {
                 // Convert blob to PNG for clipboard compatibility
                 const img = new Image();
-                img.src = URL.createObjectURL(fileItem.compressedBlob);
-                await new Promise((r) => (img.onload = r));
+                const tempUrl = URL.createObjectURL(fileItem.compressedBlob);
+                try {
+                    await new Promise<void>((resolve, reject) => {
+                        img.onload = () => resolve();
+                        img.onerror = () => reject(new Error("Failed to decode image for clipboard"));
+                        img.src = tempUrl;
+                    });
+                } finally {
+                    URL.revokeObjectURL(tempUrl);
+                }
                 const canvas = document.createElement("canvas");
                 canvas.width = img.width;
                 canvas.height = img.height;
@@ -564,6 +625,16 @@ export default function ImageCompressorTool() {
                             </div>
                         )}
                     </div>
+
+                    {activeFile?.status === "target-unattainable" && activeFile.statusMessage && (
+                        <div
+                            role="status"
+                            className="flex items-center gap-2 px-3 py-2 rounded-lg border border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-300 text-xs"
+                        >
+                            <AlertCircle className="w-4 h-4 shrink-0" />
+                            <span>{activeFile.statusMessage}</span>
+                        </div>
+                    )}
                 </div>
 
                 {/* Right Settings Panel */}
