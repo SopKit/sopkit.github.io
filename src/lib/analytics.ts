@@ -49,10 +49,11 @@ export function isAnalyticsAllowed(): boolean {
 	try {
 		if (window.__sopkit_analytics_disabled) return false;
 		if (localStorage.getItem("sopkit_consent_analytics") !== "granted") return false;
+		return true;
 	} catch {
-		// Ignore storage errors in restrictive/incognito contexts
+		// Fail closed in restrictive/incognito contexts where storage cannot be read
+		return false;
 	}
-	return true;
 }
 
 /**
