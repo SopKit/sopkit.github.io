@@ -3,6 +3,7 @@ import {
 	sanitizeSearchQuery,
 	getFileSizeBracket,
 	getRouteCategory,
+	isAnalyticsAllowed,
 	detectUserProperties,
 	setGAUserProperties,
 	sendGAEvent,
@@ -68,7 +69,20 @@ describe("Route Category Classification", () => {
 });
 
 describe("GA4 Custom User Properties & Event Dispatcher", () => {
+	const originalLocalStorage = (globalThis as any).localStorage;
+	let storageData: Record<string, string>;
+
 	beforeEach(() => {
+		storageData = { sopkit_consent_analytics: "granted" };
+		(globalThis as any).localStorage = {
+			getItem: (key: string) => (key in storageData ? storageData[key] : null),
+			setItem: (key: string, val: string) => {
+				storageData[key] = val;
+			},
+			removeItem: (key: string) => {
+				delete storageData[key];
+			},
+		};
 		// Mock window and dataLayer
 		(globalThis as any).window = {
 			dataLayer: [],
@@ -84,6 +98,36 @@ describe("GA4 Custom User Properties & Event Dispatcher", () => {
 	// (Astryx) that treat a defined `window` as a real DOM.
 	afterEach(() => {
 		delete (globalThis as any).window;
+		if (originalLocalStorage === undefined) {
+			delete (globalThis as any).localStorage;
+		} else {
+			(globalThis as any).localStorage = originalLocalStorage;
+		}
+	});
+
+	it("fails closed when consent is missing, denied, disabled, or storage throws", () => {
+		expect(isAnalyticsAllowed()).toBe(true);
+
+		delete storageData.sopkit_consent_analytics;
+		expect(isAnalyticsAllowed()).toBe(false);
+
+		storageData.sopkit_consent_analytics = "denied";
+		expect(isAnalyticsAllowed()).toBe(false);
+
+		storageData.sopkit_consent_analytics = "granted";
+		(globalThis as any).window.__sopkit_analytics_disabled = true;
+		expect(isAnalyticsAllowed()).toBe(false);
+
+		(globalThis as any).window.__sopkit_analytics_disabled = false;
+		(globalThis as any).localStorage = {
+			getItem: () => {
+				throw new Error("SecurityError: storage disabled");
+			},
+		};
+		expect(isAnalyticsAllowed()).toBe(false);
+
+		sendGAEvent("page_view", { page_path: "/blocked" });
+		expect((globalThis as any).window.dataLayer).toHaveLength(0);
 	});
 
 	it("detects user properties with safe fallbacks in server/test environments", () => {
