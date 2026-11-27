@@ -61,13 +61,41 @@ export default function AudioEqualizerTool() {
 	const fileInputRef = useRef<HTMLInputElement>(null);
 	const audioElementRef = useRef<HTMLAudioElement | null>(null);
 	const animationRef = useRef<number | null>(null);
+	const audioUrlRef = useRef<string>("");
+	const processedUrlRef = useRef<string>("");
+
+	const replaceAudioUrl = useCallback((nextUrl: string) => {
+		if (audioUrlRef.current && audioUrlRef.current !== nextUrl) {
+			URL.revokeObjectURL(audioUrlRef.current);
+		}
+		audioUrlRef.current = nextUrl;
+		setAudioUrl(nextUrl);
+	}, []);
+
+	const replaceProcessedUrl = useCallback((nextUrl: string) => {
+		if (processedUrlRef.current && processedUrlRef.current !== nextUrl) {
+			URL.revokeObjectURL(processedUrlRef.current);
+		}
+		processedUrlRef.current = nextUrl;
+		setProcessedUrl(nextUrl);
+	}, []);
 
 	useEffect(() => {
+		const animationFrame = animationRef;
 		return () => {
-			if (audioContextRef.current) audioContextRef.current.close();
-			if (animationRef.current) cancelAnimationFrame(animationRef.current);
-			if (audioUrl) URL.revokeObjectURL(audioUrl);
-			if (processedUrl) URL.revokeObjectURL(processedUrl);
+			if (audioContextRef.current && audioContextRef.current.state !== "closed") {
+				audioContextRef.current.close().catch(() => {});
+				audioContextRef.current = null;
+			}
+			if (animationFrame.current) cancelAnimationFrame(animationFrame.current);
+			if (audioUrlRef.current) {
+				URL.revokeObjectURL(audioUrlRef.current);
+				audioUrlRef.current = "";
+			}
+			if (processedUrlRef.current) {
+				URL.revokeObjectURL(processedUrlRef.current);
+				processedUrlRef.current = "";
+			}
 		};
 	}, []);
 
@@ -87,11 +115,10 @@ export default function AudioEqualizerTool() {
 		}
 
 		setAudioFile(file);
-		setProcessedUrl("");
-		if (audioUrl) URL.revokeObjectURL(audioUrl);
-		setAudioUrl(URL.createObjectURL(file));
+		replaceProcessedUrl("");
+		replaceAudioUrl(URL.createObjectURL(file));
 		e.target.value = "";
-	}, [audioUrl]);
+	}, [replaceAudioUrl, replaceProcessedUrl]);
 
 	const applyPreset = useCallback((presetKey: string) => {
 		const preset = PRESETS[presetKey];
@@ -109,9 +136,14 @@ export default function AudioEqualizerTool() {
 		if (!audioFile) return;
 		setIsProcessing(true);
 
+		const AudioContextCtor = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+		let ctx: AudioContext | null = null;
+
 		try {
-			const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
-			const ctx = new AudioContext();
+			if (audioContextRef.current && audioContextRef.current.state !== "closed") {
+				await audioContextRef.current.close().catch(() => {});
+			}
+			ctx = new AudioContextCtor();
 			audioContextRef.current = ctx;
 
 			const arrayBuffer = await audioFile.arrayBuffer();
@@ -153,17 +185,21 @@ export default function AudioEqualizerTool() {
 			const renderedBuffer = await offlineCtx.startRendering();
 
 			const wavBlob = audioBufferToWav(renderedBuffer);
-			const url = URL.createObjectURL(wavBlob);
-			if (processedUrl) URL.revokeObjectURL(processedUrl);
-			setProcessedUrl(url);
+			replaceProcessedUrl(URL.createObjectURL(wavBlob));
 			toast.success("Equalizer applied successfully!");
 		} catch (error) {
 			console.error(error);
 			toast.error("Failed to process audio.");
 		} finally {
+			if (ctx && ctx.state !== "closed") {
+				await ctx.close().catch(() => {});
+			}
+			if (audioContextRef.current === ctx) {
+				audioContextRef.current = null;
+			}
 			setIsProcessing(false);
 		}
-	}, [audioFile, bands, processedUrl]);
+	}, [audioFile, bands, replaceProcessedUrl]);
 
 	const audioBufferToWav = (buffer: AudioBuffer): Blob => {
 		const numChannels = buffer.numberOfChannels;
@@ -228,13 +264,13 @@ export default function AudioEqualizerTool() {
 	};
 
 	const reset = () => {
-		if (audioContextRef.current) audioContextRef.current.close();
+		if (audioContextRef.current && audioContextRef.current.state !== "closed") {
+			audioContextRef.current.close().catch(() => {});
+		}
 		if (animationRef.current) cancelAnimationFrame(animationRef.current);
-		if (audioUrl) URL.revokeObjectURL(audioUrl);
-		if (processedUrl) URL.revokeObjectURL(processedUrl);
+		replaceAudioUrl("");
+		replaceProcessedUrl("");
 		setAudioFile(null);
-		setAudioUrl("");
-		setProcessedUrl("");
 		setBands(PRESET_BANDS.map(b => ({ ...b })));
 		setCurrentPreset("flat");
 		setIsPlaying(false);

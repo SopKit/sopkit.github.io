@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 import {
 	Upload,
 	Download,
@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { toast } from "sonner";
+import { computeConcatenationSchedule, encodeWavPcm16 } from "@/lib/audio/joiner-utils";
 
 interface AudioItem {
 	id: string;
@@ -32,6 +33,24 @@ export default function AudioJoinerTool() {
 	const [progress, setProgress] = useState(0);
 	const [processedUrl, setProcessedUrl] = useState<string>("");
 	const fileInputRef = useRef<HTMLInputElement>(null);
+	const processedUrlRef = useRef<string>("");
+
+	const replaceProcessedUrl = useCallback((nextUrl: string) => {
+		if (processedUrlRef.current && processedUrlRef.current !== nextUrl) {
+			URL.revokeObjectURL(processedUrlRef.current);
+		}
+		processedUrlRef.current = nextUrl;
+		setProcessedUrl(nextUrl);
+	}, []);
+
+	useEffect(() => {
+		return () => {
+			if (processedUrlRef.current) {
+				URL.revokeObjectURL(processedUrlRef.current);
+				processedUrlRef.current = "";
+			}
+		};
+	}, []);
 
 	const handleFileUpload = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
 		const files = Array.from(e.target.files || []);
@@ -59,16 +78,16 @@ export default function AudioJoinerTool() {
 
 		if (newItems.length > 0) {
 			setAudioFiles(prev => [...prev, ...newItems]);
-			setProcessedUrl("");
+			replaceProcessedUrl("");
 			toast.success(`${newItems.length} file(s) added.`);
 		}
 		e.target.value = "";
-	}, []);
+	}, [replaceProcessedUrl]);
 
 	const removeFile = useCallback((id: string) => {
 		setAudioFiles(prev => prev.filter(f => f.id !== id));
-		setProcessedUrl("");
-	}, []);
+		replaceProcessedUrl("");
+	}, [replaceProcessedUrl]);
 
 	const moveFile = useCallback((index: number, direction: "up" | "down") => {
 		setAudioFiles(prev => {
@@ -78,8 +97,8 @@ export default function AudioJoinerTool() {
 			[arr[index], arr[newIndex]] = [arr[newIndex], arr[index]];
 			return arr;
 		});
-		setProcessedUrl("");
-	}, []);
+		replaceProcessedUrl("");
+	}, [replaceProcessedUrl]);
 
 	const joinAudios = useCallback(async () => {
 		if (audioFiles.length < 2) {
@@ -90,9 +109,11 @@ export default function AudioJoinerTool() {
 		setIsProcessing(true);
 		setProgress(0);
 
+		const AudioContextCtor = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+		let ctx: AudioContext | null = null;
+
 		try {
-			const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
-			const ctx = new AudioContext();
+			ctx = new AudioContextCtor();
 
 			const buffers: AudioBuffer[] = [];
 			let totalLength = 0;
@@ -108,82 +129,38 @@ export default function AudioJoinerTool() {
 
 			const numChannels = Math.max(...buffers.map(b => b.numberOfChannels));
 			const offlineCtx = new OfflineAudioContext(numChannels, totalLength, sampleRate);
+			const schedule = computeConcatenationSchedule(buffers.map(b => b.duration));
 
-			let offset = 0;
 			for (let i = 0; i < buffers.length; i++) {
 				const source = offlineCtx.createBufferSource();
 				source.buffer = buffers[i];
 				source.connect(offlineCtx.destination);
-				source.start(0, 0, buffers[i].duration);
+				source.start(schedule[i].startTime, 0, schedule[i].duration);
 				setProgress(40 + Math.round(((i + 1) / buffers.length) * 40));
 			}
 
 			const renderedBuffer = await offlineCtx.startRendering();
 			setProgress(90);
 
-			const wavBlob = audioBufferToWav(renderedBuffer);
+			const channels = Array.from({ length: renderedBuffer.numberOfChannels }, (_, c) =>
+				renderedBuffer.getChannelData(c),
+			);
+			const wavBlob = encodeWavPcm16(channels, renderedBuffer.sampleRate);
 			const url = URL.createObjectURL(wavBlob);
-			if (processedUrl) URL.revokeObjectURL(processedUrl);
-			setProcessedUrl(url);
+			replaceProcessedUrl(url);
 			setProgress(100);
 
-			ctx.close();
 			toast.success(`Joined ${audioFiles.length} audio files successfully!`);
 		} catch (error) {
 			console.error(error);
 			toast.error("Failed to join audio files.");
 		} finally {
+			if (ctx && ctx.state !== "closed") {
+				await ctx.close().catch(() => {});
+			}
 			setIsProcessing(false);
 		}
-	}, [audioFiles, processedUrl]);
-
-	const audioBufferToWav = (buffer: AudioBuffer): Blob => {
-		const numChannels = buffer.numberOfChannels;
-		const sampleRate = buffer.sampleRate;
-		const format = 1;
-		const bitDepth = 16;
-		const bytesPerSample = bitDepth / 8;
-		const blockAlign = numChannels * bytesPerSample;
-		const dataSize = buffer.length * blockAlign;
-		const headerSize = 44;
-		const totalSize = headerSize + dataSize;
-
-		const arrayBuffer = new ArrayBuffer(totalSize);
-		const view = new DataView(arrayBuffer);
-
-		writeString(view, 0, "RIFF");
-		view.setUint32(4, totalSize - 8, true);
-		writeString(view, 8, "WAVE");
-		writeString(view, 12, "fmt ");
-		view.setUint32(16, 16, true);
-		view.setUint16(20, format, true);
-		view.setUint16(22, numChannels, true);
-		view.setUint32(24, sampleRate, true);
-		view.setUint32(28, sampleRate * blockAlign, true);
-		view.setUint16(32, blockAlign, true);
-		view.setUint16(34, bitDepth, true);
-		writeString(view, 36, "data");
-		view.setUint32(40, dataSize, true);
-
-		for (let c = 0; c < numChannels; c++) {
-			const channelData = buffer.getChannelData(c);
-			let offset = 44 + c * 2;
-			for (let i = 0; i < buffer.length; i++) {
-				const sample = Math.max(-1, Math.min(1, channelData[i]));
-				const intSample = sample < 0 ? sample * 0x8000 : sample * 0x7FFF;
-				view.setInt16(offset, intSample, true);
-				offset += numChannels * 2;
-			}
-		}
-
-		return new Blob([arrayBuffer], { type: "audio/wav" });
-	};
-
-	const writeString = (view: DataView, offset: number, string: string) => {
-		for (let i = 0; i < string.length; i++) {
-			view.setUint8(offset + i, string.charCodeAt(i));
-		}
-	};
+	}, [audioFiles, replaceProcessedUrl]);
 
 	const downloadJoined = () => {
 		if (!processedUrl) return;
@@ -195,9 +172,8 @@ export default function AudioJoinerTool() {
 	};
 
 	const reset = () => {
-		if (processedUrl) URL.revokeObjectURL(processedUrl);
+		replaceProcessedUrl("");
 		setAudioFiles([]);
-		setProcessedUrl("");
 		setProgress(0);
 		if (fileInputRef.current) fileInputRef.current.value = "";
 	};
