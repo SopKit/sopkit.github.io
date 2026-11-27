@@ -33,22 +33,24 @@ const clean = (s) =>
 		.trim();
 
 const HUB_MAP = {
-	image: "/image-tools",
-	pdf: "/pdf-tools",
-	video: "/video-tools",
-	audio: "/audio-tools",
-	text: "/text-tools",
-	seo: "/seo-tools",
-	developer: "/developer-tools",
-	utilities: "/other-tools",
-	others: "/other-tools",
+	"image-tools": "/image-tools",
+	"pdf-tools": "/pdf-tools",
+	"video-tools": "/video-tools",
+	"audio-tools": "/audio-tools",
+	"text-tools": "/text-tools",
+	"seo-tools": "/seo-tools",
+	"developer-tools": "/developer-tools",
+	"utility-tools": "/other-tools",
+	"other-tools": "/other-tools",
 	generators: "/generators",
-	youtube: "/youtube-tools",
+	"youtube-tools": "/youtube-tools",
+	"ai-tools": "/ai-tools",
 	calculators: "/calculators",
 	"exam-tools": "/exam-tools",
+	"extraction-tools": "/extraction-tools",
+	"privacy-tools": "/privacy-tools",
 	health: "/health",
-	content: "/tool-guides",
-	blog: "/blog",
+	guides: "/tool-guides",
 };
 
 // -----------------------------------------------------------------------------
@@ -73,8 +75,9 @@ llmsSummaryLines.push(
 llmsSummaryLines.push("");
 llmsSummaryLines.push("## Category hubs");
 llmsSummaryLines.push("");
-for (const c of cats) {
-	const hub = HUB_MAP[c.slug] || HUB_MAP[c.key];
+for (const [key, c] of Object.entries(categories)) {
+	if (!c.tools || c.tools.length === 0) continue;
+	const hub = HUB_MAP[c.slug] || HUB_MAP[key];
 	if (!hub) continue;
 	llmsSummaryLines.push(`- [${c.name}](${page(hub)}) - ${clean(c.description || "")}`);
 }

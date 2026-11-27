@@ -13,10 +13,23 @@ SopKit is a comprehensive collection of free online utilities for creators, deve
 ## Category hubs
 
 - [Fun Generators](https://sopkit.space/generators/) - Create viral content with AI-powered fun generators
-- [Blog](https://sopkit.space/blog/) - Tech blog and tool deep-dives
+- [Image Tools](https://sopkit.space/image-tools/) - Compress, convert, resize, and edit images online
+- [Text Tools](https://sopkit.space/text-tools/) - Format, convert, and manipulate text content
+- [PDF Tools](https://sopkit.space/pdf-tools/) - Merge, split, compress, and manipulate PDF documents
+- [Video Tools](https://sopkit.space/video-tools/) - Compress videos, convert formats, and create GIFs
+- [YouTube Tools](https://sopkit.space/youtube-tools/) - Download, optimize, and create content for YouTube
+- [Audio Tools](https://sopkit.space/audio-tools/) - Compress and convert audio files between formats
+- [Developer Tools](https://sopkit.space/developer-tools/) - Format JSON, generate hashes, and developer utilities
+- [Utility Tools](https://sopkit.space/other-tools/) - Convert units, create ZIP files, and essential utilities
+- [SEO Tools](https://sopkit.space/seo-tools/) - Professional SEO tools for keyword research, rank tracking, technical SEO, and website optimization. Boost your search rankings with our comprehensive SEO toolkit.
+- [AI Prompt Tools](https://sopkit.space/ai-tools/) - Interactive builders and generators to write optimal AI prompts and personas
+- [Other Tools](https://sopkit.space/other-tools/) - Various useful tools
+- [Guides & Comparisons](https://sopkit.space/tool-guides/) - Expert guides and tool comparisons
 - [Calculators](https://sopkit.space/calculators/) - Calculate academic grades, attendance shortage, and construction materials with ease.
 - [Exam Image & Form Tools](https://sopkit.space/exam-tools/) - Resize and compress photos, signatures, and PDFs to fit exact official requirements for UPSC, SSC, NEET, JEE, and other major exams.
 - [Health & Fitness](https://sopkit.space/health/) - Calculate BMI, BMR, TDEE, and other health metrics to stay on track with your fitness goals.
+- [Privacy & Security Tools](https://sopkit.space/privacy-tools/) - Free privacy-first tools for data protection, email security, and compliance. Run securely in your browser with zero uploads.
+- [Extraction Tools](https://sopkit.space/extraction-tools/) - Extract structured data from text, HTML, JSON, regex, and CSV
 
 ## Tools by category
 
